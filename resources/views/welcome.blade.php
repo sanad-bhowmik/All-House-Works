@@ -308,22 +308,8 @@
                             <nav>
                                 <ul class="space-y-2">
                                     <li><a href="/" class="block px-4 py-2 rounded hover:bg-gray-300">Home</a></li>
-                                    <li x-data="{ openAbout: false }">
-                                        <a href="/about" class="block px-4 py-2 rounded hover:bg-gray-300 flex items-center" @click.prevent="openAbout = !openAbout">
-                                            <span class="ml-1">About Us</span>
-                                            <!-- <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" @click.stop="openAbout = !openAbout" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                                <g id="SVGRepo_iconCarrier">
-                                                    <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
-                                                </g>
-                                            </svg> -->
-                                        </a>
-                                        <ul x-show="openAbout" id="about-submenu" class="ml-4 space-y-2">
-                                            <li><a href="/review" class="block px-4 py-2 hover:bg-gray-200">Review</a></li>
-                                            <li><a href="/mission" class="block px-4 py-2 hover:bg-gray-200">Mission</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="/about" class="block px-4 py-2 rounded hover:bg-gray-300">About</a></li>
+
 
                                     <li x-data="{ openService: false }">
                                         <a href="#" @click="openService = !openService" class="block px-4 py-2 rounded hover:bg-gray-300">Service <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" style="margin-top: -28px;margin-left: 62px;">
