@@ -292,201 +292,628 @@
                         <span class="mt-2">All House Works</span>
                     </a>
                 </div>
+                <!-- mobile Screnn -->
+                <div x-data="{ open: false }" style="margin-right: 2%;">
+                    <!-- Sidebar -->
+                    <div x-show="open" x-transition:enter="transition ease-in-out duration-300" class="fixed top-0 left-0 h-full bg-white shadow-lg z-50 w-64 md:hidden overflow-y-auto" style="border: 1px solid black;">
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-6">
+                                <span class="text-xl font-bold">All House Works</span>
+                                <button @click="open = false" class="text-gray-600 focus:outline-none">
+                                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <nav>
+                                <ul class="space-y-2">
+                                    <li><a href="/" class="block px-4 py-2 rounded hover:bg-gray-300">Home</a></li>
+                                    <li x-data="{ openAbout: false }">
+                                        <a href="/about" class="block px-4 py-2 rounded hover:bg-gray-300 flex items-center" @click.prevent="openAbout = !openAbout">
+                                            <span class="ml-1">About Us</span>
+                                            <!-- <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" @click.stop="openAbout = !openAbout" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
+                                                </g>
+                                            </svg> -->
+                                        </a>
+                                        <ul x-show="openAbout" id="about-submenu" class="ml-4 space-y-2">
+                                            <li><a href="/review" class="block px-4 py-2 hover:bg-gray-200">Review</a></li>
+                                            <li><a href="/mission" class="block px-4 py-2 hover:bg-gray-200">Mission</a></li>
+                                        </ul>
+                                    </li>
 
-                <div x-show="open" x-transition:enter="transition ease-in-out duration-300" class="flex flex-col w-full h-auto md:hidden">
-                    <div class="flex flex-col items-center justify-center gap-2">
+                                    <li x-data="{ openService: false }">
+                                        <a href="#" @click="openService = !openService" class="block px-4 py-2 rounded hover:bg-gray-300">Service <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" style="margin-top: -28px;margin-left: 62px;">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
+                                                </g>
+                                            </svg></a>
+                                        <ul x-show="openService" class="ml-4 space-y-2 bg-gray-100">
+                                            <!-- Plumber -->
+                                            <!-- Your main content -->
+                                            <ul class="space-y-2">
+                                                <!-- Plumber -->
+                                                <li>
+                                                    <a href="/plumbing" class="block px-4 py-2 rounded hover:bg-gray-300 flex items-center">
+                                                        <span class="ml-1">Plumber</span>
+
+                                                        <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" onclick="toggleSubmenu(event)" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                            <g id="SVGRepo_iconCarrier">
+                                                                <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                    <ul id="plumber-submenu" class="ml-4 space-y-2 hidden">
+                                                        <li>
+                                                            <a href="/plumbingInstall" class="block px-4 py-2 rounded hover:bg-gray-300"><span class="ml-1">Plumber Install</span>
+                                                                <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" onclick="toggleSubmenu12(event)" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" style="margin-top: -30px;">
+                                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                                    <g id="SVGRepo_iconCarrier">
+                                                                        <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
+                                                                    </g>
+                                                                </svg>
+                                                            </a>
+                                                            <ul id="plumberInstall-submenu" class="ml-4 space-y-2 hidden" style="background-color: #b9cbda;">
+                                                                <li><a href="/pipeInstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Pipe Installation</a></li>
+                                                                <li> <a href="/bidetSpray" class="block px-4 py-2 hover:bg-gray-200 border-b">Bidet Spray</a></li>
+                                                                <li> <a href="/bathroomRack" class="block px-4 py-2 hover:bg-gray-200 border-b">Bathroom Rack</a></li>
+                                                            </ul>
+                                                        </li>
+
+
+
+                                                        <li><a href="/plumbingChoke" class="block px-4 py-2 rounded hover:bg-gray-300">Plumbing Choke</a></li>
+
+                                                        <li>
+                                                            <a href="/plumbingLeak" class="block px-4 py-2 rounded hover:bg-gray-300"><span class="ml-1">Plumbing Leak</span>
+                                                                <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" onclick="toggleSubmenu22(event)" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" style="margin-top: -30px;">
+                                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                                    <g id="SVGRepo_iconCarrier">
+                                                                        <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
+                                                                    </g>
+                                                                </svg>
+                                                            </a>
+                                                            <ul id="plumberLeak-submenu" class="ml-4 space-y-2 hidden" style="background-color: #b9cbda;">
+                                                                <li> <a href="/tapLeak" class="block px-4 py-2 hover:bg-gray-200 border-b">Leaking Tap</a></li>
+                                                                <li> <a href="/heaterLeak" class="block px-4 py-2 hover:bg-gray-200 border-b">Heater Leak</a></li>
+                                                                <li> <a href="/showerService" class="block px-4 py-2 hover:bg-gray-200 border-b">Shower Leak</a></li>
+                                                            </ul>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="/waterHeater" class="block px-4 py-2 rounded hover:bg-gray-300"><span class="ml-1">Water Heater</span>
+                                                                <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" onclick="toggleSubmenu32(event)" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" style="margin-top: -30px;">
+                                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                                    <g id="SVGRepo_iconCarrier">
+                                                                        <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
+                                                                    </g>
+                                                                </svg>
+                                                            </a>
+                                                            <ul id="waterHeater-submenu" class="ml-4 space-y-2 hidden" style="background-color: #b9cbda;">
+                                                                <li> <a href="/heaterinstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Water Heater Installation</a></li>
+                                                                <li> <a href="/waterheaterLeak" class="block px-4 py-2 hover:bg-gray-200 border-b">Water Heater Leak</a></li>
+                                                                <li> <a href="/heaterRepair" class="block px-4 py-2 hover:bg-gray-200 border-b">Water Heater Repair</a></li>
+                                                            </ul>
+                                                        </li>
+
+
+                                                        <li>
+                                                            <a href="/toiletBowl" class="block px-4 py-2 rounded hover:bg-gray-300"><span class="ml-1">Toilet Bowl</span>
+                                                                <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" onclick="toggleSubmenu42(event)" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" style="margin-top: -30px;">
+                                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                                    <g id="SVGRepo_iconCarrier">
+                                                                        <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
+                                                                    </g>
+                                                                </svg>
+                                                            </a>
+                                                            <ul id="toiletBowl-submenu" class="ml-4 space-y-2 hidden" style="background-color: #b9cbda;">
+                                                                <li> <a href="/toiletBowl" class="block px-4 py-2 hover:bg-gray-200 border-b">Toilet Bowl Installation</a>
+                                                                </li>
+                                                                <li> <a href="/plumbingChoke" class="block px-4 py-2 hover:bg-gray-200 border-b">Toilet Bowl Choke</a></li>
+                                                                <li> <a href="/toiletRepair" class="block px-4 py-2 hover:bg-gray-200 border-b">Toilet Bowl Choke Repair</a></li>
+                                                            </ul>
+                                                        </li>
+
+
+                                                        <li>
+                                                            <a href="/showerService" class="block px-4 py-2 rounded hover:bg-gray-300"><span class="ml-1">Shower Service</span>
+                                                                <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" onclick="toggleSubmenu52(event)" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" style="margin-top: -30px;">
+                                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                                    <g id="SVGRepo_iconCarrier">
+                                                                        <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
+                                                                    </g>
+                                                                </svg>
+                                                            </a>
+                                                            <ul id="shower-submenu" class="ml-4 space-y-2 hidden" style="background-color: #b9cbda;">
+                                                                <li> <a href="/showerInstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Shower Installation</a>
+                                                                </li>
+                                                                <li> <a href="/showerRepair" class="block px-4 py-2 hover:bg-gray-200 border-b">Shower Repair</a></li>
+                                                            </ul>
+                                                        </li>
+
+                                                        <li><a href="/tapFaucet" class="block px-4 py-2 rounded hover:bg-gray-300">Tap & Faucet</a></li>
+                                                        <li><a href="/bidetSpray" class="block px-4 py-2 rounded hover:bg-gray-300">Bidet Spray</a></li>
+                                                        <li><a href="/coomercialPlumber" class="block px-4 py-2 rounded hover:bg-gray-300">Commercial Plumber</a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- Plumber -->
+                                            </ul>
+                                            <!-- Plumber -->
+
+                                            <!-- Electrician -->
+                                            <li>
+                                                <a href="/electric" class="block px-4 py-2 rounded hover:bg-gray-300 flex items-center">
+                                                    <span class="ml-1">Electrician</span>
+                                                    <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" onclick="toggleSubmenu2(event)" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                        <g id="SVGRepo_iconCarrier">
+                                                            <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
+                                                        </g>
+                                                    </svg>
+                                                </a>
+                                                <ul id="electrician-submenu" class="ml-4 space-y-2 hidden">
+                                                    <li><a href="/electricalInstall" class="block px-4 py-2 rounded hover:bg-gray-300">Electrical Installation</a></li>
+                                                    <li><a href="/electricRepair" class="block px-4 py-2 rounded hover:bg-gray-300">Electrical Repair</a></li>
+
+                                                    <li>
+                                                        <a href="/lightService" class="block px-4 py-2 rounded hover:bg-gray-300"><span class="ml-1">Light Service</span>
+                                                            <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" onclick="toggleSubmenu62(event)" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" style="margin-top: -30px;">
+                                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                                <g id="SVGRepo_iconCarrier">
+                                                                    <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
+                                                                </g>
+                                                            </svg>
+                                                        </a>
+                                                        <ul id="lightService-submenu" class="ml-4 space-y-2 hidden" style="background-color: #b9cbda;">
+                                                            <li> <a href="/lightInstall" class="border-b block px-4 py-2 hover:bg-gray-200 border-b">Light Installation</a>
+                                                            </li>
+                                                            <li> <a href="/lightReplace" class="border-b block px-4 py-2 hover:bg-gray-200 border-b">Light Repair</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="/switchService" class="block px-4 py-2 rounded hover:bg-gray-300">Electric Switch Service</a></li>
+                                                    <li><a href="/powerSocket" class="block px-4 py-2 rounded hover:bg-gray-300">Power Sockets</a></li>
+                                                    <li><a href="/hdrElectric" class="block px-4 py-2 rounded hover:bg-gray-300">HDR Electrician</a></li>
+                                                    <li><a href="/smartSwitch" class="block px-4 py-2 rounded hover:bg-gray-300">Smart Switch</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- Electrician -->
+
+                                            <!-- Handyman -->
+                                            <li>
+                                                <a href="/handyman" class="block px-4 py-2 rounded hover:bg-gray-300 flex items-center">
+                                                    <span class="ml-1">Handyman</span>
+
+                                                    <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" onclick="toggleSubmenu3(event)" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                        <g id="SVGRepo_iconCarrier">
+                                                            <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
+                                                        </g>
+                                                    </svg>
+                                                </a>
+                                                <ul id="handyman-submenu" class="ml-4 space-y-2 hidden">
+                                                    <li><a href="/rubbishChute" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">Rubbish Chute</a></li>
+                                                    <li><a href="/cupboard" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">Cupboard Hinge</a></li>
+                                                    <li><a href="/cabinetHinge" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">Cabinet Hinge</a></li>
+                                                    <li><a href="/hydraulic" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">Hydraulic Hinge</a></li>
+                                                    <li><a href="/drilling" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">Handyman Drilling</a></li>
+                                                    <li><a href="/tvBucket" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">TV Bracket Installation</a></li>
+                                                    <li><a href="/wallMounting" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">Wall Mounting Installation</a></li>
+                                                    <li><a href="/pullUp" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">PullUp Bar Installation</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- Handyman -->
+
+                                            <!-- Deep Cleaning -->
+                                            <li>
+                                                <a href="/deepclean" class="block px-4 py-2 rounded hover:bg-gray-300 flex items-center">
+                                                    <span class="ml-1">Deep Cleaning</span>
+                                                    <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" onclick="toggleSubmenu4(event)" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                        <g id="SVGRepo_iconCarrier">
+                                                            <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
+                                                        </g>
+                                                    </svg>
+
+                                                </a>
+                                                <ul id="deepclean-submenu" class="ml-4 space-y-2 hidden">
+                                                    <li><a href="/matressClean" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">Mattress Cleaning</a></li>
+                                                    <li><a href="/matressDeepClean" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">Mattress Deep Cleaning</a></li>
+                                                    <li><a href="/matressstemClean" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">Mattress Steam Cleaning</a></li>
+                                                    <li><a href="/matrissStainClean" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">Mattress Stain Removal</a></li>
+                                                    <li><a href="/sofaClean" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">Sofa Cleaning</a></li>
+                                                    <li><a href="/sofaDeepClean" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">Sofa Deep Cleaning</a></li>
+                                                    <li><a href="/sofaStain" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">Sofa Stain Removal</a></li>
+                                                    <li><a href="/fabricSofaClean" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">Fabric Sofa Cleaning</a></li>
+                                                    <li><a href="/unholsteryClean" class="block px-4 py-2 hover:bg-gray-200 border-b" onclick="handleLinkClick(event)">Upholstery Cleaning</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- Deep Cleaning -->
+
+                                            <!-- Floor Polishing -->
+                                            <li>
+                                                <a href="/floorpolish" class="block px-4 py-2 rounded hover:bg-gray-300 flex items-center">
+                                                    <span class="ml-1">Floor Polishing</span>
+                                                    <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" onclick="toggleSubmenu5(event)" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                        <g id="SVGRepo_iconCarrier">
+                                                            <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
+                                                        </g>
+                                                    </svg>
+                                                </a>
+                                                <ul id="floorpolish-submenu" class="ml-4 space-y-2 hidden">
+                                                    <li><a href="/marbleFloorPolish" class="block px-4 py-2 hover:bg-gray-200 border-b">Marble Floor Polish</a></li>
+                                                    <li><a href="/marblePolish" class="block px-4 py-2 hover:bg-gray-200 border-b">Marble Polishing</a></li>
+                                                    <li><a href="/parquetPolish" class="block px-4 py-2 hover:bg-gray-200 border-b">Parquet Polishing</a></li>
+                                                    <li><a href="/parquetVarnish" class="block px-4 py-2 hover:bg-gray-200 border-b">Parquet Floor Polishing</a></li>
+                                                    <li><a href="/woodPolish" class="block px-4 py-2 hover:bg-gray-200 border-b">Wood Polishing</a></li>
+                                                    <li><a href="/wood" class="block px-4 py-2 hover:bg-gray-200 border-b">Wood Floor Polishing</a></li>
+                                                    <li><a href="/vinylFloorPolish" class="block px-4 py-2 hover:bg-gray-200 border-b">Vinyl Floor Polishing</a></li>
+                                                    <li><a href="/tileFloorPolish" class="block px-4 py-2 hover:bg-gray-200 border-b">Tile Floor Polishing</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- Floor Polishing -->
+
+                                            <!-- Floor Cleaning -->
+                                            <li>
+                                                <a href="/floorclean" class="block px-4 py-2 rounded hover:bg-gray-300 flex items-center">
+                                                    <span class="ml-1">Floor Cleaning</span>
+                                                    <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" onclick="toggleSubmenu6(event)" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                        <g id="SVGRepo_iconCarrier">
+                                                            <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
+                                                        </g>
+                                                    </svg>
+                                                </a>
+                                                <ul id="floorclean-submenu" class="ml-4 space-y-2 hidden">
+                                                    <li><a href="/floorclean" class="border-b block px-4 py-2 hover:bg-gray-200">Floor Deep Cleaning</a></li>
+                                                    <li> <a href="/vinylClean" class="border-b block px-4 py-2 hover:bg-gray-200">Vinyl Cleaning</a></li>
+                                                    <li> <a href="/vinylFloorClean" class="border-b block px-4 py-2 hover:bg-gray-200">Vinyl Floor Cleaning</a></li>
+                                                    <li> <a href="/terrazzoClean" class="border-b block px-4 py-2 hover:bg-gray-200">Terrazzo Cleaning</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- Floor Cleaning -->
+
+                                            <!-- Wood Varnishing -->
+                                            <li>
+                                                <a href="/wood" class="block px-4 py-2 rounded hover:bg-gray-300 flex items-center">
+                                                    <span class="ml-1">Wood Varnishing</span>
+                                                    <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" onclick="toggleSubmenu66(event)" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                        <g id="SVGRepo_iconCarrier">
+                                                            <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
+                                                        </g>
+                                                    </svg>
+                                                </a>
+                                                <ul id="varnish-submenu" class="ml-4 space-y-2 hidden">
+                                                    <li><a href="/parquetVarnish" class="border-b block px-4 py-2 hover:bg-gray-200">Parquet Varnish</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- Wood Varnishing -->
+                                            <!-- Decking -->
+                                            <li>
+                                                <a href="/decking" class="block px-4 py-2 rounded hover:bg-gray-300 flex items-center">
+                                                    <span class="ml-1">Decking</span>
+                                                    <svg class="w-10 h-10 ml-auto cursor-pointer toggle-submenu-icon" onclick="toggleSubmenu7(event)" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                        <g id="SVGRepo_iconCarrier">
+                                                            <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path>
+                                                        </g>
+                                                    </svg>
+                                                </a>
+                                                <ul id="decking-submenu" class="ml-4 space-y-2 hidden">
+                                                    <li><a href="/balconyDeck" class="border-b block px-4 py-2 hover:bg-gray-200">Balcony Decking</a></li>
+                                                    <li> <a href="/timberDeck" class="border-b block px-4 py-2 hover:bg-gray-200">Timber Decking</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- Decking -->
+                                        </ul>
+                                    </li>
+                                    <li><a href="/price" class="block px-4 py-2 rounded hover:bg-gray-300">Price</a></li>
+                                    <li><a href="/works" class="block px-4 py-2 rounded hover:bg-gray-300">Works</a></li>
+                                    <li><a href="/contact" class="block px-4 py-2 rounded hover:bg-gray-300">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <script>
+                        function toggleSubmenu(event) {
+                            event.preventDefault();
+                            const submenu = document.getElementById('plumber-submenu');
+                            submenu.classList.toggle('hidden');
+                        }
+
+                        function toggleSubmenu2(event) {
+                            event.preventDefault();
+                            const submenu = document.getElementById('electrician-submenu');
+                            submenu.classList.toggle('hidden');
+                        }
+
+                        function toggleSubmenu3(event) {
+                            event.preventDefault();
+                            const submenu = document.getElementById('handyman-submenu');
+                            submenu.classList.toggle('hidden');
+                        }
+
+                        function toggleSubmenu4(event) {
+                            event.preventDefault();
+                            const submenu = document.getElementById('deepclean-submenu');
+                            submenu.classList.toggle('hidden');
+                        }
+
+                        function toggleSubmenu5(event) {
+                            event.preventDefault();
+                            const submenu = document.getElementById('floorpolish-submenu');
+                            submenu.classList.toggle('hidden');
+                        }
+
+                        function toggleSubmenu6(event) {
+                            event.preventDefault();
+                            const submenu = document.getElementById('floorclean-submenu');
+                            submenu.classList.toggle('hidden');
+                        }
+
+                        function toggleSubmenu7(event) {
+                            event.preventDefault();
+                            const submenu = document.getElementById('decking-submenu');
+                            submenu.classList.toggle('hidden');
+                        }
+
+                        function toggleSubmenu66(event) {
+                            event.preventDefault();
+                            const submenu = document.getElementById('varnish-submenu');
+                            submenu.classList.toggle('hidden');
+                        }
+
+                        function toggleSubmenu55(event) {
+                            event.preventDefault();
+                            const submenu = document.getElementById('about-submenu');
+                            submenu.classList.toggle('hidden');
+                        }
+
+                        function toggleSubmenu12(event) {
+                            event.preventDefault();
+                            const submenu = document.getElementById('plumberInstall-submenu');
+                            submenu.classList.toggle('hidden');
+                        }
+
+                        function toggleSubmenu22(event) {
+                            event.preventDefault();
+                            const submenu = document.getElementById('plumberLeak-submenu');
+                            submenu.classList.toggle('hidden');
+                        }
+
+                        function toggleSubmenu32(event) {
+                            event.preventDefault();
+                            const submenu = document.getElementById('waterHeater-submenu');
+                            submenu.classList.toggle('hidden');
+                        }
+
+                        function toggleSubmenu42(event) {
+                            event.preventDefault();
+                            const submenu = document.getElementById('toiletBowl-submenu');
+                            submenu.classList.toggle('hidden');
+                        }
+
+                        function toggleSubmenu52(event) {
+                            event.preventDefault();
+                            const submenu = document.getElementById('shower-submenu');
+                            submenu.classList.toggle('hidden');
+                        }
+
+                        function toggleSubmenu62(event) {
+                            event.preventDefault();
+                            const submenu = document.getElementById('lightService-submenu');
+                            submenu.classList.toggle('hidden');
+                        }
+                    </script>
+
+
+
+                    <!-- Pc Screnn -->
+                    <div class="mt-4 hidden items-center justify-evenly font-semibold md:flex"style="margin-right: 72%;gap: 53px;">
                         <a href="/">Home</a>
-                        <a href="/about">About Us</a>
-                        <a href="/service">Service</a>
+                        <div class="relative group">
+                            <a href="/about">About</a>
+                            <div class="absolute left-0 mt-1 bg-white shadow-lg rounded-lg p-2 hidden group-hover:block">
+                                <a href="/review" class="border-b block px-4 py-2 hover:bg-gray-200">Review</a>
+                                <a href="/mission" class="block px-4 py-2 hover:bg-gray-200">Mission</a>
+                            </div>
+                        </div>
+                        <div class="relative group">
+                            <a href="/service">Service</a>
+
+                            <div class="absolute left-0 mt-1 bg-white shadow-lg rounded-lg p-2 hidden group-hover:block z-20" style="width: 340%;">
+                                <div class="relative group" onmouseover="showSubmenu7()" onmouseout="hideSubmenu7()">
+                                    <a href="/plumbing" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
+                                        <span class="ml-1">Plumber</span>
+                                    </a>
+                                    <div id="service-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
+                                        <div class="relative group" onmouseover="showPlumbingInstallSubmenu()" onmouseout="hidePlumbingInstallSubmenu()">
+                                            <a href="/plumbingInstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Plumbing Install</a>
+                                            <div id="plumbing-install-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
+                                                <a href="/pipeInstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Pipe Installation</a>
+                                                <a href="/bidetSpray" class="block px-4 py-2 hover:bg-gray-200 border-b">Bidet Spray</a>
+                                                <a href="/bathroomRack" class="block px-4 py-2 hover:bg-gray-200 border-b">Bathroom Rack</a>
+                                            </div>
+                                        </div>
+                                        <a href="/plumbingChoke" class="border-b block px-4 py-2 hover:bg-gray-200">Plumbing Choke</a>
+                                        <div class="relative group" onmouseover="showPlumbingLeakSubmenu()" onmouseout="hidePlumbingLeakSubmenu()">
+                                            <a href="/plumbingLeak" class="block px-4 py-2 hover:bg-gray-200 border-b">Plumbing Leak</a>
+                                            <div id="plumbing-leak-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
+                                                <a href="/tapLeak" class="block px-4 py-2 hover:bg-gray-200 border-b">Leaking Tap</a>
+                                                <a href="/heaterLeak" class="block px-4 py-2 hover:bg-gray-200 border-b">Heater Leak</a>
+                                                <a href="/showerService" class="block px-4 py-2 hover:bg-gray-200 border-b">Shower Leak</a>
+                                            </div>
+                                        </div>
+                                        <div class="relative group" onmouseover="showWaterHeaterSubmenu()" onmouseout="hideWaterHeaterSubmenu()">
+                                            <a href="/waterHeater" class="block px-4 py-2 hover:bg-gray-200 border-b">Water Heater</a>
+                                            <div id="water-heater-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
+                                                <a href="/heaterinstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Water Heater Installation</a>
+                                                <a href="/waterheaterLeak" class="block px-4 py-2 hover:bg-gray-200 border-b">Water Heater Leak</a>
+                                                <a href="/heaterRepair" class="block px-4 py-2 hover:bg-gray-200 border-b">Water Heater Repair</a>
+                                            </div>
+                                        </div>
+                                        <div class="relative group" onmouseover="showToiletBowlSubmenu()" onmouseout="hideToiletBowlSubmenu()">
+                                            <a href="/toiletBowl" class="block px-4 py-2 hover:bg-gray-200 border-b">Toilet Bowl</a>
+                                            <div id="toilet-bowl-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
+                                                <a href="/toiletBowl" class="block px-4 py-2 hover:bg-gray-200 border-b">Toilet Bowl Installation</a>
+                                                <a href="/plumbingChoke" class="block px-4 py-2 hover:bg-gray-200 border-b">Toilet Bowl Choke</a>
+                                                <a href="/toiletRepair" class="block px-4 py-2 hover:bg-gray-200 border-b">Toilet Bowl Choke Repair</a>
+                                            </div>
+                                        </div>
+                                        <div class="relative group" onmouseover="showShowerServiceSubmenu()" onmouseout="hideShowerServiceSubmenu()">
+                                            <a href="/showerService" class="block px-4 py-2 hover:bg-gray-200 border-b">Shower Service</a>
+                                            <div id="shower-service-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
+                                                <a href="/showerInstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Shower Installation</a>
+                                                <a href="/showerRepair" class="block px-4 py-2 hover:bg-gray-200 border-b">Shower Repair</a>
+                                            </div>
+                                        </div>
+                                        <a href="/tapFaucet" class="border-b block px-4 py-2 hover:bg-gray-200">Tap & Faucet</a>
+                                        <a href="/bidetSpray" class="border-b block px-4 py-2 hover:bg-gray-200">Bidet Spray</a>
+                                        <a href="/coomercialPlumber" class="border-b block px-4 py-2 hover:bg-gray-200">Comercial Plumber</a>
+                                    </div>
+                                </div>
+
+
+                                <div class="relative group" onmouseover="showSubmenu6()" onmouseout="hideSubmenu6()">
+                                    <div class="relative group" onmouseover="showSubmenu6()" onmouseout="hideSubmenu6()">
+                                        <a href="/electric" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
+                                            <span class="ml-1">Electrician</span>
+                                        </a>
+                                        <div id="electric-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
+                                            <a href="/electricalInstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Electrical Installation</a>
+                                            <a href="/electricRepair" class="block px-4 py-2 hover:bg-gray-200 border-b">Electrical Repair</a>
+                                            <div class="relative group" onmouseover="showLightServiceSubmenu()" onmouseout="hideLightServiceSubmenu()">
+                                                <a href="/lightService" class="block px-4 py-2 hover:bg-gray-200 border-b">Light Service</a>
+                                                <div id="light-service-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
+                                                    <a href="/lightInstall" class="border-b block px-4 py-2 hover:bg-gray-200 border-b">Light Installation</a>
+                                                    <a href="/lightReplace" class="border-b block px-4 py-2 hover:bg-gray-200 border-b">Light Repair</a>
+                                                </div>
+                                            </div>
+                                            <a href="/switchService" class="block px-4 py-2 hover:bg-gray-200 border-b">Electric Switch Service</a>
+                                            <a href="/powerSocket" class="block px-4 py-2 hover:bg-gray-200 border-b">Power Sockets</a>
+                                            <a href="/hdrElectric" class="block px-4 py-2 hover:bg-gray-200 border-b">HDR Electrician</a>
+                                            <a href="/smartSwitch" class="block px-4 py-2 hover:bg-gray-200 border-b">Smart Switch</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="relative group" onmouseover="showSubmenu5()" onmouseout="hideSubmenu5()">
+                                    <a href="/handyman" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
+                                        <span class="ml-1">Handyman</span>
+                                    </a>
+                                    <div id="handy-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
+                                        <a href="/rubbishChute" class="block px-4 py-2 hover:bg-gray-200 border-b">Rubbish Chute</a>
+                                        <a href="/cupboard" class="block px-4 py-2 hover:bg-gray-200 border-b">Cupboard Hinge</a>
+                                        <a href="/cabinetHinge" class="block px-4 py-2 hover:bg-gray-200 border-b">Cabinet Hinge</a>
+                                        <a href="/hydraulic" class="block px-4 py-2 hover:bg-gray-200 border-b">Hydraulic Hinge</a>
+                                        <a href="/drilling" class="block px-4 py-2 hover:bg-gray-200 border-b">Handyman Drilling</a>
+                                        <a href="/tvBucket" class="block px-4 py-2 hover:bg-gray-200 border-b">TV Bracket Installation</a>
+                                        <a href="/wallMounting" class="block px-4 py-2 hover:bg-gray-200 border-b">Wall Mounting Installation</a>
+                                        <a href="/pullUp" class="block px-4 py-2 hover:bg-gray-200 border-b">PullUp Bar Installation</a>
+                                    </div>
+                                </div>
+
+                                <div class="relative group" onmouseover="showSubmenu4()" onmouseout="hideSubmenu4()">
+                                    <a href="/deepclean" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
+                                        <span class="ml-1">Deep Cleaning</span>
+                                    </a>
+                                    <div id="dClean-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
+                                        <a href="/matressClean" class="border-b block px-4 py-2 hover:bg-gray-200">Mattress Cleaning</a>
+                                        <a href="/matressDeepClean" class="border-b block px-4 py-2 hover:bg-gray-200">Mattress Deep Cleaning</a>
+                                        <a href="/matressstemClean" class="border-b block px-4 py-2 hover:bg-gray-200">Mattress Steam Cleaning</a>
+                                        <a href="/matrissStainClean" class="border-b block px-4 py-2 hover:bg-gray-200">Mattress Stain Removal</a>
+                                        <a href="/sofaClean" class="border-b block px-4 py-2 hover:bg-gray-200">Sofa Cleaning</a>
+                                        <a href="/sofaDeepClean" class="border-b block px-4 py-2 hover:bg-gray-200">Sofa Deep Cleaning</a>
+                                        <a href="/sofaStain" class="border-b block px-4 py-2 hover:bg-gray-200">Sofa Stain Removal</a>
+                                        <a href="/fabricSofaClean" class="border-b block px-4 py-2 hover:bg-gray-200">Fabric Sofa Cleaning</a>
+                                        <a href="/unholsteryClean" class="border-b block px-4 py-2 hover:bg-gray-200">Upholstery Cleaning</a>
+                                    </div>
+                                </div>
+
+                                <div class="relative group" onmouseover="showSubmenu3()" onmouseout="hideSubmenu3()">
+                                    <a href="/floorpolish" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
+                                        <span class="ml-1">Floor Polishing</span>
+                                    </a>
+                                    <div id="fpolish-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
+                                        <a href="/marbleFloorPolish" class="border-b block px-4 py-2 hover:bg-gray-200">Marble Floor Polish</a>
+                                        <a href="/marblePolish" class="border-b block px-4 py-2 hover:bg-gray-200">Marble Polishing</a>
+                                        <a href="/parquetPolish" class="border-b block px-4 py-2 hover:bg-gray-200">Parquet Polishing</a>
+                                        <a href="/parquetVarnish" class="border-b block px-4 py-2 hover:bg-gray-200">Parquet Floor Polishing</a>
+                                        <a href="/woodPolish" class="border-b block px-4 py-2 hover:bg-gray-200">Wood Polishing</a>
+                                        <a href="/wood" class="border-b block px-4 py-2 hover:bg-gray-200">Wood Floor Polishing</a>
+                                        <a href="/vinylFloorPolish" class="border-b block px-4 py-2 hover:bg-gray-200">Vinyl Floor Polishing</a>
+                                        <a href="/tileFloorPolish" class="border-b block px-4 py-2 hover:bg-gray-200">Tile Floor Polishing</a>
+                                    </div>
+                                </div>
+
+                                <div class="relative group" onmouseover="showSubmenu2()" onmouseout="hideSubmenu2()">
+                                    <a href="/floorclean" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
+                                        <span class="ml-1">Floor Cleaning</span>
+                                    </a>
+                                    <div id="fClean-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
+                                        <a href="/floorclean" class="border-b block px-4 py-2 hover:bg-gray-200">Floor Deep Cleaning</a>
+                                        <a href="/vinylClean" class="border-b block px-4 py-2 hover:bg-gray-200">Vinyl Cleaning</a>
+                                        <a href="/vinylFloorClean" class="border-b block px-4 py-2 hover:bg-gray-200">Vinyl Floor Cleaning</a>
+                                        <a href="/vinylDeepFloorClean" class="border-b block px-4 py-2 hover:bg-gray-200">Vinyl Floor Deep Cleaning</a>
+                                        <a href="/terrazzoClean" class="border-b block px-4 py-2 hover:bg-gray-200">Terrazzo Cleaning</a>
+                                    </div>
+                                </div>
+
+                                <div class="relative group" onmouseover="showSubmenu1()" onmouseout="hideSubmenu1()">
+                                    <a href="/wood" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
+                                        <span class="ml-1">Wood Varnishing</span>
+                                    </a>
+                                    <div id="varnish-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
+                                        <a href="/parquetVarnish" class="block px-4 py-2 hover:bg-gray-200">Parquet Varnish</a>
+                                    </div>
+                                </div>
+
+                                <div class="relative group" onmouseover="showSubmenu()" onmouseout="hideSubmenu()">
+                                    <a href="/decking" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
+                                        <span class="ml-1">Decking</span>
+                                    </a>
+                                    <div id="decking-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
+                                        <a href="/balconyDeck" class="border-b block px-4 py-2 hover:bg-gray-200">Balcony Decking</a>
+                                        <a href="/timberDeck" class="border-b block px-4 py-2 hover:bg-gray-200">Timber Decking</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="/price">Price</a>
                         <a href="/works">Works</a>
                         <a href="/contact">Contact</a>
                     </div>
-                </div>
-                <div class="hidden w-2/5 items-center justify-evenly font-semibold md:flex">
-                    <a href="/">Home</a>
-                    <div class="relative group">
-                        <a href="/about">About Us</a>
-                        <div class="absolute left-0 mt-1 bg-white shadow-lg rounded-lg p-2 hidden group-hover:block">
-                            <a href="/review" class="border-b block px-4 py-2 hover:bg-gray-200">Review</a>
-                            <a href="/mission" class="block px-4 py-2 hover:bg-gray-200">Mission</a>
+
+                    <button class="text-gray-500 w-10 h-10 relative focus:outline-none md:hidden mt-2" @click="open = !open">
+                        <span class="sr-only">Open main menu</span>
+                        <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+                            <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'opacity-0': open }"></span>
+                            <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
                         </div>
-                    </div>
-                    <div class="relative group">
-                        <a href="/service">Service</a>
-
-                        <div class="absolute left-0 mt-1 bg-white shadow-lg rounded-lg p-2 hidden group-hover:block z-20" style="width: 340%;">
-                            <div class="relative group" onmouseover="showSubmenu7()" onmouseout="hideSubmenu7()">
-                                <a href="/plumbing" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
-                                    <span class="ml-1">Plumber</span>
-                                </a>
-                                <div id="service-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
-                                    <div class="relative group" onmouseover="showPlumbingInstallSubmenu()" onmouseout="hidePlumbingInstallSubmenu()">
-                                        <a href="/plumbingInstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Plumbing Install</a>
-                                        <div id="plumbing-install-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
-                                            <a href="/pipeInstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Pipe Installation</a>
-                                            <a href="/bidetSpray" class="block px-4 py-2 hover:bg-gray-200 border-b">Bidet Spray</a>
-                                            <a href="/bathroomRack" class="block px-4 py-2 hover:bg-gray-200 border-b">Bathroom Rack</a>
-                                        </div>
-                                    </div>
-                                    <a href="/plumbingChoke" class="border-b block px-4 py-2 hover:bg-gray-200">Plumbing Choke</a>
-                                    <div class="relative group" onmouseover="showPlumbingLeakSubmenu()" onmouseout="hidePlumbingLeakSubmenu()">
-                                        <a href="/plumbingLeak" class="block px-4 py-2 hover:bg-gray-200 border-b">Plumbing Leak</a>
-                                        <div id="plumbing-leak-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
-                                            <a href="/tapLeak" class="block px-4 py-2 hover:bg-gray-200 border-b">Leaking Tap</a>
-                                            <a href="/heaterLeak" class="block px-4 py-2 hover:bg-gray-200 border-b">Heater Leak</a>
-                                            <a href="/showerService" class="block px-4 py-2 hover:bg-gray-200 border-b">Shower Leak</a>
-                                        </div>
-                                    </div>
-                                    <div class="relative group" onmouseover="showWaterHeaterSubmenu()" onmouseout="hideWaterHeaterSubmenu()">
-                                        <a href="/waterHeater" class="block px-4 py-2 hover:bg-gray-200 border-b">Water Heater</a>
-                                        <div id="water-heater-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
-                                            <a href="/heaterinstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Water Heater Installation</a>
-                                            <a href="/waterheaterLeak" class="block px-4 py-2 hover:bg-gray-200 border-b">Water Heater Leak</a>
-                                            <a href="/heaterRepair" class="block px-4 py-2 hover:bg-gray-200 border-b">Water Heater Repair</a>
-                                        </div>
-                                    </div>
-                                    <div class="relative group" onmouseover="showToiletBowlSubmenu()" onmouseout="hideToiletBowlSubmenu()">
-                                        <a href="/toiletBowl" class="block px-4 py-2 hover:bg-gray-200 border-b">Toilet Bowl</a>
-                                        <div id="toilet-bowl-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
-                                            <a href="/toiletBowl" class="block px-4 py-2 hover:bg-gray-200 border-b">Toilet Bowl Installation</a>
-                                            <a href="/plumbingChoke" class="block px-4 py-2 hover:bg-gray-200 border-b">Toilet Bowl Choke</a>
-                                            <a href="/toiletRepair" class="block px-4 py-2 hover:bg-gray-200 border-b">Toilet Bowl Choke Repair</a>
-                                        </div>
-                                    </div>
-                                    <div class="relative group" onmouseover="showShowerServiceSubmenu()" onmouseout="hideShowerServiceSubmenu()">
-                                        <a href="/showerService" class="block px-4 py-2 hover:bg-gray-200 border-b">Shower Service</a>
-                                        <div id="shower-service-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
-                                            <a href="/showerInstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Shower Installation</a>
-                                            <a href="/showerRepair" class="block px-4 py-2 hover:bg-gray-200 border-b">Shower Repair</a>
-                                        </div>
-                                    </div>
-                                    <a href="/tapFaucet" class="border-b block px-4 py-2 hover:bg-gray-200">Tap & Faucet</a>
-                                    <a href="/bidetSpray" class="border-b block px-4 py-2 hover:bg-gray-200">Bidet Spray</a>
-                                    <a href="/bidetSpray" class="border-b block px-4 py-2 hover:bg-gray-200">Comercial Plumber</a>
-                                </div>
-                            </div>
-
-
-                            <div class="relative group" onmouseover="showSubmenu6()" onmouseout="hideSubmenu6()">
-                                <div class="relative group" onmouseover="showSubmenu6()" onmouseout="hideSubmenu6()">
-                                    <a href="/electric" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
-                                        <span class="ml-1">Electrician</span>
-                                    </a>
-                                    <div id="electric-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
-                                        <a href="/electricalInstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Electrical Installation</a>
-                                        <a href="/electricRepair" class="block px-4 py-2 hover:bg-gray-200 border-b">Electrical Repair</a>
-                                        <div class="relative group" onmouseover="showLightServiceSubmenu()" onmouseout="hideLightServiceSubmenu()">
-                                            <a href="/lightService" class="block px-4 py-2 hover:bg-gray-200 border-b">Light Service</a>
-                                            <div id="light-service-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
-                                                <a href="/lightInstall" class="border-b block px-4 py-2 hover:bg-gray-200 border-b">Light Installation</a>
-                                                <a href="/lightReplace" class="border-b block px-4 py-2 hover:bg-gray-200 border-b">Light Repair</a>
-                                            </div>
-                                        </div>
-                                        <a href="/switchService" class="block px-4 py-2 hover:bg-gray-200 border-b">Electric Switch Service</a>
-                                        <a href="/powerSocket" class="block px-4 py-2 hover:bg-gray-200 border-b">Power Sockets</a>
-                                        <a href="/hdrElectric" class="block px-4 py-2 hover:bg-gray-200 border-b">HDR Electrician</a>
-                                        <a href="/smartSwitch" class="block px-4 py-2 hover:bg-gray-200 border-b">Smart Switch</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="relative group" onmouseover="showSubmenu5()" onmouseout="hideSubmenu5()">
-                                <a href="/handyman" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
-                                    <span class="ml-1">Handyman</span>
-                                </a>
-                                <div id="handy-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
-                                    <a href="/rubbishChute" class="block px-4 py-2 hover:bg-gray-200 border-b">Rubbish Chute</a>
-                                    <a href="/cupboard" class="block px-4 py-2 hover:bg-gray-200 border-b">Cupboard Hinge</a>
-                                    <a href="/cabinetHinge" class="block px-4 py-2 hover:bg-gray-200 border-b">Cabinet Hinge</a>
-                                    <a href="/hydraulic" class="block px-4 py-2 hover:bg-gray-200 border-b">Hydraulic Hinge</a>
-                                    <a href="/drilling" class="block px-4 py-2 hover:bg-gray-200 border-b">Handyman Drilling</a>
-                                    <a href="/tvBucket" class="block px-4 py-2 hover:bg-gray-200 border-b">TV Bracket Installation</a>
-                                    <a href="/wallMounting" class="block px-4 py-2 hover:bg-gray-200 border-b">Wall Mounting Installation</a>
-                                    <a href="/pullUp" class="block px-4 py-2 hover:bg-gray-200 border-b">PullUp Bar Installation</a>
-                                </div>
-                            </div>
-
-                            <div class="relative group" onmouseover="showSubmenu4()" onmouseout="hideSubmenu4()">
-                                <a href="/deepclean" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
-                                    <span class="ml-1">Deep Cleaning</span>
-                                </a>
-                                <div id="dClean-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
-                                    <a href="/matressClean" class="border-b block px-4 py-2 hover:bg-gray-200">Mattress Cleaning</a>
-                                    <a href="/matressDeepClean" class="border-b block px-4 py-2 hover:bg-gray-200">Mattress Deep Cleaning</a>
-                                    <a href="/matressstemClean" class="border-b block px-4 py-2 hover:bg-gray-200">Mattress Steam Cleaning</a>
-                                    <a href="/matrissStainClean" class="border-b block px-4 py-2 hover:bg-gray-200">Mattress Stain Removal</a>
-                                    <a href="/sofaClean" class="border-b block px-4 py-2 hover:bg-gray-200">Sofa Cleaning</a>
-                                    <a href="/sofaDeepClean" class="border-b block px-4 py-2 hover:bg-gray-200">Sofa Deep Cleaning</a>
-                                    <a href="/sofaStain" class="border-b block px-4 py-2 hover:bg-gray-200">Sofa Stain Removal</a>
-                                    <a href="/fabricSofaClean" class="border-b block px-4 py-2 hover:bg-gray-200">Fabric Sofa Cleaning</a>
-                                    <a href="/unholsteryClean" class="border-b block px-4 py-2 hover:bg-gray-200">Upholstery Cleaning</a>
-                                </div>
-                            </div>
-
-                            <div class="relative group" onmouseover="showSubmenu3()" onmouseout="hideSubmenu3()">
-                                <a href="/floorpolish" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
-                                    <span class="ml-1">Floor Polishing</span>
-                                </a>
-                                <div id="fpolish-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
-                                    <a href="/marbleFloorPolish" class="border-b block px-4 py-2 hover:bg-gray-200">Marble Floor Polish</a>
-                                    <a href="/marblePolish" class="border-b block px-4 py-2 hover:bg-gray-200">Marble Polishing</a>
-                                    <a href="/parquetPolish" class="border-b block px-4 py-2 hover:bg-gray-200">Parquet Polishing</a>
-                                    <a href="/parquetVarnish" class="border-b block px-4 py-2 hover:bg-gray-200">Parquet Floor Polishing</a>
-                                    <a href="/woodPolish" class="border-b block px-4 py-2 hover:bg-gray-200">Wood Polishing</a>
-                                    <a href="/wood" class="border-b block px-4 py-2 hover:bg-gray-200">Wood Floor Polishing</a>
-                                    <a href="/vinylFloorPolish" class="border-b block px-4 py-2 hover:bg-gray-200">Vinyl Floor Polishing</a>
-                                    <a href="/tileFloorPolish" class="border-b block px-4 py-2 hover:bg-gray-200">Tile Floor Polishing</a>
-                                </div>
-                            </div>
-
-                            <div class="relative group" onmouseover="showSubmenu2()" onmouseout="hideSubmenu2()">
-                                <a href="/floorclean" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
-                                    <span class="ml-1">Floor Cleaning</span>
-                                </a>
-                                <div id="fClean-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
-                                    <a href="/floorclean" class="border-b block px-4 py-2 hover:bg-gray-200">Floor Deep Cleaning</a>
-                                    <a href="/vinylClean" class="border-b block px-4 py-2 hover:bg-gray-200">Vinyl Cleaning</a>
-                                    <a href="/vinylFloorClean" class="border-b block px-4 py-2 hover:bg-gray-200">Vinyl Floor Cleaning</a>
-                                    <a href="/vinylDeepFloorClean" class="border-b block px-4 py-2 hover:bg-gray-200">Vinyl Floor Deep Cleaning</a>
-                                    <a href="/terrazzoClean" class="border-b block px-4 py-2 hover:bg-gray-200">Terrazzo Cleaning</a>
-                                </div>
-                            </div>
-
-                            <div class="relative group" onmouseover="showSubmenu1()" onmouseout="hideSubmenu1()">
-                                <a href="/wood" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
-                                    <span class="ml-1">Wood Varnishing</span>
-                                </a>
-                                <div id="varnish-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
-                                    <a href="/parquetVarnish" class="block px-4 py-2 hover:bg-gray-200">Parquet Varnish</a>
-                                </div>
-                            </div>
-
-                            <div class="relative group" onmouseover="showSubmenu()" onmouseout="hideSubmenu()">
-                                <a href="/decking" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
-                                    <span class="ml-1">Decking</span>
-                                </a>
-                                <div id="decking-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
-                                    <a href="/balconyDeck" class="border-b block px-4 py-2 hover:bg-gray-200">Balcony Decking</a>
-                                    <a href="/timberDeck" class="border-b block px-4 py-2 hover:bg-gray-200">Timber Decking</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="/price">Price</a>
-                    <a href="/works">Works</a>
-                    <a href="/contact">Contact</a>
+                    </button>
                 </div>
-
-                <button class="text-gray-500 w-10 h-10 relative focus:outline-none md:hidden mt-2" @click="open = !open">
-                    <span class="sr-only">Open main menu</span>
-                    <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                        <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
-                        <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'opacity-0': open }"></span>
-                        <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
-                    </div>
-                </button>
-            </div>
         </nav>
     </header>
 
