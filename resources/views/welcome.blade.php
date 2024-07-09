@@ -716,172 +716,191 @@
 
 
                     <!-- Pc Screnn -->
-                    <div class="mt-4 hidden items-center justify-evenly font-semibold md:flex"style="margin-right: 72%;gap: 53px;">
+                    <div class="mt-4 hidden items-center justify-evenly font-semibold md:flex" style="margin-right: 72%;gap: 53px;">
                         <a href="/">Home</a>
                         <div class="relative group">
-                            <a href="/about">About</a>
-                            <div class="absolute left-0 mt-1 bg-white shadow-lg rounded-lg p-2 hidden group-hover:block">
-                                <a href="/review" class="border-b block px-4 py-2 hover:bg-gray-200">Review</a>
-                                <a href="/mission" class="block px-4 py-2 hover:bg-gray-200">Mission</a>
+                            <a href="/about" id="hov" style="display: inline-flex; align-items: center; text-decoration: none;">About
+                                <svg style="width: 1rem; height: 1rem; margin-left: 0.25rem; transition: transform 0.5s ease;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="transform">
+                                    <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
+                                </svg>
+                            </a>
+
+                            <div class="absolute left-0 mt-1 bg-gray-800 text-white shadow-lg rounded-lg p-2 hidden group-hover:block">
+                                <a href="/review" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Review</a>
+                                <a href="/mission" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Mission</a>
                             </div>
                         </div>
-                        <div class="relative group">
-                            <a href="/service">Service</a>
 
-                            <div class="absolute left-0 mt-1 bg-white shadow-lg rounded-lg p-2 hidden group-hover:block z-20" style="width: 340%;">
+
+                        <div class="relative group">
+                            <a href="/service" id="hov" style="display: inline-flex; align-items: center; text-decoration: none;">
+                                Service
+                                <svg style="width: 1rem; height: 1rem; margin-left: 0.25rem; transition: transform 0.5s ease;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="transform">
+                                    <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
+                                </svg>
+                            </a>
+
+                            <style>
+                                #hov:hover .transform {
+                                    transform: rotate(180deg);
+                                }
+                            </style>
+
+
+                            <div class="absolute left-0 mt-1 bg-gray-800 text-white shadow-lg rounded-lg p-2 hidden group-hover:block z-20" style="width: 340%;">
                                 <div class="relative group" onmouseover="showSubmenu7()" onmouseout="hideSubmenu7()">
-                                    <a href="/plumbing" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
+                                    <a href="/plumbing" class="border-b flex items-center px-4 py-2 hover:bg-gray-200 hover:text-black">
                                         <span class="ml-1">Plumber</span>
                                     </a>
-                                    <div id="service-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
+                                    <div id="service-submenu" class="absolute right-full top-0 mt-0 bg-gray-800 shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
                                         <div class="relative group" onmouseover="showPlumbingInstallSubmenu()" onmouseout="hidePlumbingInstallSubmenu()">
-                                            <a href="/plumbingInstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Plumbing Install</a>
-                                            <div id="plumbing-install-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
-                                                <a href="/pipeInstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Pipe Installation</a>
-                                                <a href="/bidetSpray" class="block px-4 py-2 hover:bg-gray-200 border-b">Bidet Spray</a>
-                                                <a href="/bathroomRack" class="block px-4 py-2 hover:bg-gray-200 border-b">Bathroom Rack</a>
+                                            <a href="/plumbingInstall" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Plumbing Install</a>
+                                            <div id="plumbing-install-submenu" class="absolute right-full top-0 mt-0 bg-gray-800 shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
+                                                <a href="/pipeInstall" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Pipe Installation</a>
+                                                <a href="/bidetSpray" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Bidet Spray</a>
+                                                <a href="/bathroomRack" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Bathroom Rack</a>
                                             </div>
                                         </div>
-                                        <a href="/plumbingChoke" class="border-b block px-4 py-2 hover:bg-gray-200">Plumbing Choke</a>
+                                        <a href="/plumbingChoke" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Plumbing Choke</a>
                                         <div class="relative group" onmouseover="showPlumbingLeakSubmenu()" onmouseout="hidePlumbingLeakSubmenu()">
-                                            <a href="/plumbingLeak" class="block px-4 py-2 hover:bg-gray-200 border-b">Plumbing Leak</a>
-                                            <div id="plumbing-leak-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
-                                                <a href="/tapLeak" class="block px-4 py-2 hover:bg-gray-200 border-b">Leaking Tap</a>
-                                                <a href="/heaterLeak" class="block px-4 py-2 hover:bg-gray-200 border-b">Heater Leak</a>
-                                                <a href="/showerService" class="block px-4 py-2 hover:bg-gray-200 border-b">Shower Leak</a>
+                                            <a href="/plumbingLeak" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Plumbing Leak</a>
+                                            <div id="plumbing-leak-submenu" class="absolute right-full top-0 mt-0 bg-gray-800 shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
+                                                <a href="/tapLeak" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Leaking Tap</a>
+                                                <a href="/heaterLeak" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Heater Leak</a>
+                                                <a href="/showerService" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Shower Leak</a>
                                             </div>
                                         </div>
                                         <div class="relative group" onmouseover="showWaterHeaterSubmenu()" onmouseout="hideWaterHeaterSubmenu()">
-                                            <a href="/waterHeater" class="block px-4 py-2 hover:bg-gray-200 border-b">Water Heater</a>
-                                            <div id="water-heater-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
-                                                <a href="/heaterinstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Water Heater Installation</a>
-                                                <a href="/waterheaterLeak" class="block px-4 py-2 hover:bg-gray-200 border-b">Water Heater Leak</a>
-                                                <a href="/heaterRepair" class="block px-4 py-2 hover:bg-gray-200 border-b">Water Heater Repair</a>
+                                            <a href="/waterHeater" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Water Heater</a>
+                                            <div id="water-heater-submenu" class="absolute right-full top-0 mt-0 bg-gray-800 shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
+                                                <a href="/heaterinstall" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Water Heater Installation</a>
+                                                <a href="/waterheaterLeak" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Water Heater Leak</a>
+                                                <a href="/heaterRepair" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Water Heater Repair</a>
                                             </div>
                                         </div>
                                         <div class="relative group" onmouseover="showToiletBowlSubmenu()" onmouseout="hideToiletBowlSubmenu()">
-                                            <a href="/toiletBowl" class="block px-4 py-2 hover:bg-gray-200 border-b">Toilet Bowl</a>
-                                            <div id="toilet-bowl-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
-                                                <a href="/toiletBowl" class="block px-4 py-2 hover:bg-gray-200 border-b">Toilet Bowl Installation</a>
-                                                <a href="/plumbingChoke" class="block px-4 py-2 hover:bg-gray-200 border-b">Toilet Bowl Choke</a>
-                                                <a href="/toiletRepair" class="block px-4 py-2 hover:bg-gray-200 border-b">Toilet Bowl Choke Repair</a>
+                                            <a href="/toiletBowl" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Toilet Bowl</a>
+                                            <div id="toilet-bowl-submenu" class="absolute right-full top-0 mt-0 bg-gray-800 shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
+                                                <a href="/toiletBowl" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Toilet Bowl Installation</a>
+                                                <a href="/plumbingChoke" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Toilet Bowl Choke</a>
+                                                <a href="/toiletRepair" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Toilet Bowl Choke Repair</a>
                                             </div>
                                         </div>
                                         <div class="relative group" onmouseover="showShowerServiceSubmenu()" onmouseout="hideShowerServiceSubmenu()">
-                                            <a href="/showerService" class="block px-4 py-2 hover:bg-gray-200 border-b">Shower Service</a>
-                                            <div id="shower-service-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
-                                                <a href="/showerInstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Shower Installation</a>
-                                                <a href="/showerRepair" class="block px-4 py-2 hover:bg-gray-200 border-b">Shower Repair</a>
+                                            <a href="/showerService" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Shower Service</a>
+                                            <div id="shower-service-submenu" class="absolute right-full top-0 mt-0 bg-gray-800 shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
+                                                <a href="/showerInstall" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Shower Installation</a>
+                                                <a href="/showerRepair" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Shower Repair</a>
                                             </div>
                                         </div>
-                                        <a href="/tapFaucet" class="border-b block px-4 py-2 hover:bg-gray-200">Tap & Faucet</a>
-                                        <a href="/bidetSpray" class="border-b block px-4 py-2 hover:bg-gray-200">Bidet Spray</a>
-                                        <a href="/coomercialPlumber" class="border-b block px-4 py-2 hover:bg-gray-200">Comercial Plumber</a>
+                                        <a href="/tapFaucet" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Tap & Faucet</a>
+                                        <a href="/bidetSpray" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Bidet Spray</a>
+                                        <a href="/coomercialPlumber" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Comercial Plumber</a>
                                     </div>
                                 </div>
 
 
                                 <div class="relative group" onmouseover="showSubmenu6()" onmouseout="hideSubmenu6()">
                                     <div class="relative group" onmouseover="showSubmenu6()" onmouseout="hideSubmenu6()">
-                                        <a href="/electric" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
+                                        <a href="/electric" class="border-b flex items-center px-4 py-2 hover:bg-gray-200 hover:text-black">
                                             <span class="ml-1">Electrician</span>
                                         </a>
-                                        <div id="electric-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
-                                            <a href="/electricalInstall" class="block px-4 py-2 hover:bg-gray-200 border-b">Electrical Installation</a>
-                                            <a href="/electricRepair" class="block px-4 py-2 hover:bg-gray-200 border-b">Electrical Repair</a>
+                                        <div id="electric-submenu" class="absolute right-full top-0 mt-0 bg-gray-800 shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
+                                            <a href="/electricalInstall" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Electrical Installation</a>
+                                            <a href="/electricRepair" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Electrical Repair</a>
                                             <div class="relative group" onmouseover="showLightServiceSubmenu()" onmouseout="hideLightServiceSubmenu()">
-                                                <a href="/lightService" class="block px-4 py-2 hover:bg-gray-200 border-b">Light Service</a>
+                                                <a href="/lightService" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Light Service</a>
                                                 <div id="light-service-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px; left: -200px;">
-                                                    <a href="/lightInstall" class="border-b block px-4 py-2 hover:bg-gray-200 border-b">Light Installation</a>
-                                                    <a href="/lightReplace" class="border-b block px-4 py-2 hover:bg-gray-200 border-b">Light Repair</a>
+                                                    <a href="/lightInstall" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Light Installation</a>
+                                                    <a href="/lightReplace" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Light Repair</a>
                                                 </div>
                                             </div>
                                             <a href="/switchService" class="block px-4 py-2 hover:bg-gray-200 border-b">Electric Switch Service</a>
-                                            <a href="/powerSocket" class="block px-4 py-2 hover:bg-gray-200 border-b">Power Sockets</a>
-                                            <a href="/hdrElectric" class="block px-4 py-2 hover:bg-gray-200 border-b">HDR Electrician</a>
-                                            <a href="/smartSwitch" class="block px-4 py-2 hover:bg-gray-200 border-b">Smart Switch</a>
+                                            <a href="/powerSocket" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Power Sockets</a>
+                                            <a href="/hdrElectric" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">HDR Electrician</a>
+                                            <a href="/smartSwitch" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Smart Switch</a>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="relative group" onmouseover="showSubmenu5()" onmouseout="hideSubmenu5()">
-                                    <a href="/handyman" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
+                                    <a href="/handyman" class="border-b flex items-center px-4 py-2 hover:bg-gray-200 hover:text-black">
                                         <span class="ml-1">Handyman</span>
                                     </a>
-                                    <div id="handy-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
-                                        <a href="/rubbishChute" class="block px-4 py-2 hover:bg-gray-200 border-b">Rubbish Chute</a>
-                                        <a href="/cupboard" class="block px-4 py-2 hover:bg-gray-200 border-b">Cupboard Hinge</a>
-                                        <a href="/cabinetHinge" class="block px-4 py-2 hover:bg-gray-200 border-b">Cabinet Hinge</a>
-                                        <a href="/hydraulic" class="block px-4 py-2 hover:bg-gray-200 border-b">Hydraulic Hinge</a>
-                                        <a href="/drilling" class="block px-4 py-2 hover:bg-gray-200 border-b">Handyman Drilling</a>
-                                        <a href="/tvBucket" class="block px-4 py-2 hover:bg-gray-200 border-b">TV Bracket Installation</a>
-                                        <a href="/wallMounting" class="block px-4 py-2 hover:bg-gray-200 border-b">Wall Mounting Installation</a>
-                                        <a href="/pullUp" class="block px-4 py-2 hover:bg-gray-200 border-b">PullUp Bar Installation</a>
+                                    <div id="handy-submenu" class="absolute right-full top-0 mt-0 bg-gray-800 shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
+                                        <a href="/rubbishChute" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Rubbish Chute</a>
+                                        <a href="/cupboard" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Cupboard Hinge</a>
+                                        <a href="/cabinetHinge" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Cabinet Hinge</a>
+                                        <a href="/hydraulic" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Hydraulic Hinge</a>
+                                        <a href="/drilling" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Handyman Drilling</a>
+                                        <a href="/tvBucket" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">TV Bracket Installation</a>
+                                        <a href="/wallMounting" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Wall Mounting Installation</a>
+                                        <a href="/pullUp" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">PullUp Bar Installation</a>
                                     </div>
                                 </div>
 
                                 <div class="relative group" onmouseover="showSubmenu4()" onmouseout="hideSubmenu4()">
-                                    <a href="/deepclean" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
+                                    <a href="/deepclean" class="border-b flex items-center px-4 py-2 hover:bg-gray-200 hover:text-black">
                                         <span class="ml-1">Deep Cleaning</span>
                                     </a>
-                                    <div id="dClean-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
-                                        <a href="/matressClean" class="border-b block px-4 py-2 hover:bg-gray-200">Mattress Cleaning</a>
-                                        <a href="/matressDeepClean" class="border-b block px-4 py-2 hover:bg-gray-200">Mattress Deep Cleaning</a>
-                                        <a href="/matressstemClean" class="border-b block px-4 py-2 hover:bg-gray-200">Mattress Steam Cleaning</a>
-                                        <a href="/matrissStainClean" class="border-b block px-4 py-2 hover:bg-gray-200">Mattress Stain Removal</a>
-                                        <a href="/sofaClean" class="border-b block px-4 py-2 hover:bg-gray-200">Sofa Cleaning</a>
-                                        <a href="/sofaDeepClean" class="border-b block px-4 py-2 hover:bg-gray-200">Sofa Deep Cleaning</a>
-                                        <a href="/sofaStain" class="border-b block px-4 py-2 hover:bg-gray-200">Sofa Stain Removal</a>
-                                        <a href="/fabricSofaClean" class="border-b block px-4 py-2 hover:bg-gray-200">Fabric Sofa Cleaning</a>
-                                        <a href="/unholsteryClean" class="border-b block px-4 py-2 hover:bg-gray-200">Upholstery Cleaning</a>
+                                    <div id="dClean-submenu" class="absolute right-full top-0 mt-0 bg-gray-800 shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
+                                        <a href="/matressClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Mattress Cleaning</a>
+                                        <a href="/matressDeepClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Mattress Deep Cleaning</a>
+                                        <a href="/matressstemClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Mattress Steam Cleaning</a>
+                                        <a href="/matrissStainClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Mattress Stain Removal</a>
+                                        <a href="/sofaClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Sofa Cleaning</a>
+                                        <a href="/sofaDeepClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Sofa Deep Cleaning</a>
+                                        <a href="/sofaStain" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Sofa Stain Removal</a>
+                                        <a href="/fabricSofaClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Fabric Sofa Cleaning</a>
+                                        <a href="/unholsteryClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Upholstery Cleaning</a>
                                     </div>
                                 </div>
 
                                 <div class="relative group" onmouseover="showSubmenu3()" onmouseout="hideSubmenu3()">
-                                    <a href="/floorpolish" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
+                                    <a href="/floorpolish" class="border-b flex items-center px-4 py-2 hover:bg-gray-200 hover:text-black">
                                         <span class="ml-1">Floor Polishing</span>
                                     </a>
-                                    <div id="fpolish-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
-                                        <a href="/marbleFloorPolish" class="border-b block px-4 py-2 hover:bg-gray-200">Marble Floor Polish</a>
-                                        <a href="/marblePolish" class="border-b block px-4 py-2 hover:bg-gray-200">Marble Polishing</a>
-                                        <a href="/parquetPolish" class="border-b block px-4 py-2 hover:bg-gray-200">Parquet Polishing</a>
+                                    <div id="fpolish-submenu" class="absolute right-full top-0 mt-0 bg-gray-800 shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
+                                        <a href="/marbleFloorPolish" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Marble Floor Polish</a>
+                                        <a href="/marblePolish" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Marble Polishing</a>
+                                        <a href="/parquetPolish" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Parquet Polishing</a>
                                         <a href="/parquetVarnish" class="border-b block px-4 py-2 hover:bg-gray-200">Parquet Floor Polishing</a>
-                                        <a href="/woodPolish" class="border-b block px-4 py-2 hover:bg-gray-200">Wood Polishing</a>
-                                        <a href="/wood" class="border-b block px-4 py-2 hover:bg-gray-200">Wood Floor Polishing</a>
-                                        <a href="/vinylFloorPolish" class="border-b block px-4 py-2 hover:bg-gray-200">Vinyl Floor Polishing</a>
-                                        <a href="/tileFloorPolish" class="border-b block px-4 py-2 hover:bg-gray-200">Tile Floor Polishing</a>
+                                        <a href="/woodPolish" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Wood Polishing</a>
+                                        <a href="/wood" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Wood Floor Polishing</a>
+                                        <a href="/vinylFloorPolish" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Vinyl Floor Polishing</a>
+                                        <a href="/tileFloorPolish" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Tile Floor Polishing</a>
                                     </div>
                                 </div>
 
                                 <div class="relative group" onmouseover="showSubmenu2()" onmouseout="hideSubmenu2()">
-                                    <a href="/floorclean" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
+                                    <a href="/floorclean" class="border-b flex items-center px-4 py-2 hover:bg-gray-200 hover:text-black">
                                         <span class="ml-1">Floor Cleaning</span>
                                     </a>
-                                    <div id="fClean-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
-                                        <a href="/floorclean" class="border-b block px-4 py-2 hover:bg-gray-200">Floor Deep Cleaning</a>
-                                        <a href="/vinylClean" class="border-b block px-4 py-2 hover:bg-gray-200">Vinyl Cleaning</a>
-                                        <a href="/vinylFloorClean" class="border-b block px-4 py-2 hover:bg-gray-200">Vinyl Floor Cleaning</a>
-                                        <a href="/vinylDeepFloorClean" class="border-b block px-4 py-2 hover:bg-gray-200">Vinyl Floor Deep Cleaning</a>
-                                        <a href="/terrazzoClean" class="border-b block px-4 py-2 hover:bg-gray-200">Terrazzo Cleaning</a>
+                                    <div id="fClean-submenu" class="absolute right-full top-0 mt-0 bg-gray-800 shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
+                                        <a href="/floorclean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Floor Deep Cleaning</a>
+                                        <a href="/vinylClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Vinyl Cleaning</a>
+                                        <a href="/vinylFloorClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Vinyl Floor Cleaning</a>
+                                        <a href="/vinylDeepFloorClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Vinyl Floor Deep Cleaning</a>
+                                        <a href="/terrazzoClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Terrazzo Cleaning</a>
                                     </div>
                                 </div>
 
                                 <div class="relative group" onmouseover="showSubmenu1()" onmouseout="hideSubmenu1()">
-                                    <a href="/wood" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
+                                    <a href="/wood" class="border-b flex items-center px-4 py-2 hover:bg-gray-200 hover:text-black">
                                         <span class="ml-1">Wood Varnishing</span>
                                     </a>
-                                    <div id="varnish-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
-                                        <a href="/parquetVarnish" class="block px-4 py-2 hover:bg-gray-200">Parquet Varnish</a>
+                                    <div id="varnish-submenu" class="absolute right-full top-0 mt-0 bg-gray-800 shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
+                                        <a href="/parquetVarnish" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Parquet Varnish</a>
                                     </div>
                                 </div>
 
                                 <div class="relative group" onmouseover="showSubmenu()" onmouseout="hideSubmenu()">
-                                    <a href="/decking" class="border-b flex items-center px-4 py-2 hover:bg-gray-200">
+                                    <a href="/decking" class="border-b flex items-center px-4 py-2 hover:bg-gray-200 hover:text-black">
                                         <span class="ml-1">Decking</span>
                                     </a>
-                                    <div id="decking-submenu" class="absolute right-full top-0 mt-0 bg-white shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
-                                        <a href="/balconyDeck" class="border-b block px-4 py-2 hover:bg-gray-200">Balcony Decking</a>
-                                        <a href="/timberDeck" class="border-b block px-4 py-2 hover:bg-gray-200">Timber Decking</a>
+                                    <div id="decking-submenu" class="absolute right-full top-0 mt-0 bg-gray-800 shadow-lg rounded-lg p-2 hidden-submenu z-20" style="width: 200px;">
+                                        <a href="/balconyDeck" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Balcony Decking</a>
+                                        <a href="/timberDeck" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Timber Decking</a>
                                     </div>
                                 </div>
                             </div>
@@ -902,7 +921,6 @@
                 </div>
         </nav>
     </header>
-
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
 
@@ -970,7 +988,7 @@
     <section class="mt-10">
         <div class="relative flex flex-col md:flex-row items-center md:items-start mt-8">
             <span class="bg-yellow-500 yellow-triangle absolute left-0 h-20 hidden md:block"></span>
-            <h3 class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-full md:max-w-2/3" style="font-size: 18px; font-family: cursive; text-shadow: 3px 3px 0 rgb(255 255 255 / 25%);">
+            <h3 class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-full md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;">
                 <span class="inner-span">One-Stop Handyman Solutions For Convenience in Modern Living</span>
             </h3>
             <style>
@@ -1004,8 +1022,8 @@
                                         <path d="M28.488 7.301a5.354 5.354 0 0 0-2.743-3.305c-.112-.056-2.96-1.2-4.942-1.996l.87 4.987a.52.52 0 0 1-.488.746.535.535 0 0 1-.101-.01L16.5 6.806V12a.5.5 0 1 1-1 0V6.806l-4.583.917a.518.518 0 0 1-.613-.598L11.196 2c-1.982.796-4.828 1.94-4.94 1.996a5.36 5.36 0 0 0-2.75 3.328l-1.492 6.26c-.042.175.01.359.138.486l.608.608a5.487 5.487 0 0 0 3.907 1.618c.196 0 .375-.111.464-.287l1.072-2.145c.013.292.02.584.02.876V28.48c0 .231.153.435.375.499A27.03 27.03 0 0 0 16 30c2.508 0 5.015-.34 7.402-1.022a.52.52 0 0 0 .376-.5V14.74c0-.292.006-.584.019-.876l1.073 2.145a.519.519 0 0 0 .463.287 5.487 5.487 0 0 0 3.907-1.618l.608-.608a.518.518 0 0 0 .138-.487l-1.498-6.282zM17.03 11.5c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1zm0-2c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1z">
                                         </path>
                                     </svg>
-                                    <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white ">Seamless Booking</h3>
-                                    <p class="mt-4 text-base text-gray-600 group-hover:text-white  ">Message us to get instant diagnosis and quote. Book one or multiple services and we will arrange everything in the most convenient schedule for you.</p>
+                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white ">Seamless Booking</h3>
+                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white  ">Message us to get instant diagnosis and quote. Book one or multiple services and we will arrange everything in the most convenient schedule for you.</p>
                                 </div>
                             </a>
 
@@ -1017,8 +1035,8 @@
                                         <path d="M13.6 4.8v54.3c0 .4.3.8.8.8H31v-2.3H19c-.6 0-1-.5-1-1s.5-1 1-1h12V4.1H14.4C14 4.1 13.6 4.4 13.6 4.8zM29.1 38.2c0 .6-.5 1-1 1s-1-.5-1-1v-1.3c0-.6.5-1 1-1s1 .5 1 1V38.2zM29.1 25.8v6.5c0 .6-.5 1-1 1s-1-.5-1-1v-6.5c0-.6.5-1 1-1S29.1 25.3 29.1 25.8zM16.1 11c0-1.6 1.3-2.8 2.8-2.8h7.4c.6 0 1 .5 1 1 0 .6-.5 1-1 1H19c-.4 0-.8.3-.8.8v17.2c0 .6-.5 1-1 1-.6 0-1-.5-1-1V11zM49.6 4.1H33v51.5h12c.4 0 .8-.3.8-.8V9.2c0-.6.5-1 1-1s1 .5 1 1v45.5c0 1.6-1.3 2.8-2.8 2.8H33v2.3h16.6c.4 0 .8-.3.8-.8V4.8C50.4 4.4 50 4.1 49.6 4.1zM37 38.2c0 .6-.5 1-1 1s-1-.5-1-1v-1.3c0-.6.5-1 1-1s1 .5 1 1V38.2zM37 32.3c0 .6-.5 1-1 1s-1-.5-1-1v-6.5c0-.6.5-1 1-1s1 .5 1 1V32.3z">
                                         </path>
                                     </svg>
-                                    <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white ">One-Stop Convenience</h3>
-                                    <p class="mt-4 text-base text-gray-600 group-hover:text-white">Our services are designed to be a fuss-free experience for you. Just choose the services or product installations you need, and allow us to fulfil the rest.</p>
+                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white ">One-Stop Convenience</h3>
+                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white">Our services are designed to be a fuss-free experience for you. Just choose the services or product installations you need, and allow us to fulfil the rest.</p>
                                 </div>
                             </a>
 
@@ -1030,8 +1048,8 @@
                                         <path d="M60,34H56a1,1,0,0,0-1,1v3H52V28a1,1,0,0,0-1-1H47.51l-4.7-6.58A1,1,0,0,0,42,20H35V17h3a1,1,0,0,0,1-1V12a1,1,0,0,0-1-1H26a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h3v3H24a1,1,0,0,0-.81.42L18.49,27H13a1,1,0,0,0-1,1V38H9V35a1,1,0,0,0-1-1H4a1,1,0,0,0-1,1V47a1,1,0,0,0,1,1H8a1,1,0,0,0,1-1V44h3v5a1,1,0,0,0,1,1H24.59l2.7,2.71A1,1,0,0,0,28,53H48a1,1,0,0,0,.71-.29l3-3A1,1,0,0,0,52,49V44h3v3a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1V35A1,1,0,0,0,60,34ZM35.77,37.64l-5,6A1,1,0,0,1,30,44a1,1,0,0,1-.64-.23,1,1,0,0,1-.13-1.41L32.87,38H29a1,1,0,0,1-.77-1.64l5-6a1,1,0,0,1,1.54,1.28L31.13,36H35a1,1,0,0,1,.77,1.64Z">
                                         </path>
                                     </svg>
-                                    <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white ">Strong Customer Support</h3>
-                                    <p class="mt-4 text-base text-gray-600 group-hover:text-white">Our dedicated team will follow-up on your needs with open and transparent communication. We will diagnose the problem before recommending the best solution for your exact needs.</p>
+                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white ">Strong Customer Support</h3>
+                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white">Our dedicated team will follow-up on your needs with open and transparent communication. We will diagnose the problem before recommending the best solution for your exact needs.</p>
                                 </div>
                             </a>
                         </div>
@@ -1040,23 +1058,44 @@
         </section>
     </section>
 
-    <section class="mt-10">
-        <div class="flex flex-col md:flex-row">
-            <!-- Black Polygon Section -->
-            <div class="bg-black text-white h-auto md:h-72 w-full md:w-8/12 flex flex-col items-center justify-center ww-polygon" style="text-align: center; font-size: 26px; font-family: cursive;">
-                <div style="width: 90%; max-width: 710px; margin: 20px auto 0; text-align: start; font-size: 28px; font-weight: 800; font-family: serif;">
-                    <p>We've Completed More Than 20,000 Jobs In Singapore With 6000s Of Strong Reviews.</p>
+
+    <div class="flex justify-center items-center dark:bg-slate-800"style="margin-top: -92px;">
+        <div class="mx-auto mt-10 flex justify-center px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8">
+            <div class="text-center ">
+                <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-slate-200 sm:text-5xl md:text-6xl">
+                    <span class="block xl:inline"><span class="mb-1 block">We've Completed More Than</span>
+                        <span class="bg-gradient-to-r from-indigo-400 to-pink-600 bg-clip-text text-transparent">
+
+                            <span class="relative mt-3 whitespace-nowrap text-blue-600"><svg aria-hidden="true" viewBox="0 0 418 42" class="absolute top-3/4 left-0 right-0 m-auto h-[0.58em] w-fit fill-pink-400/50" preserveAspectRatio="none">
+                                    <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
+                                    </path>
+                                </svg>
+                                <span class="relative">20,000+</span>
+                            </span>
+                            Works
+                        </span>
+                    </span>
+                </h1>
+                <div class="mt-5 sm:mt-8 sm:flex sm:justify-center">
+                    <div class="rounded-md shadow">
+                        <a href="https://api.whatsapp.com/send?phone=6596585757&text=Hello%2C%20I%20need%20assistance%20today" target="_blank" class="flex w-full items-center justify-center rounded-md border border-transparent bg-green-500 px-8 py-3 text-base font-medium text-white hover:bg-green-700 md:py-4 md:px-10 md:text-lg">
+                            How Can We Help You Today?
+                            <img src="http://127.0.0.1:8000/img/social.png" style="height: 25px; margin-left: 10px;" alt="">
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://www.shutterstock.com/image-vector/builder-crossed-hammers-new-construction-600nw-2246936013.jpg" alt="" class="h-32 mt-6 border-b-4 border-white" style="margin: 20px auto 0;">
-                </div>
-            </div>
-            <!-- Purple Polygon Section -->
-            <div class="bg-yellow-500 text-white h-auto md:h-72 w-full md:w-4/12 flex items-center justify-center purple-polygon" style="padding: 20px; text-align: center;">
-                <p id="help" style="font-size: 24px;">How Can We <br> Help You <br> Today?</p>
             </div>
         </div>
-    </section>
+    </div>
+    </div>
+    <div class="inline-flex items-center justify-center w-full mt-6">
+        <hr class="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700" style="width: 95%;">
+        <div class="absolute px-4 -translate-x-1/2 bg-white left-90 dark:bg-gray-900">
+            <svg class="w-4 h-4 text-gray-700 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+            </svg>
+        </div>
+    </div>
 
 
     <!-- Popular Home Maintenance Services -->
@@ -1149,7 +1188,7 @@
     <section class="mt-10 mb-10">
         <div class="p-4" id="timeline">
             <h2 class="text-3xl text-black font-bold mb-10 text-center">All House Work's For Businesses</h2>
-            <p class="text-lg mb-10 text-black text-center">EveryWeworks provides easy access to quality home services at <br>affordable prices. This allows businesses to value-add their services for their customers.</p>
+            <p class="text-lg mb-10 text-black text-center">All House Work's provides easy access to quality home services at <br>affordable prices. This allows businesses to value-add their services for their customers.</p>
             <div class="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
                 <div class="flex md:contents flex-row-reverse">
                     <div class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto" id="timebor">

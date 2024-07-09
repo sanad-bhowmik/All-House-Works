@@ -57,7 +57,7 @@ Route::get('/searchElectric', function () {
     return view('searchElectric');
 });
 Route::get('/searchHandyMan', function () {
-    return view('searchHandyMan');
+    return view('searchHandyman');
 });
 Route::get('/searchDeepclean', function () {
     return view('searchDeepclean');
