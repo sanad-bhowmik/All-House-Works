@@ -8,6 +8,7 @@
     <!-- Link to Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" href="https://i.ibb.co/37LJZ19/Blue-Modern-Luxury-Real-Estate-Logo-removebg-preview.png" type="image/x-icon">
+
 </head>
 <style>
     #nav1 {
@@ -368,12 +369,14 @@
         background-color: #f8f8f8;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-         @media (min-width: 641px) { /* Adjust min-width as needed */
+
+    @media (min-width: 641px) {
+
+        /* Adjust min-width as needed */
         #kol {
             margin-left: 15%;
         }
     }
-
 </style>
 
 <body class="bg-white relative">
@@ -401,24 +404,29 @@
                 <div class="w-full md:w-auto flex justify-center">
                     <img src="https://www.shutterstock.com/image-vector/builder-crossed-hammers-new-construction-600nw-2246936013.jpg" alt="" class="h-20">
                 </div>
-                <form onsubmit="checkAndRedirect(event)">
-                    <div class="flex items-center w-full md:w-auto">
-                        <input id="search-input" type="text" placeholder="ENTER KEYWORD" class="h-12 text-blackhover:text-white border border-black px-2 py-1 pl-8 w-full md:w-auto">
-                        <button type="submit">
-                            <svg fill="#000000" height="64px" width="64px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-459.1 -459.1 1406.60 1406.60" xml:space="preserve">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <g>
+                <form onsubmit="checkAndRedirect(event)" class="flex items-center w-full md:w-auto space-x-2">
+                    <div class="relative w-full md:w-auto" style="border-bottom: 3px solid #939090;">
+                        <div class="flex border border-gray-300">
+                            <input id="search-input" type="text" placeholder="ENTER KEYWORD" class="h-12 pl-10 pr-4 py-2 w-full md:w-auto text-black text-base rounded-l-lg focus:outline-none focus:border-brown-500 transition-colors duration-300 ease-in-out">
+                            <button type="submit" class="relative flex items-center justify-center w-12 h-12 bg-brown-500 text-white rounded-r-lg hover:bg-brown-700 focus:outline-none transition-all duration-300 ease-in-out transform hover:scale-105">
+                                <svg height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-276.79 -276.79 1039.18 1039.18" xml:space="preserve" fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
                                         <g>
-                                            <path d="M0,203.25c0,112.1,91.2,203.2,203.2,203.2c51.6,0,98.8-19.4,134.7-51.2l129.5,129.5c2.4,2.4,5.5,3.6,8.7,3.6 s6.3-1.2,8.7-3.6c4.8-4.8,4.8-12.5,0-17.3l-129.6-129.5c31.8-35.9,51.2-83,51.2-134.7c0-112.1-91.2-203.2-203.2-203.2 S0,91.15,0,203.25z M381.9,203.25c0,98.5-80.2,178.7-178.7,178.7s-178.7-80.2-178.7-178.7s80.2-178.7,178.7-178.7 S381.9,104.65,381.9,203.25z"></path>
+                                            <g>
+                                                <path style="fill:#E64C3D;" d="M447.5,477.85l30.3-30.3c4-4,4-10.4,0-14.4l-149.2-149.2l-44.7,44.7l149.2,149.2 C437.1,481.85,443.5,481.85,447.5,477.85z"></path>
+                                                <path style="fill:#2C2F33;" d="M163.4,67.05c-53.2,0-96.5,43.3-96.5,96.5c0,5,4.1,9.1,9.1,9.1s9.1-4.1,9.1-9.1 c0-43.2,35.1-78.3,78.3-78.3c5,0,9.1-4.1,9.1-9.1C172.5,71.05,168.4,67.05,163.4,67.05z"></path>
+                                                <path style="fill:#2C2F33;" d="M335,277.55c-3.5-3.5-9.3-3.5-12.8,0l-15.9,15.9l-21.1-21.1c25.9-28.9,41.7-67.1,41.7-108.9 c0-90.1-73.3-163.4-163.4-163.4S0,73.35,0,163.45s73.3,163.4,163.4,163.4c41.8,0,79.9-15.8,108.9-41.7l21.1,21.1l-15.9,15.9 c-1.7,1.7-2.7,4-2.7,6.4s1,4.7,2.7,6.4l141.9,141.9c5.6,5.6,13,8.7,20.9,8.7s15.3-3.1,20.9-8.7l15.7-15.7c5.6-5.6,8.7-13,8.7-20.9 s-3.1-15.3-8.7-20.9L335,277.55z M18.2,163.45c0-80.1,65.2-145.3,145.3-145.3s145.3,65.2,145.3,145.3s-65.2,145.3-145.3,145.3 S18.2,243.55,18.2,163.45z M464.1,448.45l-15.7,15.7c-2.2,2.2-5,3.4-8.1,3.4s-5.9-1.2-8.1-3.4l-135.5-135.5l31.9-31.9l135.5,135.5 c2.2,2.2,3.4,5,3.4,8.1S466.2,446.35,464.1,448.45z"></path>
+                                            </g>
                                         </g>
                                     </g>
-                                </g>
-                            </svg>
-                        </button>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </form>
+
             </div>
         </div>
     </nav>
@@ -772,13 +780,13 @@
                                     <!--Decking -->
                                 </div>
                             </div>
-                            <div class="hover-border-top ">
+                            <div class="hover-border-top" style="margin-top: 2px;">
                                 <a href="/price" class="text-gray-700 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Price</a>
                             </div>
-                            <div class="hover-border-top ">
+                            <div class="hover-border-top"style="margin-top: 2px;">
                                 <a href="/works" class="text-gray-700 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Works</a>
                             </div>
-                            <div class="hover-border-top border-r border-l">
+                            <div class="hover-border-top"style="margin-top: 2px;">
                                 <a href="/contact" class="text-gray-700 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Contact
                                     Us</a>
                             </div>
