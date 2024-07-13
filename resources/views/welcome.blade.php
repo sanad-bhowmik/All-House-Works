@@ -368,6 +368,12 @@
         background-color: #f8f8f8;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+         @media (min-width: 641px) { /* Adjust min-width as needed */
+        #kol {
+            margin-left: 15%;
+        }
+    }
+
 </style>
 
 <body class="bg-white relative">
@@ -427,9 +433,9 @@
         </div>
     </div>
     <!-- Scroll Up -->
- <nav id="main-nav" class="bg-white shadow-lg relative z-50 sticky">
+    <nav id="main-nav" class="bg-white shadow-lg relative z-50 sticky">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t">
-            <div class="relative flex items-center justify-between h-16" style="margin-left: 15%;">
+            <div class="relative flex items-center justify-between h-16" id="kol">
                 <div class="inset-y-0 left-0 flex items-center sm:hidden">
                     <button id="mobile-menu-toggle" type="button" class="inline-flex bg-gray-700 items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
@@ -444,27 +450,27 @@
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
                     <div class="hidden sm:block sm:ml-6">
                         <div class="flex space-x-16">
-                            <div class="border-r-2 border-l-2 " style="border-top: 4px solid #B48F57;">
-                                <a href="/" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Home</a>
+                            <div class=" " style="border-top: 4px solid #B48F57;">
+                                <a href="/" class="text-gray-700 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Home</a>
                             </div>
-                            <div class="relative group border-r border-l hover-border-top">
-                                <a href="/about" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium flex items-center">About
+                            <div class="relative group hover-border-top">
+                                <a href="/about" class="text-gray-700 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">About
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
                                 </a>
-                                <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md mt-2 w-40 z-50">
+                                <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md w-40 z-50">
                                     <a href="/review" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Review</a>
                                     <a href="/mission" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Mission</a>
                                 </div>
                             </div>
-                            <div class="relative group border-r border-l hover-border-top">
-                                <a href="service" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium flex items-center">Service
+                            <div class="relative group  hover-border-top">
+                                <a href="service" class="text-gray-700 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">Service
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
                                 </a>
-                                <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md mt-2 w-40 z-50">
+                                <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md w-40 z-50">
                                     <!-- Plumber -->
                                     <div class="relative plumber-group">
                                         <a href="/plumbing" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Plumber</a>
@@ -766,14 +772,14 @@
                                     <!--Decking -->
                                 </div>
                             </div>
-                            <div class="hover-border-top border-r border-l">
-                                <a href="/price" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Price</a>
+                            <div class="hover-border-top ">
+                                <a href="/price" class="text-gray-700 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Price</a>
+                            </div>
+                            <div class="hover-border-top ">
+                                <a href="/works" class="text-gray-700 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Works</a>
                             </div>
                             <div class="hover-border-top border-r border-l">
-                                <a href="/works" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Works</a>
-                            </div>
-                            <div class="hover-border-top border-r border-l">
-                                <a href="/contact" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Contact
+                                <a href="/contact" class="text-gray-700 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Contact
                                     Us</a>
                             </div>
                         </div>
