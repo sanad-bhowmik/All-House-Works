@@ -1542,7 +1542,6 @@
 
         .footer-text-yellow {
             color: #f8b500;
-            /* Adjust this color as needed */
         }
     </style>
 </body>
