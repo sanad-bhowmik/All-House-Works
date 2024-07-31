@@ -4,24 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHH M&E SERVICES PTE LTD</title>
+    <title>AllHouseWorks</title>
     <!-- Link to Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="icon" href="https://i.ibb.co/37LJZ19/Blue-Modern-Luxury-Real-Estate-Logo-removebg-preview.png" type="image/x-icon">
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
-
-    <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
+    <link rel="icon" href="{{ url('img/favicon.ico') }}" type="image/x-icon">
 </head>
 <style>
-    hr.hr-1 {
-        border: 0;
-        height: 1px;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-    }
-
-       #nav1 {
-       background-color: #fbde6e;
+    #nav1 {
+        background-color: #fbde6e;
     }
 
     .submenu {
@@ -166,12 +156,6 @@
         width: 50px;
     }
 
-    .footer {
-        background: linear-gradient(rgb(62 71 247 / 9%), rgb(39 255 111 / 10%)), url(https://agrosoftware.in/img/product-bg.png) left bottom no-repeat;
-        background-size: auto;
-
-    }
-
     .shortcode_wa_button,
     .shortcode_wa_button_nt {
         background: #25d366 !important;
@@ -289,7 +273,47 @@
     .hidden-submenu {
         display: none;
     }
- /* Adjustments for submenu visibility */
+
+    /* General Styles */
+    .hover-border-top:hover {
+        border-top: 4px solid #B48F57;
+    }
+
+    .group:hover .group-hover\:block {
+        display: block;
+    }
+
+    #main-nav {
+        z-index: 50;
+    }
+
+    #banner-section {
+        z-index: 10;
+    }
+
+    #main-nav .group:hover svg {
+        transform: rotate(180deg);
+    }
+
+    /* New Nav */
+    #main-nav .relative {
+        position: relative;
+    }
+
+    #main-nav .absolute.left-0 {
+        left: -100%;
+    }
+
+    #main-nav .group:hover .absolute.left-0 {
+        left: 100%;
+    }
+
+    #main-nav .group:hover .transform {
+        display: block;
+        visibility: visible;
+    }
+
+    /* Adjustments for submenu visibility */
     .plumber-group:hover .plumber-group-hover\:block {
         display: block;
     }
@@ -336,11 +360,18 @@
         background-color: #f8f8f8;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
+    @media (min-width: 641px) {
+
+        /* Adjust min-width as needed */
+        #kol {
+            margin-left: 15%;
+        }
+    }
 </style>
 
 <body class="bg-white relative">
-
-      <div class="bg-black text-white text-center py-4" style="font-size: 12px;text-transform: uppercase;">
+    <div class="bg-black text-white text-center py-4" style="font-size: 12px;text-transform: uppercase;">
         <a href="https://wa.me/6596585757" target="_blank" rel="noopener noreferrer">
             <p style="font-family: sans-serif;font-weight: 500;letter-spacing: 3px;">WHATSAPP NOW FOR SERVICE HELP</p>
         </a>
@@ -350,7 +381,7 @@
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
 
     <nav class="h-auto md:h-48">
-        <div class="max-w-7xl mx-auto px-4 py-2">
+        <div class="max-w-7xl mx-auto px-4">
             <div class="mt-10 flex flex-wrap justify-center md:space-x-64 space-y-4 md:space-y-0">
                 <div class="flex items-center w-full md:w-auto" style="height: auto; width: auto;">
                     <div class="p-2">
@@ -362,30 +393,33 @@
                     </div>
                 </div>
                 <div class="w-full md:w-auto flex justify-center">
-                    <img src="https://www.shutterstock.com/image-vector/builder-crossed-hammers-new-construction-600nw-2246936013.jpg" alt="" class="h-20">
+                    <img src="{{ url('img/icon2.png') }}" alt="" class="h-40">
                 </div>
-                <form onsubmit="checkAndRedirect(event)">
-                    <div class="flex items-center w-full md:w-auto">
-                        <input id="search-input" type="text" placeholder="ENTER KEYWORD" class="h-12 text-blackhover:text-white border border-black px-2 py-1 pl-8 w-full md:w-auto">
-                        <button type="submit">
-                            <svg fill="#000000" height="64px" width="64px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-459.1 -459.1 1406.60 1406.60" xml:space="preserve">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <g>
+                <form onsubmit="checkAndRedirect(event)" class="flex items-center w-full md:w-auto space-x-2">
+                    <div class="relative w-full md:w-auto" style="border-bottom: 3px solid #939090;">
+                        <div class="flex border border-gray-300">
+                            <input id="search-input" type="text" placeholder="ENTER KEYWORD" class="h-12 pl-10 pr-4 py-2 w-full md:w-auto text-black text-base rounded-l-lg focus:outline-none focus:border-brown-500 transition-colors duration-300 ease-in-out">
+                            <button type="submit" class="relative flex items-center justify-center w-12 h-12 bg-brown-500 text-white rounded-r-lg hover:bg-brown-700 focus:outline-none transition-all duration-300 ease-in-out transform hover:scale-105">
+                                <svg height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-276.79 -276.79 1039.18 1039.18" xml:space="preserve" fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
                                         <g>
-                                            <path d="M0,203.25c0,112.1,91.2,203.2,203.2,203.2c51.6,0,98.8-19.4,134.7-51.2l129.5,129.5c2.4,2.4,5.5,3.6,8.7,3.6 s6.3-1.2,8.7-3.6c4.8-4.8,4.8-12.5,0-17.3l-129.6-129.5c31.8-35.9,51.2-83,51.2-134.7c0-112.1-91.2-203.2-203.2-203.2 S0,91.15,0,203.25z M381.9,203.25c0,98.5-80.2,178.7-178.7,178.7s-178.7-80.2-178.7-178.7s80.2-178.7,178.7-178.7 S381.9,104.65,381.9,203.25z"></path>
+                                            <g>
+                                                <path style="fill:#E64C3D;" d="M447.5,477.85l30.3-30.3c4-4,4-10.4,0-14.4l-149.2-149.2l-44.7,44.7l149.2,149.2 C437.1,481.85,443.5,481.85,447.5,477.85z"></path>
+                                                <path style="fill:#2C2F33;" d="M163.4,67.05c-53.2,0-96.5,43.3-96.5,96.5c0,5,4.1,9.1,9.1,9.1s9.1-4.1,9.1-9.1 c0-43.2,35.1-78.3,78.3-78.3c5,0,9.1-4.1,9.1-9.1C172.5,71.05,168.4,67.05,163.4,67.05z"></path>
+                                                <path style="fill:#2C2F33;" d="M335,277.55c-3.5-3.5-9.3-3.5-12.8,0l-15.9,15.9l-21.1-21.1c25.9-28.9,41.7-67.1,41.7-108.9 c0-90.1-73.3-163.4-163.4-163.4S0,73.35,0,163.45s73.3,163.4,163.4,163.4c41.8,0,79.9-15.8,108.9-41.7l21.1,21.1l-15.9,15.9 c-1.7,1.7-2.7,4-2.7,6.4s1,4.7,2.7,6.4l141.9,141.9c5.6,5.6,13,8.7,20.9,8.7s15.3-3.1,20.9-8.7l15.7-15.7c5.6-5.6,8.7-13,8.7-20.9 s-3.1-15.3-8.7-20.9L335,277.55z M18.2,163.45c0-80.1,65.2-145.3,145.3-145.3s145.3,65.2,145.3,145.3s-65.2,145.3-145.3,145.3 S18.2,243.55,18.2,163.45z M464.1,448.45l-15.7,15.7c-2.2,2.2-5,3.4-8.1,3.4s-5.9-1.2-8.1-3.4l-135.5-135.5l31.9-31.9l135.5,135.5 c2.2,2.2,3.4,5,3.4,8.1S466.2,446.35,464.1,448.45z"></path>
+                                            </g>
                                         </g>
                                     </g>
-                                </g>
-                            </svg>
-                        </button>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
     </nav>
-
     <!-- Navigation Menu -->
     <!-- Scroll Up -->
     <div class="flex items-end justify-start fixed bottom-0 left-0 mb-4 ml-4 z-10">
@@ -398,7 +432,7 @@
     <!-- Scroll Up -->
     <nav id="main-nav" class="bg-white shadow-lg relative z-50 sticky">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t">
-            <div class="relative flex items-center justify-between h-16" style="margin-left: 15%;">
+            <div class="relative flex items-center justify-between h-16" id="kol">
                 <div class="inset-y-0 left-0 flex items-center sm:hidden">
                     <button id="mobile-menu-toggle" type="button" class="inline-flex bg-gray-700 items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
@@ -410,30 +444,35 @@
                         </svg>
                     </button>
                 </div>
+                <style>
+                    .hover-border-top:hover {
+                        border-top: 4px solid #B48F57;
+                    }
+                </style>
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
                     <div class="hidden sm:block sm:ml-6">
-                        <div class="flex space-x-16">
-                            <div class="border-r-2 border-l-2" style="border-top: 4px solid #B48F57;">
-                                <a href="#" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Home</a>
+                        <div class="flex space-x-16 ">
+                            <div class="hover-border-top" style="margin-top: 10px;">
+                                <a href="/" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Home</a>
                             </div>
-                            <div class="relative group border-r border-l hover-border-top">
+                            <div class="relative group hover-border-top">
                                 <a href="/about" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium flex items-center">About
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
                                 </a>
-                                <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md mt-2 w-40 z-50">
+                                <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md w-40 z-50">
                                     <a href="/review" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Review</a>
                                     <a href="/mission" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Mission</a>
                                 </div>
                             </div>
-                            <div class="relative group border-r border-l hover-border-top">
-                                <a href="#" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium flex items-center">Service
+                            <div class="relative group hover-border-top" style="border-top: 4px solid #B48F57;">
+                                <a href="service" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium flex items-center">Service
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
                                 </a>
-                                <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md mt-2 w-40 z-50">
+                                <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md w-40 z-50">
                                     <!-- Plumber -->
                                     <div class="relative plumber-group">
                                         <a href="/plumbing" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Plumber</a>
@@ -522,11 +561,11 @@
                                         <div class="absolute hidden electric-group-hover:block text-white bg-gray-800 shadow-lg rounded-md mt-2 w-40 left-full top-0 z-50">
 
                                             <!-- Electric Install -->
-                                            <a href="/electricalInstall" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Electrical Installation</a>
+                                            <a href="/electricalInstall" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">WOOD Installation</a>
                                             <!-- Electric Install -->
 
                                             <!-- Electric Repair -->
-                                            <a href="/electricRepair" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Electrical Repair</a>
+                                            <a href="/electricRepair" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">WOOD Repair</a>
                                             <!-- Electric Repair -->
 
 
@@ -735,14 +774,14 @@
                                     <!--Decking -->
                                 </div>
                             </div>
-                            <div class="hover-border-top border-r border-l">
-                                <a href="#" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Price</a>
+                            <div class="hover-border-top  " style="margin-top: 10px;">
+                                <a href="/price" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Price</a>
                             </div>
-                            <div class="hover-border-top border-r border-l">
-                                <a href="#" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Works</a>
+                            <div class="hover-border-top  " style="margin-top: 10px;">
+                                <a href="/works" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Works</a>
                             </div>
-                            <div class="hover-border-top border-r border-l">
-                                <a href="#" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Contact
+                            <div class="hover-border-top" style="margin-top: 10px;">
+                                <a href="/contact" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Contact
                                     Us</a>
                             </div>
                         </div>
@@ -1030,11 +1069,11 @@
         </div>
     </nav>
     <!-- Navigation Menu -->
-    <section class="parallax mt-16" style="position: relative; background: url('https://media.istockphoto.com/id/1469656864/photo/electrician-engineer-uses-a-multimeter-to-test-the-electrical-installation-and-power-line.jpg?s=612x612&w=0&k=20&c=h70UOpNbJYT5G2oGT-KUeIE3yXwEgsCpr25yR1rnGtU=') no-repeat center center fixed; background-size: cover; height: 300px;">
+    <section class="parallax mt-16" style="position: relative; background: url('https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2023/05/solid-oak-flooring.jpeg-1-e1684409736918.jpg') no-repeat center center fixed; background-size: cover; height: 300px;">
         <div class="overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
         <div class="content" style="position: relative; z-index: 1; display: flex; flex-direction: column; padding-left: 1rem; padding-right: 1rem; text-align: center; gap: 1rem;">
-            <h1 style="font-size: 2.5rem; color: white; font-weight: 100; margin-bottom: 1.5rem;">Electrician</h1>
-            <p style="font-size: 1rem; color: antiquewhite;">Home / Service / Electrician</p>
+            <h1 style="font-size: 2.5rem; color: white; font-weight: 100; margin-bottom: 1.5rem;">WOOD</h1>
+            <p style="font-size: 1rem; color: antiquewhite;">Home / Service / WOOD</p>
         </div>
     </section>
 
@@ -1121,12 +1160,11 @@
             </div>
         </div>
     </section>
-
     <section class="mt-10">
         <div class="relative flex flex-col md:flex-row items-center md:items-start mt-8">
             <span class="bg-yellow-500 yellow-triangle absolute left-0 h-20 hidden md:block"></span>
-            <h3 class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-full md:max-w-2/3" style="font-size: 18px; font-family: cursive; text-shadow: 3px 3px 0 rgb(255 255 255 / 25%);">
-                <span class="inner-span">One-Stop Home Solutions For Your Convenience</span>
+            <h3 class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-full md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;">
+                <span class="inner-span">All-in-One Handyman Services for Modern Living Convenience</span>
             </h3>
             <style>
                 @media (max-width: 768px) {
@@ -1139,7 +1177,7 @@
         </div>
 
 
-        <p class="text-center text-lg text-gray-600 mt-6 md:mt-12">We have all the time-saving processes so you can get every home task done with qualified professionals.</p>
+        <p class="text-center text-lg text-gray-600 mt-6 md:mt-12">We provide efficient solutions to ensure every home task is expertly handled by qualified professionals.</p>
 
         <!-- component -->
         <section class=" bg-blue-500ray-50">
@@ -1148,7 +1186,7 @@
                 <div class="relative mx-auto h-full px-4 pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
                     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative">
                         <div class="grid grid-cols-1 gap-2 sm:grid-cols-3">
-                            <a href="#" class="transition-all shadow-lg duration-1000 bg-white hover:bg-blue-500  hover:shadow-xl m-2 p-4 relative z-40 group  ">
+                            <a href="#" class="transition-all shadow-lg duration-1000 bg-white hover:bg-blue-500  hover:shadow-xl m-2 p-4 relative z-40 group  " style="cursor:context-menu;">
                                 <div class=" absolute  bg-blue-500 top-0 left-0 w-24 h-1 z-30  transition-all duration-200   group-hover:bg-white group-hover:w-1/2  ">
                                 </div>
                                 <div class="py-2 px-9 relative  ">
@@ -1159,12 +1197,12 @@
                                         <path d="M28.488 7.301a5.354 5.354 0 0 0-2.743-3.305c-.112-.056-2.96-1.2-4.942-1.996l.87 4.987a.52.52 0 0 1-.488.746.535.535 0 0 1-.101-.01L16.5 6.806V12a.5.5 0 1 1-1 0V6.806l-4.583.917a.518.518 0 0 1-.613-.598L11.196 2c-1.982.796-4.828 1.94-4.94 1.996a5.36 5.36 0 0 0-2.75 3.328l-1.492 6.26c-.042.175.01.359.138.486l.608.608a5.487 5.487 0 0 0 3.907 1.618c.196 0 .375-.111.464-.287l1.072-2.145c.013.292.02.584.02.876V28.48c0 .231.153.435.375.499A27.03 27.03 0 0 0 16 30c2.508 0 5.015-.34 7.402-1.022a.52.52 0 0 0 .376-.5V14.74c0-.292.006-.584.019-.876l1.073 2.145a.519.519 0 0 0 .463.287 5.487 5.487 0 0 0 3.907-1.618l.608-.608a.518.518 0 0 0 .138-.487l-1.498-6.282zM17.03 11.5c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1zm0-2c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1z">
                                         </path>
                                     </svg>
-                                    <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white ">Seamless Booking</h3>
-                                    <p class="mt-4 text-base text-gray-600 group-hover:text-white  ">Message us to get instant diagnosis and quote. Book one or multiple services and we will arrange everything in the most convenient schedule for you.</p>
+                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white ">Effortless Scheduling</h3>
+                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white  ">We deliver time-saving solutions, ensuring every home task is expertly completed by qualified professionals.</p>
                                 </div>
                             </a>
 
-                            <a href="#" class="transition-all shadow-lg duration-1000 bg-white hover:bg-blue-500  hover:shadow-xl m-2 p-4 relative z-40 group  ">
+                            <a href="#" class="transition-all shadow-lg duration-1000 bg-white hover:bg-blue-500  hover:shadow-xl m-2 p-4 relative z-40 group  " style="cursor:context-menu;">
                                 <div class=" absolute  bg-blue-500 top-0 left-0 w-24 h-1 z-30  transition-all duration-200   group-hover:bg-white group-hover:w-1/2  ">
                                 </div>
                                 <div class="py-2 px-9 relative  ">
@@ -1172,12 +1210,12 @@
                                         <path d="M13.6 4.8v54.3c0 .4.3.8.8.8H31v-2.3H19c-.6 0-1-.5-1-1s.5-1 1-1h12V4.1H14.4C14 4.1 13.6 4.4 13.6 4.8zM29.1 38.2c0 .6-.5 1-1 1s-1-.5-1-1v-1.3c0-.6.5-1 1-1s1 .5 1 1V38.2zM29.1 25.8v6.5c0 .6-.5 1-1 1s-1-.5-1-1v-6.5c0-.6.5-1 1-1S29.1 25.3 29.1 25.8zM16.1 11c0-1.6 1.3-2.8 2.8-2.8h7.4c.6 0 1 .5 1 1 0 .6-.5 1-1 1H19c-.4 0-.8.3-.8.8v17.2c0 .6-.5 1-1 1-.6 0-1-.5-1-1V11zM49.6 4.1H33v51.5h12c.4 0 .8-.3.8-.8V9.2c0-.6.5-1 1-1s1 .5 1 1v45.5c0 1.6-1.3 2.8-2.8 2.8H33v2.3h16.6c.4 0 .8-.3.8-.8V4.8C50.4 4.4 50 4.1 49.6 4.1zM37 38.2c0 .6-.5 1-1 1s-1-.5-1-1v-1.3c0-.6.5-1 1-1s1 .5 1 1V38.2zM37 32.3c0 .6-.5 1-1 1s-1-.5-1-1v-6.5c0-.6.5-1 1-1s1 .5 1 1V32.3z">
                                         </path>
                                     </svg>
-                                    <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white ">One-Stop Convenience</h3>
-                                    <p class="mt-4 text-base text-gray-600 group-hover:text-white">Our services are designed to be a fuss-free experience for you. Just choose the services or product installations you need, and allow us to fulfil the rest.</p>
+                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white ">Comprehensive Convenience</h3>
+                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white">Our solutions are designed to provide a seamless experience. Choose the services or product installations you need, and we'll handle everything for you.</p>
                                 </div>
                             </a>
 
-                            <a href="#" class="transition-all shadow-lg duration-1000 bg-white hover:bg-blue-500  hover:shadow-xl m-2 p-4 relative z-40 group  ">
+                            <a href="#" class="transition-all shadow-lg duration-1000 bg-white hover:bg-blue-500  hover:shadow-xl m-2 p-4 relative z-40 group " style="cursor:context-menu;">
                                 <div class=" absolute  bg-blue-500 top-0 left-0 w-24 h-1 z-30  transition-all duration-200   group-hover:bg-white group-hover:w-1/2  ">
                                 </div>
                                 <div class="py-2 px-9 relative  ">
@@ -1185,8 +1223,8 @@
                                         <path d="M60,34H56a1,1,0,0,0-1,1v3H52V28a1,1,0,0,0-1-1H47.51l-4.7-6.58A1,1,0,0,0,42,20H35V17h3a1,1,0,0,0,1-1V12a1,1,0,0,0-1-1H26a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h3v3H24a1,1,0,0,0-.81.42L18.49,27H13a1,1,0,0,0-1,1V38H9V35a1,1,0,0,0-1-1H4a1,1,0,0,0-1,1V47a1,1,0,0,0,1,1H8a1,1,0,0,0,1-1V44h3v5a1,1,0,0,0,1,1H24.59l2.7,2.71A1,1,0,0,0,28,53H48a1,1,0,0,0,.71-.29l3-3A1,1,0,0,0,52,49V44h3v3a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1V35A1,1,0,0,0,60,34ZM35.77,37.64l-5,6A1,1,0,0,1,30,44a1,1,0,0,1-.64-.23,1,1,0,0,1-.13-1.41L32.87,38H29a1,1,0,0,1-.77-1.64l5-6a1,1,0,0,1,1.54,1.28L31.13,36H35a1,1,0,0,1,.77,1.64Z">
                                         </path>
                                     </svg>
-                                    <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white ">Strong Customer Support</h3>
-                                    <p class="mt-4 text-base text-gray-600 group-hover:text-white">Our dedicated team will follow-up on your needs with open and transparent communication. We will diagnose the problem before recommending the best solution for your exact needs.</p>
+                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white ">Exceptional Customer Support</h3>
+                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white">Our dedicated team provides attentive follow-up with clear and transparent communication. We'll assess the issue and recommend the best solution tailored to your specific needs.</p>
                                 </div>
                             </a>
                         </div>
@@ -2175,44 +2213,61 @@
         </div>
     </section>
     <!-- Revew -->
-    <footer class="footer bg-blue-100/80 font-sans dark:bg-gray-900">
-        <div class="container px-6 py-12 mx-auto">
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-                <div class="sm:col-span-2">
-                    <h1 class="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl dark:text-white">Subscribe our newsletter to get an update.</h1>
+    <footer class="footer-bg text-white py-10">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h2 class="text-xl font-bold mb-4 footer-text-yellow border-b-2 border-yellow-500">About Allhouseworks Services</h2>
+                <p style="font-family: system-ui;font-size: inherit;line-height: 20px;">Allhouseworks is Singapore’s leading Home Maintenance Company offering quality & reliable services like Handyman, Electrical, Plumbing & Aircon Servicing and many more. Book your home maintenance services online in just a few clicks: simply message us on WhatsApp and our 4-star dedicated customer service team will fulfill the rest. Trusted by thousands of customers over the years, with a simple process to message us, we promise fast response and transparent quotes for any office or home services you need to get done. WhatsApp us at +65 8241 0032 Now!</p>
+            </div>
+            <div style="margin-left: 58px;">
+                <h2 class="text-xl font-bold mb-4 footer-text-yellow ">Useful Links</h2>
+                <ul class="space-y-2" style="line-height: 25px;font-size: medium;">
+                    <li><a href="/" class="hover:underline">Home</a></li>
+                    <li><a href="/about" class="hover:underline">About Us</a></li>
+                    <li><a href="/review" class="hover:underline">Review</a></li>
+                    <li><a href="/mission" class="hover:underline">Mission</a></li>
+                    <li><a href="/service" class="hover:underline">Services</a></li>
+                    <li><a href="/works" class="hover:underline">Works</a></li>
+                    <li><a href="/contact" class="hover:underline">Contact</a></li>
+                    <li><a href="/price" class="hover:underline">Price</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold mb-4 footer-text-yellow">Opening Hours</h2>
+                <ul class="space-y-2 " style="font-size: medium;line-height: 34px;">
+                    <li>Monday - 8:00AM to 8:00PM</li>
+                    <li>Tuesday - 8:00AM to 8:00PM</li>
+                    <li>Wednesday - 8:00AM to 8:00PM</li>
+                    <li>Thursday - 8:00AM to 8:00PM</li>
+                    <li>Friday - 8:00AM to 6:00PM</li>
+                    <li>Saturday - 9:00AM to 6:00PM</li>
+                    <li>Sunday - 8:00AM to 8:00PM</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold mb-4 footer-text-yellow">Contact Here</h2>
+                <ul class="space-y-2" style="font-size: medium;line-height: 28px;">
+                    <li>1090 Lower Delta Road #03-07, Singapore 169201</li>
+                    <li>Phone: +65 9658 5757</li>
+                    <li>WhatsApp (Message Only): +65 9658 5757</li>
+                    <li>Email: enquiry@Allhouseworks.com</li>
+                </ul>
 
-                    <div class="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
-                        <input id="email" type="text" class="px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Email Address" />
-
-                        <button class="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
-                            Subscribe
-                        </button>
-                    </div>
-                </div>
-
-                <div>
-                    <p class="font-semibold text-gray-800 dark:text-white">Quick Link</p>
-
-                    <div class="flex flex-col items-start mt-5 space-y-2">
-                        <p class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Home</p>
-                        <p class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Who We Are</p>
-                        <p class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Our Philosophy</p>
-                    </div>
-                </div>
-
-                <div>
-                    <p class="font-semibold text-gray-800 dark:text-white">Industries</p>
-
-                    <div class="flex flex-col items-start mt-5 space-y-2">
-                        <p class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Retail & E-Commerce</p>
-                        <p class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Information Technology</p>
-                        <p class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Finance & Insurance</p>
-                    </div>
-                </div>
             </div>
         </div>
     </footer>
+    <style>
+        .footer-bg {
+            background: #181818 url(https://everyworks.com/wp-content/uploads/2018/04/footerbg.png?id=45) !important;
+            background-size: cover;
+            background-position: center;
+        }
 
+        .footer-text-yellow {
+            color: #f8b500;
+            /* Adjust this color as needed */
+        }
+    </style>
 </body>
 
 </html>
