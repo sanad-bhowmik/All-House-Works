@@ -1074,8 +1074,8 @@
     <section class="parallax mt-16" style="position: relative; background: url('https://www.coynecollege.edu/wp-content/uploads/2020/06/Learn-the-Basics-of-Home-Electrical-Wiring-CoyneCollege-scaled.jpeg') no-repeat center center fixed; background-size: cover; height: 300px;">
         <div class="overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
         <div class="content" style="position: relative; z-index: 1; display: flex; flex-direction: column; padding-left: 1rem; padding-right: 1rem; text-align: center; gap: 1rem;">
-            <h1 style="font-size: 2.5rem; color: white; font-weight: 100; margin-bottom: 1.5rem;">Electrical Repair</h1>
-            <p style="font-size: 1rem; color: antiquewhite;">Home / Service / Electrical Repair</p>
+            <h1 style="font-size: 2.5rem; color: white; font-weight: 100; margin-bottom: 1.5rem;">FLOOR CLEANING</h1>
+            <p style="font-size: 1rem; color: antiquewhite;">Home / Service / FLOOR CLEANING</p>
         </div>
     </section>
 
@@ -1090,10 +1090,10 @@
                         <img alt="..." src="https://constructionreviewonline.com/wp-content/uploads/2018/05/management-wiring.jpg" class="w-full align-middle rounded-t-lg">
                         <blockquote class="relative p-8 mb-4">
                             <h4 class="text-xl font-bold text-white">
-                                Electrical Repair SERVICES
+                                FLOOR CLEANING SERVICES
                             </h4>
                             <p class="text-md font-light mt-2 text-white">
-                                Electrical Repair services include leak repairs, fixture Repairations, and maintenance for efficient water systems in homes and businesses, ensuring reliable operation and minimizing disruptions.
+                                FLOOR CLEANING services include leak repairs, fixture Repairations, and maintenance for efficient water systems in homes and businesses, ensuring reliable operation and minimizing disruptions.
                             </p>
                         </blockquote>
                     </div>
@@ -1107,9 +1107,9 @@
                                     <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
                                         <img src={{ url('img/service-tools.gif') }} alt="">
                                     </div>
-                                    <h6 class="text-xl mb-1 font-semibold">Electrical Repair EXPERTS</h6>
+                                    <h6 class="text-xl mb-1 font-semibold">Floor Cleaning EXPERTS</h6>
                                     <p class="mb-4 text-blueGray-500">
-                                        Our Electrical Repairs have over 35 years of experience in the industry, serving 1000s of residential & commercial estates.
+                                        Our Floor Cleaning have over 35 years of experience in the industry, serving 1000s of residential & commercial estates.
                                     </p>
                                 </div>
                             </div>
@@ -1119,10 +1119,10 @@
                                         <img src={{ url('img/under-construction.gif') }} alt="">
                                     </div>
                                     <h6 class="text-xl mb-1 font-semibold">
-                                        FULL 1-STOP Electrical Repair SERVICES
+                                        FULL 1-STOP Floor Cleaning SERVICES
                                     </h6>
                                     <p class="mb-4 text-blueGray-500">
-                                        Our top-to-bottom Electrical Repair service is designed to be fuss-free for you. Besides having your Electrical fixtures repaired or replace.
+                                        Our top-to-bottom Floor Cleaning service is designed to be fuss-free for you. Besides having your Electrical fixtures repaired or replace.
                                     </p>
                                 </div>
                             </div>
@@ -1133,9 +1133,9 @@
                                     <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
                                         <img src={{ url('img/tools.gif') }} alt="">
                                     </div>
-                                    <h6 class="text-xl mb-1 font-semibold">RANGE OF Electrical Repair SERVICES</h6>
+                                    <h6 class="text-xl mb-1 font-semibold">RANGE OF Floor Cleaning SERVICES</h6>
                                     <p class="mb-4 text-blueGray-500">
-                                        Our Electrical Repairs carry out a comprehensive list of Electrical Repair works including clearing chokes, fixing leaks, water heater services.
+                                        Our Floor Cleaning carry out a comprehensive list of Floor Cleaning works including clearing chokes, fixing leaks, water heater services.
                                     </p>
                                 </div>
                             </div>
@@ -1244,7 +1244,7 @@
                 <div class="w-full px-4">
                     <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
                         <h2 class=" font-bold  text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 ">
-                            OUR FULL RANGE OF Electrical Repair SERVICES INCLUDE:
+                            OUR FULL RANGE OF Floor Cleaning SERVICES INCLUDE:
                         </h2>
                     </div>
                 </div>
@@ -1253,33 +1253,33 @@
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4">
                     <div class="bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10  px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-1" style="height: 99%;">
                         <span class="text-primary font-semibold text-lg block mb-4">
-                            Light Repairation / Replacement
+                            Floor Cleaning Service
                         </span>
                         <hr>
                         <div class="mb-7">
                             <p class="text-base text-body-color leading-loose mb-1">
-                                LED Light
+                                Tile and Grout Cleaning
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Ceiling Light
+                                Hardwood Floor Cleaning
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Fluorescent Light
+                                Carpet Cleaning
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Recessed Light / Downlight / Spot Light
+                                Concrete Floor Cleaning
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Halogen Light / Dimmable Light
+                                Vinyl Floor Cleaning
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Hanging Light Fixtures
+                                Laminate Floor Cleaning
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Cove Light
+                                Stone Floor Cleaning
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Track Light
+                                Epoxy Floor Cleaning
                             </p>
                         </div>
                         <div>

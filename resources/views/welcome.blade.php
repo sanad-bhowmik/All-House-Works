@@ -1071,9 +1071,9 @@
     <section class="bg-cover bg-center relative parallax" style="background-image: url('https://images.pexels.com/photos/4108712/pexels-photo-4108712.jpeg?cs=srgb&dl=pexels-cottonbro-4108712.jpg&fm=jpg'); background-size: cover; background-repeat: no-repeat; height: 100vh; background-attachment: fixed;">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="relative z-10 p-6 md:p-24 banner flex flex-col items-center justify-center text-center text-white" style="padding-top: 150px;">
-            <h1 class="text-2xl md:text-4xl font-bold" style="font-size: 43px; text-align: center; font-family: math;line-height: normal;">Home Maintenance & Handyman Services <br>
-                Delivered To Your Doorstep</h1>
-            <p class="mt-4 md:mt-6" style="font-size: 18px; line-height: 1.2; text-align: center;">Message us with your home maintenance needs, and we will fulfill the rest. <br> Get connected to our handyman & service professionals for instant home diagnosis & direct quotations.</p>
+            <h1 class="text-2xl md:text-4xl font-bold" style="font-size: 43px; text-align: center; font-family: math;line-height: normal;">Household Repairs & Handyman Solutions <br>
+                Conveniently Delivered Right to Your Doorstep</h1>
+            <p class="mt-4 md:mt-6" style="font-size: 18px; line-height: 1.2; text-align: center;">Reach out to us with your home maintenance needs, and we'll take care of the rest. <br> Get in touch with our handyman and service experts for immediate home assessments and direct quotes.</p>
             <a id="sendbtn" class="shortcode_wa_button mt-4 md:mt-6 inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" href="https://api.whatsapp.com/send?phone=6565751226&amp;text=Hello, I would like to know more about the following home service" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">
                 <img src="img/whatsapp.png" alt="" class="mr-2"><span>WhatsApp to Start Now!</span>
             </a>
@@ -1099,7 +1099,7 @@
         <div class="relative flex flex-col md:flex-row items-center md:items-start mt-8">
             <span class="bg-yellow-500 yellow-triangle absolute left-0 h-20 hidden md:block"></span>
             <h3 class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-full md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;">
-                <span class="inner-span">One-Stop Handyman Solutions For Convenience in Modern Living</span>
+                <span class="inner-span">All-in-One Handyman Services for Modern Living Convenience</span>
             </h3>
             <style>
                 @media (max-width: 768px) {
@@ -1112,7 +1112,7 @@
         </div>
 
 
-        <p class="text-center text-lg text-gray-600 mt-6 md:mt-12">We have all the time-saving processes so you can get every home task done with qualified professionals.</p>
+        <p class="text-center text-lg text-gray-600 mt-6 md:mt-12">We provide efficient solutions to ensure every home task is expertly handled by qualified professionals.</p>
 
         <!-- component -->
         <section class=" bg-blue-500ray-50">
@@ -1121,7 +1121,7 @@
                 <div class="relative mx-auto h-full px-4 pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
                     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative">
                         <div class="grid grid-cols-1 gap-2 sm:grid-cols-3">
-                            <a href="#" class="transition-all shadow-lg duration-1000 bg-white hover:bg-blue-500  hover:shadow-xl m-2 p-4 relative z-40 group  ">
+                            <a href="#" class="transition-all shadow-lg duration-1000 bg-white hover:bg-blue-500  hover:shadow-xl m-2 p-4 relative z-40 group  " style="cursor:context-menu;">
                                 <div class=" absolute  bg-blue-500 top-0 left-0 w-24 h-1 z-30  transition-all duration-200   group-hover:bg-white group-hover:w-1/2  ">
                                 </div>
                                 <div class="py-2 px-9 relative  ">
@@ -1132,12 +1132,12 @@
                                         <path d="M28.488 7.301a5.354 5.354 0 0 0-2.743-3.305c-.112-.056-2.96-1.2-4.942-1.996l.87 4.987a.52.52 0 0 1-.488.746.535.535 0 0 1-.101-.01L16.5 6.806V12a.5.5 0 1 1-1 0V6.806l-4.583.917a.518.518 0 0 1-.613-.598L11.196 2c-1.982.796-4.828 1.94-4.94 1.996a5.36 5.36 0 0 0-2.75 3.328l-1.492 6.26c-.042.175.01.359.138.486l.608.608a5.487 5.487 0 0 0 3.907 1.618c.196 0 .375-.111.464-.287l1.072-2.145c.013.292.02.584.02.876V28.48c0 .231.153.435.375.499A27.03 27.03 0 0 0 16 30c2.508 0 5.015-.34 7.402-1.022a.52.52 0 0 0 .376-.5V14.74c0-.292.006-.584.019-.876l1.073 2.145a.519.519 0 0 0 .463.287 5.487 5.487 0 0 0 3.907-1.618l.608-.608a.518.518 0 0 0 .138-.487l-1.498-6.282zM17.03 11.5c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1zm0-2c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1z">
                                         </path>
                                     </svg>
-                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white ">Seamless Booking</h3>
-                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white  ">Message us to get instant diagnosis and quote. Book one or multiple services and we will arrange everything in the most convenient schedule for you.</p>
+                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white ">Effortless Scheduling</h3>
+                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white  ">We deliver time-saving solutions, ensuring every home task is expertly completed by qualified professionals.</p>
                                 </div>
                             </a>
 
-                            <a href="#" class="transition-all shadow-lg duration-1000 bg-white hover:bg-blue-500  hover:shadow-xl m-2 p-4 relative z-40 group  ">
+                            <a href="#" class="transition-all shadow-lg duration-1000 bg-white hover:bg-blue-500  hover:shadow-xl m-2 p-4 relative z-40 group  " style="cursor:context-menu;">
                                 <div class=" absolute  bg-blue-500 top-0 left-0 w-24 h-1 z-30  transition-all duration-200   group-hover:bg-white group-hover:w-1/2  ">
                                 </div>
                                 <div class="py-2 px-9 relative  ">
@@ -1145,12 +1145,12 @@
                                         <path d="M13.6 4.8v54.3c0 .4.3.8.8.8H31v-2.3H19c-.6 0-1-.5-1-1s.5-1 1-1h12V4.1H14.4C14 4.1 13.6 4.4 13.6 4.8zM29.1 38.2c0 .6-.5 1-1 1s-1-.5-1-1v-1.3c0-.6.5-1 1-1s1 .5 1 1V38.2zM29.1 25.8v6.5c0 .6-.5 1-1 1s-1-.5-1-1v-6.5c0-.6.5-1 1-1S29.1 25.3 29.1 25.8zM16.1 11c0-1.6 1.3-2.8 2.8-2.8h7.4c.6 0 1 .5 1 1 0 .6-.5 1-1 1H19c-.4 0-.8.3-.8.8v17.2c0 .6-.5 1-1 1-.6 0-1-.5-1-1V11zM49.6 4.1H33v51.5h12c.4 0 .8-.3.8-.8V9.2c0-.6.5-1 1-1s1 .5 1 1v45.5c0 1.6-1.3 2.8-2.8 2.8H33v2.3h16.6c.4 0 .8-.3.8-.8V4.8C50.4 4.4 50 4.1 49.6 4.1zM37 38.2c0 .6-.5 1-1 1s-1-.5-1-1v-1.3c0-.6.5-1 1-1s1 .5 1 1V38.2zM37 32.3c0 .6-.5 1-1 1s-1-.5-1-1v-6.5c0-.6.5-1 1-1s1 .5 1 1V32.3z">
                                         </path>
                                     </svg>
-                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white ">One-Stop Convenience</h3>
-                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white">Our services are designed to be a fuss-free experience for you. Just choose the services or product installations you need, and allow us to fulfil the rest.</p>
+                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white ">Comprehensive Convenience</h3>
+                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white">Our solutions are designed to provide a seamless experience. Choose the services or product installations you need, and we'll handle everything for you.</p>
                                 </div>
                             </a>
 
-                            <a href="#" class="transition-all shadow-lg duration-1000 bg-white hover:bg-blue-500  hover:shadow-xl m-2 p-4 relative z-40 group  ">
+                            <a href="#" class="transition-all shadow-lg duration-1000 bg-white hover:bg-blue-500  hover:shadow-xl m-2 p-4 relative z-40 group " style="cursor:context-menu;">
                                 <div class=" absolute  bg-blue-500 top-0 left-0 w-24 h-1 z-30  transition-all duration-200   group-hover:bg-white group-hover:w-1/2  ">
                                 </div>
                                 <div class="py-2 px-9 relative  ">
@@ -1158,8 +1158,8 @@
                                         <path d="M60,34H56a1,1,0,0,0-1,1v3H52V28a1,1,0,0,0-1-1H47.51l-4.7-6.58A1,1,0,0,0,42,20H35V17h3a1,1,0,0,0,1-1V12a1,1,0,0,0-1-1H26a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h3v3H24a1,1,0,0,0-.81.42L18.49,27H13a1,1,0,0,0-1,1V38H9V35a1,1,0,0,0-1-1H4a1,1,0,0,0-1,1V47a1,1,0,0,0,1,1H8a1,1,0,0,0,1-1V44h3v5a1,1,0,0,0,1,1H24.59l2.7,2.71A1,1,0,0,0,28,53H48a1,1,0,0,0,.71-.29l3-3A1,1,0,0,0,52,49V44h3v3a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1V35A1,1,0,0,0,60,34ZM35.77,37.64l-5,6A1,1,0,0,1,30,44a1,1,0,0,1-.64-.23,1,1,0,0,1-.13-1.41L32.87,38H29a1,1,0,0,1-.77-1.64l5-6a1,1,0,0,1,1.54,1.28L31.13,36H35a1,1,0,0,1,.77,1.64Z">
                                         </path>
                                     </svg>
-                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white ">Strong Customer Support</h3>
-                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white">Our dedicated team will follow-up on your needs with open and transparent communication. We will diagnose the problem before recommending the best solution for your exact needs.</p>
+                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white ">Exceptional Customer Support</h3>
+                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white">Our dedicated team provides attentive follow-up with clear and transparent communication. We'll assess the issue and recommend the best solution tailored to your specific needs.</p>
                                 </div>
                             </a>
                         </div>
@@ -1228,7 +1228,7 @@
             <a href="#">
                 <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Popular Home Maintenance Services</h5>
             </a>
-            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Message us to diagnose & get an instant quote for all home maintenance & handyman tasks including aircon, plumbing, and electrical services.</p>
+            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Contact us to diagnose and receive an instant quote for all your home maintenance and handyman tasks, including air conditioning, plumbing, and electrical services.</p>
         </div>
 
         <div class="flex flex-wrap gap-6 justify-center mt-6">
@@ -1269,6 +1269,72 @@
             </div>
 
             <!-- card-3 -->
+        </div>
+        <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+                <!-- CARD 1 -->
+                <div class="rounded overflow-hidden shadow-lg flex flex-col">
+                    <a href="/wood" target="_blank"></a>
+                    <div class="relative"><a href="/wood" target="_blank">
+                            <img class="w-full h-48 object-cover" src="https://www.itsplaneandsimple.com/Content/BlogImages/P%26S_Blog_Images-wood2_100821142841.jpg" alt="Sunset in the mountains">
+                            <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="px-6 py-4 mb-auto" style="text-align: center;">
+                        <a href="/wood" target="_blank" class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Wood Varnishing</a>
+                    </div>
+                    <div class="px-6 py-1 flex flex-row items-center justify-between" style="background-color: #f7a80c;">
+                    </div>
+                </div>
+                <!-- CARD 2 -->
+                <div class="rounded overflow-hidden shadow-lg flex flex-col">
+                    <a href="/deepclean" target="_blank"></a>
+                    <div class="relative"><a href="/deepclean" target="_blank">
+                            <img class="w-full h-48 object-cover" src="https://media.licdn.com/dms/image/D5612AQHkrhi78vXwrg/article-cover_image-shrink_720_1280/0/1691741644459?e=2147483647&v=beta&t=ClGXl6miAU8Al-dBeQVIYOZ9PynVy6d5JstgA3ZOROs" alt="Sunset in the mountains">
+                            <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="px-6 py-4 mb-auto" style="text-align: center;">
+                        <a href="/deepclean" target="_blank" class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Deep Cleaning</a>
+                    </div>
+                    <div class="px-6 py-1 flex flex-row items-center justify-between" style="background-color: #f7a80c;">
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="rounded overflow-hidden shadow-lg flex flex-col">
+                    <a href="/floorpolish" target="_blank"></a>
+                    <div class="relative"><a href="/floorpolish" target="_blank">
+                            <img class="w-full h-48 object-cover" src="https://d7fcfvvxwoz9e.cloudfront.net/dom43635/wp-content/uploads/2020/08/polishing-a-concrete-floor.png" alt="Sunset in the mountains">
+                            <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="px-6 py-4 mb-auto" style="text-align: center;">
+                        <a href="/floorpolish" target="_blank" class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Floor Polishing</a>
+                    </div>
+                    <div class="px-6 py-1 flex flex-row items-center justify-between" style="background-color: #f7a80c;">
+                    </div>
+                </div>
+                <!-- CARD 4 -->
+                <div class="rounded overflow-hidden shadow-lg flex flex-col">
+                    <a href="/floorclean" target="_blank"></a>
+                    <div class="relative"><a href="/floorclean" target="_blank">
+                            <img class="w-full h-48 object-cover" src="https://s1.kaercher-media.com/images/pim/Weitere_Reinigungsl_sungen_620x310_Teaserbild_.jpg" alt="Sunset in the mountains">
+                            <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="px-6 py-4 mb-auto" style="text-align: center;">
+                        <a href="/floorclean" target="_blank" class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Floor Cleaning</a>
+                    </div>
+                    <div class="px-6 py-1 flex flex-row items-center justify-between" style="background-color: #f7a80c;">
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -1542,6 +1608,7 @@
 
         .footer-text-yellow {
             color: #f8b500;
+            /* Adjust this color as needed */
         }
     </style>
 </body>
@@ -1600,8 +1667,6 @@
     }
     window.onscroll = function() {
         var navbar = document.getElementById("navbar");
-
-        
         if (window.pageYOffset > 0) {
             navbar.classList.add("sticky-nav");
             navbar.style.width = "100%";
