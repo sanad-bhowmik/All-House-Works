@@ -275,8 +275,9 @@
     }
 
     /* General Styles */
-    .hover-border-top:hover {
+   .hover-border-top:hover {
         border-top: 4px solid #B48F57;
+        border-top: 4px solid #FFFFFF;
     }
 
     .group:hover .group-hover\:block {
@@ -355,9 +356,10 @@
         }
     }
 
-    #main-nav.scrolled {
+     #main-nav.scrolled {
         top: 0;
         background-color: #f8f8f8;
+        background-color: #f69918;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
@@ -430,8 +432,8 @@
         </div>
     </div>
     <!-- Scroll Up -->
-    <nav id="main-nav" class="bg-white shadow-lg relative z-50 sticky">
-        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t">
+     <nav id="main-nav" class="bg-white relative z-50 sticky">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t" style="background-color: #f69918;">
             <div class="relative flex items-center justify-between h-16" id="kol">
                 <div class="inset-y-0 left-0 flex items-center sm:hidden">
                     <button id="mobile-menu-toggle" type="button" class="inline-flex bg-gray-700 items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
@@ -444,19 +446,14 @@
                         </svg>
                     </button>
                 </div>
-                <style>
-                    .hover-border-top:hover {
-                        border-top: 4px solid #B48F57;
-                    }
-                </style>
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
                     <div class="hidden sm:block sm:ml-6">
-                        <div class="flex space-x-16 ">
-                            <div class="hover-border-top" style="margin-top: 10px;">
-                                <a href="/" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Home</a>
+                        <div class="flex space-x-16">
+                            <div class=" " style="border-top: 4px solid rgb(255 255 255);">
+                                <a href="/" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Home</a>
                             </div>
                             <div class="relative group hover-border-top">
-                                <a href="/about" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium flex items-center">About
+                                <a href="/about" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">About
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
@@ -466,8 +463,8 @@
                                     <a href="/mission" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Mission</a>
                                 </div>
                             </div>
-                            <div class="relative group hover-border-top" style="border-top: 4px solid #B48F57;">
-                                <a href="service" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium flex items-center">Service
+                            <div class="relative group  hover-border-top">
+                                <a href="service" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">Service
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
@@ -774,14 +771,14 @@
                                     <!--Decking -->
                                 </div>
                             </div>
-                            <div class="hover-border-top  " style="margin-top: 10px;">
-                                <a href="/price" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Price</a>
+                            <div class="hover-border-top ">
+                                <a href="/price" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium" style="margin-top: 2px;">Price</a>
                             </div>
-                            <div class="hover-border-top  " style="margin-top: 10px;">
-                                <a href="/works" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Works</a>
+                            <div class="hover-border-top ">
+                                <a href="/works" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium" style="margin-top: 2px;">Works</a>
                             </div>
-                            <div class="hover-border-top" style="margin-top: 10px;">
-                                <a href="/contact" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Contact
+                            <div class="hover-border-top">
+                                <a href="/contact" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium" style="margin-top: 2px;">Contact
                                     Us</a>
                             </div>
                         </div>
@@ -1071,7 +1068,7 @@
     <!-- Navigation Menu -->
 
 
-    <section class="parallax mt-16" style="position: relative; background: url('https://www.coynecollege.edu/wp-content/uploads/2020/06/Learn-the-Basics-of-Home-Electrical-Wiring-CoyneCollege-scaled.jpeg') no-repeat center center fixed; background-size: cover; height: 300px;">
+    <section class="parallax" style="position: relative; background: url('https://www.coynecollege.edu/wp-content/uploads/2020/06/Learn-the-Basics-of-Home-Electrical-Wiring-CoyneCollege-scaled.jpeg') no-repeat center center fixed; background-size: cover; height: 300px;">
         <div class="overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
         <div class="content" style="position: relative; z-index: 1; display: flex; flex-direction: column; padding-left: 1rem; padding-right: 1rem; text-align: center; gap: 1rem;">
             <h1 style="font-size: 2.5rem; color: white; font-weight: 100; margin-bottom: 1.5rem;">FLOOR CLEANING</h1>
@@ -1922,6 +1919,60 @@
         </div>
     </section>
     <!-- Revew -->
+        <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
+        <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">Everyworks Group's Network of Service Brands</h2>
+        <div class="w-11/12 mt-2 mb-8 flex flex-wrap justify-around">
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/plumbing">
+                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/mr-plumber-singapore-logo.png" alt="Image 1" class="w-48 h-16">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/matressClean">
+                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/logo-header-png-dw-mattress-cleaning-singapore.png" alt="Image 2" class="w-48 h-16">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/electric">
+                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/Daylight-Electrician-Singapore-logo.png" alt="Image 3" class="w-48 h-16">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/handyman">
+                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/a1-handyman-singapore-logo-300x77.png" alt="Image 4" class="w-48 h-16">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/waterHeater">
+                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/Water-Heater-Singapore-logo-15.png" alt="Image 5" class="w-48 h-16">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/sofaClean">
+                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/logo-header-png-dw-sofa-cleaning-singapore.png" alt="Image 6" class="w-48 h-16">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/floorclean">
+                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/dw-floor-polishing-singapore-logo-300x123.png" alt="Image 7" class="w-80 h-20">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/rubbishChute">
+                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/a1-rubbish-chute-singapore-logo-300x117.png" alt="Image 8" class="w-80 h-20">
+                </a>
+            </div>
+        </div>
+    </section>
+    <style>
+        @media (max-width: 768px) {
+            .responsive-image {
+                flex-basis: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+    </style>
+
     <footer class="footer-bg text-white py-10">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>

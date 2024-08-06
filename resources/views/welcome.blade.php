@@ -242,17 +242,17 @@
     }
 
     #header_slider #slide_item:nth-child(1) {
-        background: url("https://media.istockphoto.com/id/1339613829/photo/plumber-at-work-in-a-bathroom-plumbing-repair-service-assemble-and-install-concept.jpg?s=612x612&w=0&k=20&c=lQREIzjwRM3ApTkRzTnbIA_BCRCy_ER-e51tofKsaP0=") no-repeat center center;
+        background: url("https://t4.ftcdn.net/jpg/02/91/14/23/360_F_291142315_1HDHshpssor08inb91jnXZxB02M3rIgi.jpg") no-repeat center center;
         background-size: cover;
     }
 
     #header_slider #slide_item:nth-child(2) {
-        background: url("https://mrelectric.com/us/en-us/_assets/images/ceiling-fan-repair.webp") no-repeat center center;
+        background: url("https://media.istockphoto.com/id/1436521782/photo/team-of-professional-cleaners-tidying-up-the-room.webp?b=1&s=170667a&w=0&k=20&c=E4Ru1OhTSNliZSNVwevKKDrH4CFjhnQfsNnPXCciBfc=") no-repeat center center;
         background-size: cover;
     }
 
     #header_slider #slide_item:nth-child(3) {
-        background: url("https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?s=612x612&w=0&k=20&c=5zlDGgLNNaWsp_jq_L1AsGT85wrzpdl3kVH-75S-zTU=") no-repeat center center;
+        background: url("https://st5.depositphotos.com/39034226/62384/i/450/depositphotos_623846382-stock-photo-female-cleaning-specialist-using-window.jpg") no-repeat center center;
         background-size: cover;
     }
 
@@ -1235,7 +1235,7 @@
             <!-- card-1 -->
             <a href="/plumbing" target="_blank">
                 <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <img class="rounded-t-lg" src="https://images.squarespace-cdn.com/content/v1/540e2e30e4b0a9fac1c138ac/1555607622300-I0MHNBHGZ7897IS5SIC8/IMG_4781.jpeg" alt="" style="border-top: 5px solid #f7a80c;" />
+                    <img class="rounded-t-lg" src="https://vlasconstruction.com/wp-content/uploads/2023/08/Plumbing-Services-003.jpg" alt="" style="border-top: 5px solid #f7a80c;" />
                     <div class="p-5">
                         <h5 class="mb-2 text-xl text-center font-medium tracking-tight text-gray-900 dark:text-white">PLUMBER SERVICES</h5>
                     </div>
@@ -1246,7 +1246,7 @@
             <!-- card-2 -->
             <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="/electric">
-                    <img class="rounded-t-lg" src="https://www.ambroseair.com/wp-content/uploads/2022/07/what-does-an-air-conditioning-service-consist-of-1080x675-1.jpg" alt="" style="border-top: 5px solid #f7a80c;" />
+                    <img class="rounded-t-lg" src="https://images.squarespace-cdn.com/content/v1/60d1c27a3fe67824cc3c5f3b/d4c00972-1be7-4ffe-9dcc-ababba2b0cc3/Midatt+electrical+services.jpg" alt="" style="border-top: 5px solid #f7a80c;" />
                 </a>
                 <div class="p-5">
                     <a href="/electric">
@@ -1259,7 +1259,7 @@
             <!-- card-3 -->
             <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="/handyman">
-                    <img class="rounded-t-lg" src="https://www.mrhandyman.com/us/en-us/mr-handyman/_assets/expert-tips/images/Local-blogs-images/mrh-blog-top-15-reasons-to-have-a-handyman-service-on-you2.webp" alt="" style="border-top: 5px solid #f7a80c;" />
+                    <img class="rounded-t-lg" src="https://codeexmaintenance.com/wp-content/uploads/2022/01/handyman-.png" alt="" style="border-top: 5px solid #f7a80c;" />
                 </a>
                 <div class="p-5">
                     <a href="/handyman">
@@ -1273,7 +1273,7 @@
         <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
                 <!-- CARD 1 -->
-                <div class="rounded overflow-hidden shadow-lg flex flex-col">
+                <div class="rounded overflow-hidden flex flex-col" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
                     <a href="/wood" target="_blank"></a>
                     <div class="relative"><a href="/wood" target="_blank">
                             <img class="w-full h-48 object-cover" src="https://www.itsplaneandsimple.com/Content/BlogImages/P%26S_Blog_Images-wood2_100821142841.jpg" alt="Sunset in the mountains">
@@ -1288,7 +1288,7 @@
                     </div>
                 </div>
                 <!-- CARD 2 -->
-                <div class="rounded overflow-hidden shadow-lg flex flex-col">
+                <div class="rounded overflow-hidden flex flex-col" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
                     <a href="/deepclean" target="_blank"></a>
                     <div class="relative"><a href="/deepclean" target="_blank">
                             <img class="w-full h-48 object-cover" src="https://media.licdn.com/dms/image/D5612AQHkrhi78vXwrg/article-cover_image-shrink_720_1280/0/1691741644459?e=2147483647&v=beta&t=ClGXl6miAU8Al-dBeQVIYOZ9PynVy6d5JstgA3ZOROs" alt="Sunset in the mountains">
@@ -1304,7 +1304,7 @@
                 </div>
 
                 <!-- CARD 3 -->
-                <div class="rounded overflow-hidden shadow-lg flex flex-col">
+                <div class="rounded overflow-hidden flex flex-col" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
                     <a href="/floorpolish" target="_blank"></a>
                     <div class="relative"><a href="/floorpolish" target="_blank">
                             <img class="w-full h-48 object-cover" src="https://d7fcfvvxwoz9e.cloudfront.net/dom43635/wp-content/uploads/2020/08/polishing-a-concrete-floor.png" alt="Sunset in the mountains">
@@ -1319,7 +1319,7 @@
                     </div>
                 </div>
                 <!-- CARD 4 -->
-                <div class="rounded overflow-hidden shadow-lg flex flex-col">
+                <div class="rounded overflow-hidden flex flex-col" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
                     <a href="/floorclean" target="_blank"></a>
                     <div class="relative"><a href="/floorclean" target="_blank">
                             <img class="w-full h-48 object-cover" src="https://s1.kaercher-media.com/images/pim/Weitere_Reinigungsl_sungen_620x310_Teaserbild_.jpg" alt="Sunset in the mountains">
@@ -1455,50 +1455,7 @@
         </div>
     </section>
 
-    <section>
-        <!-- <div class="mt-20 relative" style="margin-left: 36%;height: 73px;width: 438px;padding: 18px;border-right: 3px solid #810CA8;border-left: 3px solid #810CA8;">
-            <h1 class="text-center" style="font-size: 36px;">OUR WORKS</h1>
-            <div class="absolute top-0 left-0 right-0 " style="background-color: #810CA8;height: 2px;"></div>
-            <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 px-2 " style="background-color: #fff;">
-                <span>
-                    <svg width="64px" height="64px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path d="M512 512m-10 0a10 10 0 1 0 20 0 10 10 0 1 0-20 0Z" fill="#E73B37"></path>
-                            <path d="M512 306.8c27.7 0 54.6 5.4 79.8 16.1 24.4 10.3 46.4 25.1 65.2 44s33.6 40.8 44 65.2c10.7 25.3 16.1 52.1 16.1 79.8 0 27.7-5.4 54.6-16.1 79.8-10.3 24.4-25.1 46.4-44 65.2-18.8 18.8-40.8 33.6-65.2 44-25.3 10.7-52.1 16.1-79.8 16.1-27.7 0-54.6-5.4-79.8-16.1-24.4-10.3-46.4-25.1-65.2-44-18.8-18.8-33.6-40.8-44-65.2-10.7-25.3-16.1-52.1-16.1-79.8 0-27.7 5.4-54.6 16.1-79.8 10.3-24.4 25.1-46.4 44-65.2s40.8-33.6 65.2-44c25.2-10.6 52.1-16.1 79.8-16.1m0-22c-125.4 0-227.1 101.7-227.1 227.1S386.6 739.1 512 739.1c125.4 0 227.1-101.7 227.1-227.1S637.4 284.8 512 284.8z" fill="#39393A"></path>
-                            <path d="M512 618.7c-58.9 0-106.8-47.9-106.8-106.8S453.1 405.1 512 405.1 618.8 453 618.8 511.9 570.9 618.7 512 618.7z m0-193.5c-47.9 0-86.8 38.9-86.8 86.8s38.9 86.8 86.8 86.8 86.8-38.9 86.8-86.8-38.9-86.8-86.8-86.8z" fill="#E73B37"></path>
-                            <path d="M544.2 107.3l34.1 92.3 7.4 19.9 20.2 6.6c10.3 3.4 32.1 12.9 43.4 18.1l18.7 8.6 18.6-8.9 87.9-41.8 46.4 46.5-41.2 89.4-8.9 19.3 9.6 19c6.8 13.4 12.6 27.5 17.4 41.9l6.7 20.5 20.3 7.2 91.7 32.6v65.7l-92.3 34.1-19.9 7.4-6.6 20.2c-4.7 14.4-10.6 28.4-17.4 41.9l-9.8 19.3 9.3 19.5 41.8 87.9-46.5 46.5-89.1-41.3-19.3-8.9-19 9.6c-13.4 6.8-27.5 12.6-41.9 17.4l-20.5 6.7-7.2 20.3-32.6 91.7h-65.7l-34.1-92.3-7.4-19.9-20.2-6.6c-10.3-3.4-32.1-12.9-43.4-18.1L356 771l-18.6 8.9-87.9 41.8-46.4-46.5 41.2-89.3 8.9-19.3-9.6-19c-6.8-13.4-12.6-27.5-17.4-41.9l-6.7-20.5-20.3-7.2-91.7-32.6v-65.7l92.3-34.1 19.9-7.4 6.6-20.2c3.4-10.3 12.9-32.1 18.1-43.4l8.6-18.7-8.9-18.6-41.8-87.9 46.4-46.4 89.3 41.2 19.3 8.9 19-9.6c13.4-6.8 27.5-12.6 41.9-17.4l20.5-6.7 7.2-20.3 32.6-91.7h65.7m30.7-44.1H447.4l-43 121c-16.6 5.5-32.7 12.1-48.1 19.9l-117.2-54-90.1 90.1 55.2 116s-14.5 31.4-19.9 48.1l-121 44.7v127.4l121 43c5.5 16.6 12.1 32.6 19.9 48l-54 117.2 90.1 90.1 116-55.2s31.4 14.5 48.1 19.9l44.7 121h127.4l43-121c16.6-5.5 32.6-12.1 48-19.9l117.2 54 90.1-90.1-55.2-116c7.8-15.4 14.5-31.4 19.9-48l121-44.7V447.4l-121-43c-5.5-16.6-12.1-32.6-19.9-48l54-117.2-90.1-90.1-115.9 55.2s-31.5-14.5-48.1-19.9L574.9 63.3z" fill="#39393A"></path>
-                        </g>
-                    </svg>
-                </span>
-            </div>
-            <div class="absolute bottom-0 left-0 right-0 " style="background-color: #810CA8;height: 2px;"></div>
-        </div> -->
 
-        <div style="display: flex; justify-content: center;">
-            <p style="width: 510px;height: 120px;text-align: center;font-size: 17px;line-height: 24px;font-family: system-ui;font-weight: 600;margin-top: 3%;color: #777;line-height: 25px;">
-                We have served thousands of clients island-wide. Here are some of our trusted commercial customers.
-            </p>
-        </div>
-        <div id="header_slider" class="relative w-10/12 h-96 overflow-hidden mx-auto mt-10">
-            <div id="slide_item" class="absolute px-10 pb-10 inset-0 bg-pink-500 flex items-end justify-center transition-all ease-in-out duration-1000 transform translate-x-0 slide">
-                <p class="bg-gray-900 px-7 py-3 text-white font-bold uppercase rounded-md opacity-80">Plumbing is the system for water distribution and waste removal in buildings.</p>
-            </div>
-            <div id="slide_item" class="absolute px-10 pb-10 inset-0 bg-purple-500 flex items-end justify-center transition-all ease-in-out duration-1000 transform translate-x-full slide">
-                <p class="bg-gray-900 px-7 py-3 text-white font-bold uppercase rounded-md opacity-80">Aircon service is the maintenance and repair of air conditioning units.</p>
-            </div>
-            <div id="slide_item" class="absolute px-10 pb-10 inset-0 bg-blue-500 flex items-end justify-center transition-all ease-in-out duration-1000 transform translate-x-full slide">
-                <p class="bg-gray-900 px-7 py-3 text-white font-bold uppercase rounded-md opacity-80">Aircon service is the maintenance and repair of air conditioning units.</p>
-            </div>
-            <div class="absolute z-10 ml-16 bg-gray-200 w-16 h-16 flex items-center justify-center text-black cursor-pointer" onclick="nextSlide()">
-                &#x276F;
-            </div>
-            <div class="absolute z-10 bg-gray-200 w-16 h-16 mr-16 border-r border-gray-400 flex items-center justify-center text-black cursor-pointer" onclick="previousSlide()">
-                &#x276E;
-            </div>
-        </div>
-    </section>
 
 
     <div class="parallax py-24 sm:py-32 mt-16 mb-16">
@@ -1517,7 +1474,7 @@
                                 <use href="#0ef284b8-28c2-426e-9442-8655d393522e" x="86" />
                             </svg>
                             <blockquote class="mt-6 text-xl font-semibold leading-8 text-white">
-                                <p>“"What happens is not as important as how you react to what happens." "The journey of a thousand miles begins with one step." "The only true wisdom is in knowing you know nothing." "Just as treasures are uncovered from the earth, so virtue appears from good deeds, and wisdom appears from a pure and peaceful mind..”</p>
+                                <p>"What happens is not as important as how you react to what happens." "The journey of a thousand miles begins with one step." "The only true wisdom is in knowing you know nothing." "Just as treasures are uncovered from the earth, so virtue appears from good deeds, and wisdom appears from a pure and peaceful mind..”</p>
                             </blockquote>
                             <!--<figcaption class="mt-6 text-sm leading-6 text-gray-300"><strong class="font-semibold text-white">Shehab Najib,</strong> ceo of ISREN</figcaption>-->
                         </figure>
@@ -1534,17 +1491,8 @@
                         </div>
                     </div>
                     <dl class="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4">
-                        <div>
-                            <img src={{ url('img/electrical-energy.png') }} alt="">
-                        </div>
-                        <div>
-                            <img src={{ url('img/technician.png') }} alt="">
-                        </div>
-                        <div>
-                            <img src={{ url('img/24-hours.png') }} alt="">
-                        </div>
-                        <div>
-                            <img src={{ url('img/rating.png') }} alt="">
+                        <div style="cursor:pointer;">
+                            <img src="{{ url('img/technician.png') }}" alt="Technician" id="whatsappImage">
                         </div>
                     </dl>
                     <div class="mt-10 flex">
@@ -1555,6 +1503,59 @@
         </div>
     </div>
 
+    <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
+        <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">Everyworks Group's Network of Service Brands</h2>
+        <div class="w-11/12 mt-2 mb-8 flex flex-wrap justify-around">
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/plumbing">
+                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/mr-plumber-singapore-logo.png" alt="Image 1" class="w-48 h-16">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/matressClean">
+                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/logo-header-png-dw-mattress-cleaning-singapore.png" alt="Image 2" class="w-48 h-16">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/electric">
+                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/Daylight-Electrician-Singapore-logo.png" alt="Image 3" class="w-48 h-16">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/handyman">
+                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/a1-handyman-singapore-logo-300x77.png" alt="Image 4" class="w-48 h-16">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/waterHeater">
+                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/Water-Heater-Singapore-logo-15.png" alt="Image 5" class="w-48 h-16">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/sofaClean">
+                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/logo-header-png-dw-sofa-cleaning-singapore.png" alt="Image 6" class="w-48 h-16">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/floorclean">
+                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/dw-floor-polishing-singapore-logo-300x123.png" alt="Image 7" class="w-80 h-20">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/rubbishChute">
+                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/a1-rubbish-chute-singapore-logo-300x117.png" alt="Image 8" class="w-80 h-20">
+                </a>
+            </div>
+        </div>
+    </section>
+    <style>
+        @media (max-width: 768px) {
+            .responsive-image {
+                flex-basis: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+    </style>
 
     <footer class="footer-bg text-white py-10">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -1973,4 +1974,12 @@
             arrow.classList.remove('rotate-180');
         }
     }
+</script>
+<script>
+    document.getElementById('whatsappImage').addEventListener('click', function() {
+        var message = "Good day, I am interested in learning more about your services. Could you please provide me with more information? Thank you.";
+        var phoneNumber = "6596585757";
+        var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+        window.open(whatsappUrl, '_blank');
+    });
 </script>
