@@ -183,6 +183,22 @@
         padding: 10px;
     }
 
+    .bg-slide-1 {
+        background-image: url('https://cdn.prod.website-files.com/59cd3b3afb6d5f00016628ee/5eb42fa6fed45d02a19ed447_plumbing-faucet-installation-and-repair-p-1600.jpeg');
+    }
+
+    .bg-slide-2 {
+        background-image: url('https://lirp.cdn-website.com/a4f39b4a578d405d8553459de0e5552a/dms3rep/multi/opt/waterwater22-640w.jpg');
+    }
+
+    .bg-slide-3 {
+        background-image: url('https://www.ratherbeplumbing.com/static/5801556092c3ae751b7512481e9d1698/2720a/faucet__darkened.jpg');
+    }
+
+    .bg-slide-4 {
+        background-image: url('https://www.sos-plumbing.com/app/uploads/2018/07/water-services.jpg');
+    }
+
     .yellow-triangle {
         clip-path: polygon(0 0, 100% 0, 38% 100%, 0% 100%);
         width: 13%;
@@ -370,6 +386,15 @@
             margin-left: 15%;
         }
     }
+
+    .brand-logo {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out;
+    }
+
+    .brand-logo:hover {
+        filter: grayscale(0%);
+    }
 </style>
 
 <body class="bg-white relative">
@@ -432,7 +457,7 @@
         </div>
     </div>
     <!-- Scroll Up -->
-  <nav id="main-nav" class="bg-white relative z-50 sticky">
+    <nav id="main-nav" class="bg-white relative z-50 sticky">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t" style="background-color: #f69918;">
             <div class="relative flex items-center justify-between h-16" id="kol">
                 <div class="inset-y-0 left-0 flex items-center sm:hidden">
@@ -1074,89 +1099,44 @@
         </div>
     </section>
 
+    <!-- logo -->
+    <div class="mt-16">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-around gap-8 py-12 px-4">
+            <p class="w-full mb-4 -mt-4 text-center text-base font-semibold uppercase text-gray-400 tracking-wider">
+                Brands We Carry
+            </p>
 
+            <a class="flex items-center justify-center text-gray-400 hover:text-gray-200" href="https://ploi.io" target="_blank" title="Ploi">
+               <img class="brand-logo" src="https://www.waterheatercity.com/wp-content/uploads/2021/01/rheem-water-heater-city-singapore-90x90.png" alt="Ploi">
+            </a>
 
-    <!-- component -->
-    <section class="relative pt-16 bg-blueGray-50">
-        <div class="container mx-auto">
-            <div class="flex flex-wrap items-center">
-                <div class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">
-                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-500">
-                        <img alt="..." src="https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/Articles/how-to-choose-a-water-heater-service-provider-2023-step-1.jpg" class="w-full align-middle rounded-t-lg">
-                        <blockquote class="relative p-8 mb-4">
-                            <h4 class="text-xl font-bold text-white">
-                                Water heater
-                            </h4>
-                            <p class="text-md font-light mt-2 text-white">
-                                Water heater services include leak repairs, fixture Leakations, and maintenance for efficient water systems in homes and businesses, ensuring reliable operation and minimizing disruptions.
-                            </p>
-                        </blockquote>
-                    </div>
-                </div>
+            <a class="flex items-center justify-center text-gray-400 hover:text-gray-200" href="https://www.agiledrop.com/laravel?utm_source=filament" target="_blank" title="Agiledrop">
+               <img class="brand-logo" src="https://www.waterheatercity.com/wp-content/uploads/2021/01/ariston-water-heater-city-singapore-150x54.png" alt="Agiledrop">
+            </a>
 
-                <div class="w-full md:w-6/12 px-4">
-                    <div class="flex flex-wrap">
-                        <div class="w-full md:w-6/12 px-4">
-                            <div class="relative flex flex-col mt-4">
-                                <div class="px-4 py-5 flex-auto">
-                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
-                                        <img src={{ url('img/service-tools.gif') }} alt="">
-                                    </div>
-                                    <TS class="text-xl mb-1 font-semibold">Water heater EXPERTS</TS>
-                                    <p class="mb-4 text-blueGray-500">
-                                        Our professionals have over 35 years of experience in the industry, serving 1000s of residential & commercial estates.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="relative flex flex-col min-w-0">
-                                <div class="px-4 py-5 flex-auto">
-                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
-                                        <img src={{ url('img/under-construction.gif') }} alt="">
-                                    </div>
-                                    <h6 class="text-xl mb-1 font-semibold">
-                                        FULL 1-STOP Water heater SERVICES
-                                    </h6>
-                                    <p class="mb-4 text-blueGray-500">
-                                        Our top-to-bottom Water heater service is designed to be fuss-free for you. Besides having your floor cleaned, we also ensure that you have a clear understanding of our Water heater process, enabling you to apply the knowledge to maintain the cleanliness of your floors.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-6/12 px-4">
-                            <div class="relative flex flex-col min-w-0 mt-4">
-                                <div class="px-4 py-5 flex-auto">
-                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
-                                        <img src={{ url('img/tools.gif') }} alt="">
-                                    </div>
-                                    <h6 class="text-xl mb-1 font-semibold">RANGE OF Water heater SERVICES</h6>
-                                    <p class="mb-4 text-blueGray-500">
-                                        Our Water heater servicing technicians carry out a comprehensive list of Water heater works including floor deep cleaning, vinyl Water heater.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="relative flex flex-col min-w-0">
-                                <div class="px-4 py-5 flex-auto">
-                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
-                                        <img src={{ url('img/toolbox.gif') }} alt="">
-                                    </div>
-                                    <h6 class="text-xl mb-1 font-semibold">Service Assistance Now!</h6>
-                                    <p class="mb-4 text-blueGray-500">
-                                    <ol>
-                                        <li class="flex"> <img src="{{ url('img/hastag.png') }}" alt=""> Message us on Whatsapp</li>
-                                        <br>
-                                        <li class="flex"> <img src="{{ url('img/hastag.png') }}" alt=""> Chat with us</li>
-                                        <br>
-                                        <li class="flex"> <img src="{{ url('img/hastag.png') }}" alt=""> Get Job Done!</li>
-                                    </ol>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a class="flex items-center justify-center text-gray-400 hover:text-gray-200" href="https://codecourse.com" target="_blank" title="Codecourse">
+              <img class="brand-logo" src="https://www.waterheatercity.com/wp-content/uploads/2021/01/joven-water-heater-city-singapore-150x54.png" alt="Codecourse">
+            </a>
+
+            <a class="flex items-center justify-center text-gray-400 hover:text-gray-200" href="https://laradir.com" target="_blank" title="Laradir">
+                <img class="brand-logo" src="https://www.waterheatercity.com/wp-content/uploads/2021/01/rubine-water-heater-city-singapore-150x54.png" alt="Laradir">
+            </a>
+
+            <a class="flex items-center justify-center text-gray-400 hover:text-gray-200" href="https://uselocale.com" target="_blank" title="Locale">
+                <img class="brand-logo" src="https://www.waterheatercity.com/wp-content/uploads/2021/01/champs-water-heater-city-singapore-150x54.png" alt="Locale">
+            </a>
+
+            <a class="flex items-center justify-center text-gray-400 hover:text-gray-200" href="https://ego-trace.com" target="_blank" title="EgoTrace">
+                <img class="brand-logo" src="https://www.waterheatercity.com/wp-content/uploads/2021/01/everhot-water-heater-city-singapore-150x54.png" alt="EgoTrace">
+            </a>
+
+            <a class="flex items-center justify-center text-gray-400 hover:text-gray-200" href="https://flareapp.io" target="_blank" title="Flare">
+               <img class="brand-logo" src="https://www.waterheatercity.com/wp-content/uploads/2021/01/707-water-heater-city-singapore-150x85.png" alt="Flare">
+            </a>
         </div>
-    </section>
+    </div>
+    <!-- logo -->
+
 
     <section class="mt-10">
         <div class="relative flex flex-col md:flex-row items-center md:items-start mt-8">
@@ -1240,7 +1220,7 @@
                 <div class="w-full px-4">
                     <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
                         <h2 class=" font-bold  text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 ">
-                            OUR FLOOR DEEP CLEANING PROCESS
+                            OUR WATER HEATER SERVICES
                         </h2>
                     </div>
                 </div>
@@ -1440,10 +1420,11 @@
         </div>
     </section>
     <!-- ====== Pricing Section End -->
+
+
     <hr class="hr-1">
 
     <!-- Water heaterATION -->
-    <!-- component -->
     <section class="text-gray-400 bg-gray-800 body-font mt-10">
         <div class="container px-5 py-24 mx-auto">
             <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-white mb-20">
@@ -1587,250 +1568,32 @@
     <!-- FAQ -->
 
     <!-- Revew -->
-    <section id="testimonies" class="py-20 bg-gray-900">
-        <div class="max-w-6xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
-            <div class="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
-                <div class="mb-12 space-y-5 md:mb-16 md:text-center">
-                    <h1 class="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
-                        CUSTOMER REVIEWS absolute
-                    </h1>
-                    <p class="text-xl text-gray-100 md:text-center md:text-2xl">
-                        OUR PLUMBING SERVICES
-                    </p>
+    <section class="text-white py-16 bg-gray-700">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-2/3 md:pr-12 mb-8 md:mb-0 px-4">
+                <h2 class="text-3xl font-bold mb-4">Why Choose Us</h2>
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold">Expert Installation with PUB Submission</h3>
+                    <p>Quality workmanship to ensure that all works comply with standards prescribed / stipulated by PUB.</p>
                 </div>
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold">Transparency</h3>
+                    <p>We pride ourselves with transparent pricing so that you know exactly what you are paying for.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold">Receive Recommendations</h3>
+                    <p>Every customer has different needs, so we ensure that our recommendations best fit your needs.</p>
+                </div>
+                <a href="/contact" target="_blank" class="bg-white text-black py-2 px-6 rounded-full inline-block">Contact Us!</a>
             </div>
-
-
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-
-
-                <ul class="space-y-8">
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/kanyewest" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Kanye West</h3>
-                                            <p class="text-gray-500 text-md">Rapper &amp; Entrepreneur</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Find God.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
-                                            <p class="text-gray-500 text-md">CEO of Apple</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
-                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
-                                        aliquam malesuada bibendum.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/kanyewest" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Kanye West</h3>
-                                            <p class="text-gray-500 text-md">Rapper &amp; Entrepreneur</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Find God.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
-                                            <p class="text-gray-500 text-md">CEO of Apple</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
-                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
-                                        aliquam malesuada bibendum.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-
-
-                <ul class="hidden space-y-8 sm:block">
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/paraga" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Parag Agrawal">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Parag Agrawal</h3>
-                                            <p class="text-gray-500 text-md">CEO of Twitter</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Enim neque volutpat ac tincidunt vitae
-                                        semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus quam
-                                        pellentesque nec. Turpis cursus in hac habitasse platea dictumst.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
-                                            <p class="text-gray-500 text-md">CEO of Apple</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
-                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
-                                        aliquam malesuada bibendum.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/paraga" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Parag Agrawal">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Parag Agrawal</h3>
-                                            <p class="text-gray-500 text-md">CEO of Twitter</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Enim neque volutpat ac tincidunt vitae
-                                        semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus quam
-                                        pellentesque nec. Turpis cursus in hac habitasse platea dictumst.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
-                                            <p class="text-gray-500 text-md">CEO of Apple</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
-                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
-                                        aliquam malesuada bibendum.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-
-
-                <ul class="hidden space-y-8 lg:block">
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/satyanadella" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Satya Nadella">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Satya Nadella</h3>
-                                            <p class="text-gray-500 text-md">CEO of Microsoft</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Tortor dignissim convallis aenean et
-                                        tortor at. At ultrices mi tempus imperdiet nulla malesuada. Id cursus metus aliquam
-                                        eleifend mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/dan_schulman" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Dan Schulman">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Dan Schulman</h3>
-                                            <p class="text-gray-500 text-md">CEO of PayPal</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Quam pellentesque nec nam aliquam sem
-                                        et tortor consequat id. Enim sit amet venenatis urna cursus.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/satyanadella" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Satya Nadella">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Satya Nadella</h3>
-                                            <p class="text-gray-500 text-md">CEO of Microsoft</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Tortor dignissim convallis aenean et
-                                        tortor at. At ultrices mi tempus imperdiet nulla malesuada. Id cursus metus aliquam
-                                        eleifend mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/dan_schulman" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Dan Schulman">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Dan Schulman</h3>
-                                            <p class="text-gray-500 text-md">CEO of PayPal</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Quam pellentesque nec nam aliquam sem
-                                        et tortor consequat id. Enim sit amet venenatis urna cursus.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-
-
+            <div class="md:w-1/3 flex justify-center px-4">
+                <img src="https://www.waterheatercity.com/wp-content/uploads/2021/01/compiled-water-heaters-singapore-water-heater-city-singapore-400x300.png" alt="Water Heaters" class="max-w-full">
             </div>
         </div>
     </section>
+
     <!-- Revew -->
-        <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
+    <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
         <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">Everyworks Group's Network of Service Brands</h2>
         <div class="w-11/12 mt-2 mb-8 flex flex-wrap justify-around">
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
@@ -1884,7 +1647,7 @@
         }
     </style>
 
-     <footer class="footer-bg text-white py-10">
+    <footer class="footer-bg text-white py-10">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
                 <h2 class="text-xl font-bold mb-4 footer-text-yellow border-b-2 border-yellow-500">About Allhouseworks Services</h2>

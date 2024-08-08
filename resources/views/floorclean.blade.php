@@ -275,7 +275,7 @@
     }
 
     /* General Styles */
-   .hover-border-top:hover {
+    .hover-border-top:hover {
         border-top: 4px solid #B48F57;
         border-top: 4px solid #FFFFFF;
     }
@@ -356,7 +356,7 @@
         }
     }
 
-     #main-nav.scrolled {
+    #main-nav.scrolled {
         top: 0;
         background-color: #f8f8f8;
         background-color: #f69918;
@@ -369,6 +369,14 @@
         #kol {
             margin-left: 15%;
         }
+    }
+
+    .floor-card {
+        transition: transform 0.3s ease;
+    }
+
+    .floor-card:hover {
+        transform: scale(1.05);
     }
 </style>
 
@@ -432,7 +440,7 @@
         </div>
     </div>
     <!-- Scroll Up -->
-     <nav id="main-nav" class="bg-white relative z-50 sticky">
+    <nav id="main-nav" class="bg-white relative z-50 sticky">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t" style="background-color: #f69918;">
             <div class="relative flex items-center justify-between h-16" id="kol">
                 <div class="inset-y-0 left-0 flex items-center sm:hidden">
@@ -1068,7 +1076,7 @@
     <!-- Navigation Menu -->
 
 
-    <section class="parallax" style="position: relative; background: url('https://www.coynecollege.edu/wp-content/uploads/2020/06/Learn-the-Basics-of-Home-Electrical-Wiring-CoyneCollege-scaled.jpeg') no-repeat center center fixed; background-size: cover; height: 300px;">
+    <section class="parallax" style="position: relative; background: url('https://www.asmienterprises.in/assets/images/product/white-floor-cleaner.jpg') no-repeat center center fixed; background-size: cover; height: 300px;">
         <div class="overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
         <div class="content" style="position: relative; z-index: 1; display: flex; flex-direction: column; padding-left: 1rem; padding-right: 1rem; text-align: center; gap: 1rem;">
             <h1 style="font-size: 2.5rem; color: white; font-weight: 100; margin-bottom: 1.5rem;">FLOOR CLEANING</h1>
@@ -1233,7 +1241,104 @@
     </section>
 
     <!-- component -->
+    <section class="mb-20" style="background-image: url(https://dwfloorpolishing.com/wp-content/uploads/2015/12/page_title.jpg);background-attachment: fixed;">
+        <section class="bg-yellow-500" style="height: 20px;width: 40%;margin-left: 30%;">
+            <div class="container mx-auto text-center mb-8">
+                <h2 class="text-3xl text-white font-bold">Types of Floors We Specialise In</h2>
+            </div>
+        </section>
 
+        <section class="py-12">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+                <!-- Marble Card -->
+                <div class="floor-card bg-white text-black p-6 rounded-lg " style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                    <img src="https://dwfloorpolishing.com/wp-content/uploads/2020/12/marble-floor-polishing-services-dw-floor-polishing-singapore.jpg" alt="Marble" class="w-full h-32 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">Marble</h3>
+                    <p class="mt-2">We provide professional marble floor polishing services for all types of marble flooring. Marble floors can become dull and scratched over time. In order to restore the shine, opt for Marble Floor Polishing services.</p>
+                    <a href="/marblePolish" class="mt-4 inline-block bg-yellow-500 text-white px-4 py-2 rounded-lg">Our Marble Services</a>
+                </div>
+                <!-- Wood Card -->
+                <div class="floor-card bg-white text-black p-6 rounded-lg " style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                    <img src="https://dwfloorpolishing.com/wp-content/uploads/2020/12/1-parquet-floor-dw-floor-polishing-singapore.jpg" alt="Wood" class="w-full h-32 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">Wood</h3>
+                    <p class="mt-2">We provide wood polishing, parquet polishing and varnishing services. Wood floors will usually dull over time even with proper care. Opt for wood polishing and varnishing services to restore your wooden floors.</p>
+                    <a href="/woodPolish" class="mt-4 inline-block bg-yellow-500 text-white px-4 py-2 rounded-lg">Our Wood Services</a>
+                </div>
+                <!-- Vinyl Card -->
+                <div class="floor-card bg-white text-black p-6 rounded-lg " style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                    <img src="https://dwfloorpolishing.com/wp-content/uploads/2023/09/vinyl-services-dw-floor-polishing-singapore-wm.jpg" alt="Vinyl" class="w-full h-32 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">Vinyl</h3>
+                    <p class="mt-2">Our vinyl floor cleaning specialists employ a Bona power scrubber and targeted chemical solutions, ensuring your floors will look pristine. Finally, a special coating will be applied to leave your floor always protected.</p>
+                    <a href="/vinylClean" class="mt-4 inline-block bg-yellow-500 text-white px-4 py-2 rounded-lg">Our Vinyl Services</a>
+                </div>
+                <!-- Tile Card -->
+                <div class="floor-card bg-white text-black p-6 rounded-lg " style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                    <img src="https://dwfloorpolishing.com/wp-content/uploads/2023/09/tile-services-dw-floor-polishing-singapore-wm.jpg" alt="Tile" class="w-full h-32 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">Tile</h3>
+                    <p class="mt-2">Maintain the beauty of your tile floors with our tile services. Our skilled professionals will revitalize your tile floors to its pristine condition - leaving them looking stunning and ensuring long-lasting durability.</p>
+                    <a href="/tileFloorPolish" class="mt-4 inline-block bg-yellow-500 text-white px-4 py-2 rounded-lg">Our Tile Services</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <div class="container mx-auto p-4">
+        <h2 class="text-center text-xl font-bold mb-4">All prices are inclusive of labour and transport charges.</h2>
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-300">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-2 border-b border-gray-300">Service</th>
+                        <th class="px-4 py-2 border-b border-gray-300">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="px-4 py-2 border-b border-gray-300">Floor Polishing</td>
+                        <td class="px-4 py-2 border-b border-gray-300">$1.3/sqft</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border-b border-gray-300">Marble Floor Polishing</td>
+                        <td class="px-4 py-2 border-b border-gray-300">$1.3/sqft<br>*Please contact us for an accurate quotation.</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border-b border-gray-300">Parquet Floor Polishing</td>
+                        <td class="px-4 py-2 border-b border-gray-300">
+                            1 Bedroom/Oil-Based Varnish - From $150 to $450<br>
+                            2 Bedroom/Oil-Based Varnish - From $250 to $550<br>
+                            3 Bedroom/Oil-Based Varnish - From $450 to $650<br>
+                            <br>
+                            1 Bedroom/Water-Based Varnish - From $450 to $650<br>
+                            2 Bedroom/Water-Based Varnish - From $550 to $750<br>
+                            3 Bedroom/Water-Based Varnish - From $650 to $900<br>
+                            <br>*Please contact us for an accurate quotation.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border-b border-gray-300">Parquet Flooring Repair</td>
+                        <td class="px-4 py-2 border-b border-gray-300">Prices will be quoted based on enquiry.<br>*Subjected to a case-by-case basis.<br><a href="https://wa.me/6582410832" class="text-blue-500">WhatsApp us at +65 8241 0832</a> for a price quote.</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border-b border-gray-300">Wood Varnishing</td>
+                        <td class="px-4 py-2 border-b border-gray-300">From $150 - $350 per door<br>*Please contact us for an accurate quotation.<br><a href="https://wa.me/6582410832" class="text-blue-500">WhatsApp us at +65 8241 0832</a> for a price quote.</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border-b border-gray-300">Door Varnishing</td>
+                        <td class="px-4 py-2 border-b border-gray-300">From $150 - $350 per door<br>*Please contact us for an accurate quotation.</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border-b border-gray-300">Balcony Decking</td>
+                        <td class="px-4 py-2 border-b border-gray-300">Prices will be quoted based on enquiry.<br>*Subjected to a case-by-case basis.<br><a href="https://wa.me/6582410832" class="text-blue-500">WhatsApp us at +65 8241 0832</a> for a price quote.</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border-b border-gray-300">Timber Decking</td>
+                        <td class="px-4 py-2 border-b border-gray-300">Prices will be quoted based on enquiry.<br>*Subjected to a case-by-case basis.<br><a href="https://wa.me/6582410832" class="text-blue-500">WhatsApp us at +65 8241 0832</a> for a price quote.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
     <!-- ====== Pricing Section Start -->
     <section class="bg-white lg:pt-[120px] pb-12 lg:pb-[90px] relative z-20 overflow-hidden">
         <div class="container">
@@ -1919,7 +2024,7 @@
         </div>
     </section>
     <!-- Revew -->
-        <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
+    <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
         <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">Everyworks Group's Network of Service Brands</h2>
         <div class="w-11/12 mt-2 mb-8 flex flex-wrap justify-around">
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
