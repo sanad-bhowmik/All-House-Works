@@ -2008,7 +2008,7 @@
     <!-- PLUMBING WORKS -->
 
     <!-- Price -->
-    <div class="container mx-auto bg-white shadow-lg rounded-lg p-6 mt-24">
+    <div class="container mx-auto bg-white shadow-lg rounded-lg p-6 mt-24 mb-20">
         <h2 class="text-3xl font-semibold mb-20" style="text-align: center;font-family: math;text-decoration-line: underline;">Description of Services (All prices inclusive of material, labour & transport)</h2>
         <table class="min-w-full divide-y divide-gray-200">
             <thead class="bg-gray-50">
