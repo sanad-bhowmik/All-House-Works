@@ -1508,47 +1508,55 @@
         <div class="w-11/12 mt-2 mb-8 flex flex-wrap justify-around">
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/plumbing">
-                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/mr-plumber-singapore-logo.png" alt="Image 1" class="w-48 h-16">
+                    <img src="{{ url('img/plumber.png') }}" alt="Image 1" class="w-48 h-16 hover:zoom-in">
                 </a>
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/matressClean">
-                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/logo-header-png-dw-mattress-cleaning-singapore.png" alt="Image 2" class="w-48 h-16">
+                    <img src="{{ url('img/matress.png') }}" alt="Image 2" class="w-52 h-20 hover:zoom-in">
                 </a>
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/electric">
-                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/Daylight-Electrician-Singapore-logo.png" alt="Image 3" class="w-48 h-16">
+                    <img src="{{ url('img/daylight.png') }}" alt="Image 3" class="w-48 h-16 hover:zoom-in">
                 </a>
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/handyman">
-                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/a1-handyman-singapore-logo-300x77.png" alt="Image 4" class="w-48 h-16">
+                    <img src="{{ url('img/handy.png') }}" alt="Image 4" class="w-54 h-16 hover:zoom-in">
                 </a>
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/waterHeater">
-                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/Water-Heater-Singapore-logo-15.png" alt="Image 5" class="w-48 h-16">
+                    <img src="{{ url('img/water.png') }}" alt="Image 5" class="w-48 h-16 hover:zoom-in">
                 </a>
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/sofaClean">
-                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/logo-header-png-dw-sofa-cleaning-singapore.png" alt="Image 6" class="w-48 h-16">
+                    <img src="{{ url('img/sofa.png') }}" alt="Image 6" class="w-52 h-24 hover:zoom-in">
                 </a>
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/floorclean">
-                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/dw-floor-polishing-singapore-logo-300x123.png" alt="Image 7" class="w-80 h-20">
+                    <img src="{{ url('img/floor.png') }}" alt="Image 7" class="w-80 h-20 hover:zoom-in">
                 </a>
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/rubbishChute">
-                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/a1-rubbish-chute-singapore-logo-300x117.png" alt="Image 8" class="w-80 h-20">
+                    <img src="{{ url('img/rubbish.png') }}" alt="Image 8" class="w-56 h-16 hover:zoom-in">
                 </a>
             </div>
         </div>
     </section>
     <style>
+        .hover\:zoom-in {
+            transition: transform 0.3s ease;
+        }
+
+        .hover\:zoom-in:hover {
+            transform: scale(1.1);
+        }
+
         @media (max-width: 768px) {
             .responsive-image {
                 flex-basis: 100% !important;
