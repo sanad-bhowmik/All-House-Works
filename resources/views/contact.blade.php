@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All House Works</title>
+    <title>AllHouseWorks</title>
     <!-- Link to Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="icon" href="https://i.ibb.co/37LJZ19/Blue-Modern-Luxury-Real-Estate-Logo-removebg-preview.png" type="image/x-icon">
+    <link rel="icon" href="{{ url('img/favicon.ico') }}" type="image/x-icon">
 </head>
 <style>
     #nav1 {
@@ -156,14 +156,6 @@
         width: 50px;
     }
 
-    .footer {
-        background: linear-gradient(rgba(118 122 199 / 0.09), rgba(103 165 124 / 0.1)), url(https://www.nicepng.com/png/full/365-3651833_top-shadow-toronto.png) left bottom / cover no-repeat;
-        width: 100%;
-        background-attachment: fixed;
-        background-position: left top 120px;
-        opacity: 0.9;
-    }
-
     .shortcode_wa_button,
     .shortcode_wa_button_nt {
         background: #25d366 !important;
@@ -284,7 +276,7 @@
 
     /* General Styles */
     .hover-border-top:hover {
-        border-top: 4px solid #B48F57;
+        border-top: 4px solid #FFFFFF;
     }
 
     .group:hover .group-hover\:block {
@@ -365,8 +357,16 @@
 
     #main-nav.scrolled {
         top: 0;
-        background-color: #f8f8f8;
+        background-color: #f69918;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (min-width: 641px) {
+
+        /* Adjust min-width as needed */
+        #kol {
+            margin-left: 15%;
+        }
     }
 </style>
 
@@ -381,7 +381,7 @@
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
 
     <nav class="h-auto md:h-48">
-        <div class="max-w-7xl mx-auto px-4 py-2">
+        <div class="max-w-7xl mx-auto px-4">
             <div class="mt-10 flex flex-wrap justify-center md:space-x-64 space-y-4 md:space-y-0">
                 <div class="flex items-center w-full md:w-auto" style="height: auto; width: auto;">
                     <div class="p-2">
@@ -393,7 +393,7 @@
                     </div>
                 </div>
                 <div class="w-full md:w-auto flex justify-center">
-                    <img src="https://www.shutterstock.com/image-vector/builder-crossed-hammers-new-construction-600nw-2246936013.jpg" alt="" class="h-20">
+                    <img src="{{ url('img/icon2.png') }}" alt="" class="h-40">
                 </div>
                 <form onsubmit="checkAndRedirect(event)" class="flex items-center w-full md:w-auto space-x-2">
                     <div class="relative w-full md:w-auto" style="border-bottom: 3px solid #939090;">
@@ -431,9 +431,9 @@
         </div>
     </div>
     <!-- Scroll Up -->
-    <nav id="main-nav" class="bg-white shadow-lg relative z-50 sticky">
-        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t">
-            <div class="relative flex items-center justify-between h-16" style="margin-left: 15%;">
+    <nav id="main-nav" class="bg-white relative z-50 sticky">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t" style="background-color: #f69918;">
+            <div class="relative flex items-center justify-between h-16" id="kol">
                 <div class="inset-y-0 left-0 flex items-center sm:hidden">
                     <button id="mobile-menu-toggle" type="button" class="inline-flex bg-gray-700 items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
@@ -448,11 +448,11 @@
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
                     <div class="hidden sm:block sm:ml-6">
                         <div class="flex space-x-16">
-                            <div class="border-r-2 border-l-2 hover-border-top " style="margin-top: 10px;">
-                                <a href="/" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Home</a>
+                            <div class=" " style="border-top: 4px solid rgb(255 255 255);">
+                                <a href="/" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Home</a>
                             </div>
-                            <div class="relative group border-r border-l hover-border-top">
-                                <a href="/about" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium flex items-center">About
+                            <div class="relative group hover-border-top">
+                                <a href="/about" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">About
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
@@ -462,8 +462,8 @@
                                     <a href="/mission" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Mission</a>
                                 </div>
                             </div>
-                            <div class="relative group border-r border-l hover-border-top">
-                                <a href="service" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium flex items-center">Service
+                            <div class="relative group  hover-border-top">
+                                <a href="service" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">Service
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
@@ -770,14 +770,14 @@
                                     <!--Decking -->
                                 </div>
                             </div>
-                            <div class="hover-border-top border-r border-l"style="margin-top: 10px;">
-                                <a href="/price" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium" >Price</a>
+                            <div class="hover-border-top ">
+                                <a href="/price" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium" style="margin-top: 2px;">Price</a>
                             </div>
-                            <div class="hover-border-top border-r border-l" style="margin-top: 10px;">
-                                <a href="/works" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Works</a>
+                            <div class="hover-border-top ">
+                                <a href="/works" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium" style="margin-top: 2px;">Works</a>
                             </div>
-                            <div class="hover-border-top border-r border-l" style="border-top: 4px solid #B48F57;"style="margin-top: 10px;">
-                                <a href="/contact" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium" >Contact
+                            <div class="hover-border-top">
+                                <a href="/contact" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium" style="margin-top: 2px;">Contact
                                     Us</a>
                             </div>
                         </div>
@@ -1066,7 +1066,9 @@
     </nav>
     <!-- Navigation Menu -->
 
-    <section class="parallax mt-16" style="position: relative; background: url('https://www.shutterstock.com/image-photo/businessman-working-modern-devices-student-600nw-654406453.jpg') no-repeat center center fixed; background-size: cover; height: 300px;">
+
+
+    <section class="parallax" style="position: relative; background: url('https://www.shutterstock.com/image-photo/businessman-working-modern-devices-student-600nw-654406453.jpg') no-repeat center center fixed; background-size: cover; height: 300px;">
         <div class="overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
         <div class="content" style="position: relative; z-index: 1; display: flex; flex-direction: column; padding-left: 1rem; padding-right: 1rem; text-align: center; gap: 1rem;">
             <h1 style="font-size: 2.5rem; color: white; font-weight: 100; margin-bottom: 1.5rem;">Contact</h1>
@@ -1081,204 +1083,111 @@
         <img src="https://www.everyworks.com/wp-content/uploads/2021/08/whatsapp-chat-icon-everyworks-singapore-300x168.png" alt="WhatsApp Icon" style="margin: 1rem auto; display: block; width: 50%; max-width: 300px;">
     </section>
 
-
+    <div class="dark:bg-gray-800 mt-20" style="background-image: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)),
+        url(https://png.pngtree.com/thumb_back/fw800/background/20230929/pngtree-d-illustration-triangular-parametric-digital-texture-with-varied-volume-and-intricate-image_13522499.png);background-attachment: fixed;">
+        <div class="z-20 w-full px-4 py-12 mx-auto text-center sm:px-6 lg:py-16 lg:px-8">
+            <h2 class="text-black dark:text-white sm:text-4xl">
+                <span class="text-lg font-semibold leading-6 text-indigo-500 uppercase">
+                    Please do not hesitate to contact our All House Work's Services team for any enquiries or quotations.
+                </span>
+                <span class="block mt-2 text-2xl font-extrabold leading-8 text-white dark:text-white sm:text-3xl sm:leading-9">
+                    Call us at +65 6575 1226 </span>
+            </h2>
+        </div>
+    </div>
     <section class="half-red-half-black">
         <div class="half">
-            <div class="mt-20 relative" style="top:60px;margin-left: 36%;height: 73px;width: 438px;padding: 18px;border-right: 3px solid #810CA8;border-left: 3px solid #810CA8;">
-                <h1 class="text-center" style="font-size: 36px;font-weight: 800;font-family: math;text-shadow: 1px 1px 1px #000;">CONTACT INFO</h1>
-                <div class="absolute top-0 left-0 right-0 " style="background-color: #810CA8;height: 2px;"></div>
-                <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 px-2 " style="background-color: #fff;">
-                    <span>
-                        <svg fill="#000000" width="64px" height="64px" viewBox="-16.64 -16.64 97.28 97.28" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00064">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <g id="_x32_5_attachment"></g>
-                                <g id="_x32_4_office"></g>
-                                <g id="_x32_3_pin"></g>
-                                <g id="_x32_2_business_card"></g>
-                                <g id="_x32_1_form"></g>
-                                <g id="_x32_0_headset"></g>
-                                <g id="_x31_9_video_call"></g>
-                                <g id="_x31_8_letter_box"></g>
-                                <g id="_x31_7_papperplane"></g>
-                                <g id="_x31_6_laptop"></g>
-                                <g id="_x31_5_connection">
-                                    <g>
-                                        <path d="M32,1C14.9072,1,1.001,14.9067,1.001,32S14.9072,63,32,63s30.999-13.9067,30.999-31S49.0928,1,32,1z M46.7568,31 c-0.0324-2.1485-0.1685-4.2808-0.4067-6.3666c1.3589-0.485,2.4686-1.4901,3.0918-2.7772 C56.0771,24.0959,60.2359,27.4291,60.8954,31H46.7568z M44.3726,39.0518c-2.9026,0.0765-5.2448,2.4193-5.3213,5.3214 c-1.9846,0.2237-4.0108,0.3524-6.0513,0.3841V33h11.7568C44.7252,35.0426,44.5967,37.0689,44.3726,39.0518z M33,31V19.246 c2.0505,0.0314,4.0767,0.1591,6.0513,0.381c0.0766,2.902,2.4188,5.2447,5.3213,5.3212c0.2241,1.9828,0.3527,4.0092,0.3843,6.0518 H33z M44.5176,22.9556c-1.915,0-3.4736-1.5581-3.4736-3.4736c0-1.915,1.5586-3.4731,3.4736-3.4731s3.4736,1.5581,3.4736,3.4731 C47.9912,21.3975,46.4326,22.9556,44.5176,22.9556z M39.366,17.6501c-2.0773-0.2368-4.2094-0.372-6.366-0.4041V3.1034 c3.5742,0.6591,6.9073,4.8182,9.1432,11.4547C40.8559,15.1812,39.8508,16.2911,39.366,17.6501z M31,3.097v14.1451 c-3.6047,0.052-7.0351,0.3829-10.2034,0.9517C22.8394,9.7535,26.668,3.8873,31,3.097z M31,19.2421V31h-7.3917 c-0.3975-2.1418-2.0439-3.8463-4.1541-4.3305c0.184-2.2051,0.478-4.3188,0.8689-6.3129 C23.6259,19.6952,27.2342,19.3017,31,19.2421z M18.2314,35.4731c-1.918,0-3.4775-1.5581-3.4775-3.4731 s1.5596-3.4731,3.4775-3.4731c1.915,0,3.4727,1.5581,3.4727,3.4731S20.1465,35.4731,18.2314,35.4731z M17.4542,26.5885 c-2.3233,0.3321-4.1789,2.121-4.6044,4.4115H3.103c0.8047-4.3291,6.7612-8.1297,15.0952-10.1736 C17.8681,22.6607,17.6182,24.5873,17.4542,26.5885z M12.8498,33c0.4255,2.2905,2.2811,4.0794,4.6044,4.4115 c0.1642,2.0023,0.4142,3.93,0.7446,5.7653C9.8643,41.1323,3.9075,37.3306,3.103,33H12.8498z M19.4542,37.3305 c2.1101-0.4842,3.7565-2.1887,4.1541-4.3305H31v11.7614c-3.7656-0.0596-7.3736-0.4533-10.6763-1.1147 C19.9324,41.6517,19.6383,39.5368,19.4542,37.3305z M31,46.7613V60.903c-4.3314-0.7902-8.1597-6.6549-10.2026-15.0935 C23.9655,46.3783,27.3956,46.7093,31,46.7613z M33,60.8964V46.7573c2.1461-0.0324,4.2782-0.1686,6.366-0.4072 c0.4849,1.359,1.4902,2.4689,2.7775,3.092C39.9038,56.0775,36.5709,60.2366,33,60.8964z M41.0439,44.5181 c0-1.9155,1.5586-3.4736,3.4736-3.4736s3.4736,1.5581,3.4736,3.4736c0,1.915-1.5586,3.4731-3.4736,3.4731 S41.0439,46.4331,41.0439,44.5181z M46.35,39.3666c0.2383-2.0858,0.3743-4.2181,0.4067-6.3666h14.1387 c-0.6595,3.5709-4.8183,6.9041-11.4536,9.1438C48.8187,40.8568,47.7089,39.8516,46.35,39.3666z M60.3704,25.9969 c-2.2195-2.4177-5.7788-4.5214-10.4017-6.0711c0.0118-0.1468,0.0225-0.294,0.0225-0.4438c0-3.0181-2.4551-5.4731-5.4736-5.4731 c-0.1496,0-0.2966,0.0106-0.4432,0.0225c-1.5475-4.6228-3.6501-8.182-6.0676-10.4017 C49.1861,5.9941,58.0074,14.8167,60.3704,25.9969z M25.9716,3.6345c-3.2159,2.9634-5.822,8.2573-7.3279,14.9893 c-6.7022,1.4893-12.0201,4.0807-15.0005,7.3146C6.023,14.7933,14.8222,6.0018,25.9716,3.6345z M3.6436,38.0635 c2.9807,3.2344,8.2986,5.8265,15.0007,7.316c1.5061,6.7305,4.1119,12.023,7.3273,14.986 C14.8229,57.9984,6.024,49.2076,3.6436,38.0635z M38.003,60.3714c2.4175-2.2197,4.5209-5.7791,6.0702-10.4027 c0.147,0.0119,0.2944,0.0225,0.4444,0.0225c3.0186,0,5.4736-2.4551,5.4736-5.4731c0-0.1498-0.0107-0.2971-0.0225-0.4438 c4.6229-1.5497,8.1822-3.6534,10.4017-6.0711C58.0072,49.1846,49.1841,58.0081,38.003,60.3714z"></path>
-                                    </g>
-                                </g>
-                                <g id="_x31_4_phonebook"></g>
-                                <g id="_x31_3_classic_telephone"></g>
-                                <g id="_x31_2_sending_mail"></g>
-                                <g id="_x31_1_man_talking"></g>
-                                <g id="_x31_0_date"></g>
-                                <g id="_x30_9_review"></g>
-                                <g id="_x30_8_email"></g>
-                                <g id="_x30_7_information"></g>
-                                <g id="_x30_6_phone_talking"></g>
-                                <g id="_x30_5_women_talking"></g>
-                                <g id="_x30_4_calling"></g>
-                                <g id="_x30_3_women"></g>
-                                <g id="_x30_2_writing"></g>
-                                <g id="_x30_1_chatting"></g>
-                            </g>
-                        </svg>
-                    </span>
-                </div>
-                <div class="absolute bottom-0 left-0 right-0 " style="background-color: #810CA8;height: 2px;"></div>
-            </div>
-            <p style="width: 403px;height: 119px;text-align: center;margin-top: 8%;margin-left: 38%;font-size: large;color: gray;">Please do not hesitate to contact our All House Work'sServices team for any enquiries or quotations. Call us at <span class="text-yellow-400">+65 6575 1226</span> or message us via <span class="text-yellow-400">Whatsapp</span>. We look forward to providing our expertise and services to you and your company.</p>
-
-
-            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 " style="margin-top: 20px;margin-right: 20px;">
-                <div class="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-                    <div class="pattern-dots-md red-light">
-                        <div class="rounded bg-white-100 p-4 transform translate-x-6 -translate-y-6  border-t border-r">
-                            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-green-500 mb-5 flex-shrink-0 p-2">
-                                <svg height="64px" width="64px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255.86 255.86" xml:space="preserve" fill="#000000" stroke="#000000" stroke-width="0.00255856">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <g>
-                                            <path style="fill:#000002;" d="M127.928,38.8c-30.75,0-55.768,25.017-55.768,55.767s25.018,55.767,55.768,55.767 s55.768-25.017,55.768-55.767S158.678,38.8,127.928,38.8z M127.928,135.333c-22.479,0-40.768-18.288-40.768-40.767 S105.449,53.8,127.928,53.8s40.768,18.288,40.768,40.767S150.408,135.333,127.928,135.333z"></path>
-                                            <path style="fill:#000002;" d="M127.928,0C75.784,0,33.362,42.422,33.362,94.566c0,30.072,25.22,74.875,40.253,98.904 c9.891,15.809,20.52,30.855,29.928,42.365c15.101,18.474,20.506,20.02,24.386,20.02c3.938,0,9.041-1.547,24.095-20.031 c9.429-11.579,20.063-26.616,29.944-42.342c15.136-24.088,40.527-68.971,40.527-98.917C222.495,42.422,180.073,0,127.928,0z M171.569,181.803c-19.396,31.483-37.203,52.757-43.73,58.188c-6.561-5.264-24.079-26.032-43.746-58.089 c-22.707-37.015-35.73-68.848-35.73-87.336C48.362,50.693,84.055,15,127.928,15c43.873,0,79.566,35.693,79.566,79.566 C207.495,112.948,194.4,144.744,171.569,181.803z"></path>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="flex-grow " style="font-family: sans-serif;">
-                                <h2 class=" text-xl title-font font-medium mb-3">All House Work'sSingapore – East</h2>
-                                <p class="leading-relaxed text-sm text-justify">WhatsAspp Number (WhatsApp message Only): <span class="text-yellow-300">+65 6575 1226</span></p>
-                                <p class="leading-relaxed text-sm text-justify">Phone Number: <span class="text-yellow-300">+65 6232 6600 </span></p>
-                                <p class="leading-relaxed text-sm text-justify">Address: 5 Tampines Central 6, #03-38, Singapore 529482</p>
-                            </div>
+            <div class="w-full pt-12 p-4 mt-24">
+                <div class="grid gap-14 md:grid-cols-3 md:gap-5">
+                    <div class="rounded-xl bg-white p-6 text-center shadow-xl">
+                        <div
+                            class="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-red-400 shadow-lg shadow-red-500/40">
+                            <svg viewBox="0 0 33 46" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white">
+                                <path
+                                    d="M24.75 23H8.25V28.75H24.75V23ZM32.3984 9.43359L23.9852 0.628906C23.5984 0.224609 23.0742 0 22.5242 0H22V11.5H33V10.952C33 10.3859 32.7852 9.83789 32.3984 9.43359ZM19.25 12.2188V0H2.0625C0.919531 0 0 0.961328 0 2.15625V43.8438C0 45.0387 0.919531 46 2.0625 46H30.9375C32.0805 46 33 45.0387 33 43.8438V14.375H21.3125C20.1781 14.375 19.25 13.4047 19.25 12.2188ZM5.5 6.46875C5.5 6.07164 5.80766 5.75 6.1875 5.75H13.0625C13.4423 5.75 13.75 6.07164 13.75 6.46875V7.90625C13.75 8.30336 13.4423 8.625 13.0625 8.625H6.1875C5.80766 8.625 5.5 8.30336 5.5 7.90625V6.46875ZM5.5 12.2188C5.5 11.8216 5.80766 11.5 6.1875 11.5H13.0625C13.4423 11.5 13.75 11.8216 13.75 12.2188V13.6562C13.75 14.0534 13.4423 14.375 13.0625 14.375H6.1875C5.80766 14.375 5.5 14.0534 5.5 13.6562V12.2188ZM27.5 39.5312C27.5 39.9284 27.1923 40.25 26.8125 40.25H19.9375C19.5577 40.25 19.25 39.9284 19.25 39.5312V38.0938C19.25 37.6966 19.5577 37.375 19.9375 37.375H26.8125C27.1923 37.375 27.5 37.6966 27.5 38.0938V39.5312ZM27.5 21.5625V30.1875C27.5 30.9817 26.8847 31.625 26.125 31.625H6.875C6.11531 31.625 5.5 30.9817 5.5 30.1875V21.5625C5.5 20.7683 6.11531 20.125 6.875 20.125H26.125C26.8847 20.125 27.5 20.7683 27.5 21.5625Z"
+                                    fill="white"></path>
+                            </svg>
                         </div>
+                        <h1 class="text-darken mb-3 text-xl font-medium lg:px-14">All House Work's Singapore – East</h1>
+                        <p class="px-4 text-gray-500">WhatsAspp Number (WhatsApp message Only): <span style="color: #f69918;">+65 6232 6600</span>
+                            <br>
+                            Phone Number: <span style="color: #f69918;">+65 6232 6600</span>
+                            <br>
+                            Address: 5 Tampines Central 6, #03-38, Singapore 529482
+                        </p>
                     </div>
-                </div>
-                <div class="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-                    <div class="pattern-dots-md red-light">
-                        <div class="rounded bg-white-100 p-4 transform translate-x-6 -translate-y-6  border-t border-r">
-                            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-5 flex-shrink-0 p-2">
-                                <svg height="64px" width="64px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255.86 255.86" xml:space="preserve" fill="#000000" stroke="#000000" stroke-width="0.00255856">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <g>
-                                            <path style="fill:#000002;" d="M127.928,38.8c-30.75,0-55.768,25.017-55.768,55.767s25.018,55.767,55.768,55.767 s55.768-25.017,55.768-55.767S158.678,38.8,127.928,38.8z M127.928,135.333c-22.479,0-40.768-18.288-40.768-40.767 S105.449,53.8,127.928,53.8s40.768,18.288,40.768,40.767S150.408,135.333,127.928,135.333z"></path>
-                                            <path style="fill:#000002;" d="M127.928,0C75.784,0,33.362,42.422,33.362,94.566c0,30.072,25.22,74.875,40.253,98.904 c9.891,15.809,20.52,30.855,29.928,42.365c15.101,18.474,20.506,20.02,24.386,20.02c3.938,0,9.041-1.547,24.095-20.031 c9.429-11.579,20.063-26.616,29.944-42.342c15.136-24.088,40.527-68.971,40.527-98.917C222.495,42.422,180.073,0,127.928,0z M171.569,181.803c-19.396,31.483-37.203,52.757-43.73,58.188c-6.561-5.264-24.079-26.032-43.746-58.089 c-22.707-37.015-35.73-68.848-35.73-87.336C48.362,50.693,84.055,15,127.928,15c43.873,0,79.566,35.693,79.566,79.566 C207.495,112.948,194.4,144.744,171.569,181.803z"></path>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="flex-grow " style="font-family: sans-serif;">
-                                <h2 class=" text-xl title-font font-medium mb-3">All House Work'sSingapore – West</h2>
-                                <p class="leading-relaxed text-sm text-justify">WhatsAspp Number (WhatsApp message Only): <span class="text-yellow-300">+65 6575 1226</span></p>
-                                <p class="leading-relaxed text-sm text-justify">Phone Number: <span class="text-yellow-300">+65 6232 6600 </span></p>
-                                <p class="leading-relaxed text-sm text-justify">Address: 2 Venture Drive #14-02, Singapore 608526</p>
-                            </div>
+                    <div data-aos-delay="150" class="rounded-xl bg-white p-6 text-center shadow-xl">
+                        <div
+                            class="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-green-500 shadow-green-500/40"">
+                            <svg viewBox=" 0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white">
+                            <path
+                                d="M12 0C11.0532 0 10.2857 0.767511 10.2857 1.71432V5.14285H13.7142V1.71432C13.7142 0.767511 12.9467 0 12 0Z"
+                                fill="white"></path>
+                            <path
+                                d="M36 0C35.0532 0 34.2856 0.767511 34.2856 1.71432V5.14285H37.7142V1.71432C37.7143 0.767511 36.9468 0 36 0Z"
+                                fill="white"></path>
+                            <path
+                                d="M42.8571 5.14282H37.7143V12C37.7143 12.9468 36.9468 13.7143 36 13.7143C35.0532 13.7143 34.2857 12.9468 34.2857 12V5.14282H13.7142V12C13.7142 12.9468 12.9467 13.7143 11.9999 13.7143C11.0531 13.7143 10.2856 12.9468 10.2856 12V5.14282H5.14285C2.30253 5.14282 0 7.44535 0 10.2857V42.8571C0 45.6974 2.30253 48 5.14285 48H42.8571C45.6975 48 48 45.6974 48 42.8571V10.2857C48 7.44535 45.6975 5.14282 42.8571 5.14282ZM44.5714 42.8571C44.5714 43.8039 43.8039 44.5714 42.857 44.5714H5.14285C4.19605 44.5714 3.42854 43.8039 3.42854 42.8571V20.5714H44.5714V42.8571Z"
+                                fill="white"></path>
+                            <path
+                                d="M13.7142 23.9999H10.2857C9.33889 23.9999 8.57138 24.7674 8.57138 25.7142C8.57138 26.661 9.33889 27.4285 10.2857 27.4285H13.7142C14.661 27.4285 15.4285 26.661 15.4285 25.7142C15.4285 24.7674 14.661 23.9999 13.7142 23.9999Z"
+                                fill="white"></path>
+                            <path
+                                d="M25.7143 23.9999H22.2857C21.3389 23.9999 20.5714 24.7674 20.5714 25.7142C20.5714 26.661 21.3389 27.4285 22.2857 27.4285H25.7143C26.6611 27.4285 27.4286 26.661 27.4286 25.7142C27.4286 24.7674 26.6611 23.9999 25.7143 23.9999Z"
+                                fill="white"></path>
+                            <path
+                                d="M37.7143 23.9999H34.2857C33.3389 23.9999 32.5714 24.7674 32.5714 25.7142C32.5714 26.661 33.3389 27.4285 34.2857 27.4285H37.7143C38.6611 27.4285 39.4286 26.661 39.4286 25.7142C39.4286 24.7674 38.661 23.9999 37.7143 23.9999Z"
+                                fill="white"></path>
+                            <path
+                                d="M13.7142 30.8571H10.2857C9.33889 30.8571 8.57138 31.6246 8.57138 32.5714C8.57138 33.5182 9.33889 34.2857 10.2857 34.2857H13.7142C14.661 34.2857 15.4285 33.5182 15.4285 32.5714C15.4285 31.6246 14.661 30.8571 13.7142 30.8571Z"
+                                fill="white"></path>
+                            <path
+                                d="M25.7143 30.8571H22.2857C21.3389 30.8571 20.5714 31.6246 20.5714 32.5714C20.5714 33.5182 21.3389 34.2857 22.2857 34.2857H25.7143C26.6611 34.2857 27.4286 33.5182 27.4286 32.5714C27.4286 31.6246 26.6611 30.8571 25.7143 30.8571Z"
+                                fill="white"></path>
+                            <path
+                                d="M37.7143 30.8571H34.2857C33.3389 30.8571 32.5714 31.6246 32.5714 32.5714C32.5714 33.5182 33.3389 34.2857 34.2857 34.2857H37.7143C38.6611 34.2857 39.4286 33.5182 39.4286 32.5714C39.4285 31.6246 38.661 30.8571 37.7143 30.8571Z"
+                                fill="white"></path>
+                            <path
+                                d="M13.7142 37.7142H10.2857C9.33889 37.7142 8.57138 38.4817 8.57138 39.4286C8.57138 40.3754 9.33889 41.1428 10.2857 41.1428H13.7142C14.661 41.1428 15.4285 40.3753 15.4285 39.4284C15.4285 38.4816 14.661 37.7142 13.7142 37.7142Z"
+                                fill="white"></path>
+                            <path
+                                d="M25.7143 37.7142H22.2857C21.3389 37.7142 20.5714 38.4817 20.5714 39.4285C20.5714 40.3754 21.3389 41.1429 22.2857 41.1429H25.7143C26.6611 41.1429 27.4286 40.3754 27.4286 39.4285C27.4286 38.4817 26.6611 37.7142 25.7143 37.7142Z"
+                                fill="white"></path>
+                            <path
+                                d="M37.7143 37.7142H34.2857C33.3389 37.7142 32.5714 38.4817 32.5714 39.4285C32.5714 40.3754 33.3389 41.1429 34.2857 41.1429H37.7143C38.6611 41.1429 39.4286 40.3754 39.4286 39.4285C39.4286 38.4817 38.661 37.7142 37.7143 37.7142Z"
+                                fill="white"></path>
+                            </svg>
                         </div>
+                        <h1 class="text-darken mb-3 text-xl font-medium lg:px-14">All House Work's Singapore – East</h1>
+                        <p class="px-4 text-gray-500">WhatsAspp Number (WhatsApp message Only): <span style="color: #f69918;">+65 6232 6600</span>
+                            <br>
+                            Phone Number: <span style="color: #f69918;">+65 6232 6600</span>
+                            <br>
+                            Address: 5 Tampines Central 6, #03-38, Singapore 529482
+                        </p>
                     </div>
-                </div>
-                <div class="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
-                    <div class="pattern-dots-md red-light">
-                        <div class="rounded bg-white-100 p-4 transform translate-x-6 -translate-y-6  border-t border-r">
-                            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-yellow-100 text-green-500 mb-5 flex-shrink-0 p-2">
-                                <svg height="64px" width="64px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255.86 255.86" xml:space="preserve" fill="#000000" stroke="#000000" stroke-width="0.00255856">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <g>
-                                            <path style="fill:#000002;" d="M127.928,38.8c-30.75,0-55.768,25.017-55.768,55.767s25.018,55.767,55.768,55.767 s55.768-25.017,55.768-55.767S158.678,38.8,127.928,38.8z M127.928,135.333c-22.479,0-40.768-18.288-40.768-40.767 S105.449,53.8,127.928,53.8s40.768,18.288,40.768,40.767S150.408,135.333,127.928,135.333z"></path>
-                                            <path style="fill:#000002;" d="M127.928,0C75.784,0,33.362,42.422,33.362,94.566c0,30.072,25.22,74.875,40.253,98.904 c9.891,15.809,20.52,30.855,29.928,42.365c15.101,18.474,20.506,20.02,24.386,20.02c3.938,0,9.041-1.547,24.095-20.031 c9.429-11.579,20.063-26.616,29.944-42.342c15.136-24.088,40.527-68.971,40.527-98.917C222.495,42.422,180.073,0,127.928,0z M171.569,181.803c-19.396,31.483-37.203,52.757-43.73,58.188c-6.561-5.264-24.079-26.032-43.746-58.089 c-22.707-37.015-35.73-68.848-35.73-87.336C48.362,50.693,84.055,15,127.928,15c43.873,0,79.566,35.693,79.566,79.566 C207.495,112.948,194.4,144.744,171.569,181.803z"></path>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="flex-grow " style="font-family: sans-serif;">
-                                <h2 class=" text-xl title-font font-medium mb-3">All House Work'sSingapore – North</h2>
-                                <p class="leading-relaxed text-sm text-justify">WhatsAspp Number (WhatsApp message Only): <span class="text-yellow-300">+65 6575 1226</span></p>
-                                <p class="leading-relaxed text-sm text-justify">Phone Number: <span class="text-yellow-300">+65 6232 6600 </span></p>
-                                <p class="leading-relaxed text-sm text-justify">Address: 10 Woodlands Square, #04-53, Singapore 737714</p>
-                            </div>
+                    <div data-aos-delay="300" class="rounded-xl bg-white p-6 text-center shadow-xl">
+                        <div
+                            class="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-blue-500 shadow-blue-500/40">
+                            <svg viewBox="0 0 55 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white">
+                                <path
+                                    d="M8.25 19.25C11.2836 19.25 13.75 16.7836 13.75 13.75C13.75 10.7164 11.2836 8.25 8.25 8.25C5.21641 8.25 2.75 10.7164 2.75 13.75C2.75 16.7836 5.21641 19.25 8.25 19.25ZM46.75 19.25C49.7836 19.25 52.25 16.7836 52.25 13.75C52.25 10.7164 49.7836 8.25 46.75 8.25C43.7164 8.25 41.25 10.7164 41.25 13.75C41.25 16.7836 43.7164 19.25 46.75 19.25ZM49.5 22H44C42.4875 22 41.1211 22.6102 40.1242 23.5984C43.5875 25.4977 46.0453 28.9266 46.5781 33H52.25C53.7711 33 55 31.7711 55 30.25V27.5C55 24.4664 52.5336 22 49.5 22ZM27.5 22C32.8195 22 37.125 17.6945 37.125 12.375C37.125 7.05547 32.8195 2.75 27.5 2.75C22.1805 2.75 17.875 7.05547 17.875 12.375C17.875 17.6945 22.1805 22 27.5 22ZM34.1 24.75H33.3867C31.5992 25.6094 29.6141 26.125 27.5 26.125C25.3859 26.125 23.4094 25.6094 21.6133 24.75H20.9C15.4344 24.75 11 29.1844 11 34.65V37.125C11 39.4023 12.8477 41.25 15.125 41.25H39.875C42.1523 41.25 44 39.4023 44 37.125V34.65C44 29.1844 39.5656 24.75 34.1 24.75ZM14.8758 23.5984C13.8789 22.6102 12.5125 22 11 22H5.5C2.46641 22 0 24.4664 0 27.5V30.25C0 31.7711 1.22891 33 2.75 33H8.41328C8.95469 28.9266 11.4125 25.4977 14.8758 23.5984Z"
+                                    fill="white"></path>
+                            </svg>
                         </div>
+                        <h1 class="text-darken mb-3 text-xl font-medium lg:px-14">All House Work's Singapore – East</h1>
+                        <p class="px-4 text-gray-500">WhatsAspp Number (WhatsApp message Only): <span style="color: #f69918;">+65 6232 6600</span>
+                            <br>
+                            Phone Number: <span style="color: #f69918;">+65 6232 6600</span>
+                            <br>
+                            Address: 5 Tampines Central 6, #03-38, Singapore 529482
+                        </p>
                     </div>
                 </div>
             </div>
     </section>
 
 
-    <section>
-        <!-- component -->
-        <div class="p-24 flex flex-wrap items-center justify-center">
-
-            <div class="flex-shrink-0 m-6 relative overflow-hidden bg-yellow-400 rounded-lg max-w-xs shadow-lg hover:bg-green-200">
-                <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none" style="transform: scale(1.5); opacity: 0.1;">
-                    <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
-                    <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white" />
-                </svg>
-                <div class="relative pt-10 px-10 flex items-center justify-center">
-                    <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;"></div>
-                    <img class="relative w-40" src="https://cdn-icons-png.flaticon.com/256/2886/2886372.png" alt="">
-                </div>
-                <div class="relative text-white px-6 pb-6 mt-6">
-                    <div class="flex justify-between">
-                        <span class="block font-semibold text-xl">Location</span>
-                    </div>
-                    <span class="block opacity-75 -mb-1">1090 Lower Delta Road <br> #03-07, Singapore 169201</span>
-                </div>
-            </div>
-            <div class="flex-shrink-0 m-6 relative overflow-hidden bg-red-400 rounded-lg max-w-xs shadow-lg hover:bg-green-200">
-                <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none" style="transform: scale(1.5); opacity: 0.1;">
-                    <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
-                    <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white" />
-                </svg>
-                <div class="relative pt-10 px-10 flex items-center justify-center">
-                    <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;"></div>
-                    <img class="relative w-40" src="https://cdn1.iconfinder.com/data/icons/google-new-logos-1/32/gmail_new_logo-512.png" alt="">
-                </div>
-                <div class="relative text-white px-6 pb-6 mt-6">
-                    <div class="flex justify-between">
-                        <span class="block font-semibold text-xl">Email Address</span>
-                    </div>
-                    <span class="block opacity-75 -mb-1">Example@gmail.com</span>
-                </div>
-            </div>
-            <div class="flex-shrink-0 m-6 relative overflow-hidden bg-blue-300 rounded-lg max-w-xs shadow-lg hover:bg-green-200">
-                <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none" style="transform: scale(1.5); opacity: 0.1;">
-                    <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
-                    <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white" />
-                </svg>
-                <div class="relative pt-10 px-10 flex items-center justify-center">
-                    <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;"></div>
-                    <img class="relative w-40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Green_Phone_Font-Awesome.svg/512px-Green_Phone_Font-Awesome.svg.png" alt="">
-                </div>
-                <div class="relative text-white px-6 pb-6 mt-6">
-                    <div class="flex justify-between">
-                        <span class="block font-semibold text-xl">Phone Number</span>
-                    </div>
-                    <span class="block opacity-75 -mb-1">+65 6575 1226</span>
-                </div>
-            </div>
-            <div class="flex-shrink-0 m-6 relative overflow-hidden bg-purple-300 rounded-lg max-w-xs shadow-lg hover:bg-green-200">
-                <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none" style="transform: scale(1.5); opacity: 0.1;">
-                    <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
-                    <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white" />
-                </svg>
-                <div class="relative pt-10 px-10 flex items-center justify-center">
-                    <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;"></div>
-                    <img class="relative w-40" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt="">
-                </div>
-                <div class="relative text-white px-6 pb-6 mt-6">
-                    <div class="flex justify-between">
-                        <span class="block font-semibold text-xl">WhatsApp Number</span>
-                    </div>
-                    <span class="block opacity-75 -mb-1">+65 6575 1226</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
 
     <div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
         <div>
@@ -1287,83 +1196,137 @@
             </a>
         </div>
     </div>
-
     <section>
         <div class="responsive-map mb-10">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.714758267377!2d103.69263646814161!3d1.3476262586048955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0fbda6cccbab%3A0xb1c20d19b16ef889!2s747%20Jurong%20West%20Street%2073%2C%20Block%20747%2C%20Singapore%20640747!5e0!3m2!1sen!2sbd!4v1717497453947!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div style="position: relative; width: 100%; padding-bottom: 56.25%; /* 16:9 Aspect Ratio */">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.714758267377!2d103.69263646814161!3d1.3476262586048955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0fbda6cccbab%3A0xb1c20d19b16ef889!2s747%20Jurong%20West%20Street%2073%2C%20Block%20747%2C%20Singapore%20640747!5e0!3m2!1sen!2sbd!4v1717497453947!5m2!1sen!2sbd"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <section class="pt-16 pb-7 px-2">
-            <div class="mx-auto max-w-7xl px-4 lg:px-12 p-12 rounded-2xl bg-neutral-100">
-                <div class="flex flex-col min-[830px]:flex-row items-center justify-between gap-6 pb-10 border-b-2 border-gray-300">
-                    <a href="https://pagedone.io/" class="py-1.5">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="166" height="33" viewBox="0 0 166 33" fill="none">
-                            <path d="M47.7101 24.7231V7H55.0833C55.2568 7 55.4799 7.00821 55.7525 7.02462C56.0251 7.03282 56.2771 7.05744 56.5084 7.09846C57.541 7.25436 58.392 7.59487 59.0611 8.12C59.7386 8.64513 60.2384 9.30974 60.5606 10.1138C60.891 10.9097 61.0562 11.7959 61.0562 12.7723C61.0562 13.7405 60.891 14.6267 60.5606 15.4308C60.2301 16.2267 59.7262 16.8872 59.0487 17.4123C58.3796 17.9374 57.5328 18.2779 56.5084 18.4338C56.2771 18.4667 56.021 18.4913 55.7401 18.5077C55.4675 18.5241 55.2485 18.5323 55.0833 18.5323H50.6965V24.7231H47.7101ZM50.6965 15.7631H54.9594C55.1246 15.7631 55.3105 15.7549 55.517 15.7385C55.7236 15.7221 55.9136 15.6892 56.0871 15.64C56.5827 15.5169 56.971 15.2995 57.2519 14.9877C57.541 14.6759 57.7435 14.3231 57.8591 13.9292C57.983 13.5354 58.045 13.1497 58.045 12.7723C58.045 12.3949 57.983 12.0092 57.8591 11.6154C57.7435 11.2133 57.541 10.8564 57.2519 10.5446C56.971 10.2328 56.5827 10.0154 56.0871 9.89231C55.9136 9.84308 55.7236 9.81436 55.517 9.80615C55.3105 9.78974 55.1246 9.78154 54.9594 9.78154H50.6965V15.7631Z" fill="#111827" />
-                            <path d="M66.6946 25.0923C65.728 25.0923 64.9101 24.9118 64.241 24.5508C63.5718 24.1815 63.0637 23.6933 62.7168 23.0862C62.378 22.479 62.2087 21.8103 62.2087 21.08C62.2087 20.44 62.3161 19.8656 62.5309 19.3569C62.7457 18.84 63.0761 18.3969 63.5222 18.0277C63.9684 17.6503 64.5466 17.3426 65.2571 17.1046C65.7941 16.9323 66.422 16.7764 67.1407 16.6369C67.8677 16.4974 68.6525 16.3703 69.4952 16.2554C70.3461 16.1323 71.2342 16.001 72.1594 15.8615L71.0937 16.4646C71.102 15.5456 70.8955 14.8687 70.4741 14.4338C70.0528 13.999 69.3423 13.7815 68.3427 13.7815C67.7396 13.7815 67.1572 13.921 66.5955 14.2C66.0337 14.479 65.6413 14.959 65.4182 15.64L62.692 14.7908C63.0224 13.6667 63.6503 12.7641 64.5756 12.0831C65.5091 11.4021 66.7648 11.0615 68.3427 11.0615C69.5323 11.0615 70.5774 11.2544 71.4779 11.64C72.3866 12.0256 73.0599 12.6574 73.4978 13.5354C73.7374 14.0031 73.8819 14.4831 73.9315 14.9754C73.9811 15.4595 74.0059 15.9887 74.0059 16.5631V24.7231H71.3911V21.8431L71.8249 22.3108C71.2218 23.2708 70.5154 23.9764 69.7058 24.4277C68.9045 24.8708 67.9007 25.0923 66.6946 25.0923ZM67.2894 22.7292C67.9668 22.7292 68.5451 22.6103 69.0243 22.3723C69.5034 22.1344 69.8835 21.8431 70.1643 21.4985C70.4535 21.1538 70.6476 20.8297 70.7468 20.5262C70.9037 20.1487 70.9905 19.7179 71.007 19.2338C71.0318 18.7415 71.0442 18.3436 71.0442 18.04L71.9612 18.3108C71.0607 18.4503 70.2883 18.5733 69.6439 18.68C68.9995 18.7867 68.446 18.8892 67.9834 18.9877C67.5207 19.0779 67.1118 19.1805 66.7565 19.2954C66.4096 19.4185 66.1163 19.5621 65.8767 19.7262C65.6371 19.8903 65.4513 20.079 65.3191 20.2923C65.1952 20.5056 65.1332 20.7559 65.1332 21.0431C65.1332 21.3713 65.2158 21.6626 65.381 21.9169C65.5463 22.1631 65.7858 22.36 66.0998 22.5077C66.422 22.6554 66.8185 22.7292 67.2894 22.7292Z" fill="#111827" />
-                            <path d="M82.6101 31C81.8666 31 81.152 30.8851 80.4663 30.6554C79.7889 30.4256 79.1776 30.0933 78.6323 29.6585C78.0871 29.2318 77.641 28.7149 77.294 28.1077L80.045 26.7538C80.3011 27.2379 80.6605 27.5949 81.1231 27.8246C81.594 28.0626 82.0938 28.1815 82.6225 28.1815C83.2421 28.1815 83.7956 28.0708 84.2831 27.8492C84.7705 27.6359 85.1464 27.3159 85.4107 26.8892C85.6833 26.4708 85.8114 25.9456 85.7949 25.3138V21.5354H86.1666V11.4308H88.7813V25.3631C88.7813 25.6995 88.7648 26.0195 88.7318 26.3231C88.707 26.6349 88.6616 26.9385 88.5955 27.2338C88.3972 28.0954 88.0172 28.801 87.4554 29.3508C86.8936 29.9087 86.1956 30.3231 85.3612 30.5938C84.535 30.8646 83.618 31 82.6101 31ZM82.3499 25.0923C81.119 25.0923 80.045 24.7846 79.128 24.1692C78.211 23.5538 77.5005 22.7169 76.9966 21.6585C76.4926 20.6 76.2407 19.4062 76.2407 18.0769C76.2407 16.7313 76.4926 15.5333 76.9966 14.4831C77.5088 13.4246 78.2316 12.5918 79.1652 11.9846C80.0987 11.3692 81.1975 11.0615 82.4614 11.0615C83.7337 11.0615 84.7994 11.3692 85.6586 11.9846C86.526 12.5918 87.1828 13.4246 87.6289 14.4831C88.075 15.5415 88.2981 16.7395 88.2981 18.0769C88.2981 19.3979 88.075 20.5918 87.6289 21.6585C87.1828 22.7169 86.5177 23.5538 85.6338 24.1692C84.7498 24.7846 83.6552 25.0923 82.3499 25.0923ZM82.8084 22.4338C83.6098 22.4338 84.2541 22.2533 84.7416 21.8923C85.2372 21.5231 85.5966 21.0103 85.8197 20.3538C86.051 19.6974 86.1666 18.9385 86.1666 18.0769C86.1666 17.2072 86.051 16.4482 85.8197 15.8C85.5966 15.1436 85.2455 14.6349 84.7663 14.2738C84.2872 13.9046 83.6676 13.72 82.9075 13.72C82.1062 13.72 81.4453 13.9169 80.9248 14.3108C80.4044 14.6964 80.0202 15.2215 79.7724 15.8862C79.5245 16.5426 79.4006 17.2728 79.4006 18.0769C79.4006 18.8892 79.5204 19.6277 79.76 20.2923C80.0078 20.9487 80.3837 21.4697 80.8877 21.8554C81.3916 22.241 82.0318 22.4338 82.8084 22.4338Z" fill="#111827" />
-                            <path d="M98.0929 25.0923C96.7381 25.0923 95.5485 24.801 94.5241 24.2185C93.4997 23.6359 92.6983 22.8277 92.12 21.7938C91.55 20.76 91.265 19.5703 91.265 18.2246C91.265 16.7723 91.5458 15.5128 92.1076 14.4462C92.6694 13.3713 93.4501 12.5385 94.4497 11.9477C95.4493 11.3569 96.6059 11.0615 97.9195 11.0615C99.3074 11.0615 100.485 11.3856 101.451 12.0338C102.426 12.6738 103.149 13.5805 103.62 14.7538C104.091 15.9272 104.268 17.3097 104.153 18.9015H101.191V17.8185C101.183 16.3744 100.927 15.32 100.423 14.6554C99.9187 13.9908 99.1256 13.6585 98.0434 13.6585C96.8207 13.6585 95.912 14.0359 95.3171 14.7908C94.7223 15.5374 94.4249 16.6328 94.4249 18.0769C94.4249 19.4226 94.7223 20.4646 95.3171 21.2031C95.912 21.9415 96.7794 22.3108 97.9195 22.3108C98.6547 22.3108 99.2867 22.1508 99.8154 21.8308C100.352 21.5026 100.765 21.0308 101.055 20.4154L104.004 21.3015C103.492 22.4995 102.699 23.4308 101.625 24.0954C100.559 24.76 99.3817 25.0923 98.0929 25.0923ZM93.4831 18.9015V16.6615H102.69V18.9015H93.4831Z" fill="#111827" />
-                            <path d="M112.035 25.0923C110.805 25.0923 109.731 24.7846 108.814 24.1692C107.897 23.5538 107.186 22.7169 106.682 21.6585C106.178 20.6 105.926 19.4062 105.926 18.0769C105.926 16.7313 106.178 15.5333 106.682 14.4831C107.194 13.4246 107.917 12.5918 108.851 11.9846C109.784 11.3692 110.883 11.0615 112.147 11.0615C113.419 11.0615 114.485 11.3692 115.344 11.9846C116.212 12.5918 116.868 13.4246 117.314 14.4831C117.761 15.5415 117.984 16.7395 117.984 18.0769C117.984 19.3979 117.761 20.5918 117.314 21.6585C116.868 22.7169 116.203 23.5538 115.319 24.1692C114.435 24.7846 113.341 25.0923 112.035 25.0923ZM112.494 22.4338C113.295 22.4338 113.94 22.2533 114.427 21.8923C114.923 21.5231 115.282 21.0103 115.505 20.3538C115.737 19.6974 115.852 18.9385 115.852 18.0769C115.852 17.2072 115.737 16.4482 115.505 15.8C115.282 15.1436 114.931 14.6349 114.452 14.2738C113.973 13.9046 113.353 13.72 112.593 13.72C111.792 13.72 111.131 13.9169 110.61 14.3108C110.09 14.6964 109.706 15.2215 109.458 15.8862C109.21 16.5426 109.086 17.2728 109.086 18.0769C109.086 18.8892 109.206 19.6277 109.446 20.2923C109.693 20.9487 110.069 21.4697 110.573 21.8554C111.077 22.241 111.717 22.4338 112.494 22.4338ZM115.852 24.7231V15.3938H115.48V7H118.492V24.7231H115.852Z" fill="#111827" />
-                            <path d="M127.629 25.0923C126.291 25.0923 125.122 24.7928 124.122 24.1938C123.123 23.5949 122.346 22.7703 121.793 21.72C121.247 20.6615 120.975 19.4472 120.975 18.0769C120.975 16.6821 121.256 15.4595 121.817 14.4092C122.379 13.359 123.16 12.5385 124.159 11.9477C125.159 11.3569 126.316 11.0615 127.629 11.0615C128.976 11.0615 130.149 11.361 131.149 11.96C132.148 12.559 132.925 13.3877 133.478 14.4462C134.032 15.4964 134.308 16.7067 134.308 18.0769C134.308 19.4554 134.028 20.6738 133.466 21.7323C132.912 22.7826 132.136 23.6072 131.136 24.2062C130.137 24.7969 128.968 25.0923 127.629 25.0923ZM127.629 22.3108C128.819 22.3108 129.703 21.9169 130.281 21.1292C130.859 20.3415 131.149 19.3241 131.149 18.0769C131.149 16.7887 130.855 15.7631 130.269 15C129.682 14.2287 128.802 13.8431 127.629 13.8431C126.828 13.8431 126.167 14.0236 125.646 14.3846C125.134 14.7374 124.754 15.2338 124.506 15.8738C124.259 16.5056 124.135 17.24 124.135 18.0769C124.135 19.3651 124.428 20.3949 125.014 21.1662C125.609 21.9292 126.481 22.3108 127.629 22.3108Z" fill="#111827" />
-                            <path d="M146.048 24.7231V18.3231C146.048 17.9046 146.019 17.441 145.961 16.9323C145.903 16.4236 145.767 15.9354 145.552 15.4677C145.346 14.9918 145.032 14.6021 144.61 14.2985C144.197 13.9949 143.635 13.8431 142.925 13.8431C142.545 13.8431 142.169 13.9046 141.797 14.0277C141.426 14.1508 141.087 14.3641 140.781 14.6677C140.484 14.9631 140.244 15.3733 140.062 15.8985C139.881 16.4154 139.79 17.08 139.79 17.8923L138.018 17.1415C138.018 16.0092 138.237 14.9836 138.675 14.0646C139.121 13.1456 139.773 12.4154 140.632 11.8738C141.492 11.3241 142.549 11.0492 143.805 11.0492C144.796 11.0492 145.614 11.2133 146.258 11.5415C146.903 11.8697 147.415 12.2882 147.795 12.7969C148.175 13.3056 148.456 13.8472 148.638 14.4215C148.819 14.9959 148.935 15.5415 148.985 16.0585C149.042 16.5672 149.071 16.9815 149.071 17.3015V24.7231H146.048ZM136.766 24.7231V11.4308H139.43V15.5538H139.79V24.7231H136.766Z" fill="#111827" />
-                            <path d="M157.924 25.0923C156.569 25.0923 155.379 24.801 154.355 24.2185C153.331 23.6359 152.529 22.8277 151.951 21.7938C151.381 20.76 151.096 19.5703 151.096 18.2246C151.096 16.7723 151.377 15.5128 151.939 14.4462C152.5 13.3713 153.281 12.5385 154.281 11.9477C155.28 11.3569 156.437 11.0615 157.75 11.0615C159.138 11.0615 160.316 11.3856 161.282 12.0338C162.257 12.6738 162.98 13.5805 163.451 14.7538C163.922 15.9272 164.099 17.3097 163.984 18.9015H161.022V17.8185C161.014 16.3744 160.758 15.32 160.254 14.6554C159.75 13.9908 158.957 13.6585 157.874 13.6585C156.652 13.6585 155.743 14.0359 155.148 14.7908C154.553 15.5374 154.256 16.6328 154.256 18.0769C154.256 19.4226 154.553 20.4646 155.148 21.2031C155.743 21.9415 156.61 22.3108 157.75 22.3108C158.486 22.3108 159.118 22.1508 159.646 21.8308C160.183 21.5026 160.596 21.0308 160.886 20.4154L163.835 21.3015C163.323 22.4995 162.53 23.4308 161.456 24.0954C160.39 24.76 159.213 25.0923 157.924 25.0923ZM153.314 18.9015V16.6615H162.521V18.9015H153.314Z" fill="#111827" />
-                            <path d="M25.3902 11.8941C26.0296 12.5063 26.0458 13.5149 25.4264 14.1468L19.6357 20.054C19.0162 20.686 17.9956 20.702 17.3562 20.0898C16.7167 19.4776 16.7005 18.469 17.32 17.8371L23.1106 11.9299C23.7301 11.2979 24.7507 11.2819 25.3902 11.8941Z" fill="url(#paint0_linear_551_319)" />
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.988159 4.54673C0.988159 2.03564 3.04801 0 5.58896 0H22.4006V0.00124069C29.8074 0.0998525 35.7811 6.06429 35.7811 13.4075C35.7811 20.8123 29.7069 26.8151 22.2141 26.8151C19.5425 26.8151 17.0512 26.0519 14.9514 24.7342L7.53733 31.9057C5.09801 34.2652 0.988159 32.5573 0.988159 29.1841V4.54673ZM12.4394 22.7055C10.0911 20.295 8.64709 17.0179 8.64709 13.4075C8.64709 12.5277 9.36884 11.8144 10.2592 11.8144C11.1495 11.8144 11.8712 12.5277 11.8712 13.4075C11.8712 19.0526 16.5019 23.6288 22.2141 23.6288C27.9263 23.6288 32.5569 19.0526 32.5569 13.4075C32.5569 7.76248 27.9263 3.18626 22.2141 3.18626H5.58896C4.82866 3.18626 4.21231 3.79536 4.21231 4.54673V29.1841C4.21231 29.7351 4.88363 30.014 5.28209 29.6286L12.4394 22.7055Z" fill="url(#paint1_linear_551_319)" />
-                            <defs>
-                                <linearGradient id="paint0_linear_551_319" x1="35.7811" y1="1.89063" x2="1.90742" y2="33.2568" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#7C3AED" />
-                                    <stop offset="0.993738" stop-color="#4F46E5" />
-                                </linearGradient>
-                                <linearGradient id="paint1_linear_551_319" x1="35.7811" y1="1.89063" x2="1.90742" y2="33.2568" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#7C3AED" />
-                                    <stop offset="0.993738" stop-color="#4F46E5" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </a>
-                    <ul class="flex flex-col sm:flex-row items-center gap-5 sm:gap-12">
-                        <li><a href="/" class="text-xl font-serif font-bold text-gray-800 transition-all duration-300 hover:text-indigo-600 border-solid border-b-4 border-indigo-500 focus-within:text-indigo-600 focus-within:outline-0">Home</a>
-                        </li>
-                        <li><a href="/about" class="text-xl font-serif font-bold text-gray-800 transition-all duration-300 hover:text-indigo-600 focus-within:text-indigo-600 border-solid border-b-4 border-indigo-500  focus-within:outline-0">About</a>
-                        </li>
-                        <li><a href="/service" class="text-xl font-serif font-bold text-gray-800 transition-all duration-300 hover:text-indigo-600 focus-within:text-indigo-600 border-solid border-b-4 border-indigo-500  focus-within:outline-0">Service</a>
-                        </li>
-                        <li><a href="/price" class="text-xl font-serif font-bold text-gray-800 transition-all duration-300 hover:text-indigo-600 focus-within:text-indigo-600 border-solid border-b-4 border-indigo-500  focus-within:outline-0">Price</a>
-                        </li>
-                        <li><a href="/works" class="text-xl font-serif font-bold text-gray-800 transition-all duration-300 hover:text-indigo-600 focus-within:text-indigo-600 border-solid border-b-4 border-indigo-500  focus-within:outline-0">Works</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="pt-7 flex flex-col min-[520px]:flex-row items-center justify-between gap-6">
-                    <div class="flex items-center gap-4">
-                        <a href="https://x.com/?lang=en" target="_blank" class="border border-gray-500 p-2 rounded-full aspect-square text-gray-700 transition-all duration-500 hover:text-black-600 hover:border-black-600 focus-within:outline-0 focus-within:text-indigo-600 focus-within:border-indigo-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M11.3214 8.93666L16.4919 3.05566H15.2667L10.7772 8.16205L7.1914 3.05566H3.05566L8.47803 10.7774L3.05566 16.9446H4.28097L9.022 11.552L12.8088 16.9446H16.9446L11.3211 8.93666H11.3214ZM9.64322 10.8455L9.09382 10.0765L4.72246 3.95821H6.60445L10.1322 8.8959L10.6816 9.66481L15.2672 16.083H13.3852L9.64322 10.8458V10.8455Z" fill="currentColor" />
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="border border-gray-500 p-2 rounded-full aspect-square text-gray-700 transition-all duration-500 hover:text-pink-700 hover:border-pink-700 focus-within:outline-0 focus-within:text-indigo-600 focus-within:border-indigo-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M7.7117 9.93956C7.7117 8.66117 8.76298 7.62456 10.0601 7.62456C11.3573 7.62456 12.4092 8.66117 12.4092 9.93956C12.4092 11.218 11.3573 12.2546 10.0601 12.2546C8.76298 12.2546 7.7117 11.218 7.7117 9.93956ZM6.44187 9.93956C6.44187 11.909 8.06177 13.5055 10.0601 13.5055C12.0585 13.5055 13.6784 11.909 13.6784 9.93956C13.6784 7.97012 12.0585 6.37367 10.0601 6.37367C8.06177 6.37367 6.44187 7.97012 6.44187 9.93956ZM12.9761 6.23228C12.976 6.3971 13.0256 6.55824 13.1184 6.69532C13.2113 6.83239 13.3433 6.93926 13.4978 7.00239C13.6523 7.06552 13.8223 7.08209 13.9863 7.05C14.1503 7.01791 14.301 6.93861 14.4193 6.82211C14.5377 6.70561 14.6182 6.55716 14.6509 6.39552C14.6836 6.23388 14.667 6.06632 14.603 5.91402C14.5391 5.76173 14.4307 5.63153 14.2917 5.53991C14.1527 5.44829 13.9893 5.39935 13.822 5.39928H13.8217C13.5975 5.39939 13.3825 5.48717 13.224 5.64336C13.0654 5.79954 12.9763 6.01136 12.9761 6.23228ZM7.21337 15.5922C6.52637 15.5613 6.15296 15.4486 5.90481 15.3533C5.57583 15.2271 5.3411 15.0767 5.0943 14.8338C4.8475 14.591 4.69474 14.3598 4.56722 14.0356C4.47049 13.7912 4.35605 13.4231 4.32482 12.746C4.29066 12.014 4.28384 11.7941 4.28384 9.93962C4.28384 8.08512 4.29123 7.86584 4.32482 7.13323C4.35611 6.45617 4.47139 6.08878 4.56722 5.84362C4.6953 5.51939 4.84784 5.28806 5.0943 5.04484C5.34076 4.80162 5.57526 4.65106 5.90481 4.5254C6.15285 4.43006 6.52637 4.31728 7.21337 4.28651C7.95613 4.25284 8.17925 4.24612 10.0601 4.24612C11.9411 4.24612 12.1644 4.25339 12.9078 4.28651C13.5948 4.31734 13.9676 4.43095 14.2163 4.5254C14.5453 4.65106 14.7801 4.80195 15.0268 5.04484C15.2736 5.28773 15.4258 5.51939 15.5539 5.84362C15.6507 6.08806 15.7651 6.45617 15.7963 7.13323C15.8305 7.86584 15.8373 8.08512 15.8373 9.93962C15.8373 11.7941 15.8305 12.0134 15.7963 12.746C15.765 13.4231 15.65 13.7911 15.5539 14.0356C15.4258 14.3598 15.2733 14.5912 15.0268 14.8338C14.7804 15.0765 14.5453 15.2271 14.2163 15.3533C13.9683 15.4486 13.5948 15.5614 12.9078 15.5922C12.165 15.6258 11.9419 15.6326 10.0601 15.6326C8.1784 15.6326 7.9559 15.6258 7.21337 15.5922ZM7.15503 3.03717C6.40489 3.07084 5.8923 3.18806 5.44465 3.35973C4.98105 3.53701 4.58859 3.77484 4.19641 4.16073C3.80423 4.54662 3.56352 4.93401 3.38364 5.39089C3.20945 5.83234 3.09051 6.33723 3.05635 7.07651C3.02162 7.81695 3.01367 8.05367 3.01367 9.93956C3.01367 11.8255 3.02162 12.0622 3.05635 12.8026C3.09051 13.542 3.20945 14.0468 3.38364 14.4882C3.56352 14.9448 3.80429 15.3327 4.19641 15.7184C4.58853 16.1041 4.98105 16.3416 5.44465 16.5194C5.89314 16.6911 6.40489 16.8083 7.15503 16.842C7.90675 16.8756 8.14655 16.884 10.0601 16.884C11.9737 16.884 12.2139 16.8762 12.9653 16.842C13.7155 16.8083 14.2277 16.6911 14.6756 16.5194C15.139 16.3416 15.5317 16.1043 15.9239 15.7184C16.3161 15.3325 16.5563 14.9448 16.7367 14.4882C16.9108 14.0468 17.0304 13.5419 17.064 12.8026C17.0981 12.0616 17.1061 11.8255 17.1061 9.93956C17.1061 8.05367 17.0981 7.81695 17.064 7.07651C17.0298 6.33717 16.9108 5.83206 16.7367 5.39089C16.5563 4.93428 16.3154 4.54723 15.9239 4.16073C15.5323 3.77423 15.139 3.53701 14.6762 3.35973C14.2277 3.18806 13.7154 3.07028 12.9658 3.03717C12.2145 3.00351 11.9743 2.99512 10.0607 2.99512C8.14712 2.99512 7.90675 3.00295 7.15503 3.03717Z" fill="currentColor" />
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/feed/" target="_blank" class="border border-gray-500 p-2 rounded-full aspect-square text-gray-700 transition-all duration-500 hover:text-blue-600 hover:border-blue-600 focus-within:outline-0 focus-within:text-indigo-600 focus-within:border-indigo-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M6.87818 15.5556V7.87128H4.31767V15.5556H6.87845H6.87818ZM5.59846 6.82229C6.49118 6.82229 7.04695 6.23223 7.04695 5.49481C7.03024 4.74059 6.49118 4.16699 5.61544 4.16699C4.7391 4.16699 4.16675 4.74059 4.16675 5.49474C4.16675 6.23216 4.72232 6.82223 5.58168 6.82223H5.59826L5.59846 6.82229ZM8.29546 15.5556H10.8558V11.2648C10.8558 11.0354 10.8725 10.8055 10.9401 10.6417C11.1251 10.1826 11.5464 9.70742 12.2539 9.70742C13.1802 9.70742 13.551 10.412 13.551 11.4451V15.5556H16.1112V11.1497C16.1112 8.78945 14.8482 7.69112 13.1636 7.69112C11.7825 7.69112 11.1759 8.46114 10.8389 8.9856H10.856V7.87154H8.29559C8.32901 8.59243 8.29539 15.5559 8.29539 15.5559L8.29546 15.5556Z" fill="currentColor" />
-                            </svg>
-                        </a>
-                        <a href="https://www.youtube.com/" target="_blank" class="border border-gray-500 p-2 rounded-full aspect-square text-gray-700 transition-all duration-500 hover:text-red-600 hover:border-red-600 focus-within:outline-0 focus-within:text-indigo-600 focus-within:border-indigo-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9329 5.13919C16.5667 5.31036 17.0648 5.80978 17.2332 6.44286C17.5396 7.59178 17.5396 9.99044 17.5396 9.99044C17.5396 9.99044 17.5396 12.3891 17.2332 13.538C17.0625 14.1734 16.5643 14.6729 15.9329 14.8417C14.7869 15.1489 10.1889 15.1489 10.1889 15.1489C10.1889 15.1489 5.5932 15.1489 4.44487 14.8417C3.81106 14.6705 3.3129 14.1711 3.14451 13.538C2.83813 12.3891 2.83813 9.99044 2.83813 9.99044C2.83813 9.99044 2.83813 7.59178 3.14451 6.44286C3.31524 5.80744 3.8134 5.30801 4.44487 5.13919C5.5932 4.83203 10.1889 4.83203 10.1889 4.83203C10.1889 4.83203 14.7869 4.83203 15.9329 5.13919ZM12.5393 9.99044L8.72007 12.2015V7.77936L12.5393 9.99044Z" fill="currentColor" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+    <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
+        <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">Everyworks Group's Network of Service Brands</h2>
+        <div class="w-11/12 mt-2 mb-8 flex flex-wrap justify-around">
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/plumbing">
+                    <img src="{{ url('img/plumber.png') }}" alt="Image 1" class="w-48 h-16 hover:zoom-in">
+                </a>
             </div>
-        </section>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/matressClean">
+                    <img src="{{ url('img/matress.png') }}" alt="Image 2" class="w-52 h-20 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/electric">
+                    <img src="{{ url('img/daylight.png') }}" alt="Image 3" class="w-48 h-16 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/handyman">
+                    <img src="{{ url('img/handy.png') }}" alt="Image 4" class="w-54 h-16 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/waterHeater">
+                    <img src="{{ url('img/water.png') }}" alt="Image 5" class="w-48 h-16 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/sofaClean">
+                    <img src="{{ url('img/sofa.png') }}" alt="Image 6" class="w-52 h-24 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/floorclean">
+                    <img src="{{ url('img/floor.png') }}" alt="Image 7" class="w-80 h-20 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/rubbishChute">
+                    <img src="{{ url('img/rubbish.png') }}" alt="Image 8" class="w-56 h-16 hover:zoom-in">
+                </a>
+            </div>
+        </div>
+    </section>
+    <style>
+        .hover\:zoom-in {
+            transition: transform 0.3s ease;
+        }
+
+        .hover\:zoom-in:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .responsive-image {
+                flex-basis: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+    </style>
+
+    <footer class="footer-bg text-white py-10">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h2 class="text-xl font-bold mb-4 footer-text-yellow border-b-2 border-yellow-500">About Allhouseworks Services</h2>
+                <p style="font-family: system-ui;font-size: inherit;line-height: 20px;">Allhouseworks is Singapore’s leading Home Maintenance Company offering quality & reliable services like Handyman, Electrical, Plumbing & Aircon Servicing and many more. Book your home maintenance services online in just a few clicks: simply message us on WhatsApp and our 4-star dedicated customer service team will fulfill the rest. Trusted by thousands of customers over the years, with a simple process to message us, we promise fast response and transparent quotes for any office or home services you need to get done. WhatsApp us at +65 8241 0032 Now!</p>
+            </div>
+            <div style="margin-left: 58px;">
+                <h2 class="text-xl font-bold mb-4 footer-text-yellow ">Useful Links</h2>
+                <ul class="space-y-2" style="line-height: 25px;font-size: medium;">
+                    <li><a href="/" class="hover:underline">Home</a></li>
+                    <li><a href="/about" class="hover:underline">About Us</a></li>
+                    <li><a href="/review" class="hover:underline">Review</a></li>
+                    <li><a href="/mission" class="hover:underline">Mission</a></li>
+                    <li><a href="/service" class="hover:underline">Services</a></li>
+                    <li><a href="/works" class="hover:underline">Works</a></li>
+                    <li><a href="/contact" class="hover:underline">Contact</a></li>
+                    <li><a href="/price" class="hover:underline">Price</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold mb-4 footer-text-yellow">Opening Hours</h2>
+                <ul class="space-y-2 " style="font-size: medium;line-height: 34px;">
+                    <li>Monday - 8:00AM to 8:00PM</li>
+                    <li>Tuesday - 8:00AM to 8:00PM</li>
+                    <li>Wednesday - 8:00AM to 8:00PM</li>
+                    <li>Thursday - 8:00AM to 8:00PM</li>
+                    <li>Friday - 8:00AM to 6:00PM</li>
+                    <li>Saturday - 9:00AM to 6:00PM</li>
+                    <li>Sunday - 8:00AM to 8:00PM</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold mb-4 footer-text-yellow">Contact Here</h2>
+                <ul class="space-y-2" style="font-size: medium;line-height: 28px;">
+                    <li>1090 Lower Delta Road #03-07, Singapore 169201</li>
+                    <li>Phone: +65 9658 5757</li>
+                    <li>WhatsApp (Message Only): +65 9658 5757</li>
+                    <li>Email: enquiry@Allhouseworks.com</li>
+                </ul>
+
+            </div>
+        </div>
     </footer>
+    <style>
+        .footer-bg {
+            background: #181818 url(https://everyworks.com/wp-content/uploads/2018/04/footerbg.png?id=45) !important;
+            background-size: cover;
+            background-position: center;
+        }
 
-
+        .footer-text-yellow {
+            color: #f8b500;
+            /* Adjust this color as needed */
+        }
+    </style>
 </body>
 
 </html>

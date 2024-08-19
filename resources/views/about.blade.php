@@ -277,6 +277,7 @@
     /* General Styles */
     .hover-border-top:hover {
         border-top: 4px solid #B48F57;
+        border-top: 4px solid #FFFFFF;
     }
 
     .group:hover .group-hover\:block {
@@ -358,8 +359,10 @@
     #main-nav.scrolled {
         top: 0;
         background-color: #f8f8f8;
+        background-color: #f69918;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
 
     @media (min-width: 641px) {
 
@@ -430,9 +433,9 @@
         </div>
     </div>
     <!-- Scroll Up -->
-    <nav id="main-nav" class="bg-white shadow-lg relative z-50 sticky">
-        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t">
-            <div class="relative flex items-center justify-between h-16" style="margin-left: 15%;">
+    <nav id="main-nav" class="bg-white relative z-50 sticky">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t" style="background-color: #f69918;">
+            <div class="relative flex items-center justify-between h-16" id="kol">
                 <div class="inset-y-0 left-0 flex items-center sm:hidden">
                     <button id="mobile-menu-toggle" type="button" class="inline-flex bg-gray-700 items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
@@ -447,11 +450,11 @@
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
                     <div class="hidden sm:block sm:ml-6">
                         <div class="flex space-x-16">
-                            <div class="hover-border-top">
-                                <a href="/" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Home</a>
+                            <div class=" " style="border-top: 4px solid rgb(255 255 255);">
+                                <a href="/" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Home</a>
                             </div>
-                            <div class="relative group hover-border-top" style="border-top: 4px solid #B48F57;">
-                                <a href="/about" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium flex items-center">About
+                            <div class="relative group hover-border-top">
+                                <a href="/about" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">About
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
@@ -461,8 +464,8 @@
                                     <a href="/mission" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Mission</a>
                                 </div>
                             </div>
-                            <div class="relative grouphover-border-top">
-                                <a href="service" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium flex items-center">Service
+                            <div class="relative group  hover-border-top">
+                                <a href="service" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">Service
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
@@ -770,13 +773,13 @@
                                 </div>
                             </div>
                             <div class="hover-border-top ">
-                                <a href="/price" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Price</a>
+                                <a href="/price" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium" style="margin-top: 2px;">Price</a>
+                            </div>
+                            <div class="hover-border-top ">
+                                <a href="/works" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium" style="margin-top: 2px;">Works</a>
                             </div>
                             <div class="hover-border-top">
-                                <a href="/works" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Works</a>
-                            </div>
-                            <div class="hover-border-top">
-                                <a href="/contact" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Contact
+                                <a href="/contact" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium" style="margin-top: 2px;">Contact
                                     Us</a>
                             </div>
                         </div>
@@ -787,7 +790,7 @@
             <!-- Mobile -->
             <div class="sm:hidden hidden" id="mobile-menu">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="#" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="/" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Home</a>
 
                     <div class="relative">
                         <button class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between" onclick="toggleSubMenu('about-submenu', 'about-arrow')">
@@ -1065,7 +1068,7 @@
     </nav>
     <!-- Navigation Menu -->
 
-    <section class="parallax mt-16" style="position: relative; background: url('https://img.freepik.com/premium-photo/set-hand-tools-black-background-copy-space_275805-579.jpg') no-repeat center center fixed; background-size: cover; height: 300px;">
+    <section class="parallax" style="position: relative; background: url('https://img.freepik.com/premium-photo/professional-happy-marketing-team-working-discussing-about-project-aig53f_31965-552623.jpg') no-repeat center center fixed; background-size: cover; height: 300px;">
         <div class="overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
         <div class="content" style="position: relative; z-index: 1; display: flex; flex-direction: column; padding-left: 1rem; padding-right: 1rem; text-align: center; gap: 1rem;">
             <h1 style="font-size: 2.5rem; color: white; font-weight: 100; margin-bottom: 1.5rem;">About</h1>
@@ -1076,7 +1079,7 @@
 
 
     <section class="px-4 lg:px-0">
-        <div class="flex flex-col lg:flex-row items-center justify-center lg:justify-start"style="margin-left: 17%;margin-top: 36px;">
+        <div class="flex flex-col lg:flex-row items-center justify-center lg:justify-start" style="margin-left: 17%;margin-top: 36px;">
             <div class="flex justify-center items-center lg:w-auto">
                 <img style="height: auto; max-width: 100%;" src="{{ url('img/icon2.png') }}" alt="Everyworks Singapore Logo">
             </div>
@@ -1283,7 +1286,7 @@
         </div>
 
         <div>
-            <p style="width: 90%;text-align: justify;font-size: 14px;color: #777;margin-top: 20px;margin-left: auto;margin-right: auto;">
+            <p style="width: 90%;text-align: justify;font-size: 16px;color: #353232;margin-top: 20px;margin-left: auto;margin-right: auto;text-align: center;">
                 All House Work's offer a wide range of home maintenance services including <span style="color: #f3b04f;">handyman</span>, <span style="color: #f3b04f;">electrical</span>, <span style="color: #f3b04f;">plumbing</span>, and aircon services that will save you time from searching for other service providers. Built on transparency and trust, we will provide all the information that you require to best serve your needs. Our seamless and hassle-free service offerings will simplify the process of hiring a handyman service. Turn to All House Work's Singapore and we will get the job done. You will get more time to do the things you love so leave the rest to us. For other repair and maintenance work, please visit our <span style="color: #f3b04f;">resources page</span>.
             </p>
         </div>
@@ -1291,17 +1294,29 @@
 
     <section style="border-top: 1px solid; max-width: 100%; margin-top: 60px; text-align: center;">
         <div>
-            <p style="font-size: 24px; color: #000; margin-top: 8px; font-family: fantasy; letter-spacing: 3px; text-shadow: 2px 2px 0 rgba(0,0,0,.25);">WHY CHOOSE All House Work's</p>
+            <p style="font-size: 24px; color: #000; margin-top: 8px; font-family: fantasy; letter-spacing: 3px; text-shadow: 2px 2px 0 rgba(0,0,0,.25);">WHY CHOOSE All HOUSE Work's</p>
         </div>
 
-        <div class="relative mx-auto mt-10" style="max-width: 100%; width: 90%;">
-            <img class="absolute h-full w-full object-cover" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdvcmt8ZW58MHx8MHx8fDA%3D" style="border-radius: 8px;">
-            <div class="text-black lg:w-1/2 bg-yellow-500 bg-opacity-95 p-5 opacity-90 backdrop-blur-lg lg:p-12" style=" padding: 20px; border-radius: 8px;">
+        <div class="relative mx-auto mt-10" style="max-width: 100%; width: 90%; height: 308px; overflow: hidden; border-radius: 8px;">
+            <div class="parallax-bg absolute inset-0"
+                style="background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdvcmt8ZW58MHx8MHx8fDA%3D');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                height: 308px;">
+            </div>
+            <div class="text-black relative z-10 lg:w-1/2 bg-yellow-500 bg-opacity-95 p-5 opacity-90 backdrop-blur-lg lg:p-12"
+                style="padding: 20px; border-radius: 8px;">
                 <h2 class="font-serif text-2xl md:text-4xl font-bold">BOOK HOME MAINTENANCE SERVICES</h2>
-                <p class="mb-4 font-serif font-light text-sm md:text-base">With our range of handyman services including aircon, plumbing, and electrical services, we can solve your home repair and maintenance issues in a single arrangement. No need to book different service providers and have them arrive at different schedules.</p>
-                <a href="#" class="mt-6 inline-block rounded-xl border-2 px-6 md:px-10 py-3 font-semibold border-black hover:bg-blue hover:text-blue-600">See Services</a>
+                <p class="mb-4 font-serif font-light text-sm md:text-base">
+                    With our range of handyman services including aircon, plumbing, and electrical services, we can solve your home repair and maintenance issues in a single arrangement. No need to book different service providers and have them arrive at different schedules.
+                </p>
+                <a href="#" class="mt-6 inline-block rounded-xl border-2 px-6 md:px-10 py-3 font-semibold border-black hover:bg-blue hover:text-blue-600">
+                    See Services
+                </a>
             </div>
         </div>
+
 
         <div class="container mx-auto p-6 mt-16">
             <div class="bg-white rounded-lg shadow-lg flex flex-col md:flex-row">
@@ -1356,6 +1371,67 @@
         </div>
 
     </section>
+    <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
+        <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">Everyworks Group's Network of Service Brands</h2>
+        <div class="w-11/12 mt-2 mb-8 flex flex-wrap justify-around">
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/plumbing">
+                    <img src="{{ url('img/plumber.png') }}" alt="Image 1" class="w-48 h-16 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/matressClean">
+                    <img src="{{ url('img/matress.png') }}" alt="Image 2" class="w-52 h-20 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/electric">
+                    <img src="{{ url('img/daylight.png') }}" alt="Image 3" class="w-48 h-16 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/handyman">
+                    <img src="{{ url('img/handy.png') }}" alt="Image 4" class="w-54 h-16 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/waterHeater">
+                    <img src="{{ url('img/water.png') }}" alt="Image 5" class="w-48 h-16 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/sofaClean">
+                    <img src="{{ url('img/sofa.png') }}" alt="Image 6" class="w-52 h-24 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/floorclean">
+                    <img src="{{ url('img/floor.png') }}" alt="Image 7" class="w-80 h-20 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/rubbishChute">
+                    <img src="{{ url('img/rubbish.png') }}" alt="Image 8" class="w-56 h-16 hover:zoom-in">
+                </a>
+            </div>
+        </div>
+    </section>
+    <style>
+        .hover\:zoom-in {
+            transition: transform 0.3s ease;
+        }
+
+        .hover\:zoom-in:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .responsive-image {
+                flex-basis: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+    </style>
 
     <footer class="footer-bg text-white py-10">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">

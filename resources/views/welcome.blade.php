@@ -1493,6 +1493,9 @@
                         <div style="cursor:pointer;">
                             <img src="{{ url('img/technician.png') }}" alt="Technician" id="whatsappImage">
                         </div>
+                        <div style="cursor:pointer;">
+                            <img src="{{ url('img/gmail.png') }}" alt="Technician" id="whatsappImage">
+                        </div>
                     </dl>
                     <div class="mt-10 flex">
                         <a href="/about" class="text-base font-semibold leading-7 text-yellow-500">Learn more about our company <span aria-hidden="true">&rarr;</span></a>
@@ -1596,12 +1599,10 @@
             <div>
                 <h2 class="text-xl font-bold mb-4 footer-text-yellow">Contact Here</h2>
                 <ul class="space-y-2" style="font-size: medium;line-height: 28px;">
-                    <li>1090 Lower Delta Road #03-07, Singapore 169201</li>
-                    <li>Phone: +65 9658 5757</li>
-                    <li>WhatsApp (Message Only): +65 9658 5757</li>
-                    <li>Email: enquiry@Allhouseworks.com</li>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=1090+Lower+Delta+Road+%2303-07,+Singapore+169201" target="_blank">1090 Lower Delta Road #03-07, Singapore 169201</a></li>
+                    <li>WhatsApp (Message Only): <a href="https://wa.me/6596585757" style="color: #F69919;font-weight: 700;">+65 9658 5757</a></li>
+                    <li>Email: <a href="mailto:info@allhouseworks.com" style="color: #F69919;font-weight: 700;">info@allhouseworks.com</a></li>
                 </ul>
-
             </div>
         </div>
     </footer>
@@ -1617,6 +1618,8 @@
             /* Adjust this color as needed */
         }
     </style>
+
+
 </body>
 
 </html>
