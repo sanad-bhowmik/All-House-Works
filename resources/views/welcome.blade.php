@@ -189,7 +189,7 @@
     }
 
     .black-polygon {
-        clip-path: polygon(11% 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
     }
 
 
@@ -389,7 +389,7 @@
                     </div>
                     <div class="flex flex-col justify-center">
                         <p class="text-lg font-semibold" style="font-family: 'Josefin Sans';">WHATSAPP NUMBER</p>
-                        <p class="text-gray-500">+65 6575 1226</p>
+                        <p class="text-gray-500">+65 9658 5757</p>
                     </div>
                 </div>
                 <div class="w-full md:w-auto flex justify-center">
@@ -435,7 +435,7 @@
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t" style="background-color: #f69918;">
             <div class="relative flex items-center justify-between h-16" id="kol">
                 <div class="inset-y-0 left-0 flex items-center sm:hidden">
-                    <button id="mobile-menu-toggle" type="button" class="inline-flex bg-gray-700 items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <button id="mobile-menu-toggle" type="button" class="inline-flex ml-2 bg-white items-center justify-center p-2 rounded-md text-gray-800 hover:text-white hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
                         <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -1074,7 +1074,7 @@
             <h1 class="text-2xl md:text-4xl font-bold" style="font-size: 43px; text-align: center; font-family: math;line-height: normal;">Household Repairs & Handyman Solutions <br>
                 Conveniently Delivered Right to Your Doorstep</h1>
             <p class="mt-4 md:mt-6" style="font-size: 18px; line-height: 1.2; text-align: center;">Reach out to us with your home maintenance needs, and we'll take care of the rest. <br> Get in touch with our handyman and service experts for immediate home assessments and direct quotes.</p>
-            <a id="sendbtn" class="shortcode_wa_button mt-4 md:mt-6 inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" href="https://api.whatsapp.com/send?phone=6565751226&amp;text=Hello, I would like to know more about the following home service" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">
+            <a id="sendbtn" class="shortcode_wa_button mt-4 md:mt-6 inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" href="https://api.whatsapp.com/send?phone=6596585757&amp;text=Hello, I would like to know more about the following home service" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">
                 <img src="img/whatsapp.png" alt="" class="mr-2"><span>WhatsApp to Start Now!</span>
             </a>
         </div>
@@ -1097,8 +1097,8 @@
 
     <section class="mt-10">
         <div class="relative flex flex-col md:flex-row items-center md:items-start mt-8">
-            <span class="bg-yellow-500 yellow-triangle absolute left-0 h-20 hidden md:block"></span>
-            <h3 class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-full md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;">
+            <span class="bg-yellow-500 yellow-diamond absolute left-0 h-20 w-20 hidden md:block transform rotate-45" style="margin-left: 47%;"></span>
+            <h3 id="handyman-services" class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-11/12 md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;margin-left: 4%;">
                 <span class="inner-span">All-in-One Handyman Services for Modern Living Convenience</span>
             </h3>
             <style>
@@ -1106,6 +1106,10 @@
                     .inner-span {
                         width: 93%;
                         margin: 0 auto;
+                    }
+
+                    #handyman-services {
+                        margin-right: 4%;
                     }
                 }
             </style>
@@ -1344,7 +1348,7 @@
     <!-- All House Work's Happiness, Guaranteed -->
     <div class="flex" style="margin-left: 13%;width: 77%;">
         <section class="mt-32">
-            <a href="#" class="flex flex-col items-center bg-white  md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <a href="#" style="cursor: default;" class="flex flex-col items-center bg-white  md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <img class="object-cover w-425 h-350 md:h-96 md:w-425 md:rounded-none md:rounded-s-lg" src="https://storage.googleapis.com/carousell-wordpress-files/1/2022/10/sg_homeservice-autos_blogcover5.jpg" alt="">
                 <div class="flex flex-col justify-between p-4 leading-normal">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -1354,7 +1358,7 @@
                         </span>
                     </h5>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Your happiness is our goal. If you’re not happy, we’ll work to make it right. Our friendly customer service agents are available, 7 days a week. The All House Work's Happiness Guarantee only applies when you book and pay for a service directly through the All House Work's platform.</p>
-                    <button style="background-color: #dd9933;width: 99px;height: 32px;font-family: math;">Learn More</button>
+                    <!--<button style="background-color: #dd9933;width: 99px;height: 32px;font-family: math;">Learn More</button>-->
                 </div>
             </a>
         </section>
@@ -1493,9 +1497,12 @@
                         <div style="cursor:pointer;">
                             <img src="{{ url('img/technician.png') }}" alt="Technician" id="whatsappImage">
                         </div>
-                        <div style="cursor:pointer;">
-                            <img src="{{ url('img/gmail.png') }}" alt="Technician" id="whatsappImage">
-                        </div>
+                        <a href="mailto:info@allhouseworks.com">
+                            <div style="cursor:pointer;">
+                                <img src="{{ url('img/gmail.png') }}" alt="Technician" id="whatsappImage">
+                            </div>
+                        </a>
+
                     </dl>
                     <div class="mt-10 flex">
                         <a href="/about" class="text-base font-semibold leading-7 text-yellow-500">Learn more about our company <span aria-hidden="true">&rarr;</span></a>
@@ -1505,7 +1512,7 @@
         </div>
     </div>
     <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
-        <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">Everyworks Group's Network of Service Brands</h2>
+        <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">AllHouseWork's Group's Network of Service Brands</h2>
         <div class="w-12/12 mt-2 mb-8 flex flex-wrap justify-around">
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/plumbing">
@@ -1569,7 +1576,7 @@
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
                 <h2 class="text-xl font-bold mb-4 footer-text-yellow border-b-2 border-yellow-500">About Allhouseworks Services</h2>
-                <p style="font-family: system-ui;font-size: inherit;line-height: 20px;">Allhouseworks is Singapore’s leading Home Maintenance Company offering quality & reliable services like Handyman, Electrical, Plumbing & Aircon Servicing and many more. Book your home maintenance services online in just a few clicks: simply message us on WhatsApp and our 4-star dedicated customer service team will fulfill the rest. Trusted by thousands of customers over the years, with a simple process to message us, we promise fast response and transparent quotes for any office or home services you need to get done. WhatsApp us at +65 8241 0032 Now!</p>
+                <p style="font-family: system-ui;font-size: inherit;line-height: 20px;">Allhouseworks stands as Singapore’s top choice for Home Maintenance, providing top-quality services such as Handyman, Electrical, Plumbing, and Aircon Servicing. With our easy online booking, you can connect with us via WhatsApp and let our dedicated 4-star customer service team handle everything for you. Thousands of satisfied customers rely on us for fast, transparent quotes and reliable service. Reach out on WhatsApp at +65 9658 5757 now for all your home and office maintenance needs!</p>
             </div>
             <div style="margin-left: 58px;">
                 <h2 class="text-xl font-bold mb-4 footer-text-yellow ">Useful Links</h2>
@@ -1608,14 +1615,12 @@
     </footer>
     <style>
         .footer-bg {
-            background: #181818 url(https://everyworks.com/wp-content/uploads/2018/04/footerbg.png?id=45) !important;
-            background-size: cover;
-            background-position: center;
+            background-image: linear-gradient(#000000AB, hsla(0 0% 0% / 0.81)), url(https://img.pikbest.com/origin/09/17/44/54fpIkbEsTrpq.jpg!w700wp);
+            background-attachment: fixed;
         }
 
         .footer-text-yellow {
             color: #f8b500;
-            /* Adjust this color as needed */
         }
     </style>
 
