@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AllHouseWorks</title>
+    <title>AllHouseWorks | Plumber</title>
     <!-- Link to Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" href="{{ url('img/favicon.ico') }}" type="image/x-icon">
@@ -189,7 +189,7 @@
     }
 
     .black-polygon {
-        clip-path: polygon(11% 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
     }
 
 
@@ -391,7 +391,7 @@
                     </div>
                     <div class="flex flex-col justify-center">
                         <p class="text-lg font-semibold" style="font-family: 'Josefin Sans';">WHATSAPP NUMBER</p>
-                        <p class="text-gray-500">+65 6575 1226</p>
+                        <p class="text-gray-500">+65 9658 5757</p>
                     </div>
                 </div>
                 <div class="w-full md:w-auto flex justify-center">
@@ -1159,9 +1159,9 @@
     </section>
 
     <section class="mt-10">
-        <div class="relative flex flex-col md:flex-row items-center md:items-start mt-8">
-            <span class="bg-yellow-500 yellow-triangle absolute left-0 h-20 hidden md:block"></span>
-            <h3 class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-full md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;">
+    <div class="relative flex flex-col md:flex-row items-center md:items-start mt-8">
+            <span class="bg-yellow-500 yellow-diamond absolute left-0 h-20 w-20 hidden md:block transform rotate-45" style="margin-left: 47%;"></span>
+            <h3 id="handyman-services" class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-11/12 md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;margin-left: 4%;">
                 <span class="inner-span">All-in-One Handyman Services for Modern Living Convenience</span>
             </h3>
             <style>
@@ -1169,6 +1169,10 @@
                     .inner-span {
                         width: 93%;
                         margin: 0 auto;
+                    }
+
+                    #handyman-services {
+                        margin-right: 4%;
                     }
                 }
             </style>
@@ -2473,7 +2477,7 @@
     </section>
     <!-- Revew -->
     <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
-        <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">Everyworks Group's Network of Service Brands</h2>
+        <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">AllHouseWork's Group's Network of Service Brands</h2>
         <div class="w-11/12 mt-2 mb-8 flex flex-wrap justify-around">
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/plumbing">
@@ -2533,11 +2537,11 @@
             }
         }
     </style>
-    <footer class="footer-bg text-white py-10">
+   <footer class="footer-bg text-white py-10">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
                 <h2 class="text-xl font-bold mb-4 footer-text-yellow border-b-2 border-yellow-500">About Allhouseworks Services</h2>
-                <p style="font-family: system-ui;font-size: inherit;line-height: 20px;">Allhouseworks is Singapore’s leading Home Maintenance Company offering quality & reliable services like Handyman, Electrical, Plumbing & Aircon Servicing and many more. Book your home maintenance services online in just a few clicks: simply message us on WhatsApp and our 4-star dedicated customer service team will fulfill the rest. Trusted by thousands of customers over the years, with a simple process to message us, we promise fast response and transparent quotes for any office or home services you need to get done. WhatsApp us at +65 8241 0032 Now!</p>
+                <p style="font-family: system-ui;font-size: inherit;line-height: 20px;">Allhouseworks stands as Singapore’s top choice for Home Maintenance, providing top-quality services such as Handyman, Electrical, Plumbing, and Aircon Servicing. With our easy online booking, you can connect with us via WhatsApp and let our dedicated 4-star customer service team handle everything for you. Thousands of satisfied customers rely on us for fast, transparent quotes and reliable service. Reach out on WhatsApp at +65 9658 5757 now for all your home and office maintenance needs!</p>
             </div>
             <div style="margin-left: 58px;">
                 <h2 class="text-xl font-bold mb-4 footer-text-yellow ">Useful Links</h2>
@@ -2567,28 +2571,23 @@
             <div>
                 <h2 class="text-xl font-bold mb-4 footer-text-yellow">Contact Here</h2>
                 <ul class="space-y-2" style="font-size: medium;line-height: 28px;">
-                    <li>1090 Lower Delta Road #03-07, Singapore 169201</li>
-                    <li>Phone: +65 9658 5757</li>
-                    <li>WhatsApp (Message Only): +65 9658 5757</li>
-                    <li>Email: enquiry@Allhouseworks.com</li>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=1090+Lower+Delta+Road+%2303-07,+Singapore+169201" target="_blank">1090 Lower Delta Road #03-07, Singapore 169201</a></li>
+                    <li>WhatsApp (Message Only): <a href="https://wa.me/6596585757" style="color: #F69919;font-weight: 700;">+65 9658 5757</a></li>
+                    <li>Email: <a href="mailto:info@allhouseworks.com" style="color: #F69919;font-weight: 700;">info@allhouseworks.com</a></li>
                 </ul>
-
             </div>
         </div>
     </footer>
     <style>
         .footer-bg {
-            background: #181818 url(https://everyworks.com/wp-content/uploads/2018/04/footerbg.png?id=45) !important;
-            background-size: cover;
-            background-position: center;
+            background-image: linear-gradient(#000000AB, hsla(0 0% 0% / 0.81)), url(https://img.pikbest.com/origin/09/17/44/54fpIkbEsTrpq.jpg!w700wp);
+            background-attachment: fixed;
         }
 
         .footer-text-yellow {
             color: #f8b500;
-            /* Adjust this color as needed */
         }
     </style>
-
 </body>
 
 </html>

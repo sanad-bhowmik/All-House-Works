@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AllHouseWorks</title>
+    <title>AllHouseWorks | Sofa Clean</title>
     <!-- Link to Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" href="{{ url('img/favicon.ico') }}" type="image/x-icon">
@@ -189,7 +189,7 @@
     }
 
     .black-polygon {
-        clip-path: polygon(11% 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
     }
 
 
@@ -392,7 +392,7 @@
                     </div>
                     <div class="flex flex-col justify-center">
                         <p class="text-lg font-semibold" style="font-family: 'Josefin Sans';">WHATSAPP NUMBER</p>
-                        <p class="text-gray-500">+65 6575 1226</p>
+                        <p class="text-gray-500">+65 9658 5757</p>
                     </div>
                 </div>
                 <div class="w-full md:w-auto flex justify-center">
@@ -450,7 +450,7 @@
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
                     <div class="hidden sm:block sm:ml-6">
                         <div class="flex space-x-16">
-                            <div class=" " style="border-top: 4px solid rgb(255 255 255);">
+                            <div class="hover-border-top ">
                                 <a href="/" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Home</a>
                             </div>
                             <div class="relative group hover-border-top">
@@ -464,7 +464,7 @@
                                     <a href="/mission" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Mission</a>
                                 </div>
                             </div>
-                            <div class="relative group  hover-border-top">
+                            <div class="relative group " style="border-top: 4px solid rgb(255 255 255);">
                                 <a href="service" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">Service
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
@@ -1138,8 +1138,8 @@
 
     <section class="mt-10">
         <div class="relative flex flex-col md:flex-row items-center md:items-start mt-8">
-            <span class="bg-yellow-500 yellow-triangle absolute left-0 h-20 hidden md:block"></span>
-            <h3 class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-full md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;">
+            <span class="bg-yellow-500 yellow-diamond absolute left-0 h-20 w-20 hidden md:block transform rotate-45" style="margin-left: 47%;"></span>
+            <h3 id="handyman-services" class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-11/12 md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;margin-left: 4%;">
                 <span class="inner-span">All-in-One Handyman Services for Modern Living Convenience</span>
             </h3>
             <style>
@@ -1147,6 +1147,10 @@
                     .inner-span {
                         width: 93%;
                         margin: 0 auto;
+                    }
+
+                    #handyman-services {
+                        margin-right: 4%;
                     }
                 }
             </style>
@@ -1250,8 +1254,8 @@
 
     <!-- price -->
     <!-- component -->
-    <div class="flex flex-col items-center justify-center min-h-screen p-10 text-gray-700 bg-gray-100 md:p-20">
-        <h2 class="text-2xl font-medium">Our Exclusive Deals & Offers!</h2>
+    <div class="flex flex-col items-center justify-center min-h-screen p-10 text-gray-700 bg-gray-100 md:p-20"style="background-image: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)),url(https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg);background-attachment: fixed;">
+        <h2 class="text-3xl font-medium text-white">Our Exclusive Deals & Offers!</h2>
 
         <!-- Component Start -->
         <div class="flex flex-wrap items-center justify-center w-full max-w-4xl mt-8">
@@ -1467,53 +1471,60 @@
     </div>
     <!-- FAQ -->
 
-    <!-- Revew -->
-    <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
-        <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">Everyworks Group's Network of Service Brands</h2>
+   <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
+        <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">AllHouseWork's Group's Network of Service Brands</h2>
         <div class="w-11/12 mt-2 mb-8 flex flex-wrap justify-around">
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/plumbing">
-                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/mr-plumber-singapore-logo.png" alt="Image 1" class="w-48 h-16">
+                    <img src="{{ url('img/plumber.png') }}" alt="Image 1" class="w-48 h-16 hover:zoom-in">
                 </a>
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/matressClean">
-                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/logo-header-png-dw-mattress-cleaning-singapore.png" alt="Image 2" class="w-48 h-16">
+                    <img src="{{ url('img/matress.png') }}" alt="Image 2" class="w-52 h-20 hover:zoom-in">
                 </a>
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/electric">
-                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/Daylight-Electrician-Singapore-logo.png" alt="Image 3" class="w-48 h-16">
+                    <img src="{{ url('img/daylight.png') }}" alt="Image 3" class="w-48 h-16 hover:zoom-in">
                 </a>
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/handyman">
-                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/a1-handyman-singapore-logo-300x77.png" alt="Image 4" class="w-48 h-16">
+                    <img src="{{ url('img/handy.png') }}" alt="Image 4" class="w-54 h-16 hover:zoom-in">
                 </a>
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/waterHeater">
-                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/Water-Heater-Singapore-logo-15.png" alt="Image 5" class="w-48 h-16">
+                    <img src="{{ url('img/water.png') }}" alt="Image 5" class="w-48 h-16 hover:zoom-in">
                 </a>
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/sofaClean">
-                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/logo-header-png-dw-sofa-cleaning-singapore.png" alt="Image 6" class="w-48 h-16">
+                    <img src="{{ url('img/sofa.png') }}" alt="Image 6" class="w-52 h-24 hover:zoom-in">
                 </a>
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/floorclean">
-                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/dw-floor-polishing-singapore-logo-300x123.png" alt="Image 7" class="w-80 h-20">
+                    <img src="{{ url('img/floor.png') }}" alt="Image 7" class="w-80 h-20 hover:zoom-in">
                 </a>
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/rubbishChute">
-                    <img src="https://www.everyworks.com/wp-content/uploads/2024/01/a1-rubbish-chute-singapore-logo-300x117.png" alt="Image 8" class="w-80 h-20">
+                    <img src="{{ url('img/rubbish.png') }}" alt="Image 8" class="w-56 h-16 hover:zoom-in">
                 </a>
             </div>
         </div>
     </section>
     <style>
+        .hover\:zoom-in {
+            transition: transform 0.3s ease;
+        }
+
+        .hover\:zoom-in:hover {
+            transform: scale(1.1);
+        }
+
         @media (max-width: 768px) {
             .responsive-image {
                 flex-basis: 100% !important;
@@ -1521,12 +1532,11 @@
             }
         }
     </style>
-
-    <footer class="footer-bg text-white py-10">
+   <footer class="footer-bg text-white py-10">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
                 <h2 class="text-xl font-bold mb-4 footer-text-yellow border-b-2 border-yellow-500">About Allhouseworks Services</h2>
-                <p style="font-family: system-ui;font-size: inherit;line-height: 20px;">Allhouseworks is Singapore’s leading Home Maintenance Company offering quality & reliable services like Handyman, Electrical, Plumbing & Aircon Servicing and many more. Book your home maintenance services online in just a few clicks: simply message us on WhatsApp and our 4-star dedicated customer service team will fulfill the rest. Trusted by thousands of customers over the years, with a simple process to message us, we promise fast response and transparent quotes for any office or home services you need to get done. WhatsApp us at +65 8241 0032 Now!</p>
+                <p style="font-family: system-ui;font-size: inherit;line-height: 20px;">Allhouseworks stands as Singapore’s top choice for Home Maintenance, providing top-quality services such as Handyman, Electrical, Plumbing, and Aircon Servicing. With our easy online booking, you can connect with us via WhatsApp and let our dedicated 4-star customer service team handle everything for you. Thousands of satisfied customers rely on us for fast, transparent quotes and reliable service. Reach out on WhatsApp at +65 9658 5757 now for all your home and office maintenance needs!</p>
             </div>
             <div style="margin-left: 58px;">
                 <h2 class="text-xl font-bold mb-4 footer-text-yellow ">Useful Links</h2>
@@ -1556,25 +1566,21 @@
             <div>
                 <h2 class="text-xl font-bold mb-4 footer-text-yellow">Contact Here</h2>
                 <ul class="space-y-2" style="font-size: medium;line-height: 28px;">
-                    <li>1090 Lower Delta Road #03-07, Singapore 169201</li>
-                    <li>Phone: +65 9658 5757</li>
-                    <li>WhatsApp (Message Only): +65 9658 5757</li>
-                    <li>Email: enquiry@Allhouseworks.com</li>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=1090+Lower+Delta+Road+%2303-07,+Singapore+169201" target="_blank">1090 Lower Delta Road #03-07, Singapore 169201</a></li>
+                    <li>WhatsApp (Message Only): <a href="https://wa.me/6596585757" style="color: #F69919;font-weight: 700;">+65 9658 5757</a></li>
+                    <li>Email: <a href="mailto:info@allhouseworks.com" style="color: #F69919;font-weight: 700;">info@allhouseworks.com</a></li>
                 </ul>
-
             </div>
         </div>
     </footer>
     <style>
         .footer-bg {
-            background: #181818 url(https://everyworks.com/wp-content/uploads/2018/04/footerbg.png?id=45) !important;
-            background-size: cover;
-            background-position: center;
+            background-image: linear-gradient(#000000AB, hsla(0 0% 0% / 0.81)), url(https://img.pikbest.com/origin/09/17/44/54fpIkbEsTrpq.jpg!w700wp);
+            background-attachment: fixed;
         }
 
         .footer-text-yellow {
             color: #f8b500;
-            /* Adjust this color as needed */
         }
     </style>
 </body>

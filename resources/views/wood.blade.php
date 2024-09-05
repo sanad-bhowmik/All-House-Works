@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AllHouseWorks</title>
+    <title>AllHouseWorks | Wood Varnishing</title>
     <!-- Link to Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" href="{{ url('img/favicon.ico') }}" type="image/x-icon">
@@ -189,7 +189,7 @@
     }
 
     .black-polygon {
-        clip-path: polygon(11% 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
     }
 
 
@@ -277,6 +277,7 @@
     /* General Styles */
     .hover-border-top:hover {
         border-top: 4px solid #B48F57;
+        border-top: 4px solid #FFFFFF;
     }
 
     .group:hover .group-hover\:block {
@@ -358,6 +359,7 @@
     #main-nav.scrolled {
         top: 0;
         background-color: #f8f8f8;
+        background-color: #f69918;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
@@ -430,8 +432,8 @@
         </div>
     </div>
     <!-- Scroll Up -->
-    <nav id="main-nav" class="bg-white shadow-lg relative z-50 sticky">
-        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t">
+    <nav id="main-nav" class="bg-white relative z-50 sticky">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t" style="background-color: #f69918;">
             <div class="relative flex items-center justify-between h-16" id="kol">
                 <div class="inset-y-0 left-0 flex items-center sm:hidden">
                     <button id="mobile-menu-toggle" type="button" class="inline-flex bg-gray-700 items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
@@ -444,19 +446,14 @@
                         </svg>
                     </button>
                 </div>
-                <style>
-                    .hover-border-top:hover {
-                        border-top: 4px solid #B48F57;
-                    }
-                </style>
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
                     <div class="hidden sm:block sm:ml-6">
-                        <div class="flex space-x-16 ">
-                            <div class="hover-border-top" style="margin-top: 10px;">
-                                <a href="/" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Home</a>
+                        <div class="flex space-x-16">
+                            <div class="hover-border-top ">
+                                <a href="/" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Home</a>
                             </div>
                             <div class="relative group hover-border-top">
-                                <a href="/about" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium flex items-center">About
+                                <a href="/about" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">About
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
@@ -466,8 +463,8 @@
                                     <a href="/mission" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Mission</a>
                                 </div>
                             </div>
-                            <div class="relative group hover-border-top" style="border-top: 4px solid #B48F57;">
-                                <a href="service" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium flex items-center">Service
+                            <div class="relative group" style="border-top: 4px solid rgb(255 255 255);">
+                                <a href="service" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">Service
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
@@ -561,11 +558,11 @@
                                         <div class="absolute hidden electric-group-hover:block text-white bg-gray-800 shadow-lg rounded-md mt-2 w-40 left-full top-0 z-50">
 
                                             <!-- Electric Install -->
-                                            <a href="/electricalInstall" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">WOOD Installation</a>
+                                            <a href="/electricalInstall" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Electrical Installation</a>
                                             <!-- Electric Install -->
 
                                             <!-- Electric Repair -->
-                                            <a href="/electricRepair" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">WOOD Repair</a>
+                                            <a href="/electricRepair" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Electrical Repair</a>
                                             <!-- Electric Repair -->
 
 
@@ -682,7 +679,7 @@
                                             <!-- Marble Polishing -->
 
                                             <!-- Mattress Steam Cleaning -->
-                                            <a href="/matressstemClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Mattress Steam Cleaning</a>
+                                            <!-- <a href="/matressstemClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Mattress Steam Cleaning</a> -->
                                             <!-- Mattress Steam Cleaning -->
 
                                             <!-- Parquet Polishing -->
@@ -698,7 +695,7 @@
                                             <!-- Wood Polishing -->
 
                                             <!-- Sofa Stain Removal -->
-                                            <a href="/sofaStain" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Sofa Stain Removal</a>
+                                            <!-- <a href="/sofaStain" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Sofa Stain Removal</a> -->
                                             <!-- Sofa Stain Removal -->
 
                                             <!-- Wood Floor Polishing -->
@@ -774,14 +771,14 @@
                                     <!--Decking -->
                                 </div>
                             </div>
-                            <div class="hover-border-top  " style="margin-top: 10px;">
-                                <a href="/price" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Price</a>
+                            <div class="hover-border-top ">
+                                <a href="/price" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium" style="margin-top: 2px;">Price</a>
                             </div>
-                            <div class="hover-border-top  " style="margin-top: 10px;">
-                                <a href="/works" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Works</a>
+                            <div class="hover-border-top ">
+                                <a href="/works" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium" style="margin-top: 2px;">Works</a>
                             </div>
-                            <div class="hover-border-top" style="margin-top: 10px;">
-                                <a href="/contact" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Contact
+                            <div class="hover-border-top">
+                                <a href="/contact" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium" style="margin-top: 2px;">Contact
                                     Us</a>
                             </div>
                         </div>
@@ -792,7 +789,7 @@
             <!-- Mobile -->
             <div class="sm:hidden hidden" id="mobile-menu">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="#" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="/" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Home</a>
 
                     <div class="relative">
                         <button class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between" onclick="toggleSubMenu('about-submenu', 'about-arrow')">
@@ -1069,11 +1066,11 @@
         </div>
     </nav>
     <!-- Navigation Menu -->
-    <section class="parallax mt-16" style="position: relative; background: url('https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2023/05/solid-oak-flooring.jpeg-1-e1684409736918.jpg') no-repeat center center fixed; background-size: cover; height: 300px;">
+    <section class="parallax " style="position: relative; background: url('https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2023/05/solid-oak-flooring.jpeg-1-e1684409736918.jpg') no-repeat center center fixed; background-size: cover; height: 300px;">
         <div class="overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
         <div class="content" style="position: relative; z-index: 1; display: flex; flex-direction: column; padding-left: 1rem; padding-right: 1rem; text-align: center; gap: 1rem;">
-            <h1 style="font-size: 2.5rem; color: white; font-weight: 100; margin-bottom: 1.5rem;">WOOD</h1>
-            <p style="font-size: 1rem; color: antiquewhite;">Home / Service / WOOD</p>
+            <h1 style="font-size: 2.5rem; color: white; font-weight: 100; margin-bottom: 1.5rem;">Wood Varnishing</h1>
+            <p style="font-size: 1rem; color: antiquewhite;">Home / Service / Wood Varnishing</p>
         </div>
     </section>
 
@@ -1162,8 +1159,8 @@
     </section>
     <section class="mt-10">
         <div class="relative flex flex-col md:flex-row items-center md:items-start mt-8">
-            <span class="bg-yellow-500 yellow-triangle absolute left-0 h-20 hidden md:block"></span>
-            <h3 class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-full md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;">
+            <span class="bg-yellow-500 yellow-diamond absolute left-0 h-20 w-20 hidden md:block transform rotate-45" style="margin-left: 47%;"></span>
+            <h3 id="handyman-services" class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-11/12 md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;margin-left: 4%;">
                 <span class="inner-span">All-in-One Handyman Services for Modern Living Convenience</span>
             </h3>
             <style>
@@ -1171,6 +1168,10 @@
                     .inner-span {
                         width: 93%;
                         margin: 0 auto;
+                    }
+
+                    #handyman-services {
+                        margin-right: 4%;
                     }
                 }
             </style>
@@ -2213,6 +2214,67 @@
         </div>
     </section>
     <!-- Revew -->
+    <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
+        <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">AllHouseWork's Group's Network of Service Brands</h2>
+        <div class="w-11/12 mt-2 mb-8 flex flex-wrap justify-around">
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/plumbing">
+                    <img src="{{ url('img/plumber.png') }}" alt="Image 1" class="w-48 h-16 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/matressClean">
+                    <img src="{{ url('img/matress.png') }}" alt="Image 2" class="w-52 h-20 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/electric">
+                    <img src="{{ url('img/daylight.png') }}" alt="Image 3" class="w-48 h-16 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/handyman">
+                    <img src="{{ url('img/handy.png') }}" alt="Image 4" class="w-54 h-16 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/waterHeater">
+                    <img src="{{ url('img/water.png') }}" alt="Image 5" class="w-48 h-16 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/sofaClean">
+                    <img src="{{ url('img/sofa.png') }}" alt="Image 6" class="w-52 h-24 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/floorclean">
+                    <img src="{{ url('img/floor.png') }}" alt="Image 7" class="w-80 h-20 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/rubbishChute">
+                    <img src="{{ url('img/rubbish.png') }}" alt="Image 8" class="w-56 h-16 hover:zoom-in">
+                </a>
+            </div>
+        </div>
+    </section>
+    <style>
+        .hover\:zoom-in {
+            transition: transform 0.3s ease;
+        }
+
+        .hover\:zoom-in:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .responsive-image {
+                flex-basis: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+    </style>
     <footer class="footer-bg text-white py-10">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>

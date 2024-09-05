@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AllHouseWorks</title>
+    <title>AllHouseWorks | About</title>
     <!-- Link to Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" href="{{ url('img/favicon.ico') }}" type="image/x-icon">
@@ -392,7 +392,7 @@
                     </div>
                     <div class="flex flex-col justify-center">
                         <p class="text-lg font-semibold" style="font-family: 'Josefin Sans';">WHATSAPP NUMBER</p>
-                        <p class="text-gray-500">+65 6575 1226</p>
+                        <p class="text-gray-500">+65 9658 5757</p>
                     </div>
                 </div>
                 <div class="w-full md:w-auto flex justify-center">
@@ -450,10 +450,10 @@
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
                     <div class="hidden sm:block sm:ml-6">
                         <div class="flex space-x-16">
-                            <div class=" " style="border-top: 4px solid rgb(255 255 255);">
+                            <div class=" hover-border-top">
                                 <a href="/" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Home</a>
                             </div>
-                            <div class="relative group hover-border-top">
+                            <div class="relative group " style="border-top: 4px solid rgb(255 255 255);">
                                 <a href="/about" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">About
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
@@ -680,7 +680,7 @@
                                             <!-- Marble Polishing -->
 
                                             <!-- Mattress Steam Cleaning -->
-                                            <a href="/matressstemClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Mattress Steam Cleaning</a>
+                                            <!-- <a href="/matressstemClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Mattress Steam Cleaning</a> -->
                                             <!-- Mattress Steam Cleaning -->
 
                                             <!-- Parquet Polishing -->
@@ -696,7 +696,7 @@
                                             <!-- Wood Polishing -->
 
                                             <!-- Sofa Stain Removal -->
-                                            <a href="/sofaStain" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Sofa Stain Removal</a>
+                                            <!-- <a href="/sofaStain" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Sofa Stain Removal</a> -->
                                             <!-- Sofa Stain Removal -->
 
                                             <!-- Wood Floor Polishing -->
@@ -1084,7 +1084,7 @@
                 <img style="height: auto; max-width: 100%;" src="{{ url('img/icon2.png') }}" alt="Everyworks Singapore Logo">
             </div>
             <div class="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0">
-                <p style="max-width: 100%; text-align: justify; font-size: 17px; color: #777;">All House Work's Singapore is a holistic solution for all your home maintenance and handyman needs including electrical, plumbing, and aircon services. You can expect to get all your needs to be done just by messaging us via WhatsApp. Find and book appointments for multiple handyman services at reasonable prices, with guaranteed quality work and excellent customer support. All House Work's Singapore aims to be the number one handyman service provider to meet all your home maintenance needs!</p>
+                <p style="max-width: 100%; text-align: justify; font-size: 17px; color: #777;"> All House Work Singapore offers a comprehensive solution for all your home maintenance and handyman needs, including electrical, plumbing, and air conditioning services. Simply message us on WhatsApp to address all your requirements in one place. Book appointments for various handyman services at competitive prices, with guaranteed quality and exceptional customer support. Our goal is to be the leading provider of home maintenance services, delivering top-notch solutions for all your needs.</p>
             </div>
         </div>
     </section>
@@ -1215,7 +1215,8 @@
                         <path class="cls-1" d="M40.83,8.48c1.14,0,2,1,1.54,2.86l-5.58,26.3c-.39,1.87-1.52,2.32-3.08,1.45L20.4,29.26a.4.4,0,0,1,0-.65L35.77,14.73c.7-.62-.15-.92-1.07-.36L15.41,26.54a.46.46,0,0,1-.4.05L6.82,24C5,23.47,5,22.22,7.23,21.33L40,8.69a2.16,2.16,0,0,1,.83-.21Z"></path>
                     </g>
                 </svg>
-                <p style="font-size: 16px;font-weight: 600;width: 294px;font-family: system-ui;margin-top: 7px;margin-left: 7px;">Fast Response & Anticipation of Your Needs</p>
+                <p style="font-size: 16px;font-weight: 600;width: 294px;font-family: system-ui;margin-top: 7px;margin-left: 7px;">Swift Solutions & Understanding Your Needs</p>
+
             </div>
 
             <div style="margin: 10px;" class="border-r-2 border-b-2 p-4">
@@ -1226,7 +1227,8 @@
                         <path d="M11.2691 4.41115C11.5006 3.89177 11.6164 3.63208 11.7776 3.55211C11.9176 3.48263 12.082 3.48263 12.222 3.55211C12.3832 3.63208 12.499 3.89177 12.7305 4.41115L14.5745 8.54808C14.643 8.70162 14.6772 8.77839 14.7302 8.83718C14.777 8.8892 14.8343 8.93081 14.8982 8.95929C14.9705 8.99149 15.0541 9.00031 15.2213 9.01795L19.7256 9.49336C20.2911 9.55304 20.5738 9.58288 20.6997 9.71147C20.809 9.82316 20.8598 9.97956 20.837 10.1342C20.8108 10.3122 20.5996 10.5025 20.1772 10.8832L16.8125 13.9154C16.6877 14.0279 16.6252 14.0842 16.5857 14.1527C16.5507 14.2134 16.5288 14.2807 16.5215 14.3503C16.5132 14.429 16.5306 14.5112 16.5655 14.6757L17.5053 19.1064C17.6233 19.6627 17.6823 19.9408 17.5989 20.1002C17.5264 20.2388 17.3934 20.3354 17.2393 20.3615C17.0619 20.3915 16.8156 20.2495 16.323 19.9654L12.3995 17.7024C12.2539 17.6184 12.1811 17.5765 12.1037 17.56C12.0352 17.5455 11.9644 17.5455 11.8959 17.56C11.8185 17.5765 11.7457 17.6184 11.6001 17.7024L7.67662 19.9654C7.18404 20.2495 6.93775 20.3915 6.76034 20.3615C6.60623 20.3354 6.47319 20.2388 6.40075 20.1002C6.31736 19.9408 6.37635 19.6627 6.49434 19.1064L7.4341 14.6757C7.46898 14.5112 7.48642 14.429 7.47814 14.3503C7.47081 14.2807 7.44894 14.2134 7.41394 14.1527C7.37439 14.0842 7.31195 14.0279 7.18708 13.9154L3.82246 10.8832C3.40005 10.5025 3.18884 10.3122 3.16258 10.1342C3.13978 9.97956 3.19059 9.82316 3.29993 9.71147C3.42581 9.58288 3.70856 9.55304 4.27406 9.49336L8.77835 9.01795C8.94553 9.00031 9.02911 8.99149 9.10139 8.95929C9.16534 8.93081 9.2226 8.8892 9.26946 8.83718C9.32241 8.77839 9.35663 8.70162 9.42508 8.54808L11.2691 4.41115Z" stroke="#000000" stroke-width="0.624" stroke-linecap="round" stroke-linejoin="round"></path>
                     </g>
                 </svg>
-                <p style="font-size: 16px;font-weight: 600;width: 238px;font-family: system-ui;margin-top: 14px;margin-left: 7px;">5 -Star Customer Service</p>
+                <p style="font-size: 16px;font-weight: 600;width: 238px;font-family: system-ui;margin-top: 14px;margin-left: 7px;">Exceptional Customer Support</p>
+
             </div>
 
             <div style="margin: 10px;" class="border-r-2 border-b-2 p-4">
@@ -1240,7 +1242,7 @@
                         </g>
                     </g>
                 </svg>
-                <p style="font-size: 16px;font-weight: 600;width: 294px;font-family: system-ui;margin-top: 7px;margin-left: 7px;">End-to-End Service of Supply & Installation</p>
+                <p style="font-size: 16px;font-weight: 600;width: 294px;font-family: system-ui;margin-top: 7px;margin-left: 7px;">Turnkey Supply & Installation Solutions</p>
             </div>
         </div>
 
@@ -1255,7 +1257,7 @@
                         <path d="M712.32 426.56L448 721.6l-137.28-136.32A32 32 0 0 0 265.6 630.4l160 160a32 32 0 0 0 22.4 9.6 32 32 0 0 0 23.04-10.56l288-320a32 32 0 0 0-47.68-42.88z" fill="#f7a90c"></path>
                     </g>
                 </svg>
-                <p style="font-size: 16px;font-weight: 600;width: 294px;font-family: system-ui;margin-top: 7px;margin-left: 7px;">Transparent Pricing & Detailed Quotations</p>
+                <p style="font-size: 16px;font-weight: 600;width: 294px;font-family: system-ui;margin-top: 7px;margin-left: 7px;">Honest Pricing & In-Depth Quotes</p>
             </div>
             <div style="margin: 10px;" class="border-r-2 border-b-2 p-4">
                 <svg width="64px" height="64px" viewBox="-4.32 -4.32 32.64 32.64" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#e5e1e1" stroke-width="0.00024000000000000003">
@@ -1269,7 +1271,7 @@
                         <path d="M14.8185 14.0364C14.4045 14.0621 14.3802 14.6183 14.7606 14.7837V14.7837C15.803 15.237 16.5879 15.9043 17.1508 16.756C17.6127 17.4549 18.33 18 19.1677 18H20.9483C21.6555 18 22.1715 17.2973 21.9227 16.6108C21.9084 16.5713 21.8935 16.5321 21.8781 16.4932C21.5357 15.6286 20.9488 14.9921 20.0798 14.5864C19.2639 14.2055 18.2425 14.0483 17.0392 14.0008L17.0194 14H16.9997C16.2909 14 15.5506 13.9909 14.8185 14.0364Z" fill="#323232"></path>
                     </g>
                 </svg>
-                <p style="font-size: 16px;font-weight: 600;width: 238px;font-family: system-ui;margin-top: 14px;margin-left: 7px;">Qualified and Licensed Professionals</p>
+                <p style="font-size: 16px;font-weight: 600;width: 238px;font-family: system-ui;margin-top: 14px;margin-left: 7px;">Trained and Licensed Specialists</p>
             </div>
             <div style="margin: 10px;" class="border-r-2 border-b-2 p-4">
                 <svg width="64px" height="64px" viewBox="-6.24 -6.24 36.48 36.48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1280,15 +1282,16 @@
                         <path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke="#f7a90c" stroke-width="1.176" stroke-linecap="round"></path>
                     </g>
                 </svg>
-                <p style="font-size: 16px;font-weight: 600;width: 294px;font-family: system-ui;margin-top: 7px;margin-left: 7px;">A Holistic Solution Personalised To You</p>
+                <p style="font-size: 16px;font-weight: 600;width: 294px;font-family: system-ui;margin-top: 7px;margin-left: 7px;">A Comprehensive Solution Tailored for You</p>
             </div>
             <!-- Repeat the above structure for other items -->
         </div>
 
         <div>
             <p style="width: 90%;text-align: justify;font-size: 16px;color: #353232;margin-top: 20px;margin-left: auto;margin-right: auto;text-align: center;">
-                All House Work's offer a wide range of home maintenance services including <span style="color: #f3b04f;">handyman</span>, <span style="color: #f3b04f;">electrical</span>, <span style="color: #f3b04f;">plumbing</span>, and aircon services that will save you time from searching for other service providers. Built on transparency and trust, we will provide all the information that you require to best serve your needs. Our seamless and hassle-free service offerings will simplify the process of hiring a handyman service. Turn to All House Work's Singapore and we will get the job done. You will get more time to do the things you love so leave the rest to us. For other repair and maintenance work, please visit our <span style="color: #f3b04f;">resources page</span>.
+                All House Work offers a comprehensive range of home maintenance services, including <span style="color: #f3b04f;">handyman</span>, <span style="color: #f3b04f;">electrical</span>, <span style="color: #f3b04f;">plumbing</span>, and air conditioning solutions. Our services are designed to save you time and effort by eliminating the need to engage multiple providers. With a foundation of transparency and trust, we deliver all the necessary information to ensure we meet your expectations. Our seamless, hassle-free approach simplifies the process of hiring professional services. Rely on All House Work Singapore for efficient, reliable results, allowing you more time to focus on what matters most. For additional repair and maintenance information, please visit our <span style="color: #f3b04f;">resources page</span>.
             </p>
+
         </div>
     </section>
 
@@ -1306,12 +1309,12 @@
                 height: 308px;">
             </div>
             <div class="text-black relative z-10 lg:w-1/2 bg-yellow-500 bg-opacity-95 p-5 opacity-90 backdrop-blur-lg lg:p-12"
-                style="padding: 20px; border-radius: 8px;">
+                style="border-radius: 8px;">
                 <h2 class="font-serif text-2xl md:text-4xl font-bold">BOOK HOME MAINTENANCE SERVICES</h2>
                 <p class="mb-4 font-serif font-light text-sm md:text-base">
-                    With our range of handyman services including aircon, plumbing, and electrical services, we can solve your home repair and maintenance issues in a single arrangement. No need to book different service providers and have them arrive at different schedules.
+                    Our diverse handyman services, encompassing air conditioning, plumbing, and electrical solutions, offer a streamlined approach to addressing all your home repair and maintenance needs. Avoid the hassle of scheduling multiple service providers with varying appointment times. We handle everything in one convenient arrangement.
                 </p>
-                <a href="#" class="mt-6 inline-block rounded-xl border-2 px-6 md:px-10 py-3 font-semibold border-black hover:bg-blue hover:text-blue-600">
+                <a href="#" class="mt-2 inline-block rounded-xl border-2 px-6 md:px-10 py-3 font-semibold border-black hover:bg-blue hover:text-blue-600">
                     See Services
                 </a>
             </div>
@@ -1327,7 +1330,7 @@
                 <div class="w-full md:w-1/2 p-2">
                     <h1 class="text-xl md:text-2xl font-bold mb-4">JUST WHATSAPP TO GET ADVICE AND A DIRECT QUOTE</h1>
                     <p class="mb-4 text-sm md:text-base">
-                        Customers can enquire about All House Work's services by simply messaging us on Whatsapp. You can send a picture of the problem you are facing, or describe what you are looking for, and our customer service officers can help solve your needs quickly.
+                        To inquire about All House Work's services, simply message us on WhatsApp. You can either send a photo of the issue you're encountering or describe your needs, and our customer service team will promptly assist you in finding a solution.
                     </p>
                     <a style="margin-left: 13%;" id="sendbtn" class="shortcode_wa_button mt-6 inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-500 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" href="https://api.whatsapp.com/send?phone=65 6575 1226&amp;text=Hello, I would like to know more about the following home service" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">
                         <img src="img/whatsapp.png" alt="" class="mr-2"><span>WhatsApp to Start Now!</span>
@@ -1355,7 +1358,10 @@
                 </figcaption>
                 <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">CUSTOMER SATISFACTION GUARANTEED</h3>
-                    <p class="my-4">Our company’s policy is to maintain honesty and transparency in our prices. We are committed to providing you with effective and efficient home service solutions. We also provide workmanship warranties to ensure the job is truly well done. We are the trusted service providers to ensure guaranteed satisfaction with affordable and reliable home service offerings.</p>
+                    <p class="my-4">
+                        Our company is dedicated to upholding honesty and transparency in our pricing. We strive to deliver effective and efficient home service solutions, backed by workmanship warranties to ensure the highest quality results. As trusted service providers, we guarantee satisfaction with our affordable and reliable home services.
+                    </p>
+
                 </blockquote>
             </figure>
 
@@ -1365,14 +1371,17 @@
                 </figcaption>
                 <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">SHOP WITH US FOR ONE-STOP CONVENIENCE</h3>
-                    <p class="my-4">Customers can shop for products if they are in need of new installations or replacements for their home or office fixtures and appliances. Through WhatsApp, our customer service can provide recommendations and advice on the products we offer. We are the trusted service providers to ensure guaranteed satisfaction with affordable and reliable home service offerings.</p>
+                    <p class="my-4">
+                        For new installations or replacements of home or office fixtures and appliances, customers can explore our product offerings. Our customer service team is available via WhatsApp to provide personalized recommendations and advice on the products we offer. As trusted service providers, we ensure satisfaction with our affordable and reliable solutions.
+                    </p>
+
                 </blockquote>
             </figure>
         </div>
 
     </section>
     <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
-        <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">Everyworks Group's Network of Service Brands</h2>
+        <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">AllHouseWork's Group's Network of Service Brands</h2>
         <div class="w-11/12 mt-2 mb-8 flex flex-wrap justify-around">
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/plumbing">
@@ -1437,7 +1446,7 @@
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
                 <h2 class="text-xl font-bold mb-4 footer-text-yellow border-b-2 border-yellow-500">About Allhouseworks Services</h2>
-                <p style="font-family: system-ui;font-size: inherit;line-height: 20px;">Allhouseworks is Singapore’s leading Home Maintenance Company offering quality & reliable services like Handyman, Electrical, Plumbing & Aircon Servicing and many more. Book your home maintenance services online in just a few clicks: simply message us on WhatsApp and our 4-star dedicated customer service team will fulfill the rest. Trusted by thousands of customers over the years, with a simple process to message us, we promise fast response and transparent quotes for any office or home services you need to get done. WhatsApp us at +65 8241 0032 Now!</p>
+                <p style="font-family: system-ui;font-size: inherit;line-height: 20px;">Allhouseworks stands as Singapore’s top choice for Home Maintenance, providing top-quality services such as Handyman, Electrical, Plumbing, and Aircon Servicing. With our easy online booking, you can connect with us via WhatsApp and let our dedicated 4-star customer service team handle everything for you. Thousands of satisfied customers rely on us for fast, transparent quotes and reliable service. Reach out on WhatsApp at +65 9658 5757 now for all your home and office maintenance needs!</p>
             </div>
             <div style="margin-left: 58px;">
                 <h2 class="text-xl font-bold mb-4 footer-text-yellow ">Useful Links</h2>
@@ -1467,25 +1476,21 @@
             <div>
                 <h2 class="text-xl font-bold mb-4 footer-text-yellow">Contact Here</h2>
                 <ul class="space-y-2" style="font-size: medium;line-height: 28px;">
-                    <li>1090 Lower Delta Road #03-07, Singapore 169201</li>
-                    <li>Phone: +65 9658 5757</li>
-                    <li>WhatsApp (Message Only): +65 9658 5757</li>
-                    <li>Email: enquiry@Allhouseworks.com</li>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=1090+Lower+Delta+Road+%2303-07,+Singapore+169201" target="_blank">1090 Lower Delta Road #03-07, Singapore 169201</a></li>
+                    <li>WhatsApp (Message Only): <a href="https://wa.me/6596585757" style="color: #F69919;font-weight: 700;">+65 9658 5757</a></li>
+                    <li>Email: <a href="mailto:info@allhouseworks.com" style="color: #F69919;font-weight: 700;">info@allhouseworks.com</a></li>
                 </ul>
-
             </div>
         </div>
     </footer>
     <style>
         .footer-bg {
-            background: #181818 url(https://everyworks.com/wp-content/uploads/2018/04/footerbg.png?id=45) !important;
-            background-size: cover;
-            background-position: center;
+            background-image: linear-gradient(#000000AB, hsla(0 0% 0% / 0.81)), url(https://img.pikbest.com/origin/09/17/44/54fpIkbEsTrpq.jpg!w700wp);
+            background-attachment: fixed;
         }
 
         .footer-text-yellow {
             color: #f8b500;
-            /* Adjust this color as needed */
         }
     </style>
 </body>

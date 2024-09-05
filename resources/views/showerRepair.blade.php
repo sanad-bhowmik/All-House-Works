@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All House Works</title>
+    <title>AllHouseWorks | Shower Service</title>
     <!-- Link to Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="icon" href="https://i.ibb.co/37LJZ19/Blue-Modern-Luxury-Real-Estate-Logo-removebg-preview.png" type="image/x-icon">
+    <link rel="icon" href="{{ url('img/favicon.ico') }}" type="image/x-icon">
 </head>
 <style>
     #nav1 {
@@ -156,12 +156,6 @@
         width: 50px;
     }
 
-    .footer {
-        background: linear-gradient(rgb(62 71 247 / 9%), rgb(39 255 111 / 10%)), url(https://agrosoftware.in/img/product-bg.png) left bottom no-repeat;
-        background-size: auto;
-
-    }
-
     .shortcode_wa_button,
     .shortcode_wa_button_nt {
         background: #25d366 !important;
@@ -195,9 +189,8 @@
     }
 
     .black-polygon {
-        clip-path: polygon(11% 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
     }
-
 
     .halfway-banner {
         top: 14%;
@@ -248,7 +241,7 @@
     }
 
     #header_slider #slide_item:nth-child(1) {
-        background: url("https://media.istockphoto.com/id/1339613829/photo/plumber-at-work-in-a-bathroom-plumbing-repair-service-assemble-and-Choke's-concept.jpg?s=612x612&w=0&k=20&c=lQREIzjwRM3ApTkRzTnbIA_BCRCy_ER-e51tofKsaP0=") no-repeat center center;
+        background: url("https://media.istockphoto.com/id/1339613829/photo/plumber-at-work-in-a-bathroom-plumbing-repair-service-assemble-and-install-concept.jpg?s=612x612&w=0&k=20&c=lQREIzjwRM3ApTkRzTnbIA_BCRCy_ER-e51tofKsaP0=") no-repeat center center;
         background-size: cover;
     }
 
@@ -268,7 +261,7 @@
         background-position: center bottom;
     }
 
-       .show {
+    .show {
         display: block;
     }
 
@@ -279,7 +272,48 @@
     .hidden-submenu {
         display: none;
     }
- /* Adjustments for submenu visibility */
+
+    /* General Styles */
+    .hover-border-top:hover {
+        border-top: 4px solid #B48F57;
+        border-top: 4px solid #FFFFFF;
+    }
+
+    .group:hover .group-hover\:block {
+        display: block;
+    }
+
+    #main-nav {
+        z-index: 50;
+    }
+
+    #banner-section {
+        z-index: 10;
+    }
+
+    #main-nav .group:hover svg {
+        transform: rotate(180deg);
+    }
+
+    /* New Nav */
+    #main-nav .relative {
+        position: relative;
+    }
+
+    #main-nav .absolute.left-0 {
+        left: -100%;
+    }
+
+    #main-nav .group:hover .absolute.left-0 {
+        left: 100%;
+    }
+
+    #main-nav .group:hover .transform {
+        display: block;
+        visibility: visible;
+    }
+
+    /* Adjustments for submenu visibility */
     .plumber-group:hover .plumber-group-hover\:block {
         display: block;
     }
@@ -324,60 +358,21 @@
     #main-nav.scrolled {
         top: 0;
         background-color: #f8f8f8;
+        background-color: #f69918;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
- /* Adjustments for submenu visibility */
-    .plumber-group:hover .plumber-group-hover\:block {
-        display: block;
-    }
 
-    .electric-group:hover .electric-group-hover\:block {
-        display: block;
-    }
+    @media (min-width: 641px) {
 
-    .handyman-group:hover .handyman-group-hover\:block {
-        display: block;
-    }
-
-    .deepclean-group:hover .deepclean-group-hover\:block {
-        display: block;
-    }
-
-    .floorpolish-group:hover .floorpolish-group-hover\:block {
-        display: block;
-    }
-
-    .floorclean-group:hover .floorclean-group-hover\:block {
-        display: block;
-    }
-
-    .woodvanish-group:hover .woodvanish-group-hover\:block {
-        display: block;
-    }
-
-    .decking-group:hover .decking-group-hover\:block {
-        display: block;
-    }
-
-    @media (min-width: 1024px) {
-        #main-nav {
-            position: sticky;
-            top: -50px;
-            z-index: 50;
-            transition: top 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        /* Adjust min-width as needed */
+        #kol {
+            margin-left: 15%;
         }
-    }
-
-    #main-nav.scrolled {
-        top: 0;
-        background-color: #f8f8f8;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 </style>
 
 <body class="bg-white relative">
-
-      <div class="bg-black text-white text-center py-4" style="font-size: 12px;text-transform: uppercase;">
+    <div class="bg-black text-white text-center py-4" style="font-size: 12px;text-transform: uppercase;">
         <a href="https://wa.me/6596585757" target="_blank" rel="noopener noreferrer">
             <p style="font-family: sans-serif;font-weight: 500;letter-spacing: 3px;">WHATSAPP NOW FOR SERVICE HELP</p>
         </a>
@@ -387,7 +382,7 @@
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
 
     <nav class="h-auto md:h-48">
-        <div class="max-w-7xl mx-auto px-4 py-2">
+        <div class="max-w-7xl mx-auto px-4">
             <div class="mt-10 flex flex-wrap justify-center md:space-x-64 space-y-4 md:space-y-0">
                 <div class="flex items-center w-full md:w-auto" style="height: auto; width: auto;">
                     <div class="p-2">
@@ -399,30 +394,33 @@
                     </div>
                 </div>
                 <div class="w-full md:w-auto flex justify-center">
-                    <img src="https://www.shutterstock.com/image-vector/builder-crossed-hammers-new-construction-600nw-2246936013.jpg" alt="" class="h-20">
+                    <img src="{{ url('img/icon2.png') }}" alt="" class="h-40">
                 </div>
-                <form onsubmit="checkAndRedirect(event)">
-                    <div class="flex items-center w-full md:w-auto">
-                        <input id="search-input" type="text" placeholder="ENTER KEYWORD" class="h-12 text-blackhover:text-white border border-black px-2 py-1 pl-8 w-full md:w-auto">
-                        <button type="submit">
-                            <svg fill="#000000" height="64px" width="64px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-459.1 -459.1 1406.60 1406.60" xml:space="preserve">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <g>
+                <form onsubmit="checkAndRedirect(event)" class="flex items-center w-full md:w-auto space-x-2">
+                    <div class="relative w-full md:w-auto" style="border-bottom: 3px solid #939090;">
+                        <div class="flex border border-gray-300">
+                            <input id="search-input" type="text" placeholder="ENTER KEYWORD" class="h-12 pl-10 pr-4 py-2 w-full md:w-auto text-black text-base rounded-l-lg focus:outline-none focus:border-brown-500 transition-colors duration-300 ease-in-out">
+                            <button type="submit" class="relative flex items-center justify-center w-12 h-12 bg-brown-500 text-white rounded-r-lg hover:bg-brown-700 focus:outline-none transition-all duration-300 ease-in-out transform hover:scale-105">
+                                <svg height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-276.79 -276.79 1039.18 1039.18" xml:space="preserve" fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
                                         <g>
-                                            <path d="M0,203.25c0,112.1,91.2,203.2,203.2,203.2c51.6,0,98.8-19.4,134.7-51.2l129.5,129.5c2.4,2.4,5.5,3.6,8.7,3.6 s6.3-1.2,8.7-3.6c4.8-4.8,4.8-12.5,0-17.3l-129.6-129.5c31.8-35.9,51.2-83,51.2-134.7c0-112.1-91.2-203.2-203.2-203.2 S0,91.15,0,203.25z M381.9,203.25c0,98.5-80.2,178.7-178.7,178.7s-178.7-80.2-178.7-178.7s80.2-178.7,178.7-178.7 S381.9,104.65,381.9,203.25z"></path>
+                                            <g>
+                                                <path style="fill:#E64C3D;" d="M447.5,477.85l30.3-30.3c4-4,4-10.4,0-14.4l-149.2-149.2l-44.7,44.7l149.2,149.2 C437.1,481.85,443.5,481.85,447.5,477.85z"></path>
+                                                <path style="fill:#2C2F33;" d="M163.4,67.05c-53.2,0-96.5,43.3-96.5,96.5c0,5,4.1,9.1,9.1,9.1s9.1-4.1,9.1-9.1 c0-43.2,35.1-78.3,78.3-78.3c5,0,9.1-4.1,9.1-9.1C172.5,71.05,168.4,67.05,163.4,67.05z"></path>
+                                                <path style="fill:#2C2F33;" d="M335,277.55c-3.5-3.5-9.3-3.5-12.8,0l-15.9,15.9l-21.1-21.1c25.9-28.9,41.7-67.1,41.7-108.9 c0-90.1-73.3-163.4-163.4-163.4S0,73.35,0,163.45s73.3,163.4,163.4,163.4c41.8,0,79.9-15.8,108.9-41.7l21.1,21.1l-15.9,15.9 c-1.7,1.7-2.7,4-2.7,6.4s1,4.7,2.7,6.4l141.9,141.9c5.6,5.6,13,8.7,20.9,8.7s15.3-3.1,20.9-8.7l15.7-15.7c5.6-5.6,8.7-13,8.7-20.9 s-3.1-15.3-8.7-20.9L335,277.55z M18.2,163.45c0-80.1,65.2-145.3,145.3-145.3s145.3,65.2,145.3,145.3s-65.2,145.3-145.3,145.3 S18.2,243.55,18.2,163.45z M464.1,448.45l-15.7,15.7c-2.2,2.2-5,3.4-8.1,3.4s-5.9-1.2-8.1-3.4l-135.5-135.5l31.9-31.9l135.5,135.5 c2.2,2.2,3.4,5,3.4,8.1S466.2,446.35,464.1,448.45z"></path>
+                                            </g>
                                         </g>
                                     </g>
-                                </g>
-                            </svg>
-                        </button>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
     </nav>
-
     <!-- Navigation Menu -->
     <!-- Scroll Up -->
     <div class="flex items-end justify-start fixed bottom-0 left-0 mb-4 ml-4 z-10">
@@ -433,9 +431,9 @@
         </div>
     </div>
     <!-- Scroll Up -->
-    <nav id="main-nav" class="bg-white shadow-lg relative z-50 sticky">
-        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t">
-            <div class="relative flex items-center justify-between h-16" style="margin-left: 15%;">
+    <nav id="main-nav" class="bg-white relative z-50 sticky">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t" style="background-color: #f69918;">
+            <div class="relative flex items-center justify-between h-16" id="kol">
                 <div class="inset-y-0 left-0 flex items-center sm:hidden">
                     <button id="mobile-menu-toggle" type="button" class="inline-flex bg-gray-700 items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
@@ -450,27 +448,27 @@
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
                     <div class="hidden sm:block sm:ml-6">
                         <div class="flex space-x-16">
-                            <div class="border-r-2 border-l-2" style="border-top: 4px solid #B48F57;">
-                                <a href="#" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Home</a>
+                            <div class="hover-border-top ">
+                                <a href="/" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Home</a>
                             </div>
-                            <div class="relative group border-r border-l hover-border-top">
-                                <a href="/about" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium flex items-center">About
+                            <div class="relative group hover-border-top">
+                                <a href="/about" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">About
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
                                 </a>
-                                <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md mt-2 w-40 z-50">
+                                <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md w-40 z-50">
                                     <a href="/review" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Review</a>
                                     <a href="/mission" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Mission</a>
                                 </div>
                             </div>
-                            <div class="relative group border-r border-l hover-border-top">
-                                <a href="#" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium flex items-center">Service
+                            <div class="relative group" style="border-top: 4px solid rgb(255 255 255);">
+                                <a href="service" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">Service
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
                                 </a>
-                                <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md mt-2 w-40 z-50">
+                                <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md w-40 z-50">
                                     <!-- Plumber -->
                                     <div class="relative plumber-group">
                                         <a href="/plumbing" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Plumber</a>
@@ -772,14 +770,14 @@
                                     <!--Decking -->
                                 </div>
                             </div>
-                            <div class="hover-border-top border-r border-l">
-                                <a href="#" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Price</a>
+                            <div class="hover-border-top ">
+                                <a href="/price" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium" style="margin-top: 2px;">Price</a>
                             </div>
-                            <div class="hover-border-top border-r border-l">
-                                <a href="#" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Works</a>
+                            <div class="hover-border-top ">
+                                <a href="/works" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium" style="margin-top: 2px;">Works</a>
                             </div>
-                            <div class="hover-border-top border-r border-l">
-                                <a href="#" class="text-gray-700 hover:text-brown-500 px-3 py-2 rounded-md text-lg font-medium">Contact
+                            <div class="hover-border-top">
+                                <a href="/contact" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium" style="margin-top: 2px;">Contact
                                     Us</a>
                             </div>
                         </div>
@@ -790,7 +788,7 @@
             <!-- Mobile -->
             <div class="sm:hidden hidden" id="mobile-menu">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="#" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="/" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Home</a>
 
                     <div class="relative">
                         <button class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between" onclick="toggleSubMenu('about-submenu', 'about-arrow')">
@@ -1066,12 +1064,12 @@
 
         </div>
     </nav>
-    <!-- Navigation Menu -->
-    <section class="parallax mt-16" style="position: relative; background: url('https://img.freepik.com/premium-photo/man-repair-fixing-shower-faucet-bathroom_220873-3826.jpg') no-repeat center center fixed; background-size: cover; height: 300px;">
+
+    <section class="parallax" style="position: relative; background: url('https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2023/08/29/featured_image.jpg') no-repeat center center fixed; background-size: cover; height: 18.75rem;">
         <div class="overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
-        <div class="content" style="position: relative; z-index: 1; display: flex; flex-direction: column; padding-left: 1rem; padding-right: 1rem; text-align: center; gap: 1rem;">
-            <h1 style="font-size: 2.5rem; color: white; font-weight: 100; margin-bottom: 1.5rem;">Shower Repair</h1>
-            <p style="font-size: 1rem; color: antiquewhite;">Home / Service / Floor Clean / Shower Repair</p>
+        <div class="content" style="position: relative; z-index: 1; display: flex; flex-direction: column; padding-left: 16px; padding-right: 16px; text-align: center; gap: 16px;">
+            <h1 style="font-size: 40px; color: white; font-weight: 100; margin-bottom: 24px;">Shower Service</h1>
+            <p style="font-size: 16px; color: antiquewhite;">Home / Service / Plumbing / Shower Service</p>
         </div>
     </section>
 
@@ -1083,13 +1081,13 @@
             <div class="flex flex-wrap items-center">
                 <div class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">
                     <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-500">
-                        <img alt="..." src="https://plumbingsolved.com/wp-content/uploads/2019/10/broken-shower.jpg" class="w-full align-middle rounded-t-lg">
+                        <img alt="..." src="https://www.homecarecontractors.com/wp-content/uploads/2021/03/Shower-Repair-Replacement-in-Seattle.jpg" class="w-full align-middle rounded-t-lg">
                         <blockquote class="relative p-8 mb-4">
                             <h4 class="text-xl font-bold text-white">
-                                Shower Repair
+                                Shower Service
                             </h4>
                             <p class="text-md font-light mt-2 text-white">
-                                Shower Repair services include leak repairs, fixture Choke'sations, and maintenance for efficient water systems in homes and businesses, ensuring reliable operation and minimizing disruptions.
+                                Shower Service services include leak repairs, fixture Leakations, and maintenance for efficient water systems in homes and businesses, ensuring reliable operation and minimizing disruptions.
                             </p>
                         </blockquote>
                     </div>
@@ -1100,10 +1098,10 @@
                         <div class="w-full md:w-6/12 px-4">
                             <div class="relative flex flex-col mt-4">
                                 <div class="px-4 py-5 flex-auto">
-                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
+                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: .0625rem solid #0097a7;">
                                         <img src={{ url('img/service-tools.gif') }} alt="">
                                     </div>
-                                    <TS class="text-xl mb-1 font-semibold">Shower Repair EXPERTS</TS>
+                                    <TS class="text-xl mb-1 font-semibold">Shower Service EXPERTS</TS>
                                     <p class="mb-4 text-blueGray-500">
                                         Our professionals have over 35 years of experience in the industry, serving 1000s of residential & commercial estates.
                                     </p>
@@ -1111,14 +1109,14 @@
                             </div>
                             <div class="relative flex flex-col min-w-0">
                                 <div class="px-4 py-5 flex-auto">
-                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
+                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: .0625rem solid #0097a7;">
                                         <img src={{ url('img/under-construction.gif') }} alt="">
                                     </div>
                                     <h6 class="text-xl mb-1 font-semibold">
-                                        FULL 1-STOP Shower Repair SERVICES
+                                        FULL 1-STOP Shower Service SERVICES
                                     </h6>
                                     <p class="mb-4 text-blueGray-500">
-                                        Our top-to-bottom Shower Repair service is designed to be fuss-free for you. Besides having your floor cleaned, we also ensure that you have a clear understanding of our Shower Repair process, enabling you to apply the knowledge to maintain the cleanliness of your floors.
+                                        Our top-to-bottom Shower Service service is designed to be fuss-free for you. Besides having your floor cleaned, we also ensure that you have a clear understanding of our Shower Service process, enabling you to apply the knowledge to maintain the cleanliness of your floors.
                                     </p>
                                 </div>
                             </div>
@@ -1126,18 +1124,18 @@
                         <div class="w-full md:w-6/12 px-4">
                             <div class="relative flex flex-col min-w-0 mt-4">
                                 <div class="px-4 py-5 flex-auto">
-                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
+                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: .0625rem solid #0097a7;">
                                         <img src={{ url('img/tools.gif') }} alt="">
                                     </div>
-                                    <h6 class="text-xl mb-1 font-semibold">RANGE OF Shower Repair SERVICES</h6>
+                                    <h6 class="text-xl mb-1 font-semibold">RANGE OF Shower Service SERVICES</h6>
                                     <p class="mb-4 text-blueGray-500">
-                                        Our Shower Repair servicing technicians carry out a comprehensive list of Shower Repair works including floor deep cleaning, vinyl Shower Repair.
+                                        Our Shower Service servicing technicians carry out a comprehensive list of Shower Service works including floor deep cleaning, vinyl Shower Service.
                                     </p>
                                 </div>
                             </div>
                             <div class="relative flex flex-col min-w-0">
                                 <div class="px-4 py-5 flex-auto">
-                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
+                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: .0625rem solid #0097a7;">
                                         <img src={{ url('img/toolbox.gif') }} alt="">
                                     </div>
                                     <h6 class="text-xl mb-1 font-semibold">Service Assistance Now!</h6>
@@ -1161,15 +1159,19 @@
 
     <section class="mt-10">
         <div class="relative flex flex-col md:flex-row items-center md:items-start mt-8">
-            <span class="bg-yellow-500 yellow-triangle absolute left-0 h-20 hidden md:block"></span>
-            <h3 class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-full md:max-w-2/3" style="font-size: 18px; font-family: cursive; text-shadow: 3px 3px 0 rgb(255 255 255 / 25%);">
-                <span class="inner-span">One-Stop Home Solutions For Your Convenience</span>
+            <span class="bg-yellow-500 yellow-diamond absolute left-0 h-20 w-20 hidden md:block transform rotate-45" style="margin-left: 47%;"></span>
+            <h3 id="handyman-services" class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-11/12 md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;margin-left: 4%;">
+                <span class="inner-span">All-in-One Handyman Services for Modern Living Convenience</span>
             </h3>
             <style>
                 @media (max-width: 768px) {
                     .inner-span {
                         width: 93%;
                         margin: 0 auto;
+                    }
+
+                    #handyman-services {
+                        margin-right: 4%;
                     }
                 }
             </style>
@@ -1210,7 +1212,7 @@
                                         </path>
                                     </svg>
                                     <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white ">One-Stop Convenience</h3>
-                                    <p class="mt-4 text-base text-gray-600 group-hover:text-white">Our services are designed to be a fuss-free experience for you. Just choose the services or product Choke'sations you need, and allow us to fulfil the rest.</p>
+                                    <p class="mt-4 text-base text-gray-600 group-hover:text-white">Our services are designed to be a fuss-free experience for you. Just choose the services or product Leakations you need, and allow us to fulfil the rest.</p>
                                 </div>
                             </a>
 
@@ -1233,15 +1235,92 @@
     </section>
 
     <!-- component -->
-
+    <!-- Price -->
+    <div class="container mx-auto bg-white shadow-lg rounded-lg p-6 mt-24 mb-20">
+        <h2 class="text-3xl font-semibold mb-20" style="text-align: center;font-family: math;text-decoration-line: underline;">Description of Services (All prices inclusive of material, labour & transport)</h2>
+        <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
+                <tr>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description of Services</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Unit rate</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4">1. Clogged toilet bowl / Clearing toilet bowl choke</td>
+                    <td class="px-6 py-4">From $130</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4">2. Clogged floor trap/ Clogged drainage pipe/ Clearing floor trap choke</td>
+                    <td class="px-6 py-4">From $130</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4">3. Rectify water discharge into toilet bowl by replacing new siphon</td>
+                    <td class="px-6 py-4">From $150</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4">4. Labor & material to repair leak at exposed copper pipe or Upvc pipe</td>
+                    <td class="px-6 py-4">From $140</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4">5. Supplying & replacing toilet/WC flush system</td>
+                    <td class="px-6 py-4">From $150</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4">6. Replace shower set</td>
+                    <td class="px-6 py-4">From $150</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4">7. Replace kitchen sink/ Bathroom tap / faucet (basic type)</td>
+                    <td class="px-6 py-4">From $130</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4">8. Replace instant water heater</td>
+                    <td class="px-6 py-4">Price on ask</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4">9. Replace storage water heater</td>
+                    <td class="px-6 py-4">Price on ask</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4">10. Supply & replace bottle trap for kitchen sink</td>
+                    <td class="px-6 py-4">From $120</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4">11. Replace Sink/ Basin/ Cistern flexible hose</td>
+                    <td class="px-6 py-4">From $120</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="text-xl font-semibold mt-8 mb-4">Replacement Work</h2>
+        <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
+                <tr>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Replacement Work</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Unit rate</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4">12. Supply & install toilet bowl set</td>
+                    <td class="px-6 py-4">From $420</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4">13. Supply & install basin</td>
+                    <td class="px-6 py-4">From $250</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Price -->
     <!-- ====== Pricing Section Start -->
-    <section class="bg-white lg:pt-[120px] pb-12 lg:pb-[90px] relative z-20 overflow-hidden">
+    <section class="bg-white lg:pt-[7.5rem] pb-12 lg:pb-[5.625rem] relative z-20 overflow-hidden">
         <div class="container">
             <div class="flex flex-wrap -mx-4">
                 <div class="w-full px-4">
-                    <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
-                        <h2 class=" font-bold  text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 ">
-                            OUR SHOWER Repair PROCESS
+                    <div class="text-center mx-auto mb-[3.75rem] lg:mb-20 max-w-[31.875rem]">
+                        <h2 class=" font-bold  text-3xl sm:text-4xl md:text-[2.5rem] text-dark mb-4 ">
+                            OUR SHOWER SERVICE PROCESS
                         </h2>
                     </div>
                 </div>
@@ -1249,9 +1328,9 @@
             <div class="flex flex-wrap justify-center -mx-4">
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4" style="text-align: center;">
                     <div class="bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10  px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-1">
-                        <img src="https://superiorplumbing.ca/wp-content/uploads/2022/12/Shower-Repair.jpg" alt="" class="ml-14 mb-10" style="border: 1px solid #f7a80c;padding: 10px;height: 190px;">
+                        <img src="https://bestplumbersclub.com/wp-content/uploads/2022/03/Shower-Repair-And-Installation.jpg" alt="" class="ml-14 mb-10" style="border: .0625rem solid #f7a80c;padding: .625rem;height: 11.875rem;">
                         <span class="text-primary font-semibold text-lg block mb-4">
-                            Step 1: Inspect Your Floors
+                            Step 1: Inspect Your Leaks
                         </span>
                         <hr>
                         <div class="mb-7">
@@ -1312,7 +1391,7 @@
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4" style="text-align: center;">
                     <div class="bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10  px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-1">
-                        <img src="https://www.bathwraps.com/wp-content/uploads/2020/10/bigstock-Plumber-Repairing-Shower-Stal-362489848.jpg" alt="" class="ml-14 mb-10" style="border: 1px solid #f7a80c;padding: 10px;height: 190px;">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5effa870d6c1ce2ef8c034cf/1593913731856-ZB3V34R81TVTJZJTB768/Water+Wise+Plumbing-38.jpg" alt="" class="ml-14 mb-10" style="border: .0625rem solid #f7a80c;padding: .625rem;height: 11.875rem;">
                         <span class="text-primary font-semibold text-lg block mb-4">
                             Step 2: Power Scrubbing
                         </span>
@@ -1375,9 +1454,9 @@
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4" style="text-align: center;">
                     <div class="bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10  px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-1">
-                        <img src="https://media.product.which.co.uk/prod/images/ar_2to1_1500x750/055d205ef010-51bathroom-Repairation.jpg" alt="" class="ml-14 mb-10" style="border: 1px solid #f7a80c;padding: 10px;height: 190px;">
+                        <img src="https://plumbguardian.uk/wp-content/uploads/2021/06/Shower-Repair.jpg" alt="" class="ml-14 mb-10" style="border: .0625rem solid #f7a80c;padding: .625rem;height: 11.875rem;">
                         <span class="text-primary font-semibold text-lg block mb-4">
-                            Step 3: Rinse Your Floor
+                            Step 3: Rinse Your Leak
                         </span>
                         <hr>
                         <div class="mb-7">
@@ -1443,7 +1522,7 @@
     <!-- ====== Pricing Section End -->
     <hr class="hr-1">
 
-    <!-- Shower RepairATION -->
+    <!-- Shower ServiceATION -->
     <!-- component -->
     <section class="text-gray-400 bg-gray-800 body-font mt-10">
         <div class="container px-5 py-24 mx-auto">
@@ -1503,7 +1582,7 @@
             </div>
         </div>
     </section>
-    <!-- Shower RepairATION -->
+    <!-- Shower ServiceATION -->
 
 
     <!-- FAQ -->
@@ -1574,10 +1653,10 @@
                             Our Plumbing Services include:
 
                             Plumbing Chokes Services
-                            Shower Repairation Services
-                            Plumbing Leaks Services
-                            Water Heater Services
-                            Toilet Bowl Services
+                            Shower Serviceation Services
+                            Shower Services Services
+                            Shower Service Services
+                            Shower Service Services
                             Toilet Flush System Services
                             Shower Services</div>
                     </div>
@@ -1831,44 +1910,118 @@
         </div>
     </section>
     <!-- Revew -->
-    <footer class="footer bg-blue-100/80 font-sans dark:bg-gray-900">
-        <div class="container px-6 py-12 mx-auto">
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-                <div class="sm:col-span-2">
-                    <h1 class="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl dark:text-white">Subscribe our newsletter to get an update.</h1>
+    <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
+        <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">AllHouseWork's Group's Network of Service Brands</h2>
+        <div class="w-11/12 mt-2 mb-8 flex flex-wrap justify-around">
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/plumbing">
+                    <img src="{{ url('img/plumber.png') }}" alt="Image 1" class="w-48 h-16 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/matressClean">
+                    <img src="{{ url('img/matress.png') }}" alt="Image 2" class="w-52 h-20 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/electric">
+                    <img src="{{ url('img/daylight.png') }}" alt="Image 3" class="w-48 h-16 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/handyman">
+                    <img src="{{ url('img/handy.png') }}" alt="Image 4" class="w-54 h-16 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/waterHeater">
+                    <img src="{{ url('img/water.png') }}" alt="Image 5" class="w-48 h-16 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/sofaClean">
+                    <img src="{{ url('img/sofa.png') }}" alt="Image 6" class="w-52 h-24 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/floorclean">
+                    <img src="{{ url('img/floor.png') }}" alt="Image 7" class="w-80 h-20 hover:zoom-in">
+                </a>
+            </div>
+            <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
+                <a href="/rubbishChute">
+                    <img src="{{ url('img/rubbish.png') }}" alt="Image 8" class="w-56 h-16 hover:zoom-in">
+                </a>
+            </div>
+        </div>
+    </section>
+    <style>
+        .hover\:zoom-in {
+            transition: transform 0.3s ease;
+        }
 
-                    <div class="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
-                        <input id="email" type="text" class="px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Email Address" />
+        .hover\:zoom-in:hover {
+            transform: scale(1.1);
+        }
 
-                        <button class="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
-                            Subscribe
-                        </button>
-                    </div>
-                </div>
-
-                <div>
-                    <p class="font-semibold text-gray-800 dark:text-white">Quick Link</p>
-
-                    <div class="flex flex-col items-start mt-5 space-y-2">
-                        <p class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Home</p>
-                        <p class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Who We Are</p>
-                        <p class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Our Philosophy</p>
-                    </div>
-                </div>
-
-                <div>
-                    <p class="font-semibold text-gray-800 dark:text-white">Industries</p>
-
-                    <div class="flex flex-col items-start mt-5 space-y-2">
-                        <p class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Retail & E-Commerce</p>
-                        <p class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Information Technology</p>
-                        <p class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Finance & Insurance</p>
-                    </div>
-                </div>
+        @media (max-width: 768px) {
+            .responsive-image {
+                flex-basis: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+    </style>
+    <footer class="footer-bg text-white py-10">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h2 class="text-xl font-bold mb-4 footer-text-yellow border-b-2 border-yellow-500">About Allhouseworks Services</h2>
+                <p style="font-family: system-ui;font-size: inherit;line-height: 20px;">Allhouseworks stands as Singapore’s top choice for Home Maintenance, providing top-quality services such as Handyman, Electrical, Plumbing, and Aircon Servicing. With our easy online booking, you can connect with us via WhatsApp and let our dedicated 4-star customer service team handle everything for you. Thousands of satisfied customers rely on us for fast, transparent quotes and reliable service. Reach out on WhatsApp at +65 9658 5757 now for all your home and office maintenance needs!</p>
+            </div>
+            <div style="margin-left: 58px;">
+                <h2 class="text-xl font-bold mb-4 footer-text-yellow ">Useful Links</h2>
+                <ul class="space-y-2" style="line-height: 25px;font-size: medium;">
+                    <li><a href="/" class="hover:underline">Home</a></li>
+                    <li><a href="/about" class="hover:underline">About Us</a></li>
+                    <li><a href="/review" class="hover:underline">Review</a></li>
+                    <li><a href="/mission" class="hover:underline">Mission</a></li>
+                    <li><a href="/service" class="hover:underline">Services</a></li>
+                    <li><a href="/works" class="hover:underline">Works</a></li>
+                    <li><a href="/contact" class="hover:underline">Contact</a></li>
+                    <li><a href="/price" class="hover:underline">Price</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold mb-4 footer-text-yellow">Opening Hours</h2>
+                <ul class="space-y-2 " style="font-size: medium;line-height: 34px;">
+                    <li>Monday - 8:00AM to 8:00PM</li>
+                    <li>Tuesday - 8:00AM to 8:00PM</li>
+                    <li>Wednesday - 8:00AM to 8:00PM</li>
+                    <li>Thursday - 8:00AM to 8:00PM</li>
+                    <li>Friday - 8:00AM to 6:00PM</li>
+                    <li>Saturday - 9:00AM to 6:00PM</li>
+                    <li>Sunday - 8:00AM to 8:00PM</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold mb-4 footer-text-yellow">Contact Here</h2>
+                <ul class="space-y-2" style="font-size: medium;line-height: 28px;">
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=1090+Lower+Delta+Road+%2303-07,+Singapore+169201" target="_blank">1090 Lower Delta Road #03-07, Singapore 169201</a></li>
+                    <li>WhatsApp (Message Only): <a href="https://wa.me/6596585757" style="color: #F69919;font-weight: 700;">+65 9658 5757</a></li>
+                    <li>Email: <a href="mailto:info@allhouseworks.com" style="color: #F69919;font-weight: 700;">info@allhouseworks.com</a></li>
+                </ul>
             </div>
         </div>
     </footer>
+    <style>
+        .footer-bg {
+            background-image: linear-gradient(#000000AB, hsla(0 0% 0% / 0.81)), url(https://img.pikbest.com/origin/09/17/44/54fpIkbEsTrpq.jpg!w700wp);
+            background-attachment: fixed;
+        }
 
+        .footer-text-yellow {
+            color: #f8b500;
+        }
+    </style>
 </body>
 
 </html>
@@ -1878,11 +2031,11 @@
     function nextSlide() {
         if (i == 3) {
             let activeSlide = document.querySelector('.slide.translate-x-0');
-            activeSlide.classList.remove('translate-x-0');
+            activeSlide.classListNaNpxove('translate-x-0');
             activeSlide.classList.add('translate-x-full');
 
             let nextSlide = activeSlide.previousElementSibling.previousElementSibling;
-            nextSlide.classList.remove('translate-x-full');
+            nextSlide.classListNaNpxove('translate-x-full');
             nextSlide.classList.add('translate-x-0');
 
             i = 1;
@@ -1890,11 +2043,11 @@
             i++;
 
             let activeSlide = document.querySelector('.slide.translate-x-0');
-            activeSlide.classList.remove('translate-x-0');
+            activeSlide.classListNaNpxove('translate-x-0');
             activeSlide.classList.add('translate-x-full');
 
             let nextSlide = activeSlide.nextElementSibling;
-            nextSlide.classList.remove('translate-x-full');
+            nextSlide.classListNaNpxove('translate-x-full');
             nextSlide.classList.add('translate-x-0');
         }
 
@@ -1903,11 +2056,11 @@
     function previousSlide() {
         if (i == 1) {
             let activeSlide = document.querySelector('.slide.translate-x-0');
-            activeSlide.classList.remove('translate-x-0');
+            activeSlide.classListNaNpxove('translate-x-0');
             activeSlide.classList.add('translate-x-full');
 
             let previousSlide = activeSlide.nextElementSibling.nextElementSibling;
-            previousSlide.classList.remove('translate-x-full');
+            previousSlide.classListNaNpxove('translate-x-full');
             previousSlide.classList.add('translate-x-0');
 
             i = 3;
@@ -1915,11 +2068,11 @@
             i--;
 
             let activeSlide = document.querySelector('.slide.translate-x-0');
-            activeSlide.classList.remove('translate-x-0');
+            activeSlide.classListNaNpxove('translate-x-0');
             activeSlide.classList.add('translate-x-full');
 
             let previousSlide = activeSlide.previousElementSibling;
-            previousSlide.classList.remove('translate-x-full');
+            previousSlide.classListNaNpxove('translate-x-full');
             previousSlide.classList.add('translate-x-0');
         }
     }
@@ -1933,55 +2086,27 @@
             navbar.style.left = "50%";
             navbar.style.transform = "translateX(-50%)";
         } else {
-            navbar.classList.remove("sticky-nav");
+            navbar.classListNaNpxove("sticky-nav");
             navbar.style.width = "80%";
             navbar.style.position = "absolute";
-            navbar.style.top = "-656px";
+            navbar.style.top = "-41rem";
 
             navbar.style.left = "50%";
             navbar.style.transform = "translateX(-50%)";
         }
     };
 
-    function checkAndRedirect(event) {
-        event.preventDefault();
-        const input = document.getElementById('search-input').value.toLowerCase().replace(/\s+/g, '');
-        const routes = {
-            'plumber': '/searchPlumber',
-            'electrician': '/searchElectric',
-            'handyman': '/searchHandyMan',
-            'deepclean': '/searchDeepclean',
-            'floorpolish': '/searchFloorPolish',
-            'floorclean': '/searchFloorClean',
-            'wood': '/searchWood',
-            'decking': '/searchDecking'
-        };
-
-        let foundRoute = false;
-
-        for (const keyword in routes) {
-            if (keyword.includes(input)) {
-                window.location.href = routes[keyword];
-                foundRoute = true;
-                break;
-            }
-        }
-
-        if (!foundRoute) {
-            window.location.href = '/noSearch';
-        }
+    function toggleFAQ(button) {
+        const content = button.nextElementSibling;
+        button.setAttribute("aria-expanded", button.getAttribute("aria-expanded") === "false" ? "true" : "false");
+        content.style.maxHeight = button.getAttribute("aria-expanded") === "true" ? content.scrollHeight + "px" : "0";
     }
+</script>
 
-    function showSubmenu() {
-        document.getElementById('decking-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideSubmenu() {
-        document.getElementById('decking-submenu').classList.add('hidden-submenu');
-    }
+<script>
     // decking-submenu
     function showSubmenu() {
-        document.getElementById('decking-submenu').classList.remove('hidden-submenu');
+        document.getElementById('decking-submenu').classListNaNpxove('hidden-submenu');
     }
 
     function hideSubmenu() {
@@ -1989,7 +2114,7 @@
     }
     // decking-submenu
     function showSubmenu1() {
-        document.getElementById('varnish-submenu').classList.remove('hidden-submenu');
+        document.getElementById('varnish-submenu').classListNaNpxove('hidden-submenu');
     }
 
     function hideSubmenu1() {
@@ -1997,238 +2122,10 @@
     }
     // Vanish-submenu
     function showSubmenu2() {
-        document.getElementById('fClean-submenu').classList.remove('hidden-submenu');
+        document.getElementById('fClean-submenu').classListNaNpxove('hidden-submenu');
     }
 
     function hideSubmenu2() {
         document.getElementById('fClean-submenu').classList.add('hidden-submenu');
-    }
-    // fpolish-submenu
-    function showSubmenu3() {
-        document.getElementById('fpolish-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideSubmenu3() {
-        document.getElementById('fpolish-submenu').classList.add('hidden-submenu');
-    }
-    // dClean-submenu
-    function showSubmenu4() {
-        document.getElementById('dClean-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideSubmenu4() {
-        document.getElementById('dClean-submenu').classList.add('hidden-submenu');
-    }
-    // handy-submenu
-    function showSubmenu5() {
-        document.getElementById('handy-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideSubmenu5() {
-        document.getElementById('handy-submenu').classList.add('hidden-submenu');
-    }
-    // handy-submenu
-    function showSubmenu6() {
-        document.getElementById('electric-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideSubmenu6() {
-        document.getElementById('electric-submenu').classList.add('hidden-submenu');
-    }
-    // handy-submenu
-    function showSubmenu7() {
-        document.getElementById('service-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideSubmenu7() {
-        document.getElementById('service-submenu').classList.add('hidden-submenu');
-    }
-
-    function showLightServiceSubmenu() {
-        document.getElementById('light-service-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideLightServiceSubmenu() {
-        document.getElementById('light-service-submenu').classList.add('hidden-submenu');
-    }
-
-    function showPlumbingInstallSubmenu() {
-        document.getElementById('plumbing-install-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hidePlumbingInstallSubmenu() {
-        document.getElementById('plumbing-install-submenu').classList.add('hidden-submenu');
-    }
-
-    function showPlumbingLeakSubmenu() {
-        document.getElementById('plumbing-leak-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hidePlumbingLeakSubmenu() {
-        document.getElementById('plumbing-leak-submenu').classList.add('hidden-submenu');
-    }
-
-    function showWaterHeaterSubmenu() {
-        document.getElementById('water-heater-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideWaterHeaterSubmenu() {
-        document.getElementById('water-heater-submenu').classList.add('hidden-submenu');
-    }
-
-    function showToiletBowlSubmenu() {
-        document.getElementById('toilet-bowl-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideToiletBowlSubmenu() {
-        document.getElementById('toilet-bowl-submenu').classList.add('hidden-submenu');
-    }
-
-    function showShowerServiceSubmenu() {
-        document.getElementById('shower-service-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideShowerServiceSubmenu() {
-        document.getElementById('shower-service-submenu').classList.add('hidden-submenu');
-    }
-
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
-
-    function toggleSubmenu(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('plumber-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu2(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('electrician-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu3(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('handyman-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu4(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('deepclean-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu5(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('floorpolish-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu6(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('floorclean-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu7(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('decking-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu66(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('varnish-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu55(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('about-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu12(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('plumberInstall-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu22(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('plumberLeak-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu32(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('waterHeater-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu42(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('toiletBowl-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu52(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('shower-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu62(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('lightService-submenu');
-        submenu.classList.toggle('hidden');
-    }
-    const mobileMenuButton = document.querySelector('button[aria-controls="mobile-menu"]');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileMenuButton.addEventListener('click', () => {
-        const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
-        mobileMenuButton.setAttribute('aria-expanded', !expanded);
-        mobileMenu.classList.toggle('hidden');
-    });
-
-    function showSubMenu(event, submenuId) {
-        const submenu = document.getElementById(submenuId);
-        if (submenu) {
-            submenu.classList.remove('hidden');
-        }
-    }
-
-    // Function to hide submenu on mouse leave
-    function toggleSubMenu(submenuId) {
-        const submenu = document.getElementById(submenuId);
-        if (submenu) {
-            submenu.classList.toggle('hidden');
-        }
-    }
-    window.addEventListener('scroll', function() {
-        var mainNav = document.getElementById('main-nav');
-        if (window.scrollY > 0) {
-            mainNav.classList.add('scrolled');
-        } else {
-            mainNav.classList.remove('scrolled');
-        }
-    });
-
-    function toggleSubMenu(submenuId, arrowId) {
-        var submenu = document.getElementById(submenuId);
-        var arrow = document.getElementById(arrowId);
-        if (submenu.classList.contains('hidden')) {
-            submenu.classList.remove('hidden');
-            arrow.classList.add('rotate-180');
-        } else {
-            submenu.classList.add('hidden');
-            arrow.classList.remove('rotate-180');
-        }
     }
 </script>
