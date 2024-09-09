@@ -23,6 +23,9 @@ Route::get('/contact', function () {
 Route::get('/review', function () {
     return view('review');
 });
+Route::get('/brands', function () {
+    return view('brands');
+});
 Route::get('/mission', function () {
     return view('mission');
 });

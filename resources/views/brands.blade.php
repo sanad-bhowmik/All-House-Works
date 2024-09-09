@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AllHouseWorks | Toilet Bowl</title>
+    <title>AllHouseWorks | Brands</title>
     <!-- Link to Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" href="{{ url('img/favicon.ico') }}" type="image/x-icon">
@@ -242,17 +242,17 @@
     }
 
     #header_slider #slide_item:nth-child(1) {
-        background: url("https://media.istockphoto.com/id/1339613829/photo/plumber-at-work-in-a-bathroom-plumbing-repair-service-assemble-and-install-concept.jpg?s=612x612&w=0&k=20&c=lQREIzjwRM3ApTkRzTnbIA_BCRCy_ER-e51tofKsaP0=") no-repeat center center;
+        background: url("https://t4.ftcdn.net/jpg/02/91/14/23/360_F_291142315_1HDHshpssor08inb91jnXZxB02M3rIgi.jpg") no-repeat center center;
         background-size: cover;
     }
 
     #header_slider #slide_item:nth-child(2) {
-        background: url("https://mrelectric.com/us/en-us/_assets/images/ceiling-fan-repair.webp") no-repeat center center;
+        background: url("https://media.istockphoto.com/id/1436521782/photo/team-of-professional-cleaners-tidying-up-the-room.webp?b=1&s=170667a&w=0&k=20&c=E4Ru1OhTSNliZSNVwevKKDrH4CFjhnQfsNnPXCciBfc=") no-repeat center center;
         background-size: cover;
     }
 
     #header_slider #slide_item:nth-child(3) {
-        background: url("https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?s=612x612&w=0&k=20&c=5zlDGgLNNaWsp_jq_L1AsGT85wrzpdl3kVH-75S-zTU=") no-repeat center center;
+        background: url("https://st5.depositphotos.com/39034226/62384/i/450/depositphotos_623846382-stock-photo-female-cleaning-specialist-using-window.jpg") no-repeat center center;
         background-size: cover;
     }
 
@@ -276,7 +276,6 @@
 
     /* General Styles */
     .hover-border-top:hover {
-        border-top: 4px solid #B48F57;
         border-top: 4px solid #FFFFFF;
     }
 
@@ -358,7 +357,6 @@
 
     #main-nav.scrolled {
         top: 0;
-        background-color: #f8f8f8;
         background-color: #f69918;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
@@ -422,6 +420,7 @@
             </div>
         </div>
     </nav>
+
     <!-- Navigation Menu -->
     <!-- Scroll Up -->
     <div class="flex items-end justify-start fixed bottom-0 left-0 mb-4 ml-4 z-10">
@@ -431,14 +430,6 @@
             </button>
         </div>
     </div>
-    <script>
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    </script>
     <!-- Scroll Up -->
     <!-- Header -->
     <nav id="main-nav" class="bg-white shadow-lg relative z-50 sticky scrolled">
@@ -841,9 +832,9 @@
                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
                         <a href="/review" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Review</a>
                     </div>
-                    <!-- <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
                         <a href="/brands" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Our Brands</a>
-                    </div> -->
+                    </div>
                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
                         <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Mission</a>
                     </div>
@@ -938,16 +929,16 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
-                                        <a href="/toiletBowl" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl</a>
+                                        <a href="/toilet-bowl-option1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/toiletBowl" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Installation</a>
+                                        <a href="/toilet-bowl-option2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Installation</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/plumbingChoke" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke</a>
+                                        <a href="/toilet-bowl-option3" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/toiletRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke Repair</a>
+                                        <a href="/toilet-bowl-option4" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke Repair</a>
                                     </div>
                                 </div>
                             </div>
@@ -974,24 +965,24 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
-                                        <a href="/showerService" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Service</a>
+                                        <a href="/shower-service-option1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Service</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/showerInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Installation</a>
+                                        <a href="/shower-service-option2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Installation</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/showerRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Repair</a>
+                                        <a href="/shower-service-option3" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Repair</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/tapFaucet" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Tap & Faucet</a>
+                                <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Tap & Faucet</a>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/bidetSpray" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
+                                <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/commercialPlumber" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Commercial Plumber</a>
+                                <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Commercial Plumber</a>
                             </div>
 
 
@@ -1010,16 +1001,16 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
-                                        <a href="/plumbingInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Install</a>
+                                        <a href="/submenu-item1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Install</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
-                                        <a href="/pipeInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Pipe Installation</a>
+                                        <a href="/submenu-item1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Pipe Installation</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
-                                        <a href="/bidetSpray" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
+                                        <a href="/submenu-item1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/bathroomRack" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bathroom Rack</a>
+                                        <a href="/submenu-item2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bathroom Rack</a>
                                     </div>
                                 </div>
                             </div>
@@ -1038,16 +1029,16 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
-                                        <a href="/plumbingLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Leak</a>
+                                        <a href="/plumbing-choke-item1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Leak</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/tapLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Leaking Tap</a>
+                                        <a href="/plumbing-choke-item2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Leaking Tap</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/heaterLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Heater Leak</a>
+                                        <a href="/plumbing-choke-item2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Heater Leak</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/showerService" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Leak</a>
+                                        <a href="/plumbing-choke-item2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Leak</a>
                                     </div>
                                 </div>
                             </div>
@@ -1066,16 +1057,16 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
-                                        <a href="/waterHeater" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater</a>
+                                        <a href="/water-heater-option1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/heaterinstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Install</a>
+                                        <a href="/water-heater-option1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Install</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/waterheaterLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Leak</a>
+                                        <a href="/water-heater-option2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Leak</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/heaterRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Repair</a>
+                                        <a href="/water-heater-option3" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Repair</a>
                                     </div>
                                 </div>
                             </div>
@@ -1456,854 +1447,37 @@
     <!-- Header -->
 
 
-    <section class="parallax " style="position: relative; background: url('https://lh7-us.googleusercontent.com/a9I7wty0VT9Y9fqJN0wurb1TDcEpotl_cFXWndXHK1kEtTfSTS2k1oNJqoFgMcX0PvMOGhqi-Bu-FL1XUlOHtgYL4jY169IL2GRAJzLO0C5A-3wDu-AFbChUoQs6XLmdL1XALOPKtSp3TW9ih8i1waQ') no-repeat center center fixed; background-size: cover; height: 300px;">
-        <div class="overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
-        <div class="content" style="position: relative; z-index: 1; display: flex; flex-direction: column; padding-left: 1rem; padding-right: 1rem; text-align: center; gap: 1rem;">
-            <h1 style="font-size: 2.5rem; color: white; font-weight: 100; margin-bottom: 1.5rem;">Toilet Bowl</h1>
-            <p style="font-size: 1rem; color: antiquewhite;">Home / Service / Plumbing / Toilet Bowl</p>
+    <!-- Banner Section -->
+    <section class="bg-cover bg-center relative parallax" style="background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20220514/pngtree-new-finance-project-presented-to-business-partners-by-team-photo-image_45616880.jpg'); background-size: cover; background-repeat: no-repeat; height: 100vh; background-attachment: fixed;">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 p-6 md:p-24 banner flex flex-col items-center justify-center text-center text-white" style="padding-top: 150px;">
+            <h1 class="text-2xl md:text-4xl font-bold" style="font-size: 43px; text-align: center; font-family: math;line-height: normal;">Household Repairs & Handyman Solutions <br>
+                Conveniently Delivered Right to Your Doorstep</h1>
+            <p class="mt-4 md:mt-6" style="font-size: 18px; line-height: 1.2; text-align: center;">Reach out to us with your home maintenance needs, and we'll take care of the rest. <br> Get in touch with our handyman and service experts for immediate home assessments and direct quotes.</p>
+            <a id="sendbtn" class="shortcode_wa_button mt-4 md:mt-6 inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" href="https://api.whatsapp.com/send?phone=6596585757&amp;text=Hello, I would like to know more about the following home service" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">
+                <img src="img/whatsapp.png" alt="" class="mr-2"><span>WhatsApp to Start Now!</span>
+            </a>
         </div>
     </section>
 
+    <section class="py-8 sm:py-16 md:py-24 flex items-center justify-center mt-12 mb-12" style="background-color: #efefef;">
+        <div class="mx-auto max-w-[43rem]">
+            <div class="text-center">
+                <p class="text-lg font-medium leading-8 text-gray-500">Explore Our Brands</p>
+                <h1
+                    class="my-3 sm:my-4 md:my-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-10 tracking-tight " style="color: #777777;">
+                    Excited to Reveal Our Expanded Brand Network
+                </h1>
+                <p class="text-lg leading-relaxed text-slate-500">Explore our unified home services brands under the allhouseworks Services Network, offering a seamless and comprehensive solution for homeowners. <br> Easily book a variety of home services through allhouseworks Singapore.
 
-
-    <!-- component -->
-    <section class="relative pt-16 bg-blueGray-50">
-        <div class="container mx-auto">
-            <div class="flex flex-wrap items-center">
-                <div class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">
-                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-500">
-                        <img alt="..." src="https://www.everyworks.com/wp-content/uploads/2019/09/toilet-bowl-choke-sink-choke-everyworks-plumber-singapore-390x220.jpg" class="w-full align-middle rounded-t-lg">
-                        <blockquote class="relative p-8 mb-4">
-                            <h4 class="text-xl font-bold text-white">
-                                Toilet Bowl
-                            </h4>
-                            <p class="text-md font-light mt-2 text-white">
-                                Toilet Bowl services include leak repairs, fixture Leakations, and maintenance for efficient water systems in homes and businesses, ensuring reliable operation and minimizing disruptions.
-                            </p>
-                        </blockquote>
-                    </div>
-                </div>
-
-                <div class="w-full md:w-6/12 px-4">
-                    <div class="flex flex-wrap">
-                        <div class="w-full md:w-6/12 px-4">
-                            <div class="relative flex flex-col mt-4">
-                                <div class="px-4 py-5 flex-auto">
-                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
-                                        <img src={{ url('img/service-tools.gif') }} alt="">
-                                    </div>
-                                    <TS class="text-xl mb-1 font-semibold">Toilet Bowl EXPERTS</TS>
-                                    <p class="mb-4 text-blueGray-500">
-                                        Our professionals have over 35 years of experience in the industry, serving 1000s of residential & commercial estates.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="relative flex flex-col min-w-0">
-                                <div class="px-4 py-5 flex-auto">
-                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
-                                        <img src={{ url('img/under-construction.gif') }} alt="">
-                                    </div>
-                                    <h6 class="text-xl mb-1 font-semibold">
-                                        FULL 1-STOP Toilet Bowl SERVICES
-                                    </h6>
-                                    <p class="mb-4 text-blueGray-500">
-                                        Our top-to-bottom Toilet Bowl service is designed to be fuss-free for you. Besides having your floor cleaned, we also ensure that you have a clear understanding of our Toilet Bowl process, enabling you to apply the knowledge to maintain the cleanliness of your floors.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-6/12 px-4">
-                            <div class="relative flex flex-col min-w-0 mt-4">
-                                <div class="px-4 py-5 flex-auto">
-                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
-                                        <img src={{ url('img/tools.gif') }} alt="">
-                                    </div>
-                                    <h6 class="text-xl mb-1 font-semibold">RANGE OF Toilet Bowl SERVICES</h6>
-                                    <p class="mb-4 text-blueGray-500">
-                                        Our Toilet Bowl servicing technicians carry out a comprehensive list of Toilet Bowl works including floor deep cleaning, vinyl Toilet Bowl.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="relative flex flex-col min-w-0">
-                                <div class="px-4 py-5 flex-auto">
-                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
-                                        <img src={{ url('img/toolbox.gif') }} alt="">
-                                    </div>
-                                    <h6 class="text-xl mb-1 font-semibold">Service Assistance Now!</h6>
-                                    <p class="mb-4 text-blueGray-500">
-                                    <ol>
-                                        <li class="flex"> <img src="{{ url('img/hastag.png') }}" alt=""> Message us on Whatsapp</li>
-                                        <br>
-                                        <li class="flex"> <img src="{{ url('img/hastag.png') }}" alt=""> Chat with us</li>
-                                        <br>
-                                        <li class="flex"> <img src="{{ url('img/hastag.png') }}" alt=""> Get Job Done!</li>
-                                    </ol>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </p>
             </div>
         </div>
     </section>
 
-    <section class="mt-10">
-        <div class="relative flex flex-col md:flex-row items-center md:items-start mt-8">
-            <span class="bg-yellow-500 yellow-diamond absolute left-0 h-20 w-20 hidden md:block transform rotate-45" style="margin-left: 47%;"></span>
-            <h3 id="handyman-services" class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-11/12 md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;margin-left: 4%;">
-                <span class="inner-span">All-in-One Toilet Bowl Services for Modern Living Convenience</span>
-            </h3>
-            <style>
-                @media (max-width: 768px) {
-                    .inner-span {
-                        width: 93%;
-                        margin: 0 auto;
-                    }
-
-                    #handyman-services {
-                        margin-right: 4%;
-                    }
-                }
-            </style>
-        </div>
-
-
-        <p class="text-center text-lg text-gray-600 mt-6 md:mt-12">We have all the time-saving processes so you can get every home task done with qualified professionals.</p>
-
-        <!-- component -->
-        <section class=" bg-blue-500ray-50">
-            <div class="py-10  sm:py-16 block lg:py-24 relative bg-opacity-50  z-40  ">
-
-                <div class="relative mx-auto h-full px-4 pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
-                    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative">
-                        <div class="grid grid-cols-1 gap-2 sm:grid-cols-3">
-                            <a href="#" class="transition-all shadow-lg duration-1000 bg-white hover:bg-blue-500  hover:shadow-xl m-2 p-4 relative z-40 group  ">
-                                <div class=" absolute  bg-blue-500 top-0 left-0 w-24 h-1 z-30  transition-all duration-200   group-hover:bg-white group-hover:w-1/2  ">
-                                </div>
-                                <div class="py-2 px-9 relative  ">
-
-                                    <svg class="w-16 h-16 fill-gray-400 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="polo-tshirt">
-                                        <path d="m16.962 5.841 3.582.717-.716-4.115zM12.172 2.443l-.716 4.115 3.582-.717z">
-                                        </path>
-                                        <path d="M28.488 7.301a5.354 5.354 0 0 0-2.743-3.305c-.112-.056-2.96-1.2-4.942-1.996l.87 4.987a.52.52 0 0 1-.488.746.535.535 0 0 1-.101-.01L16.5 6.806V12a.5.5 0 1 1-1 0V6.806l-4.583.917a.518.518 0 0 1-.613-.598L11.196 2c-1.982.796-4.828 1.94-4.94 1.996a5.36 5.36 0 0 0-2.75 3.328l-1.492 6.26c-.042.175.01.359.138.486l.608.608a5.487 5.487 0 0 0 3.907 1.618c.196 0 .375-.111.464-.287l1.072-2.145c.013.292.02.584.02.876V28.48c0 .231.153.435.375.499A27.03 27.03 0 0 0 16 30c2.508 0 5.015-.34 7.402-1.022a.52.52 0 0 0 .376-.5V14.74c0-.292.006-.584.019-.876l1.073 2.145a.519.519 0 0 0 .463.287 5.487 5.487 0 0 0 3.907-1.618l.608-.608a.518.518 0 0 0 .138-.487l-1.498-6.282zM17.03 11.5c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1zm0-2c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1z">
-                                        </path>
-                                    </svg>
-                                    <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white ">Seamless Booking</h3>
-                                    <p class="mt-4 text-base text-gray-600 group-hover:text-white  ">Message us to get instant diagnosis and quote. Book one or multiple services and we will arrange everything in the most convenient schedule for you.</p>
-                                </div>
-                            </a>
-
-                            <a href="#" class="transition-all shadow-lg duration-1000 bg-white hover:bg-blue-500  hover:shadow-xl m-2 p-4 relative z-40 group  ">
-                                <div class=" absolute  bg-blue-500 top-0 left-0 w-24 h-1 z-30  transition-all duration-200   group-hover:bg-white group-hover:w-1/2  ">
-                                </div>
-                                <div class="py-2 px-9 relative  ">
-                                    <svg class="w-16 h-16 fill-gray-400 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 64 64" viewBox="0 0 64 64" id="furniture">
-                                        <path d="M13.6 4.8v54.3c0 .4.3.8.8.8H31v-2.3H19c-.6 0-1-.5-1-1s.5-1 1-1h12V4.1H14.4C14 4.1 13.6 4.4 13.6 4.8zM29.1 38.2c0 .6-.5 1-1 1s-1-.5-1-1v-1.3c0-.6.5-1 1-1s1 .5 1 1V38.2zM29.1 25.8v6.5c0 .6-.5 1-1 1s-1-.5-1-1v-6.5c0-.6.5-1 1-1S29.1 25.3 29.1 25.8zM16.1 11c0-1.6 1.3-2.8 2.8-2.8h7.4c.6 0 1 .5 1 1 0 .6-.5 1-1 1H19c-.4 0-.8.3-.8.8v17.2c0 .6-.5 1-1 1-.6 0-1-.5-1-1V11zM49.6 4.1H33v51.5h12c.4 0 .8-.3.8-.8V9.2c0-.6.5-1 1-1s1 .5 1 1v45.5c0 1.6-1.3 2.8-2.8 2.8H33v2.3h16.6c.4 0 .8-.3.8-.8V4.8C50.4 4.4 50 4.1 49.6 4.1zM37 38.2c0 .6-.5 1-1 1s-1-.5-1-1v-1.3c0-.6.5-1 1-1s1 .5 1 1V38.2zM37 32.3c0 .6-.5 1-1 1s-1-.5-1-1v-6.5c0-.6.5-1 1-1s1 .5 1 1V32.3z">
-                                        </path>
-                                    </svg>
-                                    <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white ">One-Stop Convenience</h3>
-                                    <p class="mt-4 text-base text-gray-600 group-hover:text-white">Our services are designed to be a fuss-free experience for you. Just choose the services or product Leakations you need, and allow us to fulfil the rest.</p>
-                                </div>
-                            </a>
-
-                            <a href="#" class="transition-all shadow-lg duration-1000 bg-white hover:bg-blue-500  hover:shadow-xl m-2 p-4 relative z-40 group  ">
-                                <div class=" absolute  bg-blue-500 top-0 left-0 w-24 h-1 z-30  transition-all duration-200   group-hover:bg-white group-hover:w-1/2  ">
-                                </div>
-                                <div class="py-2 px-9 relative  ">
-                                    <svg class="w-16 h-16 fill-gray-400 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="engine">
-                                        <path d="M60,34H56a1,1,0,0,0-1,1v3H52V28a1,1,0,0,0-1-1H47.51l-4.7-6.58A1,1,0,0,0,42,20H35V17h3a1,1,0,0,0,1-1V12a1,1,0,0,0-1-1H26a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h3v3H24a1,1,0,0,0-.81.42L18.49,27H13a1,1,0,0,0-1,1V38H9V35a1,1,0,0,0-1-1H4a1,1,0,0,0-1,1V47a1,1,0,0,0,1,1H8a1,1,0,0,0,1-1V44h3v5a1,1,0,0,0,1,1H24.59l2.7,2.71A1,1,0,0,0,28,53H48a1,1,0,0,0,.71-.29l3-3A1,1,0,0,0,52,49V44h3v3a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1V35A1,1,0,0,0,60,34ZM35.77,37.64l-5,6A1,1,0,0,1,30,44a1,1,0,0,1-.64-.23,1,1,0,0,1-.13-1.41L32.87,38H29a1,1,0,0,1-.77-1.64l5-6a1,1,0,0,1,1.54,1.28L31.13,36H35a1,1,0,0,1,.77,1.64Z">
-                                        </path>
-                                    </svg>
-                                    <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white ">Strong Customer Support</h3>
-                                    <p class="mt-4 text-base text-gray-600 group-hover:text-white">Our dedicated team will follow-up on your needs with open and transparent communication. We will diagnose the problem before recommending the best solution for your exact needs.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-        </section>
-    </section>
-
-    <!-- component -->
-    <!-- Price -->
-    <div class="container mx-auto bg-white shadow-lg rounded-lg p-6 mt-24 mb-20">
-        <h2 class="text-3xl font-semibold mb-20" style="text-align: center;font-family: math;text-decoration-line: underline;">Description of Services (All prices inclusive of material, labour & transport)</h2>
-        <table class="min-w-full divide-y divide-gray-200">
-            <thead class="bg-gray-50">
-                <tr>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description of Services</th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Unit rate</th>
-                </tr>
-            </thead>
-            <tbody class="bg-white divide-y divide-gray-200">
-                <tr>
-                    <td class="px-6 py-4">1. Clogged toilet bowl / Clearing toilet bowl choke</td>
-                    <td class="px-6 py-4">From $130</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">2. Clogged floor trap/ Clogged drainage pipe/ Clearing floor trap choke</td>
-                    <td class="px-6 py-4">From $130</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">3. Rectify water discharge into toilet bowl by replacing new siphon</td>
-                    <td class="px-6 py-4">From $150</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">4. Labor & material to repair leak at exposed copper pipe or Upvc pipe</td>
-                    <td class="px-6 py-4">From $140</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">5. Supplying & replacing toilet/WC flush system</td>
-                    <td class="px-6 py-4">From $150</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">6. Replace shower set</td>
-                    <td class="px-6 py-4">From $150</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">7. Replace kitchen sink/ Bathroom tap / faucet (basic type)</td>
-                    <td class="px-6 py-4">From $130</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">8. Replace instant water heater</td>
-                    <td class="px-6 py-4">Price on ask</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">9. Replace storage water heater</td>
-                    <td class="px-6 py-4">Price on ask</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">10. Supply & replace bottle trap for kitchen sink</td>
-                    <td class="px-6 py-4">From $120</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">11. Replace Sink/ Basin/ Cistern flexible hose</td>
-                    <td class="px-6 py-4">From $120</td>
-                </tr>
-            </tbody>
-        </table>
-        <h2 class="text-xl font-semibold mt-8 mb-4">Replacement Work</h2>
-        <table class="min-w-full divide-y divide-gray-200">
-            <thead class="bg-gray-50">
-                <tr>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Replacement Work</th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Unit rate</th>
-                </tr>
-            </thead>
-            <tbody class="bg-white divide-y divide-gray-200">
-                <tr>
-                    <td class="px-6 py-4">12. Supply & install toilet bowl set</td>
-                    <td class="px-6 py-4">From $420</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">13. Supply & install basin</td>
-                    <td class="px-6 py-4">From $250</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <!-- Price -->
-    <!-- ====== Pricing Section Start -->
-    <section class="bg-white lg:pt-[120px] pb-12 lg:pb-[90px] relative z-20 overflow-hidden">
-        <div class="container">
-            <div class="flex flex-wrap -mx-4">
-                <div class="w-full px-4">
-                    <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
-                        <h2 class=" font-bold  text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 ">
-                            OUR TOILET BOWL PROCESS
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-wrap justify-center -mx-4">
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4" style="text-align: center;">
-                    <div class="bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10  px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-1">
-                        <img src="https://cdn.statically.io/img/www.a1handyman.com//wp-content/uploads/2022/09/toilet-bowl-city-toilet-bowl-services-a1-handyman-singapore.jpg" alt="" class="ml-14 mb-10" style="border: 1px solid #f7a80c;padding: 10px;height: 190px;">
-                        <span class="text-primary font-semibold text-lg block mb-4">
-                            Step 1: Inspect the Toilet Bowl
-                        </span>
-                        <hr>
-                        <div class="mb-7">
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Our team begins by thoroughly inspecting the toilet bowl to identify any issues such as clogs, leaks, or damage. We assess the overall condition and functionality to determine the best approach for service.
-                            </p>
-                        </div>
-                        <div>
-                            <span class="absolute right-0 top-7 z-[-1]">
-                                <svg width="77" height="172" viewBox="0 0 77 172" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear" x1="86" y1="0" x2="86" y2="172" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#3056D3" stop-opacity="0.09" />
-                                            <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                            </span>
-                            <span class="absolute right-4 top-4 z-[-1]">
-                                <svg width="41" height="89" viewBox="0 0 41 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="38.9138" cy="87.4849" r="1.42021" transform="rotate(180 38.9138 87.4849)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="74.9871" r="1.42021" transform="rotate(180 38.9138 74.9871)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="62.4892" r="1.42021" transform="rotate(180 38.9138 62.4892)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="38.3457" r="1.42021" transform="rotate(180 38.9138 38.3457)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="13.634" r="1.42021" transform="rotate(180 38.9138 13.634)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="50.2754" r="1.42021" transform="rotate(180 38.9138 50.2754)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="26.1319" r="1.42021" transform="rotate(180 38.9138 26.1319)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="1.42021" r="1.42021" transform="rotate(180 38.9138 1.42021)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="87.4849" r="1.42021" transform="rotate(180 26.4157 87.4849)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="74.9871" r="1.42021" transform="rotate(180 26.4157 74.9871)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="62.4892" r="1.42021" transform="rotate(180 26.4157 62.4892)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="38.3457" r="1.42021" transform="rotate(180 26.4157 38.3457)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="13.634" r="1.42021" transform="rotate(180 26.4157 13.634)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="50.2754" r="1.42021" transform="rotate(180 26.4157 50.2754)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="26.1319" r="1.42021" transform="rotate(180 26.4157 26.1319)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="1.4202" r="1.42021" transform="rotate(180 26.4157 1.4202)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="87.4849" r="1.42021" transform="rotate(180 13.9177 87.4849)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="74.9871" r="1.42021" transform="rotate(180 13.9177 74.9871)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="62.4892" r="1.42021" transform="rotate(180 13.9177 62.4892)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="38.3457" r="1.42021" transform="rotate(180 13.9177 38.3457)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="13.634" r="1.42021" transform="rotate(180 13.9177 13.634)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="50.2754" r="1.42021" transform="rotate(180 13.9177 50.2754)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="26.1319" r="1.42021" transform="rotate(180 13.9177 26.1319)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="1.42019" r="1.42021" transform="rotate(180 13.9177 1.42019)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="87.4849" r="1.42021" transform="rotate(180 1.41963 87.4849)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="74.9871" r="1.42021" transform="rotate(180 1.41963 74.9871)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="62.4892" r="1.42021" transform="rotate(180 1.41963 62.4892)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="38.3457" r="1.42021" transform="rotate(180 1.41963 38.3457)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="13.634" r="1.42021" transform="rotate(180 1.41963 13.634)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="50.2754" r="1.42021" transform="rotate(180 1.41963 50.2754)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="26.1319" r="1.42021" transform="rotate(180 1.41963 26.1319)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="1.4202" r="1.42021" transform="rotate(180 1.41963 1.4202)" fill="#3056D3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4" style="text-align: center;">
-                    <div class="bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10  px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-1">
-                        <img src="https://lh7-us.googleusercontent.com/stU42cjj_mwXqrucgpgfP6kO49Iwme1ldVltMVBEZCbsGksW2qMLxLTvtlNEokzny4Qa7nmRmuTz_uNAun8lU4c6DvU12tZEdG0KDGFKXvx8sa2mjPtngIaPJzvJTU-MR9ev2UPjlJZ77vLtK9ZihWM" alt="" class="ml-14 mb-10" style="border: 1px solid #f7a80c;padding: 10px;height: 190px;">
-                        <span class="text-primary font-semibold text-lg block mb-4">
-                            Step 2: Perform Necessary Repairs or Replacement
-                        </span>
-                        <hr>
-                        <div class="mb-7">
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Based on the inspection, we carry out the required repairs or replacement. This may include clearing clogs, fixing leaks, or replacing worn-out parts such as the flush mechanism or sealing.
-                            </p>
-                        </div>
-                        <div>
-                            <span class="absolute right-0 top-7 z-[-1]">
-                                <svg width="77" height="172" viewBox="0 0 77 172" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear" x1="86" y1="0" x2="86" y2="172" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#3056D3" stop-opacity="0.09" />
-                                            <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                            </span>
-                            <span class="absolute right-4 top-4 z-[-1]">
-                                <svg width="41" height="89" viewBox="0 0 41 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="38.9138" cy="87.4849" r="1.42021" transform="rotate(180 38.9138 87.4849)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="74.9871" r="1.42021" transform="rotate(180 38.9138 74.9871)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="62.4892" r="1.42021" transform="rotate(180 38.9138 62.4892)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="38.3457" r="1.42021" transform="rotate(180 38.9138 38.3457)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="13.634" r="1.42021" transform="rotate(180 38.9138 13.634)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="50.2754" r="1.42021" transform="rotate(180 38.9138 50.2754)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="26.1319" r="1.42021" transform="rotate(180 38.9138 26.1319)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="1.42021" r="1.42021" transform="rotate(180 38.9138 1.42021)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="87.4849" r="1.42021" transform="rotate(180 26.4157 87.4849)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="74.9871" r="1.42021" transform="rotate(180 26.4157 74.9871)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="62.4892" r="1.42021" transform="rotate(180 26.4157 62.4892)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="38.3457" r="1.42021" transform="rotate(180 26.4157 38.3457)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="13.634" r="1.42021" transform="rotate(180 26.4157 13.634)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="50.2754" r="1.42021" transform="rotate(180 26.4157 50.2754)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="26.1319" r="1.42021" transform="rotate(180 26.4157 26.1319)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="1.4202" r="1.42021" transform="rotate(180 26.4157 1.4202)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="87.4849" r="1.42021" transform="rotate(180 13.9177 87.4849)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="74.9871" r="1.42021" transform="rotate(180 13.9177 74.9871)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="62.4892" r="1.42021" transform="rotate(180 13.9177 62.4892)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="38.3457" r="1.42021" transform="rotate(180 13.9177 38.3457)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="13.634" r="1.42021" transform="rotate(180 13.9177 13.634)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="50.2754" r="1.42021" transform="rotate(180 13.9177 50.2754)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="26.1319" r="1.42021" transform="rotate(180 13.9177 26.1319)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="1.42019" r="1.42021" transform="rotate(180 13.9177 1.42019)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="87.4849" r="1.42021" transform="rotate(180 1.41963 87.4849)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="74.9871" r="1.42021" transform="rotate(180 1.41963 74.9871)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="62.4892" r="1.42021" transform="rotate(180 1.41963 62.4892)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="38.3457" r="1.42021" transform="rotate(180 1.41963 38.3457)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="13.634" r="1.42021" transform="rotate(180 1.41963 13.634)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="50.2754" r="1.42021" transform="rotate(180 1.41963 50.2754)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="26.1319" r="1.42021" transform="rotate(180 1.41963 26.1319)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="1.4202" r="1.42021" transform="rotate(180 1.41963 1.4202)" fill="#3056D3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4" style="text-align: center;">
-                    <div class="bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10  px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-1">
-                        <img src="https://www.singaporeplumbers.sg/wp-content/uploads/2023/12/toilet-bowl-2.png" alt="" class="ml-14 mb-10" style="border: 1px solid #f7a80c;padding: 10px;height: 190px;">
-                        <span class="text-primary font-semibold text-lg block mb-4">
-                            Step 3: Test and Ensure Proper Functionality
-                        </span>
-                        <hr>
-                        <div class="mb-7">
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                After completing the repairs or replacement, we thoroughly test the toilet bowl to ensure it operates correctly. We check for proper flushing, sealing, and overall performance to ensure everything is functioning as expected.
-                            </p>
-                        </div>
-                        <div>
-                            <span class="absolute right-0 top-7 z-[-1]">
-                                <svg width="77" height="172" viewBox="0 0 77 172" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear" x1="86" y1="0" x2="86" y2="172" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#3056D3" stop-opacity="0.09" />
-                                            <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                            </span>
-                            <span class="absolute right-4 top-4 z-[-1]">
-                                <svg width="41" height="89" viewBox="0 0 41 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="38.9138" cy="87.4849" r="1.42021" transform="rotate(180 38.9138 87.4849)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="74.9871" r="1.42021" transform="rotate(180 38.9138 74.9871)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="62.4892" r="1.42021" transform="rotate(180 38.9138 62.4892)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="38.3457" r="1.42021" transform="rotate(180 38.9138 38.3457)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="13.634" r="1.42021" transform="rotate(180 38.9138 13.634)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="50.2754" r="1.42021" transform="rotate(180 38.9138 50.2754)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="26.1319" r="1.42021" transform="rotate(180 38.9138 26.1319)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="1.42021" r="1.42021" transform="rotate(180 38.9138 1.42021)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="87.4849" r="1.42021" transform="rotate(180 26.4157 87.4849)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="74.9871" r="1.42021" transform="rotate(180 26.4157 74.9871)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="62.4892" r="1.42021" transform="rotate(180 26.4157 62.4892)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="38.3457" r="1.42021" transform="rotate(180 26.4157 38.3457)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="13.634" r="1.42021" transform="rotate(180 26.4157 13.634)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="50.2754" r="1.42021" transform="rotate(180 26.4157 50.2754)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="26.1319" r="1.42021" transform="rotate(180 26.4157 26.1319)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="1.4202" r="1.42021" transform="rotate(180 26.4157 1.4202)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="87.4849" r="1.42021" transform="rotate(180 13.9177 87.4849)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="74.9871" r="1.42021" transform="rotate(180 13.9177 74.9871)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="62.4892" r="1.42021" transform="rotate(180 13.9177 62.4892)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="38.3457" r="1.42021" transform="rotate(180 13.9177 38.3457)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="13.634" r="1.42021" transform="rotate(180 13.9177 13.634)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="50.2754" r="1.42021" transform="rotate(180 13.9177 50.2754)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="26.1319" r="1.42021" transform="rotate(180 13.9177 26.1319)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="1.42019" r="1.42021" transform="rotate(180 13.9177 1.42019)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="87.4849" r="1.42021" transform="rotate(180 1.41963 87.4849)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="74.9871" r="1.42021" transform="rotate(180 1.41963 74.9871)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="62.4892" r="1.42021" transform="rotate(180 1.41963 62.4892)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="38.3457" r="1.42021" transform="rotate(180 1.41963 38.3457)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="13.634" r="1.42021" transform="rotate(180 1.41963 13.634)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="50.2754" r="1.42021" transform="rotate(180 1.41963 50.2754)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="26.1319" r="1.42021" transform="rotate(180 1.41963 26.1319)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="1.4202" r="1.42021" transform="rotate(180 1.41963 1.4202)" fill="#3056D3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- ====== Pricing Section End -->
-    <hr class="hr-1">
-
-    <!-- Toilet BowlATION -->
-    <!-- component -->
-    <section class="text-gray-400 bg-gray-800 body-font mt-10">
-        <div class="container px-5 py-24 mx-auto">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-white mb-20">
-                THE MOST TRUSTED SERVICE
-                <br class="hidden sm:block">PROVIDER FOR PLUMBING SERVICES
-            </h1>
-            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-                <div class="p-4 md:w-1/2 flex">
-                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4 flex-shrink-0">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                        </svg>
-                    </div>
-                    <div class="flex-grow pl-6">
-                        <h2 class="text-white text-lg title-font font-medium mb-2">EXPERIENCED</h2>
-                        <p class="leading-relaxed text-base">AllHouseWorks has helped connect thousands of happy customers to home service professionals. When troubleshooting your home repair or maintenance issues, both our customer service agents and technicians are knowledgeable in answering your queries. Feel free to message us about the products or services you are looking for, and we will respond to you promptly.</p>
-                    </div>
-                </div>
-                <div class="p-4 md:w-1/2 flex">
-                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4 flex-shrink-0">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                            <circle cx="6" cy="6" r="3"></circle>
-                            <circle cx="6" cy="18" r="3"></circle>
-                            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                        </svg>
-                    </div>
-                    <div class="flex-grow pl-6">
-                        <h2 class="text-white text-lg title-font font-medium mb-2">HONEST & TRANSPARENT PRICES</h2>
-                        <p class="leading-relaxed text-base">We are transparent about our prices and will only carry out the works upon your approval of the final quotation. Be assured that we will only recommend services or products you would need, and nothing more than that!</p>
-                    </div>
-                </div>
-                <div class="p-4 md:w-1/2 flex">
-                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4 flex-shrink-0">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                    </div>
-                    <div class="flex-grow pl-6">
-                        <h2 class="text-white text-lg title-font font-medium mb-2">FLEXIBILITY</h2>
-                        <p class="leading-relaxed text-base">Booking just one or multiple home services is easy on the AllHouseWorks platform. Our professional service providers will be arranged to fit a date and time that is convenient for you.</p>
-                    </div>
-                </div>
-                <div class="p-4 md:w-1/2 flex">
-                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4 flex-shrink-0">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                    </div>
-                    <div class="flex-grow pl-6">
-                        <h2 class="text-white text-lg title-font font-medium mb-2">RELIABILITY</h2>
-                        <p class="leading-relaxed text-base">AllHouseWorks is home to a curated list of certified and reliable professionals from reputable home repair companies in Singapore. We also co-operate with accredited and legitimate partners to value-add their services to give you a holistic solution to your home services needs.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Toilet BowlATION -->
-
-
-    <!-- FAQ -->
-    <div class="py-24 px-8 max-w-5xl mx-auto flex flex-col md:flex-row gap-12 mt-10">
-        <div class="flex flex-col text-left basis-1/2">
-            <p class="inline-block font-semibold text-primary mb-4">Insurance FAQ</p>
-            <p class="sm:text-4xl text-3xl font-extrabold text-base-content">Frequently Asked Questions</p>
-        </div>
-        <ul class="basis-1/2">
-            <li>
-                <button class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10" aria-expanded="false" onclick="toggleFAQ(this)">
-                    <span class="flex-1 text-base-content">What to Know Before Engaging an Plumbing Service Company</span>
-                    <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
-                        <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
-                    </svg>
-                </button>
-                <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
-                    <div class="pb-5 leading-relaxed">
-                        <div class="space-y-2 leading-relaxed">Whether it comes to broken pipes, leaky faucets, or clogged drains, it is best to call up a professional Singapore plumber who has the license, skills, tools and expertise to deal with the task. Here are some things to consider before looking to engage a plumber.
-                            License / Accreditations
-                            A PUB license is important for big plumbing projects, especially for HDB or commerciarenovations that require hacking into the plumbing systems. However, most plumbers should bBCA-licensed for common domestic plumbing works like solving water leaks and water pipe works.
-                            Experience
-                            Looking for an experienced plumber is key if you do not want the plumbing issue they are fixinto come back again. A plumber who is confident in their skills is equivalent to how many yearthey have been working in the industry.
-                            Look at Their Plumbing Services Reviews
-                            If the company has been in business for at least 5 years and consistently receives gooreviews, you can expect quality work.
-                            Warranty
-                            Look at Singapore plumber services that offers plumbing works with workmanship or servicwarranty, and check if the warranty is extended to the plumbing products as well.
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <button class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10" aria-expanded="false" onclick="toggleFAQ(this)">
-                    <span class="flex-1 text-base-content">Ways to Save Money On Plumbing</span>
-                    <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
-                        <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
-                    </svg>
-                </button>
-                <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
-                    <div class="pb-5 leading-relaxed">
-                        <div class="space-y-2 leading-relaxed">Plumbing emergencies do happen, and calling a plumber will be necessary. But you can certainly save money on plumbing works by preventing them from disrepair in the first place. Just follow these easy steps:
-
-                            Prevention and maintenance
-                            Prevent a small sign of plumbing issue from getting bigger, such as a leaky faucet or build-up of blockage in your drains.
-
-                            Replace rather than Repair
-                            If regular repairs become a routine in your home, consider replacing the parts that need replacement. A product replacement tends to be cheaper in the long run than constant repairs.
-
-                            Compare prices
-                            Plumbing is a competitive business, and many different companies offer different plumbing services at differing prices. Make sure you do your own research in order to compare prices and find the right plumber who can do the job well for you.</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <button class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10" aria-expanded="false" onclick="toggleFAQ(this)">
-                    <span class="flex-1 text-base-content">How Much Are Plumbing Services</span>
-                    <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
-                        <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
-                    </svg>
-                </button>
-                <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
-                    <div class="pb-5 leading-relaxed">
-                        <div class="space-y-2 leading-relaxed">Plumbing Services start from $90 per job. See here for full list of our plumbing services prices.
-
-                            Our Plumbing Services include:
-
-                            Plumbing Chokes Services
-                            Toilet Bowlation Services
-                            Toilet Bowls Services
-                            Toilet Bowl Services
-                            Toilet Bowl Services
-                            Toilet Flush System Services
-                            Shower Services</div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <!-- FAQ -->
-
-    <!-- Revew -->
-    <section id="testimonies" class="py-20 bg-gray-900">
-        <div class="max-w-6xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
-            <div class="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
-                <div class="mb-12 space-y-5 md:mb-16 md:text-center">
-                    <h1 class="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
-                        CUSTOMER REVIEWS absolute
-                    </h1>
-                    <p class="text-xl text-gray-100 md:text-center md:text-2xl">
-                        OUR PLUMBING SERVICES
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-
-
-                <ul class="space-y-8">
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/kanyewest" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Kanye West</h3>
-                                            <p class="text-gray-500 text-md">Rapper &amp; Entrepreneur</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Find God.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
-                                            <p class="text-gray-500 text-md">CEO of Apple</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
-                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
-                                        aliquam malesuada bibendum.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/kanyewest" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Kanye West</h3>
-                                            <p class="text-gray-500 text-md">Rapper &amp; Entrepreneur</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Find God.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
-                                            <p class="text-gray-500 text-md">CEO of Apple</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
-                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
-                                        aliquam malesuada bibendum.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-
-
-                <ul class="hidden space-y-8 sm:block">
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/paraga" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Parag Agrawal">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Parag Agrawal</h3>
-                                            <p class="text-gray-500 text-md">CEO of Twitter</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Enim neque volutpat ac tincidunt vitae
-                                        semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus quam
-                                        pellentesque nec. Turpis cursus in hac habitasse platea dictumst.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
-                                            <p class="text-gray-500 text-md">CEO of Apple</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
-                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
-                                        aliquam malesuada bibendum.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/paraga" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Parag Agrawal">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Parag Agrawal</h3>
-                                            <p class="text-gray-500 text-md">CEO of Twitter</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Enim neque volutpat ac tincidunt vitae
-                                        semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus quam
-                                        pellentesque nec. Turpis cursus in hac habitasse platea dictumst.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
-                                            <p class="text-gray-500 text-md">CEO of Apple</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
-                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
-                                        aliquam malesuada bibendum.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-
-
-                <ul class="hidden space-y-8 lg:block">
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/satyanadella" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Satya Nadella">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Satya Nadella</h3>
-                                            <p class="text-gray-500 text-md">CEO of Microsoft</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Tortor dignissim convallis aenean et
-                                        tortor at. At ultrices mi tempus imperdiet nulla malesuada. Id cursus metus aliquam
-                                        eleifend mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/dan_schulman" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Dan Schulman">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Dan Schulman</h3>
-                                            <p class="text-gray-500 text-md">CEO of PayPal</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Quam pellentesque nec nam aliquam sem
-                                        et tortor consequat id. Enim sit amet venenatis urna cursus.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/satyanadella" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Satya Nadella">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Satya Nadella</h3>
-                                            <p class="text-gray-500 text-md">CEO of Microsoft</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Tortor dignissim convallis aenean et
-                                        tortor at. At ultrices mi tempus imperdiet nulla malesuada. Id cursus metus aliquam
-                                        eleifend mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/dan_schulman" class="cursor-pointer">
-                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Dan Schulman">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-white">Dan Schulman</h3>
-                                            <p class="text-gray-500 text-md">CEO of PayPal</p>
-                                        </div>
-                                    </div>
-                                    <p class="leading-normal text-gray-300 text-md">Quam pellentesque nec nam aliquam sem
-                                        et tortor consequat id. Enim sit amet venenatis urna cursus.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-
-
-            </div>
-        </div>
-    </section>
-    <!-- Revew -->
     <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
         <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">AllHouseWork's Group's Network of Service Brands</h2>
-        <div class="w-11/12 mt-2 mb-8 flex flex-wrap justify-around">
+        <div class="w-12/12 mt-2 mb-8 flex flex-wrap justify-around">
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/plumbing">
                     <img src="{{ url('img/plumber.png') }}" alt="Image 1" class="w-48 h-16 hover:zoom-in">
@@ -2341,7 +1515,7 @@
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/rubbishChute">
-                    <img src="{{ url('img/rubbish.png') }}" alt="Image 8" class="w-56 h-16 hover:zoom-in">
+                    <img src="{{ url('img/rubbish.png') }}" alt="Image 8" class="w-56 h-20 hover:zoom-in">
                 </a>
             </div>
         </div>
@@ -2362,158 +1536,228 @@
             }
         }
     </style>
+    <!-- MR. Plumber -->
+    <div class="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl mb-10">
+        <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+            <img class="h-full w-full object-cover" src="https://media.istockphoto.com/id/1361116682/photo/plumber-fixing-a-leaking-bathroom-faucet.jpg?s=612x612&w=0&k=20&c=THa1uoYgW4gGz0C8YMqenM58UFY-uD1X79dP3obYLLI=" alt="Winding mountain road">
+        </div>
 
+        <div class="max-w-lg bg-white md:max-w-2xl md:z-10  md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-10 xl:ml-12" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+            <div class="flex flex-col p-12 md:px-16">
+                <h2 class="text-2xl font-medium uppercase text-green-800 lg:text-4xl">MR. Plumber</h2>
+                <p class="mt-4">
+                    Mr Plumber is Singapore’s top-rated plumber, with the best reviews on Google and Facebook. They offer a one-stop solution for plumbing services, including Plumbing Chokes, Installations, Leaks, Water Heaters, Toilet Bowls, and Tap Installations.
 
-    <!-- Choice -->
-    <div class="relative overflow-hidden rounded-2xl m-16" style="background-image: linear-gradient(rgb(0 0 0 / 87%), rgb(0 0 0 / 76%)), url(https://png.pngtree.com/thumb_back/fw800/background/20230929/pngtree-d-illustration-triangular-parametric-digital-texture-with-varied-volume-and-intricate-image_13522499.png);background-attachment: fixed;display:none">
-        <div class="px-16 py-8 sm:px-8 lg:px-16 lg:py-14">
-            <div class="md:flex md:items-center md:space-x-12 lg:space-x-24">
-                <div class="grid grid-cols-1 gap-y-3 sm:grid-cols-2 gap-x-12 xl:gap-x-24">
-                    <div>
-                        <ul class="space-y-3 text-base font-medium text-white font-pj">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                    </path>
-                                </svg> Toilet bowl
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                    </path>
-                                </svg> Floor trap
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                    </path>
-                                </svg> Pipe Replacement
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="space-y-3 text-base font-medium text-white font-pj">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                    </path>
-                                </svg> HDB Plumber
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                    </path>
-                                </svg> Floor trap choke
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                    </path>
-                                </svg> Choke
-                            </li>
-                        </ul>
-                    </div>
+                    Their team of PUB-licensed and BCA-trained specialists also provide HDB and Emergency plumbing services. Over the years, Mr Plumber has served thousands of satisfied customers, handling both residential and commercial projects.
+
+                </p>
+                <div class="mt-8">
+                    <a href="/plumbing"
+                        class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-green-600 border-solid border-2 border-gray-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48">Read
+                        More</a>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- MR. Plumber -->
+    <div class=" w-full h-px max-w-6xl mx-auto my-32"
+        style="background-image: linear-gradient(90deg, rgba(149, 131, 198, 0) 1.46%, rgba(149, 131, 198, 0.6) 40.83%, rgba(149, 131, 198, 0.3) 65.57%, rgba(149, 131, 198, 0) 107.92%);">
+    </div>
+    <!--All Sofa-->
+    <div class="relative flex flex-col items-center mx-auto lg:flex-row lg:max-w-5xl lg:mt-30 xl:max-w-6xl mb-10 mt-32">
+        <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+            <img class="h-full w-full object-cover" src="https://clean-and-service-website-storage.s3-ap-southeast-1.amazonaws.com/media-staging/87/best-sofa-cleaning-service-dhaka.jpg" alt="Winding mountain road">
+        </div>
 
-                <div>
-                    <ul class="space-y-3 text-base font-medium text-white font-pj">
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                </path>
-                            </svg> Toilet bowl replacement
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                </path>
-                            </svg> Toilet bowl installation
-                        </li>
-                    </ul>
-                </div>
+        <div class="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:right-0 lg:mt-20 lg:mr-20 xl:mt-10 xl:mr-12">
+            <div class="flex flex-col p-12 md:px-16">
+                <h2 class="text-2xl font-medium uppercase text-green-800 lg:text-4xl">All Sofa</h2>
+                <p class="mt-4">
+                    All Sofa is Singapore’s top-rated sofa cleaning service, with the best reviews on Google and Facebook. They offer a comprehensive range of cleaning services, including deep sofa cleaning, stain removal, leather conditioning, fabric protection, and upholstery cleaning.
 
-                <div class="block md:hidden lg:block">
-                    <div class="hidden lg:block">
-                        <svg class="w-4 h-auto text-gray-600" viewBox="0 0 16 123" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 11)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 46)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 81)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 116)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 18)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 53)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 88)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 123)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 25)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 60)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 95)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 32)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 67)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 102)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 39)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 74)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 109)"></line>
-                        </svg>
-                    </div>
-                    <div class="block mt-10 md:hidden">
-                        <svg class="w-auto h-4 text-gray-600" viewBox="0 0 172 16" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 11 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 46 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 81 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 116 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 151 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 18 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 53 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 88 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 123 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 158 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 25 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 60 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 95 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 130 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 165 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 32 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 67 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 102 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 137 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 172 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 39 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 74 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 109 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 144 1)">
-                            </line>
-                        </svg>
-                    </div>
-                </div>
-                <div class="mt-10 md:mt-0">
-                    <a title="Get quote now" id="whatsappImage" class="inline-flex items-center justify-center px-9 py-3.5 mt-5 text-white  font-bold text-gray-900 transition-all duration-200 bg-green-400 border border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white font-pj hover:bg-opacity-90 rounded-xl" href="#support"> What's APP
+                    Their team of experienced professionals uses eco-friendly cleaning solutions and state-of-the-art equipment to ensure your sofas are spotless and well-maintained. Over the years, All Sofa has served thousands of satisfied customers, handling both residential and commercial sofa cleaning projects.
+                </p>
+                <div class="mt-8">
+                    <a href="/matressClean" class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-green-600 border-solid border-2 border-gray-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48">
+                        Read More
                     </a>
                 </div>
             </div>
         </div>
     </div>
+    <!--All Sofa-->
+
+    <div class=" w-full h-px max-w-6xl mx-auto my-32"
+        style="background-image: linear-gradient(90deg, rgba(149, 131, 198, 0) 1.46%, rgba(149, 131, 198, 0.6) 40.83%, rgba(149, 131, 198, 0.3) 65.57%, rgba(149, 131, 198, 0) 107.92%);">
+    </div>
+
+    <!-- Daylight -->
+    <div class="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-36 xl:max-w-6xl mb-10">
+        <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+            <img class="h-full w-full object-cover" src="https://5.imimg.com/data5/PG/QN/VQ/SELLER-13916676/led-light-repair-service-500x500.jpg" alt="Winding mountain road">
+        </div>
+
+        <div class="max-w-lg bg-white md:max-w-2xl md:z-10 md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-10 xl:ml-12" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+            <div class="flex flex-col p-12 md:px-16">
+                <h2 class="text-2xl font-medium uppercase text-green-800 lg:text-4xl">Daylight Electric</h2>
+                <p class="mt-4">
+                    Daylight Electric is Singapore’s top-rated electronics repair service, with the best reviews on Google and Facebook. They offer a one-stop solution for electronic services, including appliance repairs, wiring installations, circuit troubleshooting, aircon servicing, and home automation setups.
+
+                    Their team of certified and experienced technicians also provides HDB and emergency electrical services. Over the years, Daylight Electric has served thousands of satisfied customers, handling both residential and commercial electronic projects.
+
+                </p>
+                <div class="mt-8">
+                    <a href="/electric"
+                        class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-green-600 border-solid border-2 border-gray-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48">Read
+                        More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Daylight -->
+
+    <div class=" w-full h-px max-w-6xl mx-auto my-32"
+        style="background-image: linear-gradient(90deg, rgba(149, 131, 198, 0) 1.46%, rgba(149, 131, 198, 0.6) 40.83%, rgba(149, 131, 198, 0.3) 65.57%, rgba(149, 131, 198, 0) 107.92%);">
+    </div>
+
+    <!--Handyman-->
+    <div class="relative flex flex-col items-center mx-auto lg:flex-row lg:max-w-5xl lg:mt-30 xl:max-w-6xl mb-10 mt-32">
+        <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+            <img class="h-full w-full object-cover" src="https://media.istockphoto.com/id/1439782187/photo/electrician-with-screwdriver-repairing-power-socket-indoors.jpg?s=612x612&w=0&k=20&c=RIGv8WdTyElA4zP_wCnNb_M5ayF-W8-Pe1el5DK_yWM=" alt="Winding mountain road">
+        </div>
+
+        <div class="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:right-0 lg:mt-20 lg:mr-20 xl:mt-10 xl:mr-12">
+            <div class="flex flex-col p-12 md:px-16">
+                <h2 class="text-2xl font-medium uppercase text-green-800 lg:text-4xl">Handyman</h2>
+                <p class="mt-4">
+                    HandyMan is Singapore’s premier handyman service, renowned for its outstanding reviews on Google and Facebook. We offer a wide array of home repair and maintenance services, including plumbing, electrical work, painting, carpentry, and general repairs.
+
+                    Our team of skilled professionals uses top-quality tools and materials to ensure every job is completed efficiently and to the highest standards. With years of experience, HandyMan has served thousands of satisfied customers, addressing both residential and commercial needs. Whether it's a minor fix or a major project, we’re committed to providing reliable and top-notch service for your home or business.
+                </p>
+                <div class="mt-8">
+                    <a href="/handyman" class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-green-600 border-solid border-2 border-gray-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Handyman-->
+
+    <div class=" w-full h-px max-w-6xl mx-auto my-32"
+        style="background-image: linear-gradient(90deg, rgba(149, 131, 198, 0) 1.46%, rgba(149, 131, 198, 0.6) 40.83%, rgba(149, 131, 198, 0.3) 65.57%, rgba(149, 131, 198, 0) 107.92%);">
+    </div>
+
+    <!-- Water Heater -->
+    <div class="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-36 xl:max-w-6xl mb-10">
+        <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+            <img class="h-full w-full object-cover" src="https://westernrooter.com/wp-content/uploads/2023/10/water-heater-maintenance-western-rooter.png" alt="Winding mountain road">
+        </div>
+
+        <div class="max-w-lg bg-white md:max-w-2xl md:z-10 md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-10 xl:ml-12" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+            <div class="flex flex-col p-12 md:px-16">
+                <h2 class="text-2xl font-medium uppercase text-green-800 lg:text-4xl">Water Heater</h2>
+                <p class="mt-4">
+                    Daylight Electric is Singapore’s top-rated electronics repair service, with the best reviews on Google and Facebook. They offer a one-stop solution for electronic services, including appliance repairs, wiring installations, circuit troubleshooting, aircon servicing, and home automation setups.
+
+                    Their team of certified and experienced technicians also provides HDB and emergency electrical services. Over the years, Daylight Electric has served thousands of satisfied customers, handling both residential and commercial electronic projects.
+
+                </p>
+                <div class="mt-8">
+                    <a href="/waterHeater"
+                        class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-green-600 border-solid border-2 border-gray-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48">Read
+                        More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Water Heater -->
+
+    <div class=" w-full h-px max-w-6xl mx-auto my-32"
+        style="background-image: linear-gradient(90deg, rgba(149, 131, 198, 0) 1.46%, rgba(149, 131, 198, 0.6) 40.83%, rgba(149, 131, 198, 0.3) 65.57%, rgba(149, 131, 198, 0) 107.92%);">
+    </div>
+
+    <!--Sofa Cleaning-->
+    <div class="relative flex flex-col items-center mx-auto lg:flex-row lg:max-w-5xl lg:mt-30 xl:max-w-6xl mb-10 mt-32">
+        <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+            <img class="h-full w-full object-cover" src="https://st3.depositphotos.com/1010613/14045/i/450/depositphotos_140458748-stock-photo-worker-cleaning-sofa.jpg" alt="Winding mountain road">
+        </div>
+
+        <div class="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:right-0 lg:mt-20 lg:mr-20 xl:mt-10 xl:mr-12">
+            <div class="flex flex-col p-12 md:px-16">
+                <h2 class="text-2xl font-medium uppercase text-green-800 lg:text-4xl">Sofa Cleaning</h2>
+                <p class="mt-4">
+                    SofaClean is Singapore’s leading sofa cleaning service, celebrated for its exceptional reviews on Google and Facebook. We provide a comprehensive range of cleaning solutions, including deep sofa cleaning, stain removal, leather conditioning, fabric protection, and upholstery cleaning.
+
+                    Our team of skilled professionals uses high-quality, eco-friendly cleaning products and advanced equipment to ensure your sofas are thoroughly cleaned and maintained to the highest standards. With years of experience, SofaClean has satisfied thousands of customers, handling both residential and commercial cleaning projects. Whether you need a deep clean or routine maintenance, we’re dedicated to delivering outstanding, reliable service for your home or business.
+                </p>
+                <div class="mt-8">
+                    <a href="/sofaClean" class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-green-600 border-solid border-2 border-gray-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sofa Cleaning-->
+
+    <div class=" w-full h-px max-w-6xl mx-auto my-32"
+        style="background-image: linear-gradient(90deg, rgba(149, 131, 198, 0) 1.46%, rgba(149, 131, 198, 0.6) 40.83%, rgba(149, 131, 198, 0.3) 65.57%, rgba(149, 131, 198, 0) 107.92%);">
+    </div>
+
+    <!-- Floor Polish -->
+    <div class="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-36 xl:max-w-6xl mb-10">
+        <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+            <img class="h-full w-full object-cover" src="https://www.helpling.com.sg/wp-content/uploads/2023/06/Helpling-floor-polishing-services.webp" alt="Winding mountain road">
+        </div>
+
+        <div class="max-w-lg bg-white md:max-w-2xl md:z-10 md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-10 xl:ml-12" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+            <div class="flex flex-col p-12 md:px-16">
+                <h2 class="text-2xl font-medium uppercase text-green-800 lg:text-4xl">Floor Polish</h2>
+                <p class="mt-4">
+                    ShinePro is Singapore’s top-rated floor polishing service, known for its exceptional reviews on Google and Facebook. We offer a comprehensive range of floor care solutions, including polishing, buffing, stain removal, and maintenance for various types of flooring.
+
+                    Our team of certified and experienced professionals uses advanced equipment and high-quality products to ensure your floors are polished to a brilliant shine and well-maintained. With years of experience, ShinePro has served thousands of satisfied customers, managing both residential and commercial floor polishing projects. Whether you need a fresh polish or regular upkeep, we’re committed to delivering outstanding and reliable service for your home or business.
+                </p>
+                <div class="mt-8">
+                    <a href="/floorclean"
+                        class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-green-600 border-solid border-2 border-gray-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48">Read
+                        More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Floor Polish -->
+
+    <div class=" w-full h-px max-w-6xl mx-auto my-32"
+        style="background-image: linear-gradient(90deg, rgba(149, 131, 198, 0) 1.46%, rgba(149, 131, 198, 0.6) 40.83%, rgba(149, 131, 198, 0.3) 65.57%, rgba(149, 131, 198, 0) 107.92%);">
+    </div>
+
+    <!--Rubbish Chute-->
+    <div class="relative flex flex-col items-center mx-auto lg:flex-row lg:max-w-5xl lg:mt-30 xl:max-w-6xl mb-10 mt-32">
+        <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+            <img class="h-full w-full object-cover" src="https://hengplumbing.com/wp-content/uploads/2019/01/Rubbish-Chute-3.jpg" alt="Winding mountain road">
+        </div>
+
+        <div class="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:right-0 lg:mt-20 lg:mr-20 xl:mt-10 xl:mr-12">
+            <div class="flex flex-col p-12 md:px-16">
+                <h2 class="text-2xl font-medium uppercase text-green-800 lg:text-4xl">Rubbish Chute</h2>
+                <p class="mt-4">
+                    ClearChute is Singapore’s premier rubbish chute cleaning service, highly acclaimed with top reviews on Google and Facebook. We specialize in a comprehensive range of chute maintenance services, including thorough cleaning, deodorizing, and blockage removal.
+
+                    Our team of skilled professionals utilizes advanced equipment and eco-friendly cleaning solutions to ensure your rubbish chute is hygienic, efficient, and odor-free. With years of experience, ClearChute has served thousands of satisfied customers, addressing both residential and commercial needs. Whether you need routine maintenance or urgent cleaning, we are dedicated to providing exceptional, reliable service for your property.
+                </p>
+                <div class="mt-8">
+                    <a href="/rubbishChute" class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-green-600 border-solid border-2 border-gray-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Rubbish Chute-->
+
+
     <footer class="footer-bg text-white py-10">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
@@ -2557,7 +1801,7 @@
     </footer>
     <style>
         .footer-bg {
-            background-image: linear-gradient(#000000AB, hsla(0 0% 0% / 0.81)), url(https://img.pikbest.com/origin/09/17/44/54fpIkbEsTrpq.jpg!w700wp);
+            background-image: linear-gradient(rgb(0 0 0 / 67%), rgb(0 0 0 / 81%)), url(https://img.pikbest.com/origin/09/17/44/54fpIkbEsTrpq.jpg!w700wp);
             background-attachment: fixed;
         }
 
@@ -2565,17 +1809,11 @@
             color: #f8b500;
         }
     </style>
+
+
 </body>
 
 </html>
-<script>
-    document.getElementById('whatsappImage').addEventListener('click', function() {
-        var message = "Good day, I am interested in learning more about your services. Could you please provide me with more information? Thank you.";
-        var phoneNumber = "6596585757";
-        var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
-        window.open(whatsappUrl, '_blank');
-    });
-</script>
 <script>
     let i = 1;
 

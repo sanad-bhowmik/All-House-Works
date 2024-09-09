@@ -10,6 +10,48 @@
     <link rel="icon" href="{{ url('img/favicon.ico') }}" type="image/x-icon">
 </head>
 <style>
+    .responsive-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .responsive-table thead {
+        background-color: #f8f8f8;
+    }
+
+    .responsive-table th,
+    .responsive-table td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    .responsive-table th {
+        background-color: #f8f8f8;
+        color: #333;
+    }
+
+    .responsive-table tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .responsive-table tbody tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .responsive-table .price {
+        font-weight: bold;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .responsive-table {
+            display: block;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+    }
+
     #nav1 {
         background-color: #fbde6e;
     }
@@ -431,10 +473,15 @@
             </button>
         </div>
     </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
     <!-- Scroll Up -->
-
-
-
     <!-- Header -->
     <nav id="main-nav" class="bg-white shadow-lg relative z-50 sticky scrolled">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t" style="background-color: #f69918;">
@@ -461,6 +508,7 @@
                                 </a>
                                 <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md w-40 z-50">
                                     <a href="/review" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Review</a>
+                                    <a href="/brands" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Our Brands</a>
                                     <a href="/mission" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Mission</a>
                                 </div>
                             </div>
@@ -835,6 +883,9 @@
                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
                         <a href="/review" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Review</a>
                     </div>
+                    <!-- <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <a href="/brands" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Our Brands</a>
+                    </div> -->
                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
                         <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Mission</a>
                     </div>
@@ -929,16 +980,16 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
-                                        <a href="/toilet-bowl-option1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl</a>
+                                        <a href="/toiletBowl" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/toilet-bowl-option2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Installation</a>
+                                        <a href="/toiletBowl" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Installation</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/toilet-bowl-option3" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke</a>
+                                        <a href="/plumbingChoke" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/toilet-bowl-option4" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke Repair</a>
+                                        <a href="/toiletRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke Repair</a>
                                     </div>
                                 </div>
                             </div>
@@ -965,24 +1016,24 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
-                                        <a href="/shower-service-option1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Service</a>
+                                        <a href="/showerService" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Service</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/shower-service-option2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Installation</a>
+                                        <a href="/showerInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Installation</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/shower-service-option3" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Repair</a>
+                                        <a href="/showerRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Repair</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Tap & Faucet</a>
+                                <a href="/tapFaucet" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Tap & Faucet</a>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
+                                <a href="/bidetSpray" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Commercial Plumber</a>
+                                <a href="/commercialPlumber" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Commercial Plumber</a>
                             </div>
 
 
@@ -1001,16 +1052,16 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
-                                        <a href="/submenu-item1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Install</a>
+                                        <a href="/plumbingInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Install</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
-                                        <a href="/submenu-item1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Pipe Installation</a>
+                                        <a href="/pipeInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Pipe Installation</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
-                                        <a href="/submenu-item1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
+                                        <a href="/bidetSpray" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/submenu-item2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bathroom Rack</a>
+                                        <a href="/bathroomRack" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bathroom Rack</a>
                                     </div>
                                 </div>
                             </div>
@@ -1029,16 +1080,16 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
-                                        <a href="/plumbing-choke-item1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Leak</a>
+                                        <a href="/plumbingLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Leak</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/plumbing-choke-item2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Leaking Tap</a>
+                                        <a href="/tapLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Leaking Tap</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/plumbing-choke-item2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Heater Leak</a>
+                                        <a href="/heaterLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Heater Leak</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/plumbing-choke-item2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Leak</a>
+                                        <a href="/showerService" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Leak</a>
                                     </div>
                                 </div>
                             </div>
@@ -1057,16 +1108,16 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
-                                        <a href="/water-heater-option1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater</a>
+                                        <a href="/waterHeater" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/water-heater-option1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Install</a>
+                                        <a href="/heaterinstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Install</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/water-heater-option2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Leak</a>
+                                        <a href="/waterheaterLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Leak</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/water-heater-option3" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Repair</a>
+                                        <a href="/heaterRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Repair</a>
                                     </div>
                                 </div>
                             </div>
@@ -1497,94 +1548,55 @@
         </div>
     </section>
     <!-- BUY ME A BEER AND HELP SUPPORT OPEN-SOURCE RESOURCES -->
-    <section class="relative overflow-x-auto ml-36 mb-10 mt-20" id="#Plumbing">
+    <section class="relative overflow-x-auto ml-6 mr-6 mb-10 mt-20" id="#Plumbing">
         <h1 style="font-size: 2.25rem;font-weight: 700;font-family: math;" class="mb-2">PLUMBING SERVICES PRICE LIST :</h1>
-        <table class="w-full text-base text-center rtl:text-right text-gray-500 dark:text-gray-400" style="width: 90%;">
-            <thead class="text-lg text-gray-700 uppercase dark:text-gray-400 border border-gray-300 dark:border-gray-700">
+        <table class="responsive-table">
+            <thead>
                 <tr>
-                    <th scope="col" class="px-6 py-3 bg-red-500 text-white dark:bg-gray-800">
-                        Item
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Description of Services (All prices incl. of material, labour & transport)
-                    </th>
-                    <th scope="col" class="px-6 py-3 dark:bg-gray-800">
-                        Rate
-                    </th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Description of Services (All prices incl. of material, labour & transport)</th>
+                    <th scope="col">Rate</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="border-b border-gray-300 dark:border-gray-700">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-red-500 text-white dark:text-white dark:bg-gray-800">1</th>
-                    <td class="px-6 py-4">
-                        Clogged toilet bowl / Clearing toilet bowl choke
-                    </td>
-                    <td class="px-6 py-4 dark:bg-gray-800">
-                        <p class="mt-4 ">From <span class="font-semibold text-gray-900 dark:text-white">$140</span></p>
-                    </td>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Clogged toilet bowl / Clearing toilet bowl choke</td>
+                    <td><span class="price">$140</span></td>
                 </tr>
-
-                <tr class="border-b border-gray-300 dark:border-gray-700">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-red-500 text-white dark:text-white dark:bg-gray-800">2</th>
-                    <td class="px-6 py-4">
-                        Clogged floor trap/ Clogged drainage pipe/ Clearing floor trap choke
-                    </td>
-                    <td class="px-6 py-4 dark:bg-gray-800">
-                        <p class="mt-4 ">From <span class="font-semibold text-gray-900 dark:text-white">$140</span></p>
-                    </td>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Clogged floor trap / Clogged drainage pipe / Clearing floor trap choke</td>
+                    <td><span class="price">$140</span></td>
                 </tr>
-
-                <tr class="border-b border-gray-300 dark:border-gray-700">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-red-500 text-white dark:text-white dark:bg-gray-800">3</th>
-                    <td class="px-6 py-4">
-                        Rectify water discharge into the toilet bowl by replacing the new siphon (Flush System Replacement)
-                    </td>
-                    <td class="px-6 py-4 dark:bg-gray-800">
-                        <p class="mt-4 ">From <span class="font-semibold text-gray-900 dark:text-white">$180</span></p>
-                    </td>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Rectify water discharge into the toilet bowl by replacing the new siphon (Flush System Replacement)</td>
+                    <td><span class="price">$180</span></td>
                 </tr>
-
-                <tr class="border-b border-gray-300 dark:border-gray-700">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-red-500 text-white dark:text-white dark:bg-gray-800">4</th>
-                    <td class="px-6 py-4">
-                        Labor & material to repair leak at exposed copper pipe or UPVC pipe
-                    </td>
-                    <td class="px-6 py-4 dark:bg-gray-800">
-                        <p class="mt-4 ">From <span class="font-semibold text-gray-900 dark:text-white">$140</span></p>
-                    </td>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Labor & material to repair leak at exposed copper pipe or UPVC pipe</td>
+                    <td><span class="price">$140</span></td>
                 </tr>
-
-                <tr class="border-b border-gray-300 dark:border-gray-700">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-red-500 text-white dark:text-white dark:bg-gray-800">5</th>
-                    <td class="px-6 py-4">
-                        Supplying & replacing toilet/WC flush system
-                    </td>
-                    <td class="px-6 py-4 dark:bg-gray-800">
-                        <p class="mt-4 ">From <span class="font-semibold text-gray-900 dark:text-white">$180</span></p>
-                    </td>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Supplying & replacing toilet/WC flush system</td>
+                    <td><span class="price">$180</span></td>
                 </tr>
-
-                <tr class="border-b border-gray-300 dark:border-gray-700">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-red-500 text-white dark:text-white dark:bg-gray-800">6</th>
-                    <td class="px-6 py-4">
-                        Replace shower set
-                    </td>
-                    <td class="px-6 py-4 dark:bg-gray-800">
-                        <p class="mt-4 ">From <span class="font-semibold text-gray-900 dark:text-white">$120</span></p>
-                    </td>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Replace shower set</td>
+                    <td><span class="price">$120</span></td>
                 </tr>
-
-                <tr class="border-b border-gray-300 dark:border-gray-700">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-red-500 text-white dark:text-white dark:bg-gray-800">6</th>
-                    <td class="px-6 py-4">
-                        Replace kitchen sink/ Bathroom tap/faucet (basic type)
-                    </td>
-                    <td class="px-6 py-4 dark:bg-gray-800">
-                        <p class="mt-4 ">From <span class="font-semibold text-gray-900 dark:text-white">$120</span></p>
-                    </td>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Replace kitchen sink / Bathroom tap / faucet (basic type)</td>
+                    <td><span class="price">$120</span></td>
                 </tr>
             </tbody>
         </table>
+
     </section>
 
     <section class="relative overflow-x-auto ml-36 mb-10 mt-20" id="#AIRCON">

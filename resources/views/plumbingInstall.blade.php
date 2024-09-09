@@ -431,8 +431,15 @@
             </button>
         </div>
     </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
     <!-- Scroll Up -->
-
     <!-- Header -->
     <nav id="main-nav" class="bg-white shadow-lg relative z-50 sticky scrolled">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t" style="background-color: #f69918;">
@@ -459,6 +466,7 @@
                                 </a>
                                 <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md w-40 z-50">
                                     <a href="/review" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Review</a>
+                                    <a href="/brands" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Our Brands</a>
                                     <a href="/mission" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Mission</a>
                                 </div>
                             </div>
@@ -833,6 +841,9 @@
                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
                         <a href="/review" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Review</a>
                     </div>
+                    <!-- <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <a href="/brands" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Our Brands</a>
+                    </div> -->
                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
                         <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Mission</a>
                     </div>
@@ -927,16 +938,16 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
-                                        <a href="/toilet-bowl-option1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl</a>
+                                        <a href="/toiletBowl" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/toilet-bowl-option2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Installation</a>
+                                        <a href="/toiletBowl" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Installation</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/toilet-bowl-option3" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke</a>
+                                        <a href="/plumbingChoke" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/toilet-bowl-option4" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke Repair</a>
+                                        <a href="/toiletRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke Repair</a>
                                     </div>
                                 </div>
                             </div>
@@ -963,24 +974,24 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
-                                        <a href="/shower-service-option1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Service</a>
+                                        <a href="/showerService" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Service</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/shower-service-option2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Installation</a>
+                                        <a href="/showerInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Installation</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/shower-service-option3" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Repair</a>
+                                        <a href="/showerRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Repair</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Tap & Faucet</a>
+                                <a href="/tapFaucet" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Tap & Faucet</a>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
+                                <a href="/bidetSpray" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Commercial Plumber</a>
+                                <a href="/commercialPlumber" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Commercial Plumber</a>
                             </div>
 
 
@@ -999,16 +1010,16 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
-                                        <a href="/submenu-item1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Install</a>
+                                        <a href="/plumbingInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Install</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
-                                        <a href="/submenu-item1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Pipe Installation</a>
+                                        <a href="/pipeInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Pipe Installation</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
-                                        <a href="/submenu-item1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
+                                        <a href="/bidetSpray" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/submenu-item2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bathroom Rack</a>
+                                        <a href="/bathroomRack" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bathroom Rack</a>
                                     </div>
                                 </div>
                             </div>
@@ -1027,16 +1038,16 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
-                                        <a href="/plumbing-choke-item1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Leak</a>
+                                        <a href="/plumbingLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Leak</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/plumbing-choke-item2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Leaking Tap</a>
+                                        <a href="/tapLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Leaking Tap</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/plumbing-choke-item2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Heater Leak</a>
+                                        <a href="/heaterLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Heater Leak</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/plumbing-choke-item2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Leak</a>
+                                        <a href="/showerService" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Leak</a>
                                     </div>
                                 </div>
                             </div>
@@ -1055,16 +1066,16 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
-                                        <a href="/water-heater-option1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater</a>
+                                        <a href="/waterHeater" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/water-heater-option1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Install</a>
+                                        <a href="/heaterinstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Install</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/water-heater-option2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Leak</a>
+                                        <a href="/waterheaterLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Leak</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/water-heater-option3" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Repair</a>
+                                        <a href="/heaterRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Repair</a>
                                     </div>
                                 </div>
                             </div>
@@ -1541,7 +1552,7 @@
         <div class="relative flex flex-col md:flex-row items-center md:items-start mt-8">
             <span class="bg-yellow-500 yellow-diamond absolute left-0 h-20 w-20 hidden md:block transform rotate-45" style="margin-left: 47%;"></span>
             <h3 id="handyman-services" class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-11/12 md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;margin-left: 4%;">
-                <span class="inner-span">All-in-One Handyman Services for Modern Living Convenience</span>
+                <span class="inner-span">All-in-One Plumbing Install Services for Modern Living Convenience</span>
             </h3>
             <style>
                 @media (max-width: 768px) {
@@ -1866,12 +1877,12 @@
                     <div class="bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10  px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-1">
                         <img src="https://eree8b5j43m.exactdn.com/wp-content/uploads/2023/11/DALL%C2%B7E-2023-11-23-18.43.12-A-professional-plumber-wearing-a-blue-work-uniform-and-a-tool-belt-is-fixing-a-water-leak-under-a-kitchen-sink.-The-scene-shows-the-plumber-using-a-.png?strip=all&lossy=1&webp=55&ssl=1" alt="" class="ml-14 mb-10" style="border: 1px solid #f7a80c;padding: 10px;height: 190px;">
                         <span class="text-primary font-semibold text-lg block mb-4">
-                            Step 1: Inspect Your Floors
+                            Step 1: Assess Your Plumbing Needs
                         </span>
                         <hr>
                         <div class="mb-7">
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Our team collaborates with the owner to thoroughly assess the type and current state of flooring before beginning a meticulous deep cleaning process.
+                                Our team works with you to evaluate your plumbing requirements, considering the layout, water pressure, and any specific needs before starting the installation process.
                             </p>
                         </div>
                         <div>
@@ -1929,12 +1940,12 @@
                     <div class="bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10  px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-1">
                         <img src="https://d17x34b9fcvxk7.cloudfront.net/static/marketing/images/hero-backgrounds/plumber.jpg" alt="" class="ml-14 mb-10" style="border: 1px solid #f7a80c;padding: 10px;height: 190px;">
                         <span class="text-primary font-semibold text-lg block mb-4">
-                            Step 2: Power Scrubbing
+                            Step 2: Install the Plumbing System
                         </span>
                         <hr>
                         <div class="mb-7">
                             <p class="text-base text-body-color leading-loose mb-1">
-                                In this step, we employ the powerful Bona速 machine scrubber specifically designed for tackling even the most stubborn light stains.
+                                We use high-quality materials and follow industry best practices to install your plumbing system efficiently, ensuring all pipes, fixtures, and fittings are correctly placed and securely connected.
                             </p>
                         </div>
                         <div>
@@ -1992,12 +2003,12 @@
                     <div class="bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10  px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-1">
                         <img src="https://triplumbing.com.au/media/2023/03/p5.jpg" alt="" class="ml-14 mb-10" style="border: 1px solid #f7a80c;padding: 10px;height: 190px;">
                         <span class="text-primary font-semibold text-lg block mb-4">
-                            Step 3: Rinse Your Floor
+                            Step 3: Test and Inspect
                         </span>
                         <hr>
                         <div class="mb-7">
                             <p class="text-base text-body-color leading-loose mb-1">
-                                We use targeted chemical cleaning solutions along with the Bona速 power scrubber to deep clean and eliminate dirt and grime on any type of flooring.
+                                After installation, we conduct thorough testing and inspection to ensure the plumbing system is functioning properly, with no leaks or issues, and meets all safety and regulatory standards.
                             </p>
                         </div>
                         <div>
@@ -2066,7 +2077,7 @@
                 <div class="w-full px-4">
                     <div class="text-center mx-auto mb-[3.75rem] lg:mb-20 max-w-[31.875rem]">
                         <h2 class=" font-bold  text-3xl sm:text-4xl md:text-[2.5rem] text-dark mb-4 ">
-                            OUR FULL RANGE OF HANDYMAN SERVICES INCLUDE:
+                            OUR FULL RANGE OF PLUMBING INSTALL SERVICES INCLUDE:
                         </h2>
                     </div>
                 </div>
@@ -2075,41 +2086,36 @@
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4">
                     <div class="bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10  px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-1" style="height: 94%;">
                         <span class="text-primary font-semibold text-lg block mb-4">
-                            Handyman Installations
+                            Plumbing Installation Services
                         </span>
                         <hr>
                         <div class="mb-7">
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Residential and Commercial Plumbing Services
+                                We specialize in comprehensive plumbing installations for both residential and commercial properties, including:
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Plumbing Leaks
+                                Complete Plumbing System Installation
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Plumbing Chokes
+                                Water Heater Installation
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Plumbing Chokes
+                                Toilet Bowl Installation and Replacement
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Water Heater Services
+                                Tap & Faucet Installation
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Toilet Bowl Services
+                                Toilet Flush System Installation
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Tap & Faucet Services
-                            </p>
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Toilet Flush System Services
-                            </p>
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Shower Services
+                                Shower Installation
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
                                 Bidet Spray Installation
                             </p>
                         </div>
+
                         <div>
                             <span class="absolute right-0 top-7 z-[-1]">
                                 <svg width="77" height="172" viewBox="0 0 77 172" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2164,45 +2170,33 @@
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4">
                     <div class=" bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10">
                         <span class="text-primary font-semibold text-lg block mb-4">
-                            Handyman Electrician
+                            Plumbing Installation Services
                         </span>
                         <hr>
                         <div class="mb-7">
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Residential and commercial Electrical Services
+                                We provide expert plumbing installation services for both residential and commercial properties, including:
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Electrical Installations
+                                Complete Plumbing System Installation
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Electrical Repair
+                                Water Heater Installation
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Light Services
+                                Toilet Bowl Installation and Replacement
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Electrical Switch Services
+                                Tap & Faucet Installation
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Light Switch Services
+                                Toilet Flush System Installation
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Power Sockets & Powerpoints Services
+                                Shower Installation
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Electrical Wiring
-                            </p>
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Power Trip / Power Failure Services
-                            </p>
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Smart Switch Installation
-                            </p>
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Ceiling Fan Installation
-                            </p>
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Wall Fan Installation
+                                Bidet Spray Installation
                             </p>
                         </div>
 
@@ -2260,174 +2254,33 @@
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4">
                     <div class="  bg-white rounded-xl relative z-10 overflow-hidden  border border-primary border-opacity-20 shadow-pricing py-10  px-8  sm:p-12 lg:py-10 lg:px-6  xl:p-12 mb-10" style="height: 94%;">
                         <span class="text-primary font-semibold text-lg block mb-4">
-                            Handyman Aircon Servicing
+                            Expert Plumbing Installation Services
                         </span>
                         <hr>
                         <div class="mb-7">
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Residential and Commercial Aircon Services
+                                Our skilled team offers professional plumbing installation services tailored to both residential and commercial needs, including:
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Aircon Servicing
+                                Full-System Plumbing Installations
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Aircon Installation
+                                Installation of Modern Water Heaters
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Aircon Chemical Overhaul
+                                High-Efficiency Toilet Bowl Installations
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Aircon Repair
+                                Premium Tap & Faucet Installations
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Aircon Leaking Water Repair
+                                Advanced Toilet Flush System Installations
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Aircon Not Cold Repair
+                                Custom Shower Installations
                             </p>
                             <p class="text-base text-body-color leading-loose mb-1">
-                                Aircon Gas Top Up
-                            </p>
-                        </div>
-                        <div>
-                            <span class="absolute right-0 top-7 z-[-1]">
-                                <svg width="77" height="172" viewBox="0 0 77 172" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear" x1="86" y1="0" x2="86" y2="172" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#3056D3" stop-opacity="0.09" />
-                                            <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                            </span>
-                            <span class="absolute right-4 top-4 z-[-1]">
-                                <svg width="41" height="89" viewBox="0 0 41 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="38.9138" cy="87.4849" r="1.42021" transform="rotate(180 38.9138 87.4849)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="74.9871" r="1.42021" transform="rotate(180 38.9138 74.9871)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="62.4892" r="1.42021" transform="rotate(180 38.9138 62.4892)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="38.3457" r="1.42021" transform="rotate(180 38.9138 38.3457)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="13.634" r="1.42021" transform="rotate(180 38.9138 13.634)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="50.2754" r="1.42021" transform="rotate(180 38.9138 50.2754)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="26.1319" r="1.42021" transform="rotate(180 38.9138 26.1319)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="1.42021" r="1.42021" transform="rotate(180 38.9138 1.42021)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="87.4849" r="1.42021" transform="rotate(180 26.4157 87.4849)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="74.9871" r="1.42021" transform="rotate(180 26.4157 74.9871)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="62.4892" r="1.42021" transform="rotate(180 26.4157 62.4892)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="38.3457" r="1.42021" transform="rotate(180 26.4157 38.3457)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="13.634" r="1.42021" transform="rotate(180 26.4157 13.634)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="50.2754" r="1.42021" transform="rotate(180 26.4157 50.2754)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="26.1319" r="1.42021" transform="rotate(180 26.4157 26.1319)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="1.4202" r="1.42021" transform="rotate(180 26.4157 1.4202)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="87.4849" r="1.42021" transform="rotate(180 13.9177 87.4849)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="74.9871" r="1.42021" transform="rotate(180 13.9177 74.9871)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="62.4892" r="1.42021" transform="rotate(180 13.9177 62.4892)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="38.3457" r="1.42021" transform="rotate(180 13.9177 38.3457)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="13.634" r="1.42021" transform="rotate(180 13.9177 13.634)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="50.2754" r="1.42021" transform="rotate(180 13.9177 50.2754)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="26.1319" r="1.42021" transform="rotate(180 13.9177 26.1319)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="1.42019" r="1.42021" transform="rotate(180 13.9177 1.42019)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="87.4849" r="1.42021" transform="rotate(180 1.41963 87.4849)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="74.9871" r="1.42021" transform="rotate(180 1.41963 74.9871)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="62.4892" r="1.42021" transform="rotate(180 1.41963 62.4892)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="38.3457" r="1.42021" transform="rotate(180 1.41963 38.3457)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="13.634" r="1.42021" transform="rotate(180 1.41963 13.634)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="50.2754" r="1.42021" transform="rotate(180 1.41963 50.2754)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="26.1319" r="1.42021" transform="rotate(180 1.41963 26.1319)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="1.4202" r="1.42021" transform="rotate(180 1.41963 1.4202)" fill="#3056D3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-wrap justify-center -mx-4">
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-                    <div class="bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10  px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-1">
-                        <span class="text-primary font-semibold text-lg block mb-4">
-                            Rubbish Chute Replacement
-                        </span>
-                        <hr>
-                        <div class="mb-7">
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                HDB Rubbish Chute Replacement
-                            </p>
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Condo Rubbish Chute Replacement
-                            </p>
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Rubbish Chute Repair
-                            </p>
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Refuse Chute Replacement
-                            </p>
-                        </div>
-                        <div>
-                            <span class="absolute right-0 top-7 z-[-1]">
-                                <svg width="77" height="172" viewBox="0 0 77 172" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear" x1="86" y1="0" x2="86" y2="172" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#3056D3" stop-opacity="0.09" />
-                                            <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                            </span>
-                            <span class="absolute right-4 top-4 z-[-1]">
-                                <svg width="41" height="89" viewBox="0 0 41 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="38.9138" cy="87.4849" r="1.42021" transform="rotate(180 38.9138 87.4849)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="74.9871" r="1.42021" transform="rotate(180 38.9138 74.9871)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="62.4892" r="1.42021" transform="rotate(180 38.9138 62.4892)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="38.3457" r="1.42021" transform="rotate(180 38.9138 38.3457)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="13.634" r="1.42021" transform="rotate(180 38.9138 13.634)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="50.2754" r="1.42021" transform="rotate(180 38.9138 50.2754)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="26.1319" r="1.42021" transform="rotate(180 38.9138 26.1319)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="1.42021" r="1.42021" transform="rotate(180 38.9138 1.42021)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="87.4849" r="1.42021" transform="rotate(180 26.4157 87.4849)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="74.9871" r="1.42021" transform="rotate(180 26.4157 74.9871)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="62.4892" r="1.42021" transform="rotate(180 26.4157 62.4892)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="38.3457" r="1.42021" transform="rotate(180 26.4157 38.3457)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="13.634" r="1.42021" transform="rotate(180 26.4157 13.634)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="50.2754" r="1.42021" transform="rotate(180 26.4157 50.2754)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="26.1319" r="1.42021" transform="rotate(180 26.4157 26.1319)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="1.4202" r="1.42021" transform="rotate(180 26.4157 1.4202)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="87.4849" r="1.42021" transform="rotate(180 13.9177 87.4849)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="74.9871" r="1.42021" transform="rotate(180 13.9177 74.9871)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="62.4892" r="1.42021" transform="rotate(180 13.9177 62.4892)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="38.3457" r="1.42021" transform="rotate(180 13.9177 38.3457)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="13.634" r="1.42021" transform="rotate(180 13.9177 13.634)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="50.2754" r="1.42021" transform="rotate(180 13.9177 50.2754)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="26.1319" r="1.42021" transform="rotate(180 13.9177 26.1319)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="1.42019" r="1.42021" transform="rotate(180 13.9177 1.42019)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="87.4849" r="1.42021" transform="rotate(180 1.41963 87.4849)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="74.9871" r="1.42021" transform="rotate(180 1.41963 74.9871)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="62.4892" r="1.42021" transform="rotate(180 1.41963 62.4892)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="38.3457" r="1.42021" transform="rotate(180 1.41963 38.3457)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="13.634" r="1.42021" transform="rotate(180 1.41963 13.634)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="50.2754" r="1.42021" transform="rotate(180 1.41963 50.2754)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="26.1319" r="1.42021" transform="rotate(180 1.41963 26.1319)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="1.4202" r="1.42021" transform="rotate(180 1.41963 1.4202)" fill="#3056D3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-                    <div class=" bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10" style="height: 99%;">
-                        <span class="text-primary font-semibold text-lg block mb-4">
-                            Hinge Installation
-                        </span>
-                        <hr>
-                        <div class="mb-7">
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Cupboard Hinge Installation/Replacement
-                            </p>
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Cabinet Hinge Installation/Replacement
-                            </p>
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Hydraulic Hinge Installation/Replacement
+                                Professional Bidet Spray Installations
                             </p>
                         </div>
 
@@ -2482,75 +2335,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-                    <div class="bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10  px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-1" style="height: 99%;">
-                        <span class="text-primary font-semibold text-lg block mb-4">
-                            Furniture Assembly
-                        </span>
-                        <hr>
-                        <div class="mb-7">
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Tables & Chairs Assembly
-                            </p>
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Cabinet Assembly
-                            </p>
-                            <p class="text-base text-body-color leading-loose mb-1">
-                                Wall Shelf Installation
-                            </p>
-                        </div>
-                        <div>
-                            <span class="absolute right-0 top-7 z-[-1]">
-                                <svg width="77" height="172" viewBox="0 0 77 172" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear" x1="86" y1="0" x2="86" y2="172" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#3056D3" stop-opacity="0.09" />
-                                            <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                            </span>
-                            <span class="absolute right-4 top-4 z-[-1]">
-                                <svg width="41" height="89" viewBox="0 0 41 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="38.9138" cy="87.4849" r="1.42021" transform="rotate(180 38.9138 87.4849)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="74.9871" r="1.42021" transform="rotate(180 38.9138 74.9871)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="62.4892" r="1.42021" transform="rotate(180 38.9138 62.4892)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="38.3457" r="1.42021" transform="rotate(180 38.9138 38.3457)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="13.634" r="1.42021" transform="rotate(180 38.9138 13.634)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="50.2754" r="1.42021" transform="rotate(180 38.9138 50.2754)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="26.1319" r="1.42021" transform="rotate(180 38.9138 26.1319)" fill="#3056D3" />
-                                    <circle cx="38.9138" cy="1.42021" r="1.42021" transform="rotate(180 38.9138 1.42021)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="87.4849" r="1.42021" transform="rotate(180 26.4157 87.4849)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="74.9871" r="1.42021" transform="rotate(180 26.4157 74.9871)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="62.4892" r="1.42021" transform="rotate(180 26.4157 62.4892)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="38.3457" r="1.42021" transform="rotate(180 26.4157 38.3457)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="13.634" r="1.42021" transform="rotate(180 26.4157 13.634)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="50.2754" r="1.42021" transform="rotate(180 26.4157 50.2754)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="26.1319" r="1.42021" transform="rotate(180 26.4157 26.1319)" fill="#3056D3" />
-                                    <circle cx="26.4157" cy="1.4202" r="1.42021" transform="rotate(180 26.4157 1.4202)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="87.4849" r="1.42021" transform="rotate(180 13.9177 87.4849)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="74.9871" r="1.42021" transform="rotate(180 13.9177 74.9871)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="62.4892" r="1.42021" transform="rotate(180 13.9177 62.4892)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="38.3457" r="1.42021" transform="rotate(180 13.9177 38.3457)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="13.634" r="1.42021" transform="rotate(180 13.9177 13.634)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="50.2754" r="1.42021" transform="rotate(180 13.9177 50.2754)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="26.1319" r="1.42021" transform="rotate(180 13.9177 26.1319)" fill="#3056D3" />
-                                    <circle cx="13.9177" cy="1.42019" r="1.42021" transform="rotate(180 13.9177 1.42019)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="87.4849" r="1.42021" transform="rotate(180 1.41963 87.4849)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="74.9871" r="1.42021" transform="rotate(180 1.41963 74.9871)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="62.4892" r="1.42021" transform="rotate(180 1.41963 62.4892)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="38.3457" r="1.42021" transform="rotate(180 1.41963 38.3457)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="13.634" r="1.42021" transform="rotate(180 1.41963 13.634)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="50.2754" r="1.42021" transform="rotate(180 1.41963 50.2754)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="26.1319" r="1.42021" transform="rotate(180 1.41963 26.1319)" fill="#3056D3" />
-                                    <circle cx="1.41963" cy="1.4202" r="1.42021" transform="rotate(180 1.41963 1.4202)" fill="#3056D3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
             </div>
+
         </div>
     </section>
     <!-- ====== Pricing Section End -->
