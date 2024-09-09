@@ -165,8 +165,8 @@ Route::get('/hydraulic', function () {
 Route::get('/drilling', function () {
     return view('drilling');
 });
-Route::get('/tvBucket', function () {
-    return view('tvBucket');
+Route::get('/tvBuaket', function () {
+    return view('tvBacket');
 });
 Route::get('/wallMounting', function () {
     return view('wallMounting');
