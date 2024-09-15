@@ -440,7 +440,7 @@
         }
     </script>
     <!-- Scroll Up -->
-    <!-- Header -->
+<!-- Header -->
     <nav id="main-nav" class="bg-white shadow-lg relative z-50 sticky scrolled">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t" style="background-color: #f69918;">
             <div class="relative flex items-center justify-between h-16" id="kol">
@@ -459,7 +459,7 @@
                                 <a href="/" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Home</a>
                             </div>
                             <div class="relative group hover-border-top">
-                                <a href="/about" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">About
+                                <a href="/about" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">About Us
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
@@ -794,7 +794,7 @@
                     </a>
 
                     <div class="newMb" style="margin-left: -23px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                        <button id="about-us-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;"><span style="margin-left: 8%;">About </span><svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <button id="about-us-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;"><span style="margin-left: 8%;">About Us</span><svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
 
@@ -836,14 +836,14 @@
                     </div>
 
                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
-                        <a href="/about" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">About</a>
+                        <a href="/about" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">About Us</a>
                     </div>
                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
                         <a href="/review" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Review</a>
                     </div>
-                    <!-- <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
                         <a href="/brands" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Our Brands</a>
-                    </div> -->
+                    </div>
                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
                         <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Mission</a>
                     </div>
@@ -1876,7 +1876,7 @@
             <div class="w-full px-4">
                 <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
                     <h2 class=" font-bold  text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 ">
-                        OUR COMPLETED ELECTRICAL WORKS
+                        OUR COMPLETED SOFA CLEAN WORKS
                     </h2>
                 </div>
             </div>
@@ -1885,29 +1885,29 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
                 <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
                     <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-                        <img src="https://media.istockphoto.com/id/1345765714/photo/electrical-engineers-test-electrical-Repairations-and-wiring-on-protective-relays-measuring.jpg?s=612x612&w=0&k=20&c=Go95zj7drMZVNTaPS615U5Yjsl_y1cvTHqoyJirLMlA=" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu2eUblWEyINV4RgEnJvS0R-Art7U3WbxUsg&s" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
                         <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
                     </a>
                 </div>
                 <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
                     <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
-                        <img src="https://www.designblendz.com/hs-fs/hubfs/AdobeStock_305069681.jpeg?width=750&name=AdobeStock_305069681.jpeg" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk-SFnpurZDdaSMZk3kiYJ38Y1XwQleatopQ&s" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
                         <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
                     </a>
                     <div class="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
                         <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                            <img src="https://raviniaplumbing.com/wp-content/uploads/2022/08/Ravinia_Electric.png.webp" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                            <img src="https://prohousekeepers.com/wp-content/uploads/2021/07/Fabric-Sofa-Couch-Clean.jpg" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
                             <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
                         </a>
                         <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                            <img src="https://www.equans-digital.com/sites/g/files/tkmtob241/files/styles/coh_x_large/public/2023-07/electricit%C3%A9_0.PNG?itok=Gyo9fW61" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                            <img src="https://www.thespruce.com/thmb/LwdGa6WMqT5JSA9Eh-iXWo4JaAU=/5000x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-clean-fabric-sofa-without-water-5214386-hero-3d09505bf37f43dea198cee5de12acc9.jpg" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
                             <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
                         </a>
                     </div>
                 </div>
                 <div class="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
                     <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-                        <img src="https://www.coynecollege.edu/wp-content/uploads/2020/09/home-electrical-wiring-update.jpeg" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        <img src="https://i0.wp.com/oakabode.com/wp-content/uploads/2020/08/Sequence-01.Still013-3-1.jpg?fit=1500%2C844&ssl=1" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
                         <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
                     </a>
                 </div>

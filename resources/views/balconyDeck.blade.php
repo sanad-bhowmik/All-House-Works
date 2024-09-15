@@ -423,7 +423,7 @@
         </div>
     </nav>
     <!-- Navigation Menu -->
-    <!-- Scroll Up -->
+<!-- Scroll Up -->
     <div class="flex items-end justify-start fixed bottom-0 left-0 mb-4 ml-4 z-10">
         <div>
             <button onclick="scrollToTop()" title="Scroll to Top" class="block w-11 h-11 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:-rotate-12">
@@ -431,8 +431,15 @@
             </button>
         </div>
     </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
     <!-- Scroll Up -->
-
     <!-- Header -->
     <nav id="main-nav" class="bg-white shadow-lg relative z-50 sticky scrolled">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t" style="background-color: #f69918;">
@@ -452,13 +459,14 @@
                                 <a href="/" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Home</a>
                             </div>
                             <div class="relative group hover-border-top">
-                                <a href="/about" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">About
+                                <a href="/about" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">About Us
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
                                 </a>
                                 <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md w-40 z-50">
                                     <a href="/review" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Review</a>
+                                    <a href="/brands" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Our Brands</a>
                                     <a href="/mission" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Mission</a>
                                 </div>
                             </div>
@@ -786,7 +794,7 @@
                     </a>
 
                     <div class="newMb" style="margin-left: -23px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                        <button id="about-us-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;"><span style="margin-left: 8%;">About </span><svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <button id="about-us-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;"><span style="margin-left: 8%;">About Us</span><svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
 
@@ -828,10 +836,13 @@
                     </div>
 
                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
-                        <a href="/about" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">About</a>
+                        <a href="/about" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">About Us</a>
                     </div>
                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
                         <a href="/review" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Review</a>
+                    </div>
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <a href="/brands" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Our Brands</a>
                     </div>
                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
                         <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Mission</a>
@@ -927,16 +938,16 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
-                                        <a href="/toilet-bowl-option1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl</a>
+                                        <a href="/toiletBowl" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/toilet-bowl-option2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Installation</a>
+                                        <a href="/toiletBowl" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Installation</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/toilet-bowl-option3" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke</a>
+                                        <a href="/plumbingChoke" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/toilet-bowl-option4" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke Repair</a>
+                                        <a href="/toiletRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke Repair</a>
                                     </div>
                                 </div>
                             </div>
@@ -963,24 +974,24 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
-                                        <a href="/shower-service-option1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Service</a>
+                                        <a href="/showerService" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Service</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/shower-service-option2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Installation</a>
+                                        <a href="/showerInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Installation</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/shower-service-option3" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Repair</a>
+                                        <a href="/showerRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Repair</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Tap & Faucet</a>
+                                <a href="/tapFaucet" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Tap & Faucet</a>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
+                                <a href="/bidetSpray" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Commercial Plumber</a>
+                                <a href="/commercialPlumber" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Commercial Plumber</a>
                             </div>
 
 
@@ -999,16 +1010,16 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
-                                        <a href="/submenu-item1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Install</a>
+                                        <a href="/plumbingInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Install</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
-                                        <a href="/submenu-item1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Pipe Installation</a>
+                                        <a href="/pipeInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Pipe Installation</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
-                                        <a href="/submenu-item1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
+                                        <a href="/bidetSpray" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/submenu-item2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bathroom Rack</a>
+                                        <a href="/bathroomRack" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bathroom Rack</a>
                                     </div>
                                 </div>
                             </div>
@@ -1027,16 +1038,16 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
-                                        <a href="/plumbing-choke-item1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Leak</a>
+                                        <a href="/plumbingLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Leak</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/plumbing-choke-item2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Leaking Tap</a>
+                                        <a href="/tapLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Leaking Tap</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/plumbing-choke-item2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Heater Leak</a>
+                                        <a href="/heaterLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Heater Leak</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/plumbing-choke-item2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Leak</a>
+                                        <a href="/showerService" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Leak</a>
                                     </div>
                                 </div>
                             </div>
@@ -1055,16 +1066,16 @@
                                     </div>
 
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
-                                        <a href="/water-heater-option1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater</a>
+                                        <a href="/waterHeater" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/water-heater-option1" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Install</a>
+                                        <a href="/heaterinstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Install</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/water-heater-option2" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Leak</a>
+                                        <a href="/waterheaterLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Leak</a>
                                     </div>
                                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                        <a href="/water-heater-option3" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Repair</a>
+                                        <a href="/heaterRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Repair</a>
                                     </div>
                                 </div>
                             </div>
@@ -1540,7 +1551,7 @@
         <div class="relative flex flex-col md:flex-row items-center md:items-start mt-8">
             <span class="bg-yellow-500 yellow-diamond absolute left-0 h-20 w-20 hidden md:block transform rotate-45" style="margin-left: 47%;"></span>
             <h3 id="handyman-services" class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-11/12 md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;margin-left: 4%;">
-                <span class="inner-span">All-in-One Handyman Services for Modern Living Convenience</span>
+                <span class="inner-span">All-in-One Balcony Decking Services for Modern Living Convenience</span>
             </h3>
             <style>
                 @media (max-width: 768px) {
@@ -2168,159 +2179,6 @@
         }
     </style>
 
-
-    <!-- Choice -->
-    <div class="relative overflow-hidden rounded-2xl m-16" style="background-image: linear-gradient(rgb(0 0 0 / 87%), rgb(0 0 0 / 76%)), url(https://png.pngtree.com/thumb_back/fw800/background/20230929/pngtree-d-illustration-triangular-parametric-digital-texture-with-varied-volume-and-intricate-image_13522499.png);background-attachment: fixed;display:none;">
-        <div class="px-16 py-8 sm:px-8 lg:px-16 lg:py-14">
-            <div class="md:flex md:items-center md:space-x-12 lg:space-x-24">
-                <div class="grid grid-cols-1 gap-y-3 sm:grid-cols-2 gap-x-12 xl:gap-x-24">
-                    <div>
-                        <ul class="space-y-3 text-base font-medium text-white font-pj">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                    </path>
-                                </svg> Toilet bowl
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                    </path>
-                                </svg> Floor trap
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                    </path>
-                                </svg> Pipe Replacement
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="space-y-3 text-base font-medium text-white font-pj">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                    </path>
-                                </svg> HDB Plumber
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                    </path>
-                                </svg> Floor trap choke
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                    </path>
-                                </svg> Choke
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div>
-                    <ul class="space-y-3 text-base font-medium text-white font-pj">
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                </path>
-                            </svg> Toilet bowl replacement
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                </path>
-                            </svg> Toilet bowl installation
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="block md:hidden lg:block">
-                    <div class="hidden lg:block">
-                        <svg class="w-4 h-auto text-gray-600" viewBox="0 0 16 123" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 11)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 46)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 81)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 116)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 18)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 53)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 88)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 123)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 25)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 60)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 95)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 32)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 67)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 102)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 39)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 74)"></line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.83205 -0.5547 -0.5547 0.83205 15 109)"></line>
-                        </svg>
-                    </div>
-                    <div class="block mt-10 md:hidden">
-                        <svg class="w-auto h-4 text-gray-600" viewBox="0 0 172 16" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 11 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 46 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 81 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 116 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 151 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 18 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 53 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 88 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 123 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 158 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 25 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 60 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 95 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 130 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 165 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 32 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 67 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 102 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 137 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 172 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 39 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 74 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 109 1)">
-                            </line>
-                            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 144 1)">
-                            </line>
-                        </svg>
-                    </div>
-                </div>
-                <div class="mt-10 md:mt-0">
-                    <a title="Get quote now" id="whatsappImage" class="inline-flex items-center justify-center px-9 py-3.5 mt-5 text-white  font-bold text-gray-900 transition-all duration-200 bg-green-400 border border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white font-pj hover:bg-opacity-90 rounded-xl" href="#support"> What's APP
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Choice -->
-
     <footer class="footer-bg text-white py-10">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
@@ -2375,14 +2233,6 @@
 </body>
 
 </html>
-<script>
-    document.getElementById('whatsappImage').addEventListener('click', function() {
-        var message = "Good day, I am interested in learning more about your services. Could you please provide me with more information? Thank you.";
-        var phoneNumber = "6596585757";
-        var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
-        window.open(whatsappUrl, '_blank');
-    });
-</script>
 <script>
     let i = 1;
 
@@ -2483,125 +2333,238 @@
         }
     }
 
-    // Main menu opening
-    document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const overlay = document.getElementById('menu-overlay');
-        menu.style.left = '0';
-        overlay.style.display = 'block';
+    function showSubmenu() {
+        document.getElementById('decking-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideSubmenu() {
+        document.getElementById('decking-submenu').classList.add('hidden-submenu');
+    }
+    // decking-submenu
+    function showSubmenu() {
+        document.getElementById('decking-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideSubmenu() {
+        document.getElementById('decking-submenu').classList.add('hidden-submenu');
+    }
+    // decking-submenu
+    function showSubmenu1() {
+        document.getElementById('varnish-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideSubmenu1() {
+        document.getElementById('varnish-submenu').classList.add('hidden-submenu');
+    }
+    // Vanish-submenu
+    function showSubmenu2() {
+        document.getElementById('fClean-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideSubmenu2() {
+        document.getElementById('fClean-submenu').classList.add('hidden-submenu');
+    }
+    // fpolish-submenu
+    function showSubmenu3() {
+        document.getElementById('fpolish-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideSubmenu3() {
+        document.getElementById('fpolish-submenu').classList.add('hidden-submenu');
+    }
+    // dClean-submenu
+    function showSubmenu4() {
+        document.getElementById('dClean-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideSubmenu4() {
+        document.getElementById('dClean-submenu').classList.add('hidden-submenu');
+    }
+    // handy-submenu
+    function showSubmenu5() {
+        document.getElementById('handy-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideSubmenu5() {
+        document.getElementById('handy-submenu').classList.add('hidden-submenu');
+    }
+    // handy-submenu
+    function showSubmenu6() {
+        document.getElementById('electric-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideSubmenu6() {
+        document.getElementById('electric-submenu').classList.add('hidden-submenu');
+    }
+    // handy-submenu
+    function showSubmenu7() {
+        document.getElementById('service-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideSubmenu7() {
+        document.getElementById('service-submenu').classList.add('hidden-submenu');
+    }
+
+    function showLightServiceSubmenu() {
+        document.getElementById('light-service-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideLightServiceSubmenu() {
+        document.getElementById('light-service-submenu').classList.add('hidden-submenu');
+    }
+
+    function showPlumbingInstallSubmenu() {
+        document.getElementById('plumbing-install-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hidePlumbingInstallSubmenu() {
+        document.getElementById('plumbing-install-submenu').classList.add('hidden-submenu');
+    }
+
+    function showPlumbingLeakSubmenu() {
+        document.getElementById('plumbing-leak-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hidePlumbingLeakSubmenu() {
+        document.getElementById('plumbing-leak-submenu').classList.add('hidden-submenu');
+    }
+
+    function showWaterHeaterSubmenu() {
+        document.getElementById('water-heater-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideWaterHeaterSubmenu() {
+        document.getElementById('water-heater-submenu').classList.add('hidden-submenu');
+    }
+
+    function showToiletBowlSubmenu() {
+        document.getElementById('toilet-bowl-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideToiletBowlSubmenu() {
+        document.getElementById('toilet-bowl-submenu').classList.add('hidden-submenu');
+    }
+
+    function showShowerServiceSubmenu() {
+        document.getElementById('shower-service-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideShowerServiceSubmenu() {
+        document.getElementById('shower-service-submenu').classList.add('hidden-submenu');
+    }
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    function toggleSubmenu(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('plumber-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu2(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('electrician-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu3(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('handyman-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu4(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('deepclean-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu5(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('floorpolish-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu6(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('floorclean-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu7(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('decking-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu66(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('varnish-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu55(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('about-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu12(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('plumberInstall-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu22(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('plumberLeak-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu32(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('waterHeater-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu42(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('toiletBowl-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu52(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('shower-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu62(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('lightService-submenu');
+        submenu.classList.toggle('hidden');
+    }
+    const mobileMenuButton = document.querySelector('button[aria-controls="mobile-menu"]');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+        const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+        mobileMenuButton.setAttribute('aria-expanded', !expanded);
+        mobileMenu.classList.toggle('hidden');
     });
 
-    // Close main menu
-    document.getElementById('close-menu').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const overlay = document.getElementById('menu-overlay');
-        menu.style.left = '-100%';
-        overlay.style.display = 'none';
-    });
+    function showSubMenu(event, submenuId) {
+        const submenu = document.getElementById(submenuId);
+        if (submenu) {
+            submenu.classList.remove('hidden');
+        }
+    }
 
-    // Click outside to close menu
-    document.getElementById('menu-overlay').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const secondaryMenu = document.getElementById('secondary-menu');
-        const secondaryServiceMenu = document.getElementById('secondary-service-menu');
-        const plumberMenu = document.getElementById('plumber-menu');
-        const overlay = document.getElementById('menu-overlay');
-        menu.style.left = '-100%';
-        secondaryMenu.style.left = '-100%';
-        secondaryServiceMenu.style.left = '-100%';
-        plumberMenu.style.left = '-100%';
-        overlay.style.display = 'none';
-    });
-
-    // Open secondary menu when clicking "About Us"
-    document.getElementById('about-us-btn').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const secondaryMenu = document.getElementById('secondary-menu');
-        menu.style.left = '-100%';
-        secondaryMenu.style.left = '0';
-    });
-
-    // Return to main menu from secondary menu
-    document.getElementById('return-main-menu').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const secondaryMenu = document.getElementById('secondary-menu');
-        secondaryMenu.style.left = '-100%';
-        menu.style.left = '0';
-    });
-
-    // Open service submenu when clicking "Service"
-    document.getElementById('service-btn').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const secondaryServiceMenu = document.getElementById('secondary-service-menu');
-        menu.style.left = '-100%';
-        secondaryServiceMenu.style.left = '0';
-    });
-
-    // Return to main menu from service submenu
-    document.getElementById('return-service-main-menu').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const secondaryServiceMenu = document.getElementById('secondary-service-menu');
-        secondaryServiceMenu.style.left = '-100%';
-        menu.style.left = '0';
-    });
-
-    // Open plumber menu when clicking "Plumber"
-    document.getElementById('plumber-btn').addEventListener('click', function() {
-        const secondaryServiceMenu = document.getElementById('secondary-service-menu');
-        const plumberMenu = document.getElementById('plumber-menu');
-        secondaryServiceMenu.style.left = '-100%';
-        plumberMenu.style.left = '0';
-    });
-
-    // Return to service submenu from plumber menu
-    document.getElementById('return-plumber-menu').addEventListener('click', function() {
-        const secondaryServiceMenu = document.getElementById('secondary-service-menu');
-        const plumberMenu = document.getElementById('plumber-menu');
-        plumberMenu.style.left = '-100%';
-        secondaryServiceMenu.style.left = '0';
-    });
-    // Open submenu 222 when clicking "222"
-    document.querySelector('#plumber-menu .newMb a[href="/about"]').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default link behavior
-        const plumberMenu = document.getElementById('plumber-menu');
-        const submenu222 = document.getElementById('submenu-222');
-        plumberMenu.style.left = '-100%';
-        submenu222.style.left = '0';
-    });
-
-    // Return to plumber menu from submenu 222
-    document.getElementById('return-submenu-222').addEventListener('click', function() {
-        const plumberMenu = document.getElementById('plumber-menu');
-        const submenu222 = document.getElementById('submenu-222');
-        submenu222.style.left = '-100%';
-        plumberMenu.style.left = '0';
-    });
-    // Open submenu Plumbing Choke when clicking "Plumbing Choke"
-    document.getElementById('plumbing-choke-btn').addEventListener('click', function() {
-        const plumberMenu = document.getElementById('plumber-menu');
-        const submenuPlumbingChoke = document.getElementById('submenu-plumbing-choke');
-        plumberMenu.style.left = '-100%';
-        submenuPlumbingChoke.style.left = '0';
-    });
-
-    // Return to plumber menu from submenu Plumbing Choke
-    document.getElementById('return-plumbing-choke-menu').addEventListener('click', function() {
-        const plumberMenu = document.getElementById('plumber-menu');
-        const submenuPlumbingChoke = document.getElementById('submenu-plumbing-choke');
-        submenuPlumbingChoke.style.left = '-100%';
-        plumberMenu.style.left = '0';
-    });
-
-
-
-
-    // WhatsApp
-    document.getElementById('whatsappImage').addEventListener('click', function() {
-        var message = "Good day, I am interested in learning more about your services. Could you please provide me with more information? Thank you.";
-        var phoneNumber = "6596585757";
-        var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
-        window.open(whatsappUrl, '_blank');
-    });
     // Function to hide submenu on mouse leave
     function toggleSubMenu(submenuId) {
         const submenu = document.getElementById(submenuId);
@@ -2629,249 +2592,4 @@
             arrow.classList.remove('rotate-180');
         }
     }
-    // Open Water Heater submenu
-    document.getElementById('water-heater-btn').addEventListener('click', function() {
-        const plumberMenu = document.getElementById('plumber-menu');
-        const submenuWaterHeater = document.getElementById('submenu-water-heater');
-        plumberMenu.style.left = '-100%';
-        submenuWaterHeater.style.left = '0';
-    });
-
-    // Return to Plumber menu from Water Heater submenu
-    document.getElementById('return-water-heater-menu').addEventListener('click', function() {
-        const plumberMenu = document.getElementById('plumber-menu');
-        const submenuWaterHeater = document.getElementById('submenu-water-heater');
-        submenuWaterHeater.style.left = '-100%';
-        plumberMenu.style.left = '0';
-    });
-    // Open Toilet Bowl submenu
-    document.getElementById('toilet-bowl-btn').addEventListener('click', function() {
-        const plumberMenu = document.getElementById('plumber-menu');
-        const submenuToiletBowl = document.getElementById('submenu-toilet-bowl');
-        plumberMenu.style.left = '-100%';
-        submenuToiletBowl.style.left = '0';
-    });
-
-    // Return to Plumber menu from Toilet Bowl submenu
-    document.getElementById('return-toilet-bowl-menu').addEventListener('click', function() {
-        const plumberMenu = document.getElementById('plumber-menu');
-        const submenuToiletBowl = document.getElementById('submenu-toilet-bowl');
-        submenuToiletBowl.style.left = '-100%';
-        plumberMenu.style.left = '0';
-    });
-    // Open Shower Service submenu
-    document.getElementById('shower-service-btn').addEventListener('click', function() {
-        const plumberMenu = document.getElementById('plumber-menu');
-        const submenuShowerService = document.getElementById('submenu-shower-service');
-        plumberMenu.style.left = '-100%';
-        submenuShowerService.style.left = '0';
-    });
-
-    // Return to Plumber menu from Shower Service submenu
-    document.getElementById('return-shower-service-menu').addEventListener('click', function() {
-        const plumberMenu = document.getElementById('plumber-menu');
-        const submenuShowerService = document.getElementById('submenu-shower-service');
-        submenuShowerService.style.left = '-100%';
-        plumberMenu.style.left = '0';
-    });
-    // Open Electrician submenu when clicking "Electrician"
-    document.getElementById('electrician-btn').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const electricianMenu = document.getElementById('electrician-menu');
-        menu.style.left = '-100%';
-        electricianMenu.style.left = '0';
-    });
-
-    // Return to main menu from Electrician submenu
-    document.getElementById('return-electrician-menu').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const electricianMenu = document.getElementById('electrician-menu');
-        electricianMenu.style.left = '-100%';
-        menu.style.left = '0';
-    });
-
-    // Click outside to close Electrician submenu
-    document.getElementById('menu-overlay').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const electricianMenu = document.getElementById('electrician-menu');
-        const overlay = document.getElementById('menu-overlay');
-        menu.style.left = '-100%';
-        electricianMenu.style.left = '-100%';
-        overlay.style.display = 'none';
-    });
-    // Open Light Service submenu when clicking "Light Service"
-    document.getElementById('light-service-btn').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const lightServiceMenu = document.getElementById('light-service-menu');
-        menu.style.left = '-100%';
-        lightServiceMenu.style.left = '0';
-    });
-
-    // Return to main menu from Light Service submenu
-    document.getElementById('return-light-service-menu').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const lightServiceMenu = document.getElementById('light-service-menu');
-        lightServiceMenu.style.left = '-100%';
-        menu.style.left = '0';
-    });
-
-    // Click outside to close Light Service submenu
-    document.getElementById('menu-overlay').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const lightServiceMenu = document.getElementById('light-service-menu');
-        const overlay = document.getElementById('menu-overlay');
-        menu.style.left = '-100%';
-        lightServiceMenu.style.left = '-100%';
-        overlay.style.display = 'none';
-    });
-    // Open Handyman submenu when clicking "Handyman"
-    document.getElementById('handyman-btn').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const handymanMenu = document.getElementById('handyman-menu');
-        menu.style.left = '-100%';
-        handymanMenu.style.left = '0';
-    });
-
-    // Return to main menu from Handyman submenu
-    document.getElementById('return-handyman-menu').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const handymanMenu = document.getElementById('handyman-menu');
-        handymanMenu.style.left = '-100%';
-        menu.style.left = '0';
-    });
-
-    // Click outside to close Handyman submenu
-    document.getElementById('menu-overlay').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const handymanMenu = document.getElementById('handyman-menu');
-        const overlay = document.getElementById('menu-overlay');
-        menu.style.left = '-100%';
-        handymanMenu.style.left = '-100%';
-        overlay.style.display = 'none';
-    });
-    // Open Deep Cleaning submenu when clicking "Deep Cleaning"
-    document.getElementById('deepclean-btn').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const deepcleanMenu = document.getElementById('deepclean-menu');
-        menu.style.left = '-100%';
-        deepcleanMenu.style.left = '0';
-    });
-
-    // Return to main menu from Deep Cleaning submenu
-    document.getElementById('return-deepclean-menu').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const deepcleanMenu = document.getElementById('deepclean-menu');
-        deepcleanMenu.style.left = '-100%';
-        menu.style.left = '0';
-    });
-
-    // Click outside to close Deep Cleaning submenu
-    document.getElementById('menu-overlay').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const deepcleanMenu = document.getElementById('deepclean-menu');
-        const overlay = document.getElementById('menu-overlay');
-        menu.style.left = '-100%';
-        deepcleanMenu.style.left = '-100%';
-        overlay.style.display = 'none';
-    });
-    // Open Floor Polishing submenu when clicking "Floor Polishing"
-    document.getElementById('floor-polishing-btn').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const floorPolishingMenu = document.getElementById('floor-polishing-menu');
-        menu.style.left = '-100%';
-        floorPolishingMenu.style.left = '0';
-    });
-
-    // Return to main menu from Floor Polishing submenu
-    document.getElementById('return-floor-polishing-menu').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const floorPolishingMenu = document.getElementById('floor-polishing-menu');
-        floorPolishingMenu.style.left = '-100%';
-        menu.style.left = '0';
-    });
-
-    // Click outside to close Floor Polishing submenu
-    document.getElementById('menu-overlay').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const floorPolishingMenu = document.getElementById('floor-polishing-menu');
-        const overlay = document.getElementById('menu-overlay');
-        menu.style.left = '-100%';
-        floorPolishingMenu.style.left = '-100%';
-        overlay.style.display = 'none';
-    });
-    // Open Floor Cleaning submenu when clicking "Floor Cleaning"
-    document.getElementById('floor-cleaning-btn').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const floorCleaningMenu = document.getElementById('floor-cleaning-menu');
-        menu.style.left = '-100%';
-        floorCleaningMenu.style.left = '0';
-    });
-
-    // Return to main menu from Floor Cleaning submenu
-    document.getElementById('return-floor-cleaning-menu').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const floorCleaningMenu = document.getElementById('floor-cleaning-menu');
-        floorCleaningMenu.style.left = '-100%';
-        menu.style.left = '0';
-    });
-
-    // Click outside to close Floor Cleaning submenu
-    document.getElementById('menu-overlay').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const floorCleaningMenu = document.getElementById('floor-cleaning-menu');
-        const overlay = document.getElementById('menu-overlay');
-        menu.style.left = '-100%';
-        floorCleaningMenu.style.left = '-100%';
-        overlay.style.display = 'none';
-    });
-    // Open Wood Varnishing submenu when clicking "Wood Varnishing"
-    document.getElementById('wood-varnishing-btn').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const woodVarnishingMenu = document.getElementById('wood-varnishing-menu');
-        menu.style.left = '-100%';
-        woodVarnishingMenu.style.left = '0';
-    });
-
-    // Return to main menu from Wood Varnishing submenu
-    document.getElementById('return-wood-varnishing-menu').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const woodVarnishingMenu = document.getElementById('wood-varnishing-menu');
-        woodVarnishingMenu.style.left = '-100%';
-        menu.style.left = '0';
-    });
-
-    // Click outside to close Wood Varnishing submenu
-    document.getElementById('menu-overlay').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const woodVarnishingMenu = document.getElementById('wood-varnishing-menu');
-        const overlay = document.getElementById('menu-overlay');
-        menu.style.left = '-100%';
-        woodVarnishingMenu.style.left = '-100%';
-        overlay.style.display = 'none';
-    });
-    // Open Decking submenu when clicking "Decking"
-    document.getElementById('decking-btn').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const deckingMenu = document.getElementById('decking-menu');
-        menu.style.left = '-100%';
-        deckingMenu.style.left = '0';
-    });
-
-    // Return to main menu from Decking submenu
-    document.getElementById('return-decking-menu').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const deckingMenu = document.getElementById('decking-menu');
-        deckingMenu.style.left = '-100%';
-        menu.style.left = '0';
-    });
-
-    // Click outside to close Decking submenu
-    document.getElementById('menu-overlay').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const deckingMenu = document.getElementById('decking-menu');
-        const overlay = document.getElementById('menu-overlay');
-        menu.style.left = '-100%';
-        deckingMenu.style.left = '-100%';
-        overlay.style.display = 'none';
-    });
 </script>

@@ -4,12 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AllHouseWorks | Deep Clean</title>
+    <title>AllHouseWorks | Career</title>
     <!-- Link to Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" href="{{ url('img/favicon.ico') }}" type="image/x-icon">
 </head>
 <style>
+    .hover\:zoom-in {
+        transition: transform 0.3s ease;
+    }
+
+    .hover\:zoom-in:hover {
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+        .responsive-image {
+            flex-basis: 100% !important;
+            max-width: 100% !important;
+        }
+    }
+
     #nav1 {
         background-color: #fbde6e;
     }
@@ -189,7 +204,7 @@
     }
 
     .black-polygon {
-        clip-path: polygon(11% 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
     }
 
 
@@ -242,17 +257,17 @@
     }
 
     #header_slider #slide_item:nth-child(1) {
-        background: url("https://media.istockphoto.com/id/1339613829/photo/plumber-at-work-in-a-bathroom-plumbing-repair-service-assemble-and-install-concept.jpg?s=612x612&w=0&k=20&c=lQREIzjwRM3ApTkRzTnbIA_BCRCy_ER-e51tofKsaP0=") no-repeat center center;
+        background: url("https://t4.ftcdn.net/jpg/02/91/14/23/360_F_291142315_1HDHshpssor08inb91jnXZxB02M3rIgi.jpg") no-repeat center center;
         background-size: cover;
     }
 
     #header_slider #slide_item:nth-child(2) {
-        background: url("https://mrelectric.com/us/en-us/_assets/images/ceiling-fan-repair.webp") no-repeat center center;
+        background: url("https://media.istockphoto.com/id/1436521782/photo/team-of-professional-cleaners-tidying-up-the-room.webp?b=1&s=170667a&w=0&k=20&c=E4Ru1OhTSNliZSNVwevKKDrH4CFjhnQfsNnPXCciBfc=") no-repeat center center;
         background-size: cover;
     }
 
     #header_slider #slide_item:nth-child(3) {
-        background: url("https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?s=612x612&w=0&k=20&c=5zlDGgLNNaWsp_jq_L1AsGT85wrzpdl3kVH-75S-zTU=") no-repeat center center;
+        background: url("https://st5.depositphotos.com/39034226/62384/i/450/depositphotos_623846382-stock-photo-female-cleaning-specialist-using-window.jpg") no-repeat center center;
         background-size: cover;
     }
 
@@ -276,7 +291,6 @@
 
     /* General Styles */
     .hover-border-top:hover {
-        border-top: 4px solid #B48F57;
         border-top: 4px solid #FFFFFF;
     }
 
@@ -355,13 +369,12 @@
             transition: top 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
         }
     }
- #main-nav.scrolled {
+
+    #main-nav.scrolled {
         top: 0;
-        background-color: #f8f8f8;
         background-color: #f69918;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-
 
     @media (min-width: 641px) {
 
@@ -422,7 +435,9 @@
             </div>
         </div>
     </nav>
-<!-- Scroll Up -->
+
+    <!-- Navigation Menu -->
+    <!-- Scroll Up -->
     <div class="flex items-end justify-start fixed bottom-0 left-0 mb-4 ml-4 z-10">
         <div>
             <button onclick="scrollToTop()" title="Scroll to Top" class="block w-11 h-11 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:-rotate-12">
@@ -430,16 +445,8 @@
             </button>
         </div>
     </div>
-    <script>
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    </script>
     <!-- Scroll Up -->
-<!-- Header -->
+    <!-- Header -->
     <nav id="main-nav" class="bg-white shadow-lg relative z-50 sticky scrolled">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t" style="background-color: #f69918;">
             <div class="relative flex items-center justify-between h-16" id="kol">
@@ -466,7 +473,8 @@
                                 <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md w-40 z-50">
                                     <a href="/review" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Review</a>
                                     <a href="/brands" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Our Brands</a>
-                                    <a href="/mission" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Mission</a>
+                                    <a href="/mission" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Mission & Vision</a>
+                                    <a href="/career" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Career / Jobs</a>
                                 </div>
                             </div>
                             <div class="relative group  hover-border-top">
@@ -844,7 +852,10 @@
                         <a href="/brands" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Our Brands</a>
                     </div>
                     <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                        <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Mission</a>
+                        <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Mission & Vision</a>
+                    </div>
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <a href="/career" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Career / Jobs</a>
                     </div>
                 </div>
             </div>
@@ -1454,284 +1465,276 @@
     </style>
     <!-- Header -->
 
-    <section class="parallax" style="position: relative; background: url('https://helloexpert.ae/wp-content/uploads/2019/07/deep-cleaning.jpg') no-repeat center center fixed; background-size: cover; height: 18.75rem;">
+    <section class="bg-cover bg-center relative parallax" style="background-image: url('https://plus.unsplash.com/premium_photo-1670963025018-27dd11a9b0ce?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29yayUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D'); background-size: cover; background-repeat: no-repeat; height: 45vh; background-attachment: fixed;">
         <div class="overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
-        <div class="content" style="position: relative; z-index: 1; display: flex; flex-direction: column; padding-left: 16px; padding-right: 16px; text-align: center; gap: 16px;">
-            <h1 style="font-size: 40px; color: white; font-weight: 100; margin-bottom: 24px;">SEARCH RESULT FOR DEEPCLEAN</h1>
-            <p style="font-size: 16px; color: antiquewhite;">Home / Search</p>
+        <div class="content" style="position: relative; z-index: 1; display: flex; flex-direction: column; padding-left: 1rem; padding-right: 1rem; text-align: center; gap: 1rem;">
+            <h1 style="font-size: 2.5rem; color: white; font-weight: 100; margin-bottom: 1.5rem;">Career</h1>
+            <p style="font-size: 1rem; color: antiquewhite;">Home / Career</p>
         </div>
     </section>
 
-    <section class="py-12 flex flex-col md:flex-row">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div id="cardContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
-                <!-- Card 1 -->
-                <div class="card max-w-sm bg-white shadow-lg rounded-lg overflow-hidden" style="border-bottom:3px solid #f7a80c;">
-                    <img class="w-full h-48 object-cover" src="https://www.proluxcleaning.co.uk/assets/img/uploads/2022-05/tzTatZ-x-large.webp" alt="Card Image">
-                    <div class="p-6 text-center">
-                        <h3 class="text-lg font-medium text-gray-900 mb-2">Mattress Cleaning in Singapore – Condo, Yishun</h3>
-                        <a href="/matressClean">
-                            <button class="bg-yellow-500 text-black px-2 py-2 rounded hover:bg-yellow-200 ">Read More > </button>
-                        </a>
-                    </div>
-                    <div class="flex ml-20 mb-6">
-                        <div class="text-gray-600 flex">
-                            <img src="{{ url('img/calendar.png') }}" alt="" class="mr-2 "><span> March 27, 2024</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="card max-w-sm bg-white shadow-lg rounded-lg overflow-hidden" style="border-bottom:3px solid #f7a80c;">
-                    <img class="w-full h-48 object-cover" src="https://media.product.which.co.uk/prod/images/original/gm-7085653b-1747-4e8d-a2e9-2f16e651b9a1-cleaning-a-sofa-2-002-vacuum.jpg" alt="Card Image">
-                    <div class="p-6 text-center">
-                        <h3 class="text-lg font-medium text-gray-900 mb-2">Sofa Cleaning in Singapore – Condo, Tanjong Pagar</h3>
-                        <a href="/sofaClean">
-                            <button class="bg-yellow-500 text-black px-2 py-2 rounded hover:bg-yellow-200 ">Read More > </button>
-                        </a>
-                    </div>
-                    <div class="flex ml-20 mb-6">
-                        <div class="text-gray-600 flex">
-                            <img src="{{ url('img/calendar.png') }}" alt="" class="mr-2 "><span> December 2, 2023</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="card max-w-sm bg-white shadow-lg rounded-lg overflow-hidden" style="border-bottom:3px solid #f7a80c;">
-                    <img class="w-full h-48 object-cover" src="https://www.certifiedcleancare.com/wp-content/themes/yootheme/cache/9a/mattress-cleaning-service-in-georgia-9a80a7fc.jpeg" alt="Card Image">
-                    <div class="p-6 text-center">
-                        <h3 class="text-lg font-medium text-gray-900 mb-2">Mattress Cleaning in Singapore – HDB, Hougang</h3>
-                        <a href="/matressDeepClean">
-                            <button class="bg-yellow-500 text-black px-2 py-2 rounded hover:bg-yellow-200 ">Read More > </button>
-                        </a>
-                    </div>
-                    <div class="flex ml-20 mb-6">
-                        <div class="text-gray-600 flex">
-                            <img src="{{ url('img/calendar.png') }}" alt="" class="mr-2 "><span> December 12, 2023</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="card max-w-sm bg-white shadow-lg rounded-lg overflow-hidden" style="border-bottom:3px solid #f7a80c;">
-                    <img class="w-full h-48 object-cover" src="https://www.dh-asia.com/wp-content/uploads/2022/01/steam-mattress-cleaning.jpeg" alt="Card Image">
-                    <div class="p-6 text-center">
-                        <h3 class="text-lg font-medium text-gray-900 mb-2">Mattress Steam Cleaning</h3>
-                        <a href="/matressstemClean">
-                            <button class="bg-yellow-500 text-black px-2 py-2 rounded hover:bg-yellow-200 ">Read More > </button>
-                        </a>
-                    </div>
-                    <div class="flex ml-20 mb-6">
-                        <div class="text-gray-600 flex">
-                            <img src="{{ url('img/calendar.png') }}" alt="" class="mr-2 "><span> June 22, 2021</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="card max-w-sm bg-white shadow-lg rounded-lg overflow-hidden" style="border-bottom:3px solid #f7a80c;">
-                    <img class="w-full h-48 object-cover" src="https://media.istockphoto.com/id/1746831268/photo/woman-using-vacuum-cleaner-to-vacuum-mattress-in-a-bedroom.jpg?s=612x612&w=0&k=20&c=J2IqQ5c98IhDhkNVQcHH1sf_QOgnC8I2HjMKUQFqaDY=" alt="Card Image">
-                    <div class="p-6 text-center">
-                        <h3 class="text-lg font-medium text-gray-900 mb-2">Matrix Stan remove</h3>
-                        <a href="/matrissStainClean">
-                            <button class="bg-yellow-500 text-black px-2 py-2 rounded hover:bg-yellow-200 ">Read More > </button>
-                        </a>
-                    </div>
-                    <div class="flex ml-20 mb-6">
-                        <div class="text-gray-600 flex">
-                            <img src="{{ url('img/calendar.png') }}" alt="" class="mr-2 "><span> June 12, 2021</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="card max-w-sm bg-white shadow-lg rounded-lg overflow-hidden" style="border-bottom:3px solid #f7a80c;">
-                    <img class="w-full h-48 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU2RXi0aqR9sUEp0MQHo3o1lyt7WpMYkMbqA&s" alt="Card Image">
-                    <div class="p-6 text-center">
-                        <h3 class="text-lg font-medium text-gray-900 mb-2">Sofa Steam Cleaning</h3>
-                        <a href="/sofaStain">
-                            <button class="bg-yellow-500 text-black px-2 py-2 rounded hover:bg-yellow-200 ">Read More > </button>
-                        </a>
-                    </div>
-                    <div class="flex ml-20 mb-6">
-                        <div class="text-gray-600 flex">
-                            <img src="{{ url('img/calendar.png') }}" alt="" class="mr-2 "><span> June 12, 2021</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card  max-w-sm bg-white shadow-lg rounded-lg overflow-hidden" style="border-bottom:3px solid #f7a80c;">
-                    <img class="w-full h-48 object-cover" src="https://www.chelseacleaning.co.za/wp-content/uploads/2020/10/deep-cleaning-upholstery.jpg" alt="Card Image">
-                    <div class="p-6 text-center">
-                        <h3 class="text-lg font-medium text-gray-900 mb-2">Sofa Deep Cleaning</h3>
-                        <a href="/sofaDeepClean">
-                            <button class="bg-yellow-500 text-black px-2 py-2 rounded hover:bg-yellow-200 ">Read More > </button>
-                        </a>
-                    </div>
-                    <div class="flex ml-20 mb-6">
-                        <div class="text-gray-600 flex">
-                            <img src="{{ url('img/calendar.png') }}" alt="" class="mr-2 "><span> June 12, 2021</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card  max-w-sm bg-white shadow-lg rounded-lg overflow-hidden" style="border-bottom:3px solid #f7a80c;">
-                    <img class="w-full h-48 object-cover" src="https://demo.cleancarebd.com/wp-content/uploads/2023/05/sofa_cleaning.jpg" alt="Card Image">
-                    <div class="p-6 text-center">
-                        <h3 class="text-lg font-medium text-gray-900 mb-2">Fabric Sofa Cleaning</h3>
-                        <a href="/sofaClean">
-                            <button class="bg-yellow-500 text-black px-2 py-2 rounded hover:bg-yellow-200 ">Read More > </button>
-                        </a>
-                    </div>
-                    <div class="flex ml-20 mb-6">
-                        <div class="text-gray-600 flex">
-                            <img src="{{ url('img/calendar.png') }}" alt="" class="mr-2 "><span> June 12, 2021</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card  max-w-sm bg-white shadow-lg rounded-lg overflow-hidden" style="border-bottom:3px solid #f7a80c;">
-                    <img class="w-full h-48 object-cover" src="https://www.bigred.com.sg/wp-content/uploads/2023/11/big-red-singapore-tips-professional-upholstery-cleaning.jpg" alt="Card Image">
-                    <div class="p-6 text-center">
-                        <h3 class="text-lg font-medium text-gray-900 mb-2">UPHOLSTERY CLEANING.</h3>
-                        <a href="/sofaClean">
-                            <button class="bg-yellow-500 text-black px-2 py-2 rounded hover:bg-yellow-200 ">Read More > </button>
-                        </a>
-                    </div>
-                    <div class="flex ml-20 mb-6">
-                        <div class="text-gray-600 flex">
-                            <img src="{{ url('img/calendar.png') }}" alt="" class="mr-2 "><span> June 12, 2021</span>
-                        </div>
-                    </div>
-                </div>
-
+    <section class="py-16 px-4 sm:px-8 lg:px-16">
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- Logo -->
+            <div class="mb-8">
+                <img src={{ url('img/icon2.png') }} alt="Everyworks Logo" class="w-24 mx-auto">
             </div>
 
-            <!-- Show More Button -->
-            <div class="text-center mt-4 hidden">
-                <button id="showMoreBtn" class="text-black font-bold py-2 px-4 rounded focus:outline-none">
-                    <ol class="flex justify-center text-xs font-medium space-x-1">
-                        <li>
-                            <p class="inline-flex items-center justify-center w-8 h-8 border border-gray-100 rounded" onclick="setActive(this)">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
-                                </svg>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="block w-8 h-8 text-center border border-gray-100 rounded leading-8 " id="btn1" onclick="setActive(this)"> 1 </p>
-                        </li>
-                        <li>
-                            <p class="block w-8 h-8 text-center border border-gray-100 rounded leading-8" onclick="setActive(this)"> 2 </p>
-                        </li>
-                        <li>
-                            <p class="inline-flex items-center justify-center w-8 h-8 border border-gray-100 rounded" onclick="setActive(this)">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                                </svg>
-                            </p>
-                        </li>
-                    </ol>
-                </button>
+            <!-- Title -->
+            <h1 class="text-3xl font-semibold mb-4">Careers / Jobs</h1>
+
+            <!-- Description -->
+            <p class="text-lg text-gray-500 mb-6" style="text-align: justify;font-size: 15px;font-family: inherit;">
+                AllhouseWork Singapore is growing rapidly, and we are seeking team members to grow alongside us. With our extensive expertise in providing top-tier home services, AllhouseWork Singapore is fully committed to becoming Singapore’s most reliable home service provider.
+            </p>
+
+            <!-- Call to Action -->
+            <div class="p-6">
+                <p class="text-xl font-semibold text-gray-800 mb-4 text-center">Interested candidates can
+                    <span class="text-yellow-500">WhatsApp Us</span> and forward a resume/cover letter outlining your relevant skills and experience!
+                </p>
+                <a href="https://wa.me/+65 9658 5757"
+                    class="inline-flex items-center justify-center mt-4 bg-green-500 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-green-600 transition w-full sm:w-auto sm:mx-auto"
+                    style="max-width: 300px;">
+                    <img src={{ url('img/whatsapp.png') }} alt="WhatsApp Logo" class="w-6 h-6 mr-2">
+                    WhatsApp click to chat
+                </a>
             </div>
+
         </div>
+    </section>
 
-        <div class="max-w-sm mx-auto p-4 bg-white rounded-lg shadow-md mt-8">
-            <div class="flex justify-center mb-4">
-                <img src="https://www.shutterstock.com/image-vector/builder-crossed-hammers-new-construction-600nw-2246936013.jpg" alt="Everyworks Logo" class="h-16">
+    <section class="py-10 px-4 sm:px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <!-- Left: Image -->
+            <div class="w-full h-full">
+                <img src="https://img.freepik.com/premium-photo/electricity-electrical-maintenance-service-engineer-checking-electric-circuit-breaker-cable-wiring-system-repairing-main-power-distribution-board_101448-3750.jpg?w=360" alt="Technician working" class="w-full h-auto rounded-lg shadow-lg">
             </div>
-            <div class="mb-4 text-center">
-                <a href="https://wa.me/6565751226" target="_blank" class="block bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600">WhatsApp to Start Now!</a>
-                <p class="mt-2 text-gray-600">One-stop integrated home service provider for your home needs! <a href="https://wa.me/your-number" class="text-yellow-500 hover:underline">WhatsApp us</a> for enquiry now!</p>
-            </div>
-            <div class="mt-16">
-                <h2 class="text-lg font-bold mb-2 custom-border">Categories</h2>
-                <ul>
-                    <li class=" flex justify-between py-1 border-b">
-                        <span><span style="font-weight: 900;">-</span> Deep Cleaning</span>
-                        <span class="text-gray-500 bg-gray-100 p-1 rounded-lg w-8 text-center">88</span>
-                    </li>
-                    <ul class="ml-4">
-                        <a href="/matressClean">
-                            <li class="flex justify-between py-1 border-b">
-                                <span><span style="font-weight: 900;">-</span> Mattress Cleaning</span>
-                                <span class="text-gray-500 bg-gray-100 p-1 rounded-lg w-8 text-center">44</span>
-                            </li>
-                        </a>
-                        <a href="/sofaClean">
-                            <li class="flex justify-between py-1 border-b">
-                                <span><span style="font-weight: 900;">-</span> Sofa Cleaning</span>
-                                <span class="text-gray-500 bg-gray-100 p-1 rounded-lg w-8 text-center">6</span>
-                            </li>
-                        </a>
-                        <a href="/matressstemClean">
-                            <li class="flex justify-between py-1 border-b">
-                                <span><span style="font-weight: 900;">-</span> Mattress Steam Cleaning</span>
-                                <span class="text-gray-500 bg-gray-100 p-1 rounded-lg w-8 text-center">1</span>
-                            </li>
-                        </a>
-                        <a href="/matrissStainClean">
-                            <li class="flex justify-between py-1 border-b">
-                                <span><span style="font-weight: 900;">-</span> Matrix Stan remove</span>
-                                <span class="text-gray-500 bg-gray-100 p-1 rounded-lg w-8 text-center">8</span>
-                            </li>
-                        </a>
-                        <a href="/sofaStain">
-                            <li class="flex justify-between py-1 border-b">
-                                <span><span style="font-weight: 900;">-</span> Sofa Steam Cleaning</span>
-                                <span class="text-gray-500 bg-gray-100 p-1 rounded-lg w-8 text-center">6</span>
-                            </li>
-                        </a>
-                        <a href="/sofaDeepClean">
-                            <li class="flex justify-between py-1 border-b">
-                                <span><span style="font-weight: 900;">-</span> Sofa Deep Cleaning</span>
-                                <span class="text-gray-500 bg-gray-100 p-1 rounded-lg w-8 text-center">10</span>
-                            </li>
-                        </a>
-                        <a href="/fabricSofaClean">
-                            <li class="flex justify-between py-1 border-b">
-                                <span><span style="font-weight: 900;">-</span> Fabric Sofa Cleaning</span>
-                                <span class="text-gray-500 bg-gray-100 p-1 rounded-lg w-8 text-center">40</span>
-                            </li>
-                        </a>
-                        <a href="/fabricSofaClean">
-                            <li class="flex justify-between py-1 border-b">
-                                <span><span style="font-weight: 900;">-</span> UPHOLSTERY CLEANING.</span>
-                                <span class="text-gray-500 bg-gray-100 p-1 rounded-lg w-8 text-center">4</span>
-                            </li>
-                        </a>
+
+            <!-- Right: Job Listings -->
+            <div class="flex flex-col space-y-8">
+                <!-- Current Positions Available -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">Current Positions Available</h2>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Aircon Installation Technician</li>
+                        <li>Aircon Servicing Technician (Driver)</li>
+                        <li>Aircon Servicing Technician</li>
+                        <li>Plumber Technician</li>
+                        <li>Plumber Technician (Driver)</li>
+                        <li>Electrical Technician</li>
+                        <li>Electrical Technician (Driver)</li>
+                        <li>Licensed Electrician</li>
+                        <li>Electrical Technician / Electrician</li>
+                        <li>Handyman / Carpenter</li>
                     </ul>
-                </ul>
-            </div>
+                </div>
 
-            <div class="max-w-sm mx-auto p-4 bg-white rounded-lg shadow-md mt-10">
-                <h2 class="text-lg font-bold mb-6 custom-border">Portfolio</h2>
-                <div class="grid grid-cols-3 gap-2 border-top">
-                    <img src="https://media.istockphoto.com/id/1417833187/photo/professional-cleaner-vacuuming-a-carpet.jpg?s=612x612&w=0&k=20&c=5h8NBR190d46Ni4MclqJ7Zf9ZOtf3TM3gPRJaHUdMjk=" alt="Portfolio Image 1" style="width: 100px; height: 80px; object-fit: cover;" class="rounded-lg shadow-sm">
-                    <img src="https://www.verywellhealth.com/thmb/mY9GAZ8Zu2odiap8UkiJk5pVoGY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/side-view-of-man-vacuuming-hardwood-floor-562452123-5a0326d4e258f800370fa3ca.jpg" alt="Portfolio Image 2" style="width: 100px; height: 80px; object-fit: cover;" class="rounded-lg shadow-sm">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXwzWc6xfJh3YOQW02CyrNEPD9dPppkeNXVt0Sg7ujcUyv5QlIp8t5A7OpqmxeCgVMybE&usqp=CAU" alt="Portfolio Image 3" style="width: 100px; height: 80px; object-fit: cover;" class="rounded-lg shadow-sm">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Lc4xyi9-7PkZprySRy3mfiURioj1sHnhSQ&s" alt="Portfolio Image 4" style="width: 100px; height: 80px; object-fit: cover;" class="rounded-lg shadow-sm">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFXeB6RQKL-nKRAhVaE7iwOBeyyb-HQf-Oh66kEcn3rJfj6E1RAVuqB-gVoDnVQoqXW3g&usqp=CAU" alt="Portfolio Image 5" style="width: 100px; height: 80px; object-fit: cover;" class="rounded-lg shadow-sm">
-                    <img src="https://www.homecaresolutions.in/assets/images/choose/sofa.jpg" alt="Portfolio Image 6" style="width: 100px; height: 80px; object-fit: cover;" class="rounded-lg shadow-sm">
-                    <img src="https://www.bestathire.co.uk/images/hire-carpet-cleaner-domestic_1476106321_carpet-cleaner-cleaning-sofa2_600x600_3.jpg" alt="Portfolio Image 7" style="width: 100px; height: 80px; object-fit: cover;" class="rounded-lg shadow-sm">
-                    <img src="https://img.freepik.com/free-photo/man-doing-professional-home-cleaning-service_23-2150358962.jpg" alt="Portfolio Image 8" style="width: 100px; height: 80px; object-fit: cover;" class="rounded-lg shadow-sm">
-                    <img src="https://media.istockphoto.com/id/1315150370/photo/process-of-deep-furniture-cleaning-removing-dirt-from-bed-washing-concept.jpg?s=612x612&w=0&k=20&c=MZTkBLuabqp7731Ss59ufWQAf6dC92lg5ApJ-X_6MsI=" alt="Portfolio Image 9" style="width: 100px; height: 80px; object-fit: cover;" class="rounded-lg shadow-sm">
-                    <img src="https://easyclean-solutions.co.uk/wp-content/uploads/2020/02/mattress-cleaning-hampshire.jpg" alt="Portfolio Image 10" style="width: 100px; height: 80px; object-fit: cover;" class="rounded-lg shadow-sm">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9dNeY3-N4YH6DU1Kuqk53TAlngKxqHppDbA&s" alt="Portfolio Image 11" style="width: 100px; height: 80px; object-fit: cover;" class="rounded-lg shadow-sm">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC1w_G2-C0763HwU-8P8X1nzDhvX7mH7S8rCVItUQQlAUh58pQ_Nu_-YJ6KA_iHTT0bww&usqp=CAU" alt="Portfolio Image 12" style="width: 100px; height: 80px; object-fit: cover;" class="rounded-lg shadow-sm">
-                    <img src="https://5.imimg.com/data5/ZR/RA/KW/SELLER-6536762/mattress-cleaning-services.png" alt="Portfolio Image 13" style="width: 100px; height: 80px; object-fit: cover;" class="rounded-lg shadow-sm">
-                    <img src="https://superiorplumbing.ca/wp-content/uploads/2022/12/Plumbing-Inspection.jpg" alt="Portfolio Image 14" style="width: 100px; height: 80px; object-fit: cover;" class="rounded-lg shadow-sm">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNNHGrKGdnD0-6ylrwwd_Vs_kLGROTSgSgeTGlMWP79tfvjIDgf9Fq2AiDi3EEypEiIY&usqp=CAU" alt="Portfolio Image 15" style="width: 100px; height: 80px; object-fit: cover;" class="rounded-lg shadow-sm">
+                <!-- Why Join Us -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">Why Join Us?</h2>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Advancement Opportunities</li>
+                        <li>Competitive salary</li>
+                        <li>Singaporean/Singapore PR, and all foreigners staying in Singapore are welcome to apply.</li>
+                    </ul>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="mt-6">
+                    <p class="text-lg font-semibold text-gray-800">Interested candidates can <span class="text-yellow-500">WhatsApp Us</span> and forward a resume/cover letter outlining your relevant skills and experience!</p>
                 </div>
             </div>
-
         </div>
     </section>
- <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
+
+    <hr style="width: 88%;margin-left: 6%;">
+    <section class="py-10 px-4 sm:px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <!-- Left: Image -->
+            <div class="w-full h-full">
+                <img src="https://www.shutterstock.com/image-photo/maintenance-air-conditioner-hands-man-600nw-2338426989.jpg" alt="Aircon Technician" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right: Job Details -->
+            <div class="flex flex-col space-y-4">
+                <!-- Job Title -->
+                <h2 class="text-2xl font-bold">AllhouseWork Singapore - Aircon Installation Technician</h2>
+                <!-- Divider -->
+                <div class="w-16 h-1 bg-yellow-500 rounded-full"></div>
+                <!-- Job Description Title -->
+                <h3 class="text-lg font-semibold text-gray-800">Job Description</h3>
+                <!-- Description Text -->
+                <p class="text-gray-700 leading-relaxed">
+                    We are seeking an aircon installation technician with the expertise and technical abilities required to install air conditioning systems. The technician should be able to work effectively, both independently and as part of a team, ensuring that installations are completed promptly. The role also demands the ability to perform tasks autonomously without direct oversight. Certified aircon installation technicians must have hands-on experience in electrical work across Singapore's HDB, condos, landed properties, and commercial spaces.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr style="width: 88%;margin-left: 6%;">
+    <section class="py-10 px-4 sm:px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <!-- Left: Image -->
+            <div class="w-full h-full">
+                <img src="https://www.thayerac.com/wp-content/uploads/2023/11/new-braunfels-ac-repair.jpg.jpeg" alt="Aircon Technician" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right: Job Details -->
+            <div class="flex flex-col space-y-4">
+                <!-- Job Title -->
+                <h2 class="text-2xl font-bold">AllhouseWork Singapore - Aircon Servicing Technician (Driver)</h2>
+                <!-- Divider -->
+                <div class="w-16 h-1 bg-yellow-500 rounded-full"></div>
+                <!-- Job Description Title -->
+                <h3 class="text-lg font-semibold text-gray-800">Job Description</h3>
+                <!-- Description Text -->
+                <p class="text-gray-700 leading-relaxed">
+                    We are seeking an aircon servicing technician (driver) capable of conducting air conditioner maintenance and repairs at job sites. The technician will be required to drive the company vehicle to various locations. This role also requires the ability to work independently, providing clear explanations to customers regarding any air conditioning issues. The ideal candidate should have experience performing electrical tasks in Singapore's HDB, condos, landed properties, and commercial spaces, along with a valid Class 3 driving license
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr style="width: 88%;margin-left: 6%;">
+    <section class="py-10 px-4 sm:px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <!-- Left: Image -->
+            <div class="w-full h-full">
+                <img src="https://www.airconditionerrepairservice.com.au//wp-content/uploads/2022/07/air-conditioner-repairs-and-servicing.png" alt="Aircon Technician" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right: Job Details -->
+            <div class="flex flex-col space-y-4">
+                <!-- Job Title -->
+                <h2 class="text-2xl font-bold">AllhouseWork Singapore - Aircon Servicing Technician</h2>
+                <!-- Divider -->
+                <div class="w-16 h-1 bg-yellow-500 rounded-full"></div>
+                <!-- Job Description Title -->
+                <h3 class="text-lg font-semibold text-gray-800">Job Description</h3>
+                <!-- Description Text -->
+                <p class="text-gray-700 leading-relaxed">
+                    We are seeking an aircon servicing technician skilled in performing maintenance, troubleshooting, and repairs of air conditioning systems at various job sites. The technician should have strong problem-solving abilities to diagnose and resolve aircon issues. Additionally, the role requires the ability to work independently and provide clear explanations to customers regarding air conditioning problems. Prior experience in electrical work across Singapore’s HDBs, condos, landed properties, and commercial areas is essential.
+                </p>
+            </div>
+        </div>
+    </section>
+    <hr style="width: 88%;margin-left: 6%;">
+    <section class="py-10 px-4 sm:px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <!-- Left: Image -->
+            <div class="w-full h-full">
+                <img src="https://cdn.prod.website-files.com/63501eb57ab02026df8ab1d3/635af21ceeb8ef54a82645e2_shutterstock_2010435512-optimized.webp" alt="Aircon Technician" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right: Job Details -->
+            <div class="flex flex-col space-y-4">
+                <!-- Job Title -->
+                <h2 class="text-2xl font-bold">AllhouseWork Singapore - Plumber Technician</h2>
+                <!-- Divider -->
+                <div class="w-16 h-1 bg-yellow-500 rounded-full"></div>
+                <!-- Job Description Title -->
+                <h3 class="text-lg font-semibold text-gray-800">Job Description</h3>
+                <!-- Description Text -->
+                <p class="text-gray-700 leading-relaxed">
+                    We are seeking a plumber technician to handle a wide range of plumbing maintenance tasks in residential homes. The role includes the installation of storage heaters and piping systems in residential properties. The ideal candidate should be capable of working independently with minimal supervision, while also collaborating effectively with team members. Prior experience in plumbing work across Singapore’s HDBs, condos, landed properties, and commercial spaces is required.
+                </p>
+            </div>
+        </div>
+    </section>
+    <hr style="width: 88%;margin-left: 6%;">
+    <section class="py-10 px-4 sm:px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <!-- Left: Image -->
+            <div class="w-full h-full">
+                <img src="https://thumbs.dreamstime.com/b/asian-plumber-fixing-water-heater-bathroom-using-screw-driver-shot-bathroom-glasses-asian-plumber-fixing-water-101564925.jpg" alt="Aircon Technician" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right: Job Details -->
+            <div class="flex flex-col space-y-4">
+                <!-- Job Title -->
+                <h2 class="text-2xl font-bold">AllhouseWork Singapore - Plumber Technician (Driver)</h2>
+                <!-- Divider -->
+                <div class="w-16 h-1 bg-yellow-500 rounded-full"></div>
+                <!-- Job Description Title -->
+                <h3 class="text-lg font-semibold text-gray-800">Job Description</h3>
+                <!-- Description Text -->
+                <p class="text-gray-700 leading-relaxed">
+                    We are seeking a plumber technician (driver) to carry out a variety of plumbing maintenance tasks in residential homes. The technician will be responsible for driving the company vehicle to job sites, so a valid Class 3 driving license is required. The role demands the ability to work independently with minimal supervision, while also collaborating effectively with team members. Previous experience in plumbing work across Singapore's HDBs, condos, landed properties, and commercial spaces is essential.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <hr style="width: 88%;margin-left: 6%;">
+    <section class="py-10 px-4 sm:px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <!-- Left: Image -->
+            <div class="w-full h-full">
+                <img src="https://yti.edu/sites/default/files/styles/blogfeature_large/public/field/image/ElectricianTest.jpg?itok=wo9qSeLu" alt="Aircon Technician" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right: Job Details -->
+            <div class="flex flex-col space-y-4">
+                <!-- Job Title -->
+                <h2 class="text-2xl font-bold">AllhouseWork Singapore - Electrical Technician</h2>
+                <!-- Divider -->
+                <div class="w-16 h-1 bg-yellow-500 rounded-full"></div>
+                <!-- Job Description Title -->
+                <h3 class="text-lg font-semibold text-gray-800">Job Description</h3>
+                <!-- Description Text -->
+                <p class="text-gray-700 leading-relaxed">
+                    We are seeking skilled electrical technicians for residential work. The ideal candidate should excel in both teamwork and independent tasks without supervision. Responsibilities include diagnosing and resolving electrical issues, sourcing materials for repairs, and performing electrical rewiring efficiently. Candidates must have experience in evaluating, troubleshooting, and repairing wiring systems, including addressing electrical faults and power failures.
+                </p>
+            </div>
+        </div>
+    </section>
+    <hr style="width: 88%;margin-left: 6%;">
+    <section class="py-10 px-4 sm:px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <!-- Left: Image -->
+            <div class="w-full h-full">
+                <img src="https://nebula.wsimg.com/9d1eae4d8f92ddb13133a1f45655d353?AccessKeyId=601AAB04FD1BFAD29C9B&disposition=0&alloworigin=1" alt="Aircon Technician" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right: Job Details -->
+            <div class="flex flex-col space-y-4">
+                <!-- Job Title -->
+                <h2 class="text-2xl font-bold">AllhouseWork Singapore - Handyman / Carpenter</h2>
+                <!-- Divider -->
+                <div class="w-16 h-1 bg-yellow-500 rounded-full"></div>
+                <!-- Job Description Title -->
+                <h3 class="text-lg font-semibold text-gray-800">Job Description</h3>
+                <!-- Description Text -->
+                <p class="text-gray-700 leading-relaxed">
+                    We are seeking a versatile handyman or carpenter to handle all types of carpentry maintenance and repair tasks for residential properties. The ideal candidate should be capable of working independently and as part of a team, with minimal supervision. Responsibilities include performing carpentry work and repairs, as well as explaining carpentry-related issues to customers. Prior experience in carpentry is preferred.
+                </p>
+            </div>
+        </div>
+    </section>
+    <hr style="width: 88%;margin-left: 6%;">
+
+
+    <section style="display: flex; flex-direction: column; align-items: center; margin: 20px;">
+    <div style="text-align: center; margin-bottom: 20px;">
+        <p>Interested candidates can reach out to us via WhatsApp and send a resume or cover letter <br> detailing your relevant skills and experience!</p>
+    </div>
+    <div>
+        <a href="https://wa.me/+65 9658 5757"
+            class="inline-flex items-center justify-center bg-green-500 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-green-600 transition"
+            style="max-width: 300px; display: flex; align-items: center; text-align: center; margin: auto;">
+            <img src="{{ url('img/whatsapp.png') }}" alt="WhatsApp Logo" class="w-6 h-6 mr-2">
+            WhatsApp click to chat
+        </a>
+    </div>
+</section>
+
+
+    <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4 mt-20">
         <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">AllHouseWork's Group's Network of Service Brands</h2>
-        <div class="w-11/12 mt-2 mb-8 flex flex-wrap justify-around">
+        <div class="w-12/12 mt-2 mb-8 flex flex-wrap justify-around">
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/plumbing">
                     <img src="{{ url('img/plumber.png') }}" alt="Image 1" class="w-48 h-16 hover:zoom-in">
@@ -1769,28 +1772,14 @@
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/rubbishChute">
-                    <img src="{{ url('img/rubbish.png') }}" alt="Image 8" class="w-56 h-16 hover:zoom-in">
+                    <img src="{{ url('img/rubbish.png') }}" alt="Image 8" class="w-56 h-20 hover:zoom-in">
                 </a>
             </div>
         </div>
     </section>
-    <style>
-        .hover\:zoom-in {
-            transition: transform 0.3s ease;
-        }
 
-        .hover\:zoom-in:hover {
-            transform: scale(1.1);
-        }
 
-        @media (max-width: 768px) {
-            .responsive-image {
-                flex-basis: 100% !important;
-                max-width: 100% !important;
-            }
-        }
-    </style>
-   <footer class="footer-bg text-white py-10">
+    <footer class="footer-bg text-white py-10">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
                 <h2 class="text-xl font-bold mb-4 footer-text-yellow border-b-2 border-yellow-500">About Allhouseworks Services</h2>
@@ -1833,7 +1822,7 @@
     </footer>
     <style>
         .footer-bg {
-            background-image: linear-gradient(#000000AB, hsla(0 0% 0% / 0.81)), url(https://img.pikbest.com/origin/09/17/44/54fpIkbEsTrpq.jpg!w700wp);
+            background-image: linear-gradient(rgb(0 0 0 / 67%), rgb(0 0 0 / 81%)), url(https://img.pikbest.com/origin/09/17/44/54fpIkbEsTrpq.jpg!w700wp);
             background-attachment: fixed;
         }
 
@@ -1841,6 +1830,8 @@
             color: #f8b500;
         }
     </style>
+
+
 </body>
 
 </html>
@@ -1944,238 +1935,125 @@
         }
     }
 
-    function showSubmenu() {
-        document.getElementById('decking-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideSubmenu() {
-        document.getElementById('decking-submenu').classList.add('hidden-submenu');
-    }
-    // decking-submenu
-    function showSubmenu() {
-        document.getElementById('decking-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideSubmenu() {
-        document.getElementById('decking-submenu').classList.add('hidden-submenu');
-    }
-    // decking-submenu
-    function showSubmenu1() {
-        document.getElementById('varnish-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideSubmenu1() {
-        document.getElementById('varnish-submenu').classList.add('hidden-submenu');
-    }
-    // Vanish-submenu
-    function showSubmenu2() {
-        document.getElementById('fClean-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideSubmenu2() {
-        document.getElementById('fClean-submenu').classList.add('hidden-submenu');
-    }
-    // fpolish-submenu
-    function showSubmenu3() {
-        document.getElementById('fpolish-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideSubmenu3() {
-        document.getElementById('fpolish-submenu').classList.add('hidden-submenu');
-    }
-    // dClean-submenu
-    function showSubmenu4() {
-        document.getElementById('dClean-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideSubmenu4() {
-        document.getElementById('dClean-submenu').classList.add('hidden-submenu');
-    }
-    // handy-submenu
-    function showSubmenu5() {
-        document.getElementById('handy-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideSubmenu5() {
-        document.getElementById('handy-submenu').classList.add('hidden-submenu');
-    }
-    // handy-submenu
-    function showSubmenu6() {
-        document.getElementById('electric-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideSubmenu6() {
-        document.getElementById('electric-submenu').classList.add('hidden-submenu');
-    }
-    // handy-submenu
-    function showSubmenu7() {
-        document.getElementById('service-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideSubmenu7() {
-        document.getElementById('service-submenu').classList.add('hidden-submenu');
-    }
-
-    function showLightServiceSubmenu() {
-        document.getElementById('light-service-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideLightServiceSubmenu() {
-        document.getElementById('light-service-submenu').classList.add('hidden-submenu');
-    }
-
-    function showPlumbingInstallSubmenu() {
-        document.getElementById('plumbing-install-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hidePlumbingInstallSubmenu() {
-        document.getElementById('plumbing-install-submenu').classList.add('hidden-submenu');
-    }
-
-    function showPlumbingLeakSubmenu() {
-        document.getElementById('plumbing-leak-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hidePlumbingLeakSubmenu() {
-        document.getElementById('plumbing-leak-submenu').classList.add('hidden-submenu');
-    }
-
-    function showWaterHeaterSubmenu() {
-        document.getElementById('water-heater-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideWaterHeaterSubmenu() {
-        document.getElementById('water-heater-submenu').classList.add('hidden-submenu');
-    }
-
-    function showToiletBowlSubmenu() {
-        document.getElementById('toilet-bowl-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideToiletBowlSubmenu() {
-        document.getElementById('toilet-bowl-submenu').classList.add('hidden-submenu');
-    }
-
-    function showShowerServiceSubmenu() {
-        document.getElementById('shower-service-submenu').classList.remove('hidden-submenu');
-    }
-
-    function hideShowerServiceSubmenu() {
-        document.getElementById('shower-service-submenu').classList.add('hidden-submenu');
-    }
-
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
-
-    function toggleSubmenu(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('plumber-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu2(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('electrician-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu3(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('handyman-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu4(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('deepclean-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu5(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('floorpolish-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu6(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('floorclean-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu7(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('decking-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu66(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('varnish-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu55(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('about-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu12(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('plumberInstall-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu22(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('plumberLeak-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu32(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('waterHeater-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu42(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('toiletBowl-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu52(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('shower-submenu');
-        submenu.classList.toggle('hidden');
-    }
-
-    function toggleSubmenu62(event) {
-        event.preventDefault();
-        const submenu = document.getElementById('lightService-submenu');
-        submenu.classList.toggle('hidden');
-    }
-    const mobileMenuButton = document.querySelector('button[aria-controls="mobile-menu"]');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileMenuButton.addEventListener('click', () => {
-        const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
-        mobileMenuButton.setAttribute('aria-expanded', !expanded);
-        mobileMenu.classList.toggle('hidden');
+    // Main menu opening
+    document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('menu-overlay');
+        menu.style.left = '0';
+        overlay.style.display = 'block';
     });
 
-    function showSubMenu(event, submenuId) {
-        const submenu = document.getElementById(submenuId);
-        if (submenu) {
-            submenu.classList.remove('hidden');
-        }
-    }
+    // Close main menu
+    document.getElementById('close-menu').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('menu-overlay');
+        menu.style.left = '-100%';
+        overlay.style.display = 'none';
+    });
 
+    // Click outside to close menu
+    document.getElementById('menu-overlay').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const secondaryMenu = document.getElementById('secondary-menu');
+        const secondaryServiceMenu = document.getElementById('secondary-service-menu');
+        const plumberMenu = document.getElementById('plumber-menu');
+        const overlay = document.getElementById('menu-overlay');
+        menu.style.left = '-100%';
+        secondaryMenu.style.left = '-100%';
+        secondaryServiceMenu.style.left = '-100%';
+        plumberMenu.style.left = '-100%';
+        overlay.style.display = 'none';
+    });
+
+    // Open secondary menu when clicking "About Us"
+    document.getElementById('about-us-btn').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const secondaryMenu = document.getElementById('secondary-menu');
+        menu.style.left = '-100%';
+        secondaryMenu.style.left = '0';
+    });
+
+    // Return to main menu from secondary menu
+    document.getElementById('return-main-menu').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const secondaryMenu = document.getElementById('secondary-menu');
+        secondaryMenu.style.left = '-100%';
+        menu.style.left = '0';
+    });
+
+    // Open service submenu when clicking "Service"
+    document.getElementById('service-btn').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const secondaryServiceMenu = document.getElementById('secondary-service-menu');
+        menu.style.left = '-100%';
+        secondaryServiceMenu.style.left = '0';
+    });
+
+    // Return to main menu from service submenu
+    document.getElementById('return-service-main-menu').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const secondaryServiceMenu = document.getElementById('secondary-service-menu');
+        secondaryServiceMenu.style.left = '-100%';
+        menu.style.left = '0';
+    });
+
+    // Open plumber menu when clicking "Plumber"
+    document.getElementById('plumber-btn').addEventListener('click', function() {
+        const secondaryServiceMenu = document.getElementById('secondary-service-menu');
+        const plumberMenu = document.getElementById('plumber-menu');
+        secondaryServiceMenu.style.left = '-100%';
+        plumberMenu.style.left = '0';
+    });
+
+    // Return to service submenu from plumber menu
+    document.getElementById('return-plumber-menu').addEventListener('click', function() {
+        const secondaryServiceMenu = document.getElementById('secondary-service-menu');
+        const plumberMenu = document.getElementById('plumber-menu');
+        plumberMenu.style.left = '-100%';
+        secondaryServiceMenu.style.left = '0';
+    });
+    // Open submenu 222 when clicking "222"
+    document.querySelector('#plumber-menu .newMb a[href="/about"]').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+        const plumberMenu = document.getElementById('plumber-menu');
+        const submenu222 = document.getElementById('submenu-222');
+        plumberMenu.style.left = '-100%';
+        submenu222.style.left = '0';
+    });
+
+    // Return to plumber menu from submenu 222
+    document.getElementById('return-submenu-222').addEventListener('click', function() {
+        const plumberMenu = document.getElementById('plumber-menu');
+        const submenu222 = document.getElementById('submenu-222');
+        submenu222.style.left = '-100%';
+        plumberMenu.style.left = '0';
+    });
+    // Open submenu Plumbing Choke when clicking "Plumbing Choke"
+    document.getElementById('plumbing-choke-btn').addEventListener('click', function() {
+        const plumberMenu = document.getElementById('plumber-menu');
+        const submenuPlumbingChoke = document.getElementById('submenu-plumbing-choke');
+        plumberMenu.style.left = '-100%';
+        submenuPlumbingChoke.style.left = '0';
+    });
+
+    // Return to plumber menu from submenu Plumbing Choke
+    document.getElementById('return-plumbing-choke-menu').addEventListener('click', function() {
+        const plumberMenu = document.getElementById('plumber-menu');
+        const submenuPlumbingChoke = document.getElementById('submenu-plumbing-choke');
+        submenuPlumbingChoke.style.left = '-100%';
+        plumberMenu.style.left = '0';
+    });
+
+
+
+
+    // WhatsApp
+    document.getElementById('whatsappImage').addEventListener('click', function() {
+        var message = "Good day, I am interested in learning more about your services. Could you please provide me with more information? Thank you.";
+        var phoneNumber = "6596585757";
+        var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+        window.open(whatsappUrl, '_blank');
+    });
     // Function to hide submenu on mouse leave
     function toggleSubMenu(submenuId) {
         const submenu = document.getElementById(submenuId);
@@ -2203,4 +2081,249 @@
             arrow.classList.remove('rotate-180');
         }
     }
+    // Open Water Heater submenu
+    document.getElementById('water-heater-btn').addEventListener('click', function() {
+        const plumberMenu = document.getElementById('plumber-menu');
+        const submenuWaterHeater = document.getElementById('submenu-water-heater');
+        plumberMenu.style.left = '-100%';
+        submenuWaterHeater.style.left = '0';
+    });
+
+    // Return to Plumber menu from Water Heater submenu
+    document.getElementById('return-water-heater-menu').addEventListener('click', function() {
+        const plumberMenu = document.getElementById('plumber-menu');
+        const submenuWaterHeater = document.getElementById('submenu-water-heater');
+        submenuWaterHeater.style.left = '-100%';
+        plumberMenu.style.left = '0';
+    });
+    // Open Toilet Bowl submenu
+    document.getElementById('toilet-bowl-btn').addEventListener('click', function() {
+        const plumberMenu = document.getElementById('plumber-menu');
+        const submenuToiletBowl = document.getElementById('submenu-toilet-bowl');
+        plumberMenu.style.left = '-100%';
+        submenuToiletBowl.style.left = '0';
+    });
+
+    // Return to Plumber menu from Toilet Bowl submenu
+    document.getElementById('return-toilet-bowl-menu').addEventListener('click', function() {
+        const plumberMenu = document.getElementById('plumber-menu');
+        const submenuToiletBowl = document.getElementById('submenu-toilet-bowl');
+        submenuToiletBowl.style.left = '-100%';
+        plumberMenu.style.left = '0';
+    });
+    // Open Shower Service submenu
+    document.getElementById('shower-service-btn').addEventListener('click', function() {
+        const plumberMenu = document.getElementById('plumber-menu');
+        const submenuShowerService = document.getElementById('submenu-shower-service');
+        plumberMenu.style.left = '-100%';
+        submenuShowerService.style.left = '0';
+    });
+
+    // Return to Plumber menu from Shower Service submenu
+    document.getElementById('return-shower-service-menu').addEventListener('click', function() {
+        const plumberMenu = document.getElementById('plumber-menu');
+        const submenuShowerService = document.getElementById('submenu-shower-service');
+        submenuShowerService.style.left = '-100%';
+        plumberMenu.style.left = '0';
+    });
+    // Open Electrician submenu when clicking "Electrician"
+    document.getElementById('electrician-btn').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const electricianMenu = document.getElementById('electrician-menu');
+        menu.style.left = '-100%';
+        electricianMenu.style.left = '0';
+    });
+
+    // Return to main menu from Electrician submenu
+    document.getElementById('return-electrician-menu').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const electricianMenu = document.getElementById('electrician-menu');
+        electricianMenu.style.left = '-100%';
+        menu.style.left = '0';
+    });
+
+    // Click outside to close Electrician submenu
+    document.getElementById('menu-overlay').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const electricianMenu = document.getElementById('electrician-menu');
+        const overlay = document.getElementById('menu-overlay');
+        menu.style.left = '-100%';
+        electricianMenu.style.left = '-100%';
+        overlay.style.display = 'none';
+    });
+    // Open Light Service submenu when clicking "Light Service"
+    document.getElementById('light-service-btn').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const lightServiceMenu = document.getElementById('light-service-menu');
+        menu.style.left = '-100%';
+        lightServiceMenu.style.left = '0';
+    });
+
+    // Return to main menu from Light Service submenu
+    document.getElementById('return-light-service-menu').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const lightServiceMenu = document.getElementById('light-service-menu');
+        lightServiceMenu.style.left = '-100%';
+        menu.style.left = '0';
+    });
+
+    // Click outside to close Light Service submenu
+    document.getElementById('menu-overlay').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const lightServiceMenu = document.getElementById('light-service-menu');
+        const overlay = document.getElementById('menu-overlay');
+        menu.style.left = '-100%';
+        lightServiceMenu.style.left = '-100%';
+        overlay.style.display = 'none';
+    });
+    // Open Handyman submenu when clicking "Handyman"
+    document.getElementById('handyman-btn').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const handymanMenu = document.getElementById('handyman-menu');
+        menu.style.left = '-100%';
+        handymanMenu.style.left = '0';
+    });
+
+    // Return to main menu from Handyman submenu
+    document.getElementById('return-handyman-menu').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const handymanMenu = document.getElementById('handyman-menu');
+        handymanMenu.style.left = '-100%';
+        menu.style.left = '0';
+    });
+
+    // Click outside to close Handyman submenu
+    document.getElementById('menu-overlay').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const handymanMenu = document.getElementById('handyman-menu');
+        const overlay = document.getElementById('menu-overlay');
+        menu.style.left = '-100%';
+        handymanMenu.style.left = '-100%';
+        overlay.style.display = 'none';
+    });
+    // Open Deep Cleaning submenu when clicking "Deep Cleaning"
+    document.getElementById('deepclean-btn').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const deepcleanMenu = document.getElementById('deepclean-menu');
+        menu.style.left = '-100%';
+        deepcleanMenu.style.left = '0';
+    });
+
+    // Return to main menu from Deep Cleaning submenu
+    document.getElementById('return-deepclean-menu').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const deepcleanMenu = document.getElementById('deepclean-menu');
+        deepcleanMenu.style.left = '-100%';
+        menu.style.left = '0';
+    });
+
+    // Click outside to close Deep Cleaning submenu
+    document.getElementById('menu-overlay').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const deepcleanMenu = document.getElementById('deepclean-menu');
+        const overlay = document.getElementById('menu-overlay');
+        menu.style.left = '-100%';
+        deepcleanMenu.style.left = '-100%';
+        overlay.style.display = 'none';
+    });
+    // Open Floor Polishing submenu when clicking "Floor Polishing"
+    document.getElementById('floor-polishing-btn').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const floorPolishingMenu = document.getElementById('floor-polishing-menu');
+        menu.style.left = '-100%';
+        floorPolishingMenu.style.left = '0';
+    });
+
+    // Return to main menu from Floor Polishing submenu
+    document.getElementById('return-floor-polishing-menu').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const floorPolishingMenu = document.getElementById('floor-polishing-menu');
+        floorPolishingMenu.style.left = '-100%';
+        menu.style.left = '0';
+    });
+
+    // Click outside to close Floor Polishing submenu
+    document.getElementById('menu-overlay').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const floorPolishingMenu = document.getElementById('floor-polishing-menu');
+        const overlay = document.getElementById('menu-overlay');
+        menu.style.left = '-100%';
+        floorPolishingMenu.style.left = '-100%';
+        overlay.style.display = 'none';
+    });
+    // Open Floor Cleaning submenu when clicking "Floor Cleaning"
+    document.getElementById('floor-cleaning-btn').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const floorCleaningMenu = document.getElementById('floor-cleaning-menu');
+        menu.style.left = '-100%';
+        floorCleaningMenu.style.left = '0';
+    });
+
+    // Return to main menu from Floor Cleaning submenu
+    document.getElementById('return-floor-cleaning-menu').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const floorCleaningMenu = document.getElementById('floor-cleaning-menu');
+        floorCleaningMenu.style.left = '-100%';
+        menu.style.left = '0';
+    });
+
+    // Click outside to close Floor Cleaning submenu
+    document.getElementById('menu-overlay').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const floorCleaningMenu = document.getElementById('floor-cleaning-menu');
+        const overlay = document.getElementById('menu-overlay');
+        menu.style.left = '-100%';
+        floorCleaningMenu.style.left = '-100%';
+        overlay.style.display = 'none';
+    });
+    // Open Wood Varnishing submenu when clicking "Wood Varnishing"
+    document.getElementById('wood-varnishing-btn').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const woodVarnishingMenu = document.getElementById('wood-varnishing-menu');
+        menu.style.left = '-100%';
+        woodVarnishingMenu.style.left = '0';
+    });
+
+    // Return to main menu from Wood Varnishing submenu
+    document.getElementById('return-wood-varnishing-menu').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const woodVarnishingMenu = document.getElementById('wood-varnishing-menu');
+        woodVarnishingMenu.style.left = '-100%';
+        menu.style.left = '0';
+    });
+
+    // Click outside to close Wood Varnishing submenu
+    document.getElementById('menu-overlay').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const woodVarnishingMenu = document.getElementById('wood-varnishing-menu');
+        const overlay = document.getElementById('menu-overlay');
+        menu.style.left = '-100%';
+        woodVarnishingMenu.style.left = '-100%';
+        overlay.style.display = 'none';
+    });
+    // Open Decking submenu when clicking "Decking"
+    document.getElementById('decking-btn').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const deckingMenu = document.getElementById('decking-menu');
+        menu.style.left = '-100%';
+        deckingMenu.style.left = '0';
+    });
+
+    // Return to main menu from Decking submenu
+    document.getElementById('return-decking-menu').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const deckingMenu = document.getElementById('decking-menu');
+        deckingMenu.style.left = '-100%';
+        menu.style.left = '0';
+    });
+
+    // Click outside to close Decking submenu
+    document.getElementById('menu-overlay').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const deckingMenu = document.getElementById('decking-menu');
+        const overlay = document.getElementById('menu-overlay');
+        menu.style.left = '-100%';
+        deckingMenu.style.left = '-100%';
+        overlay.style.display = 'none';
+    });
 </script>

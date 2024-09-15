@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AllHouseWorks | Shower Service</title>
+    <title>AllHouseWorks</title>
     <!-- Link to Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" href="{{ url('img/favicon.ico') }}" type="image/x-icon">
@@ -189,8 +189,9 @@
     }
 
     .black-polygon {
-        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(11% 0, 100% 0, 100% 100%, 0% 100%);
     }
+
 
     .halfway-banner {
         top: 14%;
@@ -273,8 +274,7 @@
         display: none;
     }
 
-    /* General Styles */
-    .hover-border-top:hover {
+ .hover-border-top:hover {
         border-top: 4px solid #B48F57;
         border-top: 4px solid #FFFFFF;
     }
@@ -355,13 +355,12 @@
         }
     }
 
-    #main-nav.scrolled {
+     #main-nav.scrolled {
         top: 0;
         background-color: #f8f8f8;
         background-color: #f69918;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-
     @media (min-width: 641px) {
 
         /* Adjust min-width as needed */
@@ -422,7 +421,7 @@
         </div>
     </nav>
     <!-- Navigation Menu -->
-    <!-- Scroll Up -->
+<!-- Scroll Up -->
     <div class="flex items-end justify-start fixed bottom-0 left-0 mb-4 ml-4 z-10">
         <div>
             <button onclick="scrollToTop()" title="Scroll to Top" class="block w-11 h-11 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:-rotate-12">
@@ -430,39 +429,46 @@
             </button>
         </div>
     </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
     <!-- Scroll Up -->
-    <nav id="main-nav" class="bg-white relative z-50 sticky">
+<!-- Header -->
+    <nav id="main-nav" class="bg-white shadow-lg relative z-50 sticky scrolled">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 border-t" style="background-color: #f69918;">
             <div class="relative flex items-center justify-between h-16" id="kol">
                 <div class="inset-y-0 left-0 flex items-center sm:hidden">
-                    <button id="mobile-menu-toggle" type="button" class="inline-flex bg-gray-700 items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <button id="mobile-menu-toggle" type="button" class="inline-flex ml-2 bg-white items-center justify-center p-2 rounded-md text-gray-800 hover:text-white hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                         <span class="sr-only">Open main menu</span>
                         <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
                 </div>
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
                     <div class="hidden sm:block sm:ml-6">
                         <div class="flex space-x-16">
-                            <div class="hover-border-top ">
+                            <div class=" " style="border-top: 4px solid rgb(255 255 255);">
                                 <a href="/" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium">Home</a>
                             </div>
                             <div class="relative group hover-border-top">
-                                <a href="/about" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">About
+                                <a href="/about" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">About Us
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
                                     </svg>
                                 </a>
                                 <div class="absolute hidden group-hover:block text-white bg-gray-800 shadow-lg rounded-md w-40 z-50">
                                     <a href="/review" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Review</a>
+                                    <a href="/brands" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Our Brands</a>
                                     <a href="/mission" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Mission</a>
                                 </div>
                             </div>
-                            <div class="relative group" style="border-top: 4px solid rgb(255 255 255);">
+                            <div class="relative group  hover-border-top">
                                 <a href="service" class="text-gray-900 hover:text-brown-500 px-3 rounded-md text-lg font-medium flex items-center">Service
                                     <svg class="ml-1 transform transition-transform duration-500 ease-in-out" style="width: 1rem; height: 1rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                         <path d="M10 12.59l-4.95-4.95a1.41 1.41 0 10-2 2l7.45 7.5a1.41 1.41 0 002 0l7.45-7.5a1.41 1.41 0 10-2-2L10 12.59z" />
@@ -655,10 +661,6 @@
                                             <!-- Sofa Stain Removal -->
                                             <a href="/sofaStain" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Sofa Stain Removal</a>
                                             <!-- Sofa Stain Removal -->
-
-                                            <!-- Fabric Sofa Cleaning -->
-                                            <a href="/fabricSofaClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Fabric Sofa Cleaning</a>
-                                            <!-- Fabric Sofa Cleaning -->
                                         </div>
                                     </div>
                                     <!-- Deep Cleaning -->
@@ -677,10 +679,6 @@
                                             <a href="/marblePolish" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Marble Polishing</a>
                                             <!-- Marble Polishing -->
 
-                                            <!-- Mattress Steam Cleaning -->
-                                            <a href="/matressstemClean" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Mattress Steam Cleaning</a>
-                                            <!-- Mattress Steam Cleaning -->
-
                                             <!-- Parquet Polishing -->
                                             <a href="/parquetPolish" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Parquet Polishing</a>
                                             <!-- Parquet Polishing -->
@@ -692,10 +690,6 @@
                                             <!-- Wood Polishing -->
                                             <a href="/woodPolish" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Wood Polishing</a>
                                             <!-- Wood Polishing -->
-
-                                            <!-- Sofa Stain Removal -->
-                                            <a href="/sofaStain" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Sofa Stain Removal</a>
-                                            <!-- Sofa Stain Removal -->
 
                                             <!-- Wood Floor Polishing -->
                                             <a href="/wood" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Wood Floor Polishing</a>
@@ -786,290 +780,684 @@
             </div>
 
             <!-- Mobile -->
-            <div class="sm:hidden hidden" id="mobile-menu">
-                <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="/" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+            <div id="menu-overlay" style="position: fixed; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 999; display: none;"></div>
 
-                    <div class="relative">
-                        <button class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between" onclick="toggleSubMenu('about-submenu', 'about-arrow')">
-                            About Us
-                            <svg id="about-arrow" class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <div id="about-submenu" class="hidden pl-4 max-h-40 overflow-y-auto">
-                            <a href="/about" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">About</a>
-                            <a href="/review" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Reviews</a>
-                            <a href="/mission" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Mission</a>
+            <!-- Main Side Navigation -->
+            <div id="mobile-menu" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1000; transition: left 0.3s ease-in-out;">
+                <div style="padding: 16px;">
+                    <button id="close-menu" style="font-size: 33px;margin-left: 94%;margin-top: -13px;margin-bottom: 5%;">&times;</button>
+                    <a href="/">
+                        <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;"><a href="/" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%;">Home</a>
                         </div>
+                    </a>
+
+                    <div class="newMb" style="margin-left: -23px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <button id="about-us-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;"><span style="margin-left: 8%;">About Us</span><svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+
+                        </button>
                     </div>
 
-                    <div class="relative">
-                        <button class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between" onclick="toggleSubMenu('services-submenu', 'services-arrow')">
-                            Services
-                            <svg id="services-arrow" class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    <div class="newMb" style="margin-left: -23px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <button id="service-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;"><span style="margin-left: 8%;">Service </span><svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
+
                         </button>
-                        <div id="services-submenu" class="hidden pl-4 max-h-40 overflow-y-auto">
-                            <a href="/service" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Service</a>
-
-                            <div class="relative">
-                                <button class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between" onclick="toggleSubMenu('aircon-submenu', 'aircon-arrow')">
-                                    Plumber
-                                    <svg id="aircon-arrow" class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                    </svg>
-                                </button>
-                                <div id="aircon-submenu" class="hidden pl-4 bg-gray-100">
-
-                                    <div class="relative flex items-center justify-between">
-                                        <a href="/plumbingInstall" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">
-                                            Plumbing Install
-                                        </a>
-                                        <svg id="aircon-option1-arrow" onclick="toggleSubMenu('aircon-option1-submenu', 'aircon-option1-arrow')" class="w-4 h-4 transform transition-transform duration-200 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                        </svg>
-                                    </div>
-                                    <div id="aircon-option1-submenu" class="hidden pl-4 bg-gray-200">
-                                        <a href="/pipeInstall" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Pipe Installation</a>
-                                        <a href="/bidetSpray" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Bidet Spray</a>
-                                        <a href="/bathroomRack" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Bathroom Rack</a>
-                                    </div>
-
-
-                                    <a href="/plumbingChoke" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Plumbing Choke</a>
-
-                                    <div class="relative flex items-center justify-between">
-                                        <a href="/plumbingLeak" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">
-                                            Plumbing Leak
-                                        </a>
-                                        <svg id="aircon-option2-arrow" onclick="toggleSubMenu('aircon-option2-submenu', 'aircon-option2-arrow')" class="w-4 h-4 transform transition-transform duration-200 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                        </svg>
-                                    </div>
-                                    <div id="aircon-option2-submenu" class="hidden pl-4 bg-gray-200">
-                                        <a href="/tapLeak" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Leaking Tap</a>
-                                        <a href="/heaterLeak" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Heater Leak</a>
-                                        <a href="/showerService" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Shower Leak</a>
-                                    </div>
-
-
-                                    <div class="relative flex items-center justify-between">
-                                        <a href="/waterHeater" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">
-                                            Water Heater
-                                        </a>
-                                        <svg id="aircon-option3-arrow" onclick="toggleSubMenu('aircon-option3-submenu', 'aircon-option3-arrow')" class="w-4 h-4 transform transition-transform duration-200 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                        </svg>
-                                    </div>
-                                    <div id="aircon-option3-submenu" class="hidden pl-4 bg-gray-200">
-                                        <a href="/heaterinstall" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Water Heater Installation</a>
-                                        <a href="/waterheaterLeak" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Water Heater Leak</a>
-                                        <a href="/heaterRepair" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Water Heater Repair</a>
-                                    </div>
-
-
-                                    <div class="relative flex items-center justify-between">
-                                        <a href="/toiletBowl" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">
-                                            Toilet Bowl
-                                        </a>
-                                        <svg id="aircon-option4-arrow" onclick="toggleSubMenu('aircon-option4-submenu', 'aircon-option4-arrow')" class="w-4 h-4 transform transition-transform duration-200 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                        </svg>
-                                    </div>
-                                    <div id="aircon-option4-submenu" class="hidden pl-4 bg-gray-200">
-                                        <a href="/toiletBowl" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Toilet Bowl Installation</a>
-                                        <a href="/plumbingChoke" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Toilet Bowl Choke</a>
-                                        <a href="/toiletRepair" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Toilet Bowl Choke Repair</a>
-                                    </div>
-
-
-                                    <div class="relative flex items-center justify-between">
-                                        <a href="/showerService" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">
-                                            Shower Service
-                                        </a>
-                                        <svg id="aircon-option5-arrow" onclick="toggleSubMenu('aircon-option5-submenu', 'aircon-option5-arrow')" class="w-4 h-4 transform transition-transform duration-200 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                        </svg>
-                                    </div>
-                                    <div id="aircon-option5-submenu" class="hidden pl-4 bg-gray-200">
-                                        <a href="/showerInstall" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Shower Installation</a>
-                                        <a href="/showerRepair" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Shower Repair</a>
-                                    </div>
-
-                                    <a href="/tapFaucet" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Tap & Faucet</a>
-                                    <a href="/bidetSpray" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Bidet Spray</a>
-                                    <a href="/commercialPlumber" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Commercial Plumber</a>
-                                </div>
-                            </div>
-
-
-                            <div class="relative">
-                                <button class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between" onclick="toggleSubMenu('electrician-submenu', 'aircon-arrow')">
-                                    Electrician
-                                    <svg id="aircon-arrow" class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                    </svg>
-                                </button>
-                                <div id="electrician-submenu" class="hidden pl-4 bg-gray-100">
-                                    <a href="/electricalInstall" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Electrical Installation</a>
-                                    <a href="/electricRepair" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Electrical Repair</a>
-
-
-                                    <div class="relative flex items-center justify-between">
-                                        <a href="/plumbingInstall" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">
-                                            Plumbing Install
-                                        </a>
-                                        <svg id="aircon-option11-arrow" onclick="toggleSubMenu('aircon-option11-submenu', 'aircon-option11-arrow')" class="w-4 h-4 transform transition-transform duration-200 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                        </svg>
-                                    </div>
-                                    <div id="aircon-option11-submenu" class="hidden pl-4 bg-gray-200">
-                                        <a href="/lightInstall" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Light Installation</a>
-                                        <a href="/lightReplace" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Light Repair</a>
-                                    </div>
-
-
-                                    <a href="/switchService" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Electric Switch Service</a>
-
-                                    <a href="/powerSocket" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Power Sockets</a>
-                                    <a href="/hdrElectric" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">HDR Electrician</a>
-                                    <a href="/smartSwitch" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">SmartSwitch</a>
-                                </div>
-                            </div>
-
-
-                            <div class="relative">
-                                <button class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between" onclick="toggleSubMenu('handyman-submenu', 'aircon-arrow')">
-                                    HandyMan
-                                    <svg id="aircon-arrow" class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                    </svg>
-                                </button>
-
-                                <div id="handyman-submenu" class="hidden pl-4 bg-gray-100">
-                                    <a href="/rubbishChute" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Rubbish Chute</a>
-                                    <a href="/cupboard" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Cupboard Hinge</a>
-
-                                    <a href="/cabinetHinge" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Cabinet Hinge</a>
-
-                                    <a href="/hydraulic" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Hydraulic Hinge</a>
-                                    <a href="/drilling" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Handyman Drilling</a>
-                                    <a href="/tvBucket" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">TV Bracket Installation</a>
-                                    <a href="/wallMounting" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Wall Mounting Installation</a>
-                                    <a href="/pullUp" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">PullUp Bar Installation</a>
-                                </div>
-                            </div>
-
-                            <div class="relative">
-                                <button class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between" onclick="toggleSubMenu('deepclean-submenu', 'aircon-arrow')">
-                                    Deep Cleaning
-                                    <svg id="aircon-arrow" class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                    </svg>
-                                </button>
-
-                                <div id="deepclean-submenu" class="hidden pl-4 bg-gray-100">
-                                    <a href="/matressClean" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Mattress Cleaning</a>
-                                    <a href="/matressDeepClean" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Mattress Deep Cleaning</a>
-
-                                    <a href="/cabinetHinge" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Cabinet Hinge</a>
-
-                                    <a href="/matressstemClean" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Mattress Steam Cleaning</a>
-                                    <a href="/matrissStainClean" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Mattress Stain Removal</a>
-                                    <a href="/sofaClean" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Sofa Cleaning</a>
-                                    <a href="/sofaDeepClean" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Sofa Deep Cleaning</a>
-                                    <a href="/sofaStain" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Sofa Stain Removal</a>
-                                    <a href="/fabricSofaClean" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Fabric Sofa Cleaning</a>
-                                    <a href="/unholsteryClean" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Upholstery Cleaning</a>
-                                </div>
-                            </div>
-
-                            <div class="relative">
-                                <button class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between" onclick="toggleSubMenu('floorPolish-submenu', 'aircon-arrow')">
-                                    Floor Polishing
-                                    <svg id="aircon-arrow" class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                    </svg>
-                                </button>
-
-                                <div id="floorPolish-submenu" class="hidden pl-4 bg-gray-100">
-                                    <a href="/marbleFloorPolish" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Marble Floor Polish</a>
-                                    <a href="/marblePolish" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Marble Polishing</a>
-                                    <a href="/matressstemClean" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Mattress Steam Cleaning</a>
-                                    <a href="/parquetPolish" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Parquet Polishing</a>
-                                    <a href="/parquetVarnish" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Parquet Floor Polishing</a>
-                                    <a href="/woodPolish" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Wood Polishing</a>
-                                    <a href="/sofaStain" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Sofa Deep Cleaning</a>
-                                    <a href="/sofaStain" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Sofa Stain Removal</a>
-                                    <a href="/wood" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Wood Floor Polishing</a>
-                                    <a href="/vinylFloorPolish" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Vinyl Floor Polishing</a>
-                                    <a href="/tileFloorPolish" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Tile Floor Polishing</a>
-                                </div>
-                            </div>
-
-                            <div class="relative">
-                                <button class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between" onclick="toggleSubMenu('floorClean-submenu', 'aircon-arrow')">
-                                    Floor Cleaning
-                                    <svg id="aircon-arrow" class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                    </svg>
-                                </button>
-
-                                <div id="floorClean-submenu" class="hidden pl-4 bg-gray-100">
-                                    <a href="/vinylClean" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Vinyl Cleaning</a>
-                                    <a href="/vinylFloorClean" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Vinyl Floor Clean</a>
-                                    <a href="/vinylDeepFloorClean" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Vinyl Floor Deep Cleaning</a>
-                                    <a href="/terrazzoClean" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Terrazzo Cleaning</a>
-                                </div>
-                            </div>
-
-
-                            <div class="relative">
-                                <button class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between" onclick="toggleSubMenu('wood-submenu', 'aircon-arrow')">
-                                    Wood Varnishing
-                                    <svg id="aircon-arrow" class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                    </svg>
-                                </button>
-
-                                <div id="wood-submenu" class="hidden pl-4 bg-gray-100">
-                                    <a href="/parquetVarnish" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Parque Varnish</a>
-                                </div>
-                            </div>
-
-                            <div class="relative">
-                                <button class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium flex items-center justify-between" onclick="toggleSubMenu('decking-submenu', 'aircon-arrow')">
-                                    Decking
-                                    <svg id="aircon-arrow" class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                    </svg>
-                                </button>
-
-                                <div id="decking-submenu" class="hidden pl-4 bg-gray-100">
-                                    <a href="/balconyDeck" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Balcony Decking</a>
-                                    <a href="/timberDeck" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Timber Decking</a>
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
 
-                    <a href="/price" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Price</a>
-                    <a href="/works" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Works</a>
-                    <a href="/contact" class="text-gray-700 hover:text-brown-500 block px-3 py-2 rounded-md text-base font-medium">Contact Us</a>
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <a href="/price" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%;">Price</a>
+                    </div>
+
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <a href="/works" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%;">Works</a>
+                    </div>
+
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <a href="/contact" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%;">Contact Us</a>
+                    </div>
                 </div>
             </div>
 
+            <!-- Secondary Side Navigation (About Us Submenu) -->
+            <div id="secondary-menu" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1001; transition: left 0.3s ease-in-out;">
+                <div style="padding: 16px;">
+                    <div style="margin-bottom: 6%;">
+                        <div>
+                            <button id="return-main-menu" style="font-size: 18px; padding: 8px;"><svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
+                        <a href="/about" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">About Us</a>
+                    </div>
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <a href="/review" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Review</a>
+                    </div>
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <a href="/brands" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Our Brands</a>
+                    </div>
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <a href="/mission" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Mission</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Submenu -->
+            <div id="secondary-service-menu" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1001; transition: left 0.3s ease-in-out;">
+                <div style="padding: 16px;">
+                    <div style="margin-bottom: 6%;">
+                        <div>
+                            <button id="return-service-main-menu" style="font-size: 18px; padding: 8px;"><svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
+                        <a href="/service" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Service</a>
+                    </div>
+                    <div class="newMb" style="margin-left: -23px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <button id="plumber-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;"><span style="margin-left: 8%;">Plumber </span><svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Plumber Submenu -->
+                    <div id="plumber-menu" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1001; transition: left 0.3s ease-in-out; overflow-y: auto; overflow-x: hidden;">
+                        <div style="padding: 16px;">
+                            <div style="margin-bottom: 6%;">
+                                <div>
+                                    <button id="return-plumber-menu" style="font-size: 18px; padding: 8px;">
+                                        <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
+                                <a href="/plumbing" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumber</a>
+                            </div>
+
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
+                                <a href="/about" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Install <svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/review" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Choke</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -23px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <button id="plumbing-choke-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
+                                    <span style="margin-left: 8%;">Plumbing Leak</span>
+                                    <svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <button id="water-heater-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
+                                    <span style="margin-left: 5%;">Water Heater</span>
+                                    <svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <button id="toilet-bowl-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
+                                    <span style="margin-left: 5%;">Toilet Bowl</span>
+                                    <svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Toilet Bowl Submenu -->
+                            <div id="submenu-toilet-bowl" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1002; transition: left 0.3s ease-in-out; overflow-y: auto; overflow-x: hidden;">
+                                <div style="padding: 16px;">
+                                    <div style="margin-bottom: 6%;">
+                                        <div>
+                                            <button id="return-toilet-bowl-menu" style="font-size: 18px; padding: 8px;">
+                                                <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
+                                        <a href="/toiletBowl" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/toiletBowl" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Installation</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/plumbingChoke" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/toiletRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke Repair</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <button id="shower-service-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
+                                    <span style="margin-left: 5%;">Shower Service</span>
+                                    <svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Shower Service Submenu -->
+                            <div id="submenu-shower-service" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1002; transition: left 0.3s ease-in-out; overflow-y: auto; overflow-x: hidden;">
+                                <div style="padding: 16px;">
+                                    <div style="margin-bottom: 6%;">
+                                        <div>
+                                            <button id="return-shower-service-menu" style="font-size: 18px; padding: 8px;">
+                                                <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
+                                        <a href="/showerService" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Service</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/showerInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Installation</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/showerRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Repair</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/tapFaucet" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Tap & Faucet</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/bidetSpray" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/commercialPlumber" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Commercial Plumber</a>
+                            </div>
+
+
+
+                            <!-- Submenu for 222 -->
+                            <div id="submenu-222" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1002; transition: left 0.3s ease-in-out; overflow-y: auto; overflow-x: hidden;">
+                                <div style="padding: 16px;">
+                                    <div style="margin-bottom: 6%;">
+                                        <div>
+                                            <button id="return-submenu-222" style="font-size: 18px; padding: 8px;">
+                                                <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
+                                        <a href="/plumbingInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Install</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
+                                        <a href="/pipeInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Pipe Installation</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
+                                        <a href="/bidetSpray" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/bathroomRack" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bathroom Rack</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Submenu for Plumbing leak -->
+                            <div id="submenu-plumbing-choke" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1002; transition: left 0.3s ease-in-out; overflow-y: auto; overflow-x: hidden;">
+                                <div style="padding: 16px;">
+                                    <div style="margin-bottom: 6%;">
+                                        <div>
+                                            <button id="return-plumbing-choke-menu" style="font-size: 18px; padding: 8px;">
+                                                <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
+                                        <a href="/plumbingLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Leak</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/tapLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Leaking Tap</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/heaterLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Heater Leak</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/showerService" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Leak</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Water Heater Submenu -->
+                            <div id="submenu-water-heater" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1002; transition: left 0.3s ease-in-out; overflow-y: auto; overflow-x: hidden;">
+                                <div style="padding: 16px;">
+                                    <div style="margin-bottom: 6%;">
+                                        <div>
+                                            <button id="return-water-heater-menu" style="font-size: 18px; padding: 8px;">
+                                                <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
+                                        <a href="/waterHeater" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/heaterinstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Install</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/waterheaterLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Leak</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/heaterRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Repair</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Electrician Button in Main Menu -->
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <button id="electrician-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
+                            <span style="margin-left: 5%;">Electrician</span>
+                            <svg id="electrician-arrow" style="width: 1rem;height: 1rem;float: right;transition: transform 0.3s ease;margin-right: 3%;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Electrician Submenu -->
+                    <div id="electrician-menu" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1001; transition: left 0.3s ease-in-out; overflow-y: auto; overflow-x: hidden;">
+                        <div style="padding: 16px;">
+                            <div style="margin-bottom: 6%;">
+                                <div>
+                                    <button id="return-electrician-menu" style="font-size: 18px; padding: 8px;">
+                                        <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
+                                <a href="/electric" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Electrician</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
+                                <a href="/electricalInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Electrical Install</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/electricRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Electrical Repair</a>
+                            </div>
+                            <!-- Light Service Button in Main Menu -->
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <button id="light-service-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
+                                    <span style="margin-left: 5%;">Light Service</span>
+                                    <svg id="light-service-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Light Service Submenu -->
+                            <div id="light-service-menu" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1001; transition: left 0.3s ease-in-out;">
+                                <div style="padding: 16px;">
+                                    <div style="margin-bottom: 6%;">
+                                        <div>
+                                            <button id="return-light-service-menu" style="font-size: 18px; padding: 8px;">
+                                                <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Light Service Submenu Items -->
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
+                                        <a href="/lightReplace" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Light Bulb Replacement</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/lightInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Light Fixture Installation</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/lightService" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">LED Upgrade</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/switchService" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Electrical Switch Service</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/powerSocket" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Power Socket</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/hdrElectric" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">HDR Electrician</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/smartSwitch" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Smart Switch</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Handyman Button in Main Menu -->
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <button id="handyman-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
+                            <span style="margin-left: 5%;">Handyman</span>
+                            <svg id="handyman-arrow" style="width: 1rem;height: 1rem;float: right;transition: transform 0.3s ease;margin-right: 3%;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Handyman Submenu -->
+                    <div id="handyman-menu" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1001; transition: left 0.3s ease-in-out;">
+                        <div style="padding: 16px;">
+                            <div style="margin-bottom: 6%;">
+                                <div>
+                                    <button id="return-handyman-menu" style="font-size: 18px; padding: 8px;">
+                                        <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Handyman Submenu Items -->
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
+                                <a href="/handyman" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">HandyMan</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/rubbishChute" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Rubbish Chute</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/cupboard" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Cupboard Hinge</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/cabinetHinge" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Cabinet Hinge</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/hydraulic" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Hydraulic Hinge</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/drilling" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Handyman Drilling</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/tvBucket" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">TV Bracket Installation</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/wallMounting" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Wall Mounting Install</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/pullUp" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Pullup Bar Install</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deep Cleaning Button in Main Menu -->
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <button id="deepclean-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
+                            <span style="margin-left: 5%;">Deep Cleaning</span>
+                            <svg id="deepclean-arrow" style="width: 1rem;height: 1rem;float: right;transition: transform 0.3s ease;margin-right: 3%;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Deep Cleaning Submenu -->
+                    <div id="deepclean-menu" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1001; transition: left 0.3s ease-in-out;">
+                        <div style="padding: 16px;">
+                            <div style="margin-bottom: 6%;">
+                                <div>
+                                    <button id="return-deepclean-menu" style="font-size: 18px; padding: 8px;">
+                                        <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Deep Cleaning Submenu Items -->
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
+                                <a href="/deepclean" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Deep Cleaning</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/matressClean" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Mattress Cleaning</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/matressDeepClean" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Mattress Deep Cleaning</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/cabinetHinge" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Cabinet Hinge</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/matressstemClean" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Mattress Steam Cleaning</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/matrissStainClean" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Mattress Stain Cleaning</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/sofaClean" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Sofa Cleaning</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/sofaDeepClean" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Sofa Deep Cleaning</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="fabricSofaClean" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Fabric Sofa Cleaning</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/unholsteryClean" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Upholstery Cleaning</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floor Polishing Button in Main Menu -->
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <button id="floor-polishing-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
+                            <span style="margin-left: 5%;">Floor Polishing</span>
+                            <svg id="floor-polishing-arrow" style="width: 1rem;height: 1rem;float: right;transition: transform 0.3s ease;margin-right: 3%;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Floor Polishing Submenu -->
+                    <div id="floor-polishing-menu" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1001; transition: left 0.3s ease-in-out;">
+                        <div style="padding: 16px;">
+                            <div style="margin-bottom: 6%;">
+                                <div>
+                                    <button id="return-floor-polishing-menu" style="font-size: 18px; padding: 8px;">
+                                        <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Floor Polishing Submenu Items -->
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
+                                <a href="/floorpolish" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Floor Polishing</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/marbleFloorPolish" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Marble Floor Polish</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/marblePolish" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Marble Polishing</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/parquetPolish" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Parquet Polishing</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/parquetVarnish" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Parquet Floor Polishing</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/woodPolish" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Wood Polishing</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/wood" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Wood Floor Polishing</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/vinylFloorPolish" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Vinyl Floor Polishing</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/tileFloorPolish" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Tile Floor Polishing</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floor Cleaning Button in Main Menu -->
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <button id="floor-cleaning-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
+                            <span style="margin-left: 5%;">Floor Cleaning</span>
+                            <svg id="floor-cleaning-arrow" style="width: 1rem;height: 1rem;float: right;transition: transform 0.3s ease;margin-right: 3%;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Floor Cleaning Submenu -->
+                    <div id="floor-cleaning-menu" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1001; transition: left 0.3s ease-in-out;">
+                        <div style="padding: 16px;">
+                            <div style="margin-bottom: 6%;">
+                                <div>
+                                    <button id="return-floor-cleaning-menu" style="font-size: 18px; padding: 8px;">
+                                        <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Floor Cleaning Submenu Items -->
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
+                                <a href="/floorclean" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Floor Cleaning</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/vinylClean" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Vinyl Cleaning</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/vinylFloorClean" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Vinyl Floor Cleaning</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/vinylDeepFloorClean" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Vinyl Floor Deep Cleaning</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/terrazzoClean" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Terrazzo Cleaning</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wood Varnishing Button in Main Menu -->
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <button id="wood-varnishing-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
+                            <span style="margin-left: 5%;">Wood Varnishing</span>
+                            <svg id="wood-varnishing-arrow" style="width: 1rem;height: 1rem;float: right;transition: transform 0.3s ease;margin-right: 3%;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Wood Varnishing Submenu -->
+                    <div id="wood-varnishing-menu" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1001; transition: left 0.3s ease-in-out;">
+                        <div style="padding: 16px;">
+                            <div style="margin-bottom: 6%;">
+                                <div>
+                                    <button id="return-wood-varnishing-menu" style="font-size: 18px; padding: 8px;">
+                                        <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Wood Varnishing Submenu Items -->
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
+                                <a href="/wood" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Wood Varnishing</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/parquetVarnish" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Parque Varnish</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Decking Button in Main Menu -->
+                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <button id="decking-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
+                            <span style="margin-left: 5%;">Decking</span>
+                            <svg id="decking-arrow" style="width: 1rem;height: 1rem;float: right;transition: transform 0.3s ease;margin-right: 3%;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Decking Submenu -->
+                    <div id="decking-menu" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1001; transition: left 0.3s ease-in-out;">
+                        <div style="padding: 16px;">
+                            <div style="margin-bottom: 6%;">
+                                <div>
+                                    <button id="return-decking-menu" style="font-size: 18px; padding: 8px;">
+                                        <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Decking Submenu Items -->
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
+                                <a href="/decking" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Decking</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/balconyDeck" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Balcony Decking</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <a href="/timberDeck" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Timber Decking</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
     </nav>
 
-    <section class="parallax" style="position: relative; background: url('https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2023/08/29/featured_image.jpg') no-repeat center center fixed; background-size: cover; height: 18.75rem;">
+    <style>
+        .newMb:hover {
+            background-color: #f69918
+        }
+    </style>
+    <!-- Header -->
+
+    <section class="parallax" style="position: relative; background: url('https://img.freepik.com/premium-photo/man-repair-fixing-shower-faucet-bathroom_220873-3826.jpg') no-repeat center center fixed; background-size: cover; height: 300px;">
         <div class="overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
-        <div class="content" style="position: relative; z-index: 1; display: flex; flex-direction: column; padding-left: 16px; padding-right: 16px; text-align: center; gap: 16px;">
-            <h1 style="font-size: 40px; color: white; font-weight: 100; margin-bottom: 24px;">Shower Service</h1>
-            <p style="font-size: 16px; color: antiquewhite;">Home / Service / Plumbing / Shower Service</p>
+        <div class="content" style="position: relative; z-index: 1; display: flex; flex-direction: column; padding-left: 1rem; padding-right: 1rem; text-align: center; gap: 1rem;">
+            <h1 style="font-size: 2.5rem; color: white; font-weight: 100; margin-bottom: 1.5rem;">Shower Repair</h1>
+            <p style="font-size: 1rem; color: antiquewhite;">Home / Service / Floor Clean / Shower Repair</p>
         </div>
     </section>
 
@@ -1081,13 +1469,13 @@
             <div class="flex flex-wrap items-center">
                 <div class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">
                     <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-500">
-                        <img alt="..." src="https://www.homecarecontractors.com/wp-content/uploads/2021/03/Shower-Repair-Replacement-in-Seattle.jpg" class="w-full align-middle rounded-t-lg">
+                        <img alt="..." src="https://plumbingsolved.com/wp-content/uploads/2019/10/broken-shower.jpg" class="w-full align-middle rounded-t-lg">
                         <blockquote class="relative p-8 mb-4">
                             <h4 class="text-xl font-bold text-white">
-                                Shower Service
+                                Shower Repair
                             </h4>
                             <p class="text-md font-light mt-2 text-white">
-                                Shower Service services include leak repairs, fixture Leakations, and maintenance for efficient water systems in homes and businesses, ensuring reliable operation and minimizing disruptions.
+                                Shower Repair services include leak repairs, fixture Choke'sations, and maintenance for efficient water systems in homes and businesses, ensuring reliable operation and minimizing disruptions.
                             </p>
                         </blockquote>
                     </div>
@@ -1098,10 +1486,10 @@
                         <div class="w-full md:w-6/12 px-4">
                             <div class="relative flex flex-col mt-4">
                                 <div class="px-4 py-5 flex-auto">
-                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: .0625rem solid #0097a7;">
+                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
                                         <img src={{ url('img/service-tools.gif') }} alt="">
                                     </div>
-                                    <TS class="text-xl mb-1 font-semibold">Shower Service EXPERTS</TS>
+                                    <TS class="text-xl mb-1 font-semibold">Shower Repair EXPERTS</TS>
                                     <p class="mb-4 text-blueGray-500">
                                         Our professionals have over 35 years of experience in the industry, serving 1000s of residential & commercial estates.
                                     </p>
@@ -1109,14 +1497,14 @@
                             </div>
                             <div class="relative flex flex-col min-w-0">
                                 <div class="px-4 py-5 flex-auto">
-                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: .0625rem solid #0097a7;">
+                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
                                         <img src={{ url('img/under-construction.gif') }} alt="">
                                     </div>
                                     <h6 class="text-xl mb-1 font-semibold">
-                                        FULL 1-STOP Shower Service SERVICES
+                                        FULL 1-STOP Shower Repair SERVICES
                                     </h6>
                                     <p class="mb-4 text-blueGray-500">
-                                        Our top-to-bottom Shower Service service is designed to be fuss-free for you. Besides having your floor cleaned, we also ensure that you have a clear understanding of our Shower Service process, enabling you to apply the knowledge to maintain the cleanliness of your floors.
+                                        Our top-to-bottom Shower Repair service is designed to be fuss-free for you. Besides having your floor cleaned, we also ensure that you have a clear understanding of our Shower Repair process, enabling you to apply the knowledge to maintain the cleanliness of your floors.
                                     </p>
                                 </div>
                             </div>
@@ -1124,18 +1512,18 @@
                         <div class="w-full md:w-6/12 px-4">
                             <div class="relative flex flex-col min-w-0 mt-4">
                                 <div class="px-4 py-5 flex-auto">
-                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: .0625rem solid #0097a7;">
+                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
                                         <img src={{ url('img/tools.gif') }} alt="">
                                     </div>
-                                    <h6 class="text-xl mb-1 font-semibold">RANGE OF Shower Service SERVICES</h6>
+                                    <h6 class="text-xl mb-1 font-semibold">RANGE OF Shower Repair SERVICES</h6>
                                     <p class="mb-4 text-blueGray-500">
-                                        Our Shower Service servicing technicians carry out a comprehensive list of Shower Service works including floor deep cleaning, vinyl Shower Service.
+                                        Our Shower Repair servicing technicians carry out a comprehensive list of Shower Repair works including floor deep cleaning, vinyl Shower Repair.
                                     </p>
                                 </div>
                             </div>
                             <div class="relative flex flex-col min-w-0">
                                 <div class="px-4 py-5 flex-auto">
-                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: .0625rem solid #0097a7;">
+                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
                                         <img src={{ url('img/toolbox.gif') }} alt="">
                                     </div>
                                     <h6 class="text-xl mb-1 font-semibold">Service Assistance Now!</h6>
@@ -1159,19 +1547,15 @@
 
     <section class="mt-10">
         <div class="relative flex flex-col md:flex-row items-center md:items-start mt-8">
-            <span class="bg-yellow-500 yellow-diamond absolute left-0 h-20 w-20 hidden md:block transform rotate-45" style="margin-left: 47%;"></span>
-            <h3 id="handyman-services" class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-11/12 md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;margin-left: 4%;">
-                <span class="inner-span">All-in-One Handyman Services for Modern Living Convenience</span>
+            <span class="bg-yellow-500 yellow-triangle absolute left-0 h-20 hidden md:block"></span>
+            <h3 class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-full md:max-w-2/3" style="font-size: 18px; font-family: cursive; text-shadow: 3px 3px 0 rgb(255 255 255 / 25%);">
+                <span class="inner-span">One-Stop Home Solutions For Your Convenience</span>
             </h3>
             <style>
                 @media (max-width: 768px) {
                     .inner-span {
                         width: 93%;
                         margin: 0 auto;
-                    }
-
-                    #handyman-services {
-                        margin-right: 4%;
                     }
                 }
             </style>
@@ -1212,7 +1596,7 @@
                                         </path>
                                     </svg>
                                     <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white ">One-Stop Convenience</h3>
-                                    <p class="mt-4 text-base text-gray-600 group-hover:text-white">Our services are designed to be a fuss-free experience for you. Just choose the services or product Leakations you need, and allow us to fulfil the rest.</p>
+                                    <p class="mt-4 text-base text-gray-600 group-hover:text-white">Our services are designed to be a fuss-free experience for you. Just choose the services or product Choke'sations you need, and allow us to fulfil the rest.</p>
                                 </div>
                             </a>
 
@@ -1235,92 +1619,15 @@
     </section>
 
     <!-- component -->
-    <!-- Price -->
-    <div class="container mx-auto bg-white shadow-lg rounded-lg p-6 mt-24 mb-20">
-        <h2 class="text-3xl font-semibold mb-20" style="text-align: center;font-family: math;text-decoration-line: underline;">Description of Services (All prices inclusive of material, labour & transport)</h2>
-        <table class="min-w-full divide-y divide-gray-200">
-            <thead class="bg-gray-50">
-                <tr>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description of Services</th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Unit rate</th>
-                </tr>
-            </thead>
-            <tbody class="bg-white divide-y divide-gray-200">
-                <tr>
-                    <td class="px-6 py-4">1. Clogged toilet bowl / Clearing toilet bowl choke</td>
-                    <td class="px-6 py-4">From $130</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">2. Clogged floor trap/ Clogged drainage pipe/ Clearing floor trap choke</td>
-                    <td class="px-6 py-4">From $130</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">3. Rectify water discharge into toilet bowl by replacing new siphon</td>
-                    <td class="px-6 py-4">From $150</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">4. Labor & material to repair leak at exposed copper pipe or Upvc pipe</td>
-                    <td class="px-6 py-4">From $140</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">5. Supplying & replacing toilet/WC flush system</td>
-                    <td class="px-6 py-4">From $150</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">6. Replace shower set</td>
-                    <td class="px-6 py-4">From $150</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">7. Replace kitchen sink/ Bathroom tap / faucet (basic type)</td>
-                    <td class="px-6 py-4">From $130</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">8. Replace instant water heater</td>
-                    <td class="px-6 py-4">Price on ask</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">9. Replace storage water heater</td>
-                    <td class="px-6 py-4">Price on ask</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">10. Supply & replace bottle trap for kitchen sink</td>
-                    <td class="px-6 py-4">From $120</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">11. Replace Sink/ Basin/ Cistern flexible hose</td>
-                    <td class="px-6 py-4">From $120</td>
-                </tr>
-            </tbody>
-        </table>
-        <h2 class="text-xl font-semibold mt-8 mb-4">Replacement Work</h2>
-        <table class="min-w-full divide-y divide-gray-200">
-            <thead class="bg-gray-50">
-                <tr>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Replacement Work</th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Unit rate</th>
-                </tr>
-            </thead>
-            <tbody class="bg-white divide-y divide-gray-200">
-                <tr>
-                    <td class="px-6 py-4">12. Supply & install toilet bowl set</td>
-                    <td class="px-6 py-4">From $420</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">13. Supply & install basin</td>
-                    <td class="px-6 py-4">From $250</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <!-- Price -->
+
     <!-- ====== Pricing Section Start -->
-    <section class="bg-white lg:pt-[7.5rem] pb-12 lg:pb-[5.625rem] relative z-20 overflow-hidden">
+    <section class="bg-white lg:pt-[120px] pb-12 lg:pb-[90px] relative z-20 overflow-hidden">
         <div class="container">
             <div class="flex flex-wrap -mx-4">
                 <div class="w-full px-4">
-                    <div class="text-center mx-auto mb-[3.75rem] lg:mb-20 max-w-[31.875rem]">
-                        <h2 class=" font-bold  text-3xl sm:text-4xl md:text-[2.5rem] text-dark mb-4 ">
-                            OUR SHOWER SERVICE PROCESS
+                    <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
+                        <h2 class=" font-bold  text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 ">
+                            OUR SHOWER Repair PROCESS
                         </h2>
                     </div>
                 </div>
@@ -1328,9 +1635,9 @@
             <div class="flex flex-wrap justify-center -mx-4">
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4" style="text-align: center;">
                     <div class="bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10  px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-1">
-                        <img src="https://bestplumbersclub.com/wp-content/uploads/2022/03/Shower-Repair-And-Installation.jpg" alt="" class="ml-14 mb-10" style="border: .0625rem solid #f7a80c;padding: .625rem;height: 11.875rem;">
+                        <img src="https://superiorplumbing.ca/wp-content/uploads/2022/12/Shower-Repair.jpg" alt="" class="ml-14 mb-10" style="border: 1px solid #f7a80c;padding: 10px;height: 190px;">
                         <span class="text-primary font-semibold text-lg block mb-4">
-                            Step 1: Inspect Your Leaks
+                            Step 1: Inspect Your Floors
                         </span>
                         <hr>
                         <div class="mb-7">
@@ -1391,14 +1698,14 @@
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4" style="text-align: center;">
                     <div class="bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10  px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-1">
-                        <img src="https://images.squarespace-cdn.com/content/v1/5effa870d6c1ce2ef8c034cf/1593913731856-ZB3V34R81TVTJZJTB768/Water+Wise+Plumbing-38.jpg" alt="" class="ml-14 mb-10" style="border: .0625rem solid #f7a80c;padding: .625rem;height: 11.875rem;">
+                        <img src="https://www.bathwraps.com/wp-content/uploads/2020/10/bigstock-Plumber-Repairing-Shower-Stal-362489848.jpg" alt="" class="ml-14 mb-10" style="border: 1px solid #f7a80c;padding: 10px;height: 190px;">
                         <span class="text-primary font-semibold text-lg block mb-4">
                             Step 2: Power Scrubbing
                         </span>
                         <hr>
                         <div class="mb-7">
                             <p class="text-base text-body-color leading-loose mb-1">
-                                In this step, we employ the powerful Bona速 machine scrubber specifically designed for tackling even the most stubborn light stains.
+                                In this step, we employ the powerful Bona® machine scrubber specifically designed for tackling even the most stubborn light stains.
                             </p>
                         </div>
                         <div>
@@ -1454,14 +1761,14 @@
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4" style="text-align: center;">
                     <div class="bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10  px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-1">
-                        <img src="https://plumbguardian.uk/wp-content/uploads/2021/06/Shower-Repair.jpg" alt="" class="ml-14 mb-10" style="border: .0625rem solid #f7a80c;padding: .625rem;height: 11.875rem;">
+                        <img src="https://media.product.which.co.uk/prod/images/ar_2to1_1500x750/055d205ef010-51bathroom-Repairation.jpg" alt="" class="ml-14 mb-10" style="border: 1px solid #f7a80c;padding: 10px;height: 190px;">
                         <span class="text-primary font-semibold text-lg block mb-4">
-                            Step 3: Rinse Your Leak
+                            Step 3: Rinse Your Floor
                         </span>
                         <hr>
                         <div class="mb-7">
                             <p class="text-base text-body-color leading-loose mb-1">
-                                We use targeted chemical cleaning solutions along with the Bona速 power scrubber to deep clean and eliminate dirt and grime on any type of flooring.
+                                We use targeted chemical cleaning solutions along with the Bona® power scrubber to deep clean and eliminate dirt and grime on any type of flooring.
                             </p>
                         </div>
                         <div>
@@ -1522,7 +1829,7 @@
     <!-- ====== Pricing Section End -->
     <hr class="hr-1">
 
-    <!-- Shower ServiceATION -->
+    <!-- Shower RepairATION -->
     <!-- component -->
     <section class="text-gray-400 bg-gray-800 body-font mt-10">
         <div class="container px-5 py-24 mx-auto">
@@ -1582,7 +1889,7 @@
             </div>
         </div>
     </section>
-    <!-- Shower ServiceATION -->
+    <!-- Shower RepairATION -->
 
 
     <!-- FAQ -->
@@ -1653,10 +1960,10 @@
                             Our Plumbing Services include:
 
                             Plumbing Chokes Services
-                            Shower Serviceation Services
-                            Shower Services Services
-                            Shower Service Services
-                            Shower Service Services
+                            Shower Repairation Services
+                            Plumbing Leaks Services
+                            Water Heater Services
+                            Toilet Bowl Services
                             Toilet Flush System Services
                             Shower Services</div>
                     </div>
@@ -1971,11 +2278,11 @@
             }
         }
     </style>
-    <footer class="footer-bg text-white py-10">
+     <footer class="footer-bg text-white py-10">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
                 <h2 class="text-xl font-bold mb-4 footer-text-yellow border-b-2 border-yellow-500">About Allhouseworks Services</h2>
-                <p style="font-family: system-ui;font-size: inherit;line-height: 20px;">Allhouseworks stands as Singapore’s top choice for Home Maintenance, providing top-quality services such as Handyman, Electrical, Plumbing, and Aircon Servicing. With our easy online booking, you can connect with us via WhatsApp and let our dedicated 4-star customer service team handle everything for you. Thousands of satisfied customers rely on us for fast, transparent quotes and reliable service. Reach out on WhatsApp at +65 9658 5757 now for all your home and office maintenance needs!</p>
+                <p style="font-family: system-ui;font-size: inherit;line-height: 20px;">Allhouseworks stands as Singapore��s top choice for Home Maintenance, providing top-quality services such as Handyman, Electrical, Plumbing, and Aircon Servicing. With our easy online booking, you can connect with us via WhatsApp and let our dedicated 4-star customer service team handle everything for you. Thousands of satisfied customers rely on us for fast, transparent quotes and reliable service. Reach out on WhatsApp at +65 9658 5757 now for all your home and office maintenance needs!</p>
             </div>
             <div style="margin-left: 58px;">
                 <h2 class="text-xl font-bold mb-4 footer-text-yellow ">Useful Links</h2>
@@ -2031,11 +2338,11 @@
     function nextSlide() {
         if (i == 3) {
             let activeSlide = document.querySelector('.slide.translate-x-0');
-            activeSlide.classListNaNpxove('translate-x-0');
+            activeSlide.classList.remove('translate-x-0');
             activeSlide.classList.add('translate-x-full');
 
             let nextSlide = activeSlide.previousElementSibling.previousElementSibling;
-            nextSlide.classListNaNpxove('translate-x-full');
+            nextSlide.classList.remove('translate-x-full');
             nextSlide.classList.add('translate-x-0');
 
             i = 1;
@@ -2043,11 +2350,11 @@
             i++;
 
             let activeSlide = document.querySelector('.slide.translate-x-0');
-            activeSlide.classListNaNpxove('translate-x-0');
+            activeSlide.classList.remove('translate-x-0');
             activeSlide.classList.add('translate-x-full');
 
             let nextSlide = activeSlide.nextElementSibling;
-            nextSlide.classListNaNpxove('translate-x-full');
+            nextSlide.classList.remove('translate-x-full');
             nextSlide.classList.add('translate-x-0');
         }
 
@@ -2056,11 +2363,11 @@
     function previousSlide() {
         if (i == 1) {
             let activeSlide = document.querySelector('.slide.translate-x-0');
-            activeSlide.classListNaNpxove('translate-x-0');
+            activeSlide.classList.remove('translate-x-0');
             activeSlide.classList.add('translate-x-full');
 
             let previousSlide = activeSlide.nextElementSibling.nextElementSibling;
-            previousSlide.classListNaNpxove('translate-x-full');
+            previousSlide.classList.remove('translate-x-full');
             previousSlide.classList.add('translate-x-0');
 
             i = 3;
@@ -2068,11 +2375,11 @@
             i--;
 
             let activeSlide = document.querySelector('.slide.translate-x-0');
-            activeSlide.classListNaNpxove('translate-x-0');
+            activeSlide.classList.remove('translate-x-0');
             activeSlide.classList.add('translate-x-full');
 
             let previousSlide = activeSlide.previousElementSibling;
-            previousSlide.classListNaNpxove('translate-x-full');
+            previousSlide.classList.remove('translate-x-full');
             previousSlide.classList.add('translate-x-0');
         }
     }
@@ -2086,27 +2393,55 @@
             navbar.style.left = "50%";
             navbar.style.transform = "translateX(-50%)";
         } else {
-            navbar.classListNaNpxove("sticky-nav");
+            navbar.classList.remove("sticky-nav");
             navbar.style.width = "80%";
             navbar.style.position = "absolute";
-            navbar.style.top = "-41rem";
+            navbar.style.top = "-656px";
 
             navbar.style.left = "50%";
             navbar.style.transform = "translateX(-50%)";
         }
     };
 
-    function toggleFAQ(button) {
-        const content = button.nextElementSibling;
-        button.setAttribute("aria-expanded", button.getAttribute("aria-expanded") === "false" ? "true" : "false");
-        content.style.maxHeight = button.getAttribute("aria-expanded") === "true" ? content.scrollHeight + "px" : "0";
-    }
-</script>
+    function checkAndRedirect(event) {
+        event.preventDefault();
+        const input = document.getElementById('search-input').value.toLowerCase().replace(/\s+/g, '');
+        const routes = {
+            'plumber': '/searchPlumber',
+            'electrician': '/searchElectric',
+            'handyman': '/searchHandyMan',
+            'deepclean': '/searchDeepclean',
+            'floorpolish': '/searchFloorPolish',
+            'floorclean': '/searchFloorClean',
+            'wood': '/searchWood',
+            'decking': '/searchDecking'
+        };
 
-<script>
+        let foundRoute = false;
+
+        for (const keyword in routes) {
+            if (keyword.includes(input)) {
+                window.location.href = routes[keyword];
+                foundRoute = true;
+                break;
+            }
+        }
+
+        if (!foundRoute) {
+            window.location.href = '/noSearch';
+        }
+    }
+
+    function showSubmenu() {
+        document.getElementById('decking-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideSubmenu() {
+        document.getElementById('decking-submenu').classList.add('hidden-submenu');
+    }
     // decking-submenu
     function showSubmenu() {
-        document.getElementById('decking-submenu').classListNaNpxove('hidden-submenu');
+        document.getElementById('decking-submenu').classList.remove('hidden-submenu');
     }
 
     function hideSubmenu() {
@@ -2114,7 +2449,7 @@
     }
     // decking-submenu
     function showSubmenu1() {
-        document.getElementById('varnish-submenu').classListNaNpxove('hidden-submenu');
+        document.getElementById('varnish-submenu').classList.remove('hidden-submenu');
     }
 
     function hideSubmenu1() {
@@ -2122,10 +2457,238 @@
     }
     // Vanish-submenu
     function showSubmenu2() {
-        document.getElementById('fClean-submenu').classListNaNpxove('hidden-submenu');
+        document.getElementById('fClean-submenu').classList.remove('hidden-submenu');
     }
 
     function hideSubmenu2() {
         document.getElementById('fClean-submenu').classList.add('hidden-submenu');
+    }
+    // fpolish-submenu
+    function showSubmenu3() {
+        document.getElementById('fpolish-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideSubmenu3() {
+        document.getElementById('fpolish-submenu').classList.add('hidden-submenu');
+    }
+    // dClean-submenu
+    function showSubmenu4() {
+        document.getElementById('dClean-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideSubmenu4() {
+        document.getElementById('dClean-submenu').classList.add('hidden-submenu');
+    }
+    // handy-submenu
+    function showSubmenu5() {
+        document.getElementById('handy-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideSubmenu5() {
+        document.getElementById('handy-submenu').classList.add('hidden-submenu');
+    }
+    // handy-submenu
+    function showSubmenu6() {
+        document.getElementById('electric-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideSubmenu6() {
+        document.getElementById('electric-submenu').classList.add('hidden-submenu');
+    }
+    // handy-submenu
+    function showSubmenu7() {
+        document.getElementById('service-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideSubmenu7() {
+        document.getElementById('service-submenu').classList.add('hidden-submenu');
+    }
+
+    function showLightServiceSubmenu() {
+        document.getElementById('light-service-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideLightServiceSubmenu() {
+        document.getElementById('light-service-submenu').classList.add('hidden-submenu');
+    }
+
+    function showPlumbingInstallSubmenu() {
+        document.getElementById('plumbing-install-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hidePlumbingInstallSubmenu() {
+        document.getElementById('plumbing-install-submenu').classList.add('hidden-submenu');
+    }
+
+    function showPlumbingLeakSubmenu() {
+        document.getElementById('plumbing-leak-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hidePlumbingLeakSubmenu() {
+        document.getElementById('plumbing-leak-submenu').classList.add('hidden-submenu');
+    }
+
+    function showWaterHeaterSubmenu() {
+        document.getElementById('water-heater-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideWaterHeaterSubmenu() {
+        document.getElementById('water-heater-submenu').classList.add('hidden-submenu');
+    }
+
+    function showToiletBowlSubmenu() {
+        document.getElementById('toilet-bowl-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideToiletBowlSubmenu() {
+        document.getElementById('toilet-bowl-submenu').classList.add('hidden-submenu');
+    }
+
+    function showShowerServiceSubmenu() {
+        document.getElementById('shower-service-submenu').classList.remove('hidden-submenu');
+    }
+
+    function hideShowerServiceSubmenu() {
+        document.getElementById('shower-service-submenu').classList.add('hidden-submenu');
+    }
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    function toggleSubmenu(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('plumber-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu2(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('electrician-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu3(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('handyman-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu4(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('deepclean-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu5(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('floorpolish-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu6(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('floorclean-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu7(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('decking-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu66(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('varnish-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu55(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('about-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu12(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('plumberInstall-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu22(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('plumberLeak-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu32(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('waterHeater-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu42(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('toiletBowl-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu52(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('shower-submenu');
+        submenu.classList.toggle('hidden');
+    }
+
+    function toggleSubmenu62(event) {
+        event.preventDefault();
+        const submenu = document.getElementById('lightService-submenu');
+        submenu.classList.toggle('hidden');
+    }
+    const mobileMenuButton = document.querySelector('button[aria-controls="mobile-menu"]');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+        const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+        mobileMenuButton.setAttribute('aria-expanded', !expanded);
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    function showSubMenu(event, submenuId) {
+        const submenu = document.getElementById(submenuId);
+        if (submenu) {
+            submenu.classList.remove('hidden');
+        }
+    }
+
+    // Function to hide submenu on mouse leave
+    function toggleSubMenu(submenuId) {
+        const submenu = document.getElementById(submenuId);
+        if (submenu) {
+            submenu.classList.toggle('hidden');
+        }
+    }
+    window.addEventListener('scroll', function() {
+        var mainNav = document.getElementById('main-nav');
+        if (window.scrollY > 0) {
+            mainNav.classList.add('scrolled');
+        } else {
+            mainNav.classList.remove('scrolled');
+        }
+    });
+
+    function toggleSubMenu(submenuId, arrowId) {
+        var submenu = document.getElementById(submenuId);
+        var arrow = document.getElementById(arrowId);
+        if (submenu.classList.contains('hidden')) {
+            submenu.classList.remove('hidden');
+            arrow.classList.add('rotate-180');
+        } else {
+            submenu.classList.add('hidden');
+            arrow.classList.remove('rotate-180');
+        }
     }
 </script>

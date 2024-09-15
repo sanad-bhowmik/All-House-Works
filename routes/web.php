@@ -14,6 +14,12 @@ Route::get('/service', function () {
 Route::get('/works', function () {
     return view('gallery');
 });
+Route::get('/career', function () {
+    return view('career');
+});
+Route::get('/aircon', function () {
+    return view('aircon');
+});
 Route::get('/price', function () {
     return view('price');
 });
