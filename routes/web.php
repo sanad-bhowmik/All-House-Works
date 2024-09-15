@@ -20,6 +20,27 @@ Route::get('/career', function () {
 Route::get('/aircon', function () {
     return view('aircon');
 });
+Route::get('/airconInstall', function () {
+    return view('airconInstall');
+});
+Route::get('/airconCemical', function () {
+    return view('airconCemical');
+});
+Route::get('/airconRepair', function () {
+    return view('airconRepair');
+});
+Route::get('/airconLeak', function () {
+    return view('airconLeak');
+});
+Route::get('/airconNotCold', function () {
+    return view('airconNotCold');
+});
+Route::get('/airconGasTop', function () {
+    return view('airconGasTop');
+});
+Route::get('/airconServiceContract', function () {
+    return view('airconServiceContract');
+});
 Route::get('/price', function () {
     return view('price');
 });

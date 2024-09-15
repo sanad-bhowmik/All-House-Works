@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AllHouseWorks</title>
+    <title>AllHouseWorks | Aircon Not Cold</title>
     <!-- Link to Tailwind CSS CDN -->
+
+    <!-- component -->
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" href="{{ url('img/favicon.ico') }}" type="image/x-icon">
 </head>
@@ -242,17 +246,17 @@
     }
 
     #header_slider #slide_item:nth-child(1) {
-        background: url("https://t4.ftcdn.net/jpg/02/91/14/23/360_F_291142315_1HDHshpssor08inb91jnXZxB02M3rIgi.jpg") no-repeat center center;
+        background: url("https://media.istockphoto.com/id/1339613829/photo/plumber-at-work-in-a-bathroom-plumbing-repair-service-assemble-and-install-concept.jpg?s=612x612&w=0&k=20&c=lQREIzjwRM3ApTkRzTnbIA_BCRCy_ER-e51tofKsaP0=") no-repeat center center;
         background-size: cover;
     }
 
     #header_slider #slide_item:nth-child(2) {
-        background: url("https://media.istockphoto.com/id/1436521782/photo/team-of-professional-cleaners-tidying-up-the-room.webp?b=1&s=170667a&w=0&k=20&c=E4Ru1OhTSNliZSNVwevKKDrH4CFjhnQfsNnPXCciBfc=") no-repeat center center;
+        background: url("https://mrelectric.com/us/en-us/_assets/images/ceiling-fan-repair.webp") no-repeat center center;
         background-size: cover;
     }
 
     #header_slider #slide_item:nth-child(3) {
-        background: url("https://st5.depositphotos.com/39034226/62384/i/450/depositphotos_623846382-stock-photo-female-cleaning-specialist-using-window.jpg") no-repeat center center;
+        background: url("https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?s=612x612&w=0&k=20&c=5zlDGgLNNaWsp_jq_L1AsGT85wrzpdl3kVH-75S-zTU=") no-repeat center center;
         background-size: cover;
     }
 
@@ -276,6 +280,7 @@
 
     /* General Styles */
     .hover-border-top:hover {
+        border-top: 4px solid #B48F57;
         border-top: 4px solid #FFFFFF;
     }
 
@@ -357,6 +362,7 @@
 
     #main-nav.scrolled {
         top: 0;
+        background-color: #f8f8f8;
         background-color: #f69918;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
@@ -420,7 +426,6 @@
             </div>
         </div>
     </nav>
-
     <!-- Navigation Menu -->
     <!-- Scroll Up -->
     <div class="flex items-end justify-start fixed bottom-0 left-0 mb-4 ml-4 z-10">
@@ -510,31 +515,86 @@
                                     </div>
                                     <!-- Electrician -->
 
-                                    <!-- Aircon -->
-                                    <div class="relative decking-group">
+                                    <!-- Plumber -->
+                                    <div class="relative plumber-group">
                                         <a href="/aircon" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Aircon Service</a>
-                                        <div class="absolute hidden decking-group-hover:block text-white bg-gray-800 shadow-lg rounded-md mt-2 w-40 left-full top-0 z-50">
+                                        <div class="absolute hidden plumber-group-hover:block text-white bg-gray-800 shadow-lg rounded-md mt-2 w-40 left-full top-0 z-50">
 
-                                            <a href="/aircon" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Aircon Servicing</a>
+                                            <!-- Plumbing Install -->
+                                            <div class="relative plumber-group">
+                                                <a href="/plumbingInstall" onmouseenter="toggleSubMenu('pipe-installation')" onmouseleave="toggleSubMenu('pipe-installation')" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Plumbing
+                                                    Install</a>
+                                                <div id="pipe-installation" class="absolute hidden text-white bg-gray-800 shadow-lg rounded-md mt-2 w-40 left-full top-0 z-50" onmouseenter="toggleSubMenu('pipe-installation')" onmouseleave="toggleSubMenu('pipe-installation')">
+                                                    <a href="/pipeInstall" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b plumbing-install">Pipe Installation</a>
+                                                    <a href="/bidetSpray" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Bidet Spray</a>
+                                                    <a href="/bathroomRack" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Bathroom Rack</a>
+                                                </div>
+                                            </div>
+                                            <!-- Plumbing Install -->
 
-                                            <a href="/airconInstall" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Aircon Installation</a>
+                                            <!-- Plumbing Choke -->
+                                            <a href="/plumbingChoke" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Plumbing
+                                                Choke</a>
+                                            <!-- Plumbing Choke -->
 
-                                            <a href="/airconCemical" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Aircon Chemical Overhaul</a>
+                                            <!-- Plumbing Leak-->
+                                            <div class="relative plumber-group">
+                                                <a href="/plumbingLeak" onmouseenter="toggleSubMenu('plumbing-leak')" onmouseleave="toggleSubMenu('plumbing-leak')" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Plumbing
+                                                    Leak</a>
+                                                <div id="plumbing-leak" class="absolute hidden text-white bg-gray-800 shadow-lg rounded-md mt-2 w-40 left-full top-0 z-50" onmouseenter="toggleSubMenu('plumbing-leak')" onmouseleave="toggleSubMenu('plumbing-leak')">
+                                                    <a href="/tapLeak" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b plumbing-install">Leaking Tap</a>
+                                                    <a href="/heaterLeak" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Heater Leak</a>
+                                                    <a href="/showerService" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Shower Leak</a>
+                                                </div>
+                                            </div>
+                                            <!--Plumbing Leak -->
 
-                                            <a href="/airconRepair" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Aircon Repair</a>
 
-                                            <a href="/airconLeak" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Aircon Leaking Water</a>
+                                            <!-- Water Heater-->
+                                            <div class="relative plumber-group">
+                                                <a href="/waterHeater" onmouseenter="toggleSubMenu('water-leak')" onmouseleave="toggleSubMenu('water-leak')" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Water Heater</a>
+                                                <div id="water-leak" class="absolute hidden text-white bg-gray-800 shadow-lg rounded-md mt-2 w-40 left-full top-0 z-50" onmouseenter="toggleSubMenu('water-leak')" onmouseleave="toggleSubMenu('water-leak')">
+                                                    <a href="/heaterinstall" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b plumbing-install">Water Heater Installation</a>
+                                                    <a href="/waterheaterLeak" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Water Heater Leak</a>
+                                                    <a href="/heaterRepair" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Water Heater Repair</a>
+                                                </div>
+                                            </div>
+                                            <!--Water Heater -->
 
-                                            <a href="/airconNotCold" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Aircon Not Cold</a>
 
-                                            <a href="/airconGasTop" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Aircon Gas Top Up</a>
+                                            <!-- Toilet Bowl-->
+                                            <div class="relative plumber-group">
+                                                <a href="/toiletBowl" onmouseenter="toggleSubMenu('toilet-bowl')" onmouseleave="toggleSubMenu('toilet-bowl')" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Toilet Bowl</a>
+                                                <div id="toilet-bowl" class="absolute hidden text-white bg-gray-800 shadow-lg rounded-md mt-2 w-40 left-full top-0 z-50" onmouseenter="toggleSubMenu('toilet-bowl')" onmouseleave="toggleSubMenu('toilet-bowl')">
+                                                    <a href="/toiletBowl" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b plumbing-install">Toilet Bowl Installation</a>
+                                                    <a href="/plumbingChoke" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Toilet Bowl Choke</a>
+                                                    <a href="/toiletRepair" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Toilet Bowl Choke Repair</a>
+                                                </div>
+                                            </div>
+                                            <!--Toilet Bowl-->
 
-                                            <a href="/airconServiceContract" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Aircon Servicing Contract</a>
 
-                                            <a href="/x" class="block px-4 py-2 hover:bg-gray-200 hover:text-black">Commercial & Industria</a>
+                                            <!-- Shower
+                                                Service-->
+                                            <div class="relative plumber-group">
+                                                <a href="/showerService" onmouseenter="toggleSubMenu('shower-service')" onmouseleave="toggleSubMenu('shower-service')" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Shower Service</a>
+                                                <div id="shower-service" class="absolute hidden text-white bg-gray-800 shadow-lg rounded-md mt-2 w-40 left-full top-0 z-50" onmouseenter="toggleSubMenu('shower-service')" onmouseleave="toggleSubMenu('shower-service')">
+                                                    <a href="/showerInstall" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b plumbing-install">Shower Installation</a>
+                                                    <a href="/showerRepair" class="block px-4 py-2 hover:bg-gray-200 hover:text-black border-b">Shower Repair</a>
+                                                </div>
+                                            </div>
+                                            <!--Shower Service-->
+
+                                            <a href="/tapFaucet" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Tap
+                                                & Faucet</a>
+                                            <a href="/bidetSpray" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Bidet
+                                                Spray</a>
+                                            <a href="/commercialPlumber" class="border-b block px-4 py-2 hover:bg-gray-200 hover:text-black">Commercial
+                                                Plumber</a>
+
                                         </div>
                                     </div>
-                                    <!-- Aircon -->
+                                    <!-- Plumber -->
 
 
                                     <!-- Plumber -->
@@ -982,22 +1042,19 @@
                         </div>
                     </div>
 
-                    <!-- aircon Button in Main Menu -->
-                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                        <button id="aircon-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
-                            <span style="margin-left: 5%;">Aircon Service</span>
-                            <svg id="aircon-arrow" style="width: 1rem;height: 1rem;float: right;transition: transform 0.3s ease;margin-right: 3%;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <!-- Aircon -->
+                    <div class="newMb" style="margin-left: -23px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                        <button id="plumber-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;"><span style="margin-left: 8%;">Aircon Service </span><svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
                         </button>
                     </div>
-
-                    <!-- aircon Submenu -->
-                    <div id="aircon-menu" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1001; transition: left 0.3s ease-in-out;">
+                    <!-- Plumber Submenu -->
+                    <div id="plumber-menu" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1001; transition: left 0.3s ease-in-out; overflow-y: auto; overflow-x: hidden;">
                         <div style="padding: 16px;">
                             <div style="margin-bottom: 6%;">
                                 <div>
-                                    <button id="return-aircon-menu" style="font-size: 18px; padding: 8px;">
+                                    <button id="return-plumber-menu" style="font-size: 18px; padding: 8px;">
                                         <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                                         </svg>
@@ -1005,44 +1062,208 @@
                                 </div>
                             </div>
 
-                            <!-- aircon Submenu Items -->
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
                                 <a href="/aircon" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Aircon Service</a>
                             </div>
+
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
+                                <a href="/about" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Install <svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Aircon Servicing</a>
+                                <a href="/review" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Choke</a>
+                            </div>
+                            <div class="newMb" style="margin-left: -23px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <button id="plumbing-choke-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
+                                    <span style="margin-left: 8%;">Plumbing Leak</span>
+                                    <svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                <button id="water-heater-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
+                                    <span style="margin-left: 5%;">Water Heater</span>
+                                    <svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Aircon Installation</a>
+                                <button id="toilet-bowl-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
+                                    <span style="margin-left: 5%;">Toilet Bowl</span>
+                                    <svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Toilet Bowl Submenu -->
+                            <div id="submenu-toilet-bowl" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1002; transition: left 0.3s ease-in-out; overflow-y: auto; overflow-x: hidden;">
+                                <div style="padding: 16px;">
+                                    <div style="margin-bottom: 6%;">
+                                        <div>
+                                            <button id="return-toilet-bowl-menu" style="font-size: 18px; padding: 8px;">
+                                                <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
+                                        <a href="/toiletBowl" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/toiletBowl" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Installation</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/plumbingChoke" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/toiletRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Toilet Bowl Choke Repair</a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Aircon Chemical Overhaul</a>
+                                <button id="shower-service-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;">
+                                    <span style="margin-left: 5%;">Shower Service</span>
+                                    <svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Shower Service Submenu -->
+                            <div id="submenu-shower-service" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1002; transition: left 0.3s ease-in-out; overflow-y: auto; overflow-x: hidden;">
+                                <div style="padding: 16px;">
+                                    <div style="margin-bottom: 6%;">
+                                        <div>
+                                            <button id="return-shower-service-menu" style="font-size: 18px; padding: 8px;">
+                                                <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
+                                        <a href="/showerService" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Service</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/showerInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Installation</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/showerRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Repair</a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Aircon Repair</a>
+                                <a href="/tapFaucet" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Tap & Faucet</a>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Aircon Leaking Water</a>
+                                <a href="/bidetSpray" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Aircon Not Cold</a>
+                                <a href="/commercialPlumber" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Commercial Plumber</a>
                             </div>
-                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Aircon Gas Top Up</a>
+
+
+
+                            <!-- Submenu for 222 -->
+                            <div id="submenu-222" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1002; transition: left 0.3s ease-in-out; overflow-y: auto; overflow-x: hidden;">
+                                <div style="padding: 16px;">
+                                    <div style="margin-bottom: 6%;">
+                                        <div>
+                                            <button id="return-submenu-222" style="font-size: 18px; padding: 8px;">
+                                                <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
+                                        <a href="/plumbingInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Install</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
+                                        <a href="/pipeInstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Pipe Installation</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
+                                        <a href="/bidetSpray" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bidet Spray</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/bathroomRack" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Bathroom Rack</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Aircon Servicing Contract</a>
+
+                            <!-- Submenu for Plumbing leak -->
+                            <div id="submenu-plumbing-choke" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1002; transition: left 0.3s ease-in-out; overflow-y: auto; overflow-x: hidden;">
+                                <div style="padding: 16px;">
+                                    <div style="margin-bottom: 6%;">
+                                        <div>
+                                            <button id="return-plumbing-choke-menu" style="font-size: 18px; padding: 8px;">
+                                                <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
+                                        <a href="/plumbingLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Plumbing Leak</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/tapLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Leaking Tap</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/heaterLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Heater Leak</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/showerService" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Shower Leak</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
-                                <a href="/" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Commercial & Industria Service</a>
+
+                            <!-- Water Heater Submenu -->
+                            <div id="submenu-water-heater" style="position: fixed; top: 0; left: -100%; height: 100%; width: 300px; background-color: white; z-index: 1002; transition: left 0.3s ease-in-out; overflow-y: auto; overflow-x: hidden;">
+                                <div style="padding: 16px;">
+                                    <div style="margin-bottom: 6%;">
+                                        <div>
+                                            <button id="return-water-heater-menu" style="font-size: 18px; padding: 8px;">
+                                                <svg id="left-arrow" style="width: 1.4rem; height: 1.4rem; float: left; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;background: #f3f0f0;">
+                                        <a href="/waterHeater" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/heaterinstall" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Install</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/waterheaterLeak" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Leak</a>
+                                    </div>
+                                    <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
+                                        <a href="/heaterRepair" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Water Heater Repair</a>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
-                    <!-- aircon Submenu -->
+                    <!-- Aircon -->
 
 
 
-                    <!--  Plumber -->
                     <div class="newMb" style="margin-left: -23px;border-bottom: 1px solid #e9e8e8; width: 112%;">
                         <button id="plumber-btn" style="display: block; width: 100%; text-align: left; background: none; border: none; font-size: 18px; padding: 12px 0; color: black; cursor: pointer;"><span style="margin-left: 8%;">Plumber </span><svg id="about-arrow" style="width: 1rem; height: 1rem; float: right; transition: transform 0.3s ease;" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1527,7 +1748,7 @@
                             </div>
 
                             <!-- Decking Submenu Items -->
-                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;background: #f3f0f0;">
+                            <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;border-top: 1px solid #e9e8e8;">
                                 <a href="/decking" style="display: block; text-decoration: none; color: black; padding: 12px 0; font-size: 18px;margin-left: 5%">Decking</a>
                             </div>
                             <div class="newMb" style="margin-left: -15px;border-bottom: 1px solid #e9e8e8; width: 112%;">
@@ -1553,40 +1774,107 @@
     <!-- Header -->
 
 
-
-    <!-- Banner Section -->
-    <section class="bg-cover bg-center relative parallax" style="background-image: url('https://static.vecteezy.com/system/resources/previews/025/473/952/non_2x/male-commercial-electrician-at-work-ai-generated-photo.jpg'); background-size: cover; background-repeat: no-repeat; height: 100vh; background-attachment: fixed;">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="relative z-10 p-6 md:p-24 banner flex flex-col items-center justify-center text-center text-white" style="padding-top: 150px;">
-            <h1 class="text-2xl md:text-4xl font-bold" style="font-size: 43px; text-align: center; font-family: math;line-height: normal;">Household Repairs & Handyman Solutions <br>
-                Conveniently Delivered Right to Your Doorstep</h1>
-            <p class="mt-4 md:mt-6" style="font-size: 18px; line-height: 1.2; text-align: center;">Reach out to us with your home maintenance needs, and we'll take care of the rest. <br> Get in touch with our handyman and service experts for immediate home assessments and direct quotes.</p>
-            <a id="sendbtn" class="shortcode_wa_button mt-4 md:mt-6 inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" href="https://api.whatsapp.com/send?phone=6596585757&amp;text=Hello, I would like to know more about the following home service" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">
-                <img src="img/whatsapp.png" alt="" class="mr-2"><span>WhatsApp to Start Now!</span>
-            </a>
+    <section class="parallax" style="position: relative; background: url('https://www.aircon-servicing.com.sg/wp-content/uploads/2019/08/air-con-home-servicing.jpg') no-repeat center center fixed; background-size: cover; height: 300px;">
+        <div class="overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
+        <div class="content" style="position: relative; z-index: 1; display: flex; flex-direction: column; padding-left: 1rem; padding-right: 1rem; text-align: center; gap: 1rem;">
+            <h1 style="font-size: 2.5rem; color: white; font-weight: 100; margin-bottom: 1.5rem;">Aircon Not Cold</h1>
+            <p style="font-size: 1rem; color: antiquewhite;">Home / Service / Aircon Not Cold</p>
         </div>
     </section>
 
-    <div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
-        <div class="relative group">
-            <a title="Let's Start Chat" href="https://wa.me/6596585757" target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
-                <img class="object-cover object-center w-full h-full rounded-full" src="{{ url('img/social.png') }}" />
-            </a>
-            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute right-full mr-2 w-32 bg-white text-black text-center text-lg rounded py-1 shadow-lg border-2 border-black" style="top: 50%; transform: translateY(-50%);">
-                Let's Start Chat
-                <svg class="absolute text-white h-2 w-full top-1/2 right-0" style="transform: translateY(-50%); fill: currentColor;" viewBox="0 0 255 255" xmlns="http://www.w3.org/2000/svg">
-                    <polygon points="0,0 127.5,127.5 0,255" />
-                </svg>
+
+
+    <!-- component -->
+    <section class="relative pt-16 bg-blueGray-50">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap items-center">
+                <div class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-500">
+                        <img alt="..." src="https://www.endesa.com/content/dam/endesa-com/endesaclientes/blog/imagenes/05_POST_limpiaraireacondicionado.jpg" class="w-full align-middle rounded-t-lg">
+                        <blockquote class="relative p-8 mb-4">
+                            <h4 class="text-xl font-bold text-white">
+                                Aircon Not Cold Services
+                            </h4>
+                            <p class="text-md font-light mt-2 text-white">
+                                Our Aircon Not Cold Services specialize in providing expert installation of cooling systems for both residential and commercial properties. We ensure seamless installation for optimal performance, energy efficiency, and long-lasting comfort. Our team is dedicated to delivering prompt and reliable solutions tailored to meet your specific air conditioning needs.
+                            </p>
+
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-6/12 px-4">
+                    <div class="flex flex-wrap">
+                        <div class="w-full md:w-6/12 px-4">
+                            <div class="relative flex flex-col mt-4">
+                                <div class="px-4 py-5 flex-auto">
+                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
+                                        <img src={{ url('img/service-tools.gif') }} alt="">
+                                    </div>
+                                    <h6 class="text-xl mb-1 font-semibold">Aircon Not Cold EXPERTS</h6>
+                                    <p class="mb-4 text-blueGray-500">
+                                        Our HVAC specialists have over 35 years of experience in the industry, providing expert installation, maintenance, and repair services for thousands of residential and commercial properties.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="relative flex flex-col min-w-0">
+                                <div class="px-4 py-5 flex-auto">
+                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
+                                        <img src={{ url('img/under-construction.gif') }} alt="">
+                                    </div>
+                                    <h6 class="text-xl mb-1 font-semibold">
+                                        FULL 1-STOP Aircon Not Cold SERVICES
+                                    </h6>
+                                    <p class="mb-4 text-blueGray-500">
+                                        Our comprehensive Aircon Not Cold service is designed to be hassle-free for you. From installation to repairs and maintenance, we ensure that your cooling systems are running smoothly and efficiently.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-6/12 px-4">
+                            <div class="relative flex flex-col min-w-0 mt-4">
+                                <div class="px-4 py-5 flex-auto">
+                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
+                                        <img src={{ url('img/tools.gif') }} alt="">
+                                    </div>
+                                    <h6 class="text-xl mb-1 font-semibold">RANGE OF Aircon Not Cold SERVICES</h6>
+                                    <p class="mb-4 text-blueGray-500">
+                                        Our HVAC technicians offer a full range of Aircon Not Cold services, including system installations, repairs, maintenance, and troubleshooting to ensure your cooling system operates efficiently.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="relative flex flex-col min-w-0">
+                                <div class="px-4 py-5 flex-auto">
+                                    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white" style="border: 1px solid #0097a7;">
+                                        <img src={{ url('img/toolbox.gif') }} alt="">
+                                    </div>
+                                    <h6 class="text-xl mb-1 font-semibold">Service Assistance Now!</h6>
+                                    <p class="mb-4 text-blueGray-500">
+                                    <ol>
+                                        <li class="flex"> <img src="{{ url('img/hastag.png') }}" alt=""> Message us on Whatsapp</li>
+                                        <br>
+                                        <li class="flex"> <img src="{{ url('img/hastag.png') }}" alt=""> Chat with us</li>
+                                        <br>
+                                        <li class="flex"> <img src="{{ url('img/hastag.png') }}" alt=""> Get Job Done!</li>
+                                    </ol>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
+    </section>
 
     <section class="mt-10">
         <div class="relative flex flex-col md:flex-row items-center md:items-start mt-8">
             <span class="bg-yellow-500 yellow-diamond absolute left-0 h-20 w-20 hidden md:block transform rotate-45" style="margin-left: 47%;"></span>
             <h3 id="handyman-services" class="bg-black text-white black-polygon h-auto md:h-20 flex items-center justify-center ml-0 md:ml-24 pl-4 pr-4 md:pr-24 text-center md:text-left w-11/12 md:max-w-2/3" style="font-size: 26px;font-weight: 600;font-family: Josefin sans-serif;margin-left: 4%;">
-                <span class="inner-span">All-in-One Handyman Services for Modern Living Convenience</span>
+                <span class="inner-span">All-in-One Aircon Not Cold for Modern Living Convenience</span>
             </h3>
             <style>
                 @media (max-width: 768px) {
@@ -1603,7 +1891,10 @@
         </div>
 
 
-        <p class="text-center text-lg text-gray-600 mt-6 md:mt-12">We provide efficient solutions to ensure every home task is expertly handled by qualified professionals.</p>
+        <p class="text-center text-lg text-gray-600 mt-6 md:mt-12">
+            We provide efficient air conditioning solutions to ensure your cooling needs are expertly managed by our qualified professionals.
+        </p>
+
 
         <!-- component -->
         <section class=" bg-blue-500ray-50">
@@ -1623,8 +1914,11 @@
                                         <path d="M28.488 7.301a5.354 5.354 0 0 0-2.743-3.305c-.112-.056-2.96-1.2-4.942-1.996l.87 4.987a.52.52 0 0 1-.488.746.535.535 0 0 1-.101-.01L16.5 6.806V12a.5.5 0 1 1-1 0V6.806l-4.583.917a.518.518 0 0 1-.613-.598L11.196 2c-1.982.796-4.828 1.94-4.94 1.996a5.36 5.36 0 0 0-2.75 3.328l-1.492 6.26c-.042.175.01.359.138.486l.608.608a5.487 5.487 0 0 0 3.907 1.618c.196 0 .375-.111.464-.287l1.072-2.145c.013.292.02.584.02.876V28.48c0 .231.153.435.375.499A27.03 27.03 0 0 0 16 30c2.508 0 5.015-.34 7.402-1.022a.52.52 0 0 0 .376-.5V14.74c0-.292.006-.584.019-.876l1.073 2.145a.519.519 0 0 0 .463.287 5.487 5.487 0 0 0 3.907-1.618l.608-.608a.518.518 0 0 0 .138-.487l-1.498-6.282zM17.03 11.5c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1zm0-2c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1z">
                                         </path>
                                     </svg>
-                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white ">Effortless Scheduling</h3>
-                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white  ">We deliver time-saving solutions, ensuring every home task is expertly completed by qualified professionals.</p>
+                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white">Effortless Air Conditioning Scheduling</h3>
+                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white">
+                                        We provide seamless scheduling for air conditioning services, ensuring that each appointment is handled promptly and efficiently by our team of qualified professionals.
+                                    </p>
+
                                 </div>
                             </a>
 
@@ -1636,8 +1930,11 @@
                                         <path d="M13.6 4.8v54.3c0 .4.3.8.8.8H31v-2.3H19c-.6 0-1-.5-1-1s.5-1 1-1h12V4.1H14.4C14 4.1 13.6 4.4 13.6 4.8zM29.1 38.2c0 .6-.5 1-1 1s-1-.5-1-1v-1.3c0-.6.5-1 1-1s1 .5 1 1V38.2zM29.1 25.8v6.5c0 .6-.5 1-1 1s-1-.5-1-1v-6.5c0-.6.5-1 1-1S29.1 25.3 29.1 25.8zM16.1 11c0-1.6 1.3-2.8 2.8-2.8h7.4c.6 0 1 .5 1 1 0 .6-.5 1-1 1H19c-.4 0-.8.3-.8.8v17.2c0 .6-.5 1-1 1-.6 0-1-.5-1-1V11zM49.6 4.1H33v51.5h12c.4 0 .8-.3.8-.8V9.2c0-.6.5-1 1-1s1 .5 1 1v45.5c0 1.6-1.3 2.8-2.8 2.8H33v2.3h16.6c.4 0 .8-.3.8-.8V4.8C50.4 4.4 50 4.1 49.6 4.1zM37 38.2c0 .6-.5 1-1 1s-1-.5-1-1v-1.3c0-.6.5-1 1-1s1 .5 1 1V38.2zM37 32.3c0 .6-.5 1-1 1s-1-.5-1-1v-6.5c0-.6.5-1 1-1s1 .5 1 1V32.3z">
                                         </path>
                                     </svg>
-                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white ">Comprehensive Convenience</h3>
-                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white">Our solutions are designed to provide a seamless experience. Choose the services or product installations you need, and we'll handle everything for you.</p>
+                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white">Comprehensive Air Conditioning Convenience</h3>
+                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white">
+                                        Our air conditioning solutions are designed to offer a seamless experience. Select the services or system installations you need, and our experts will take care of the rest for you.
+                                    </p>
+
                                 </div>
                             </a>
 
@@ -1649,46 +1946,39 @@
                                         <path d="M60,34H56a1,1,0,0,0-1,1v3H52V28a1,1,0,0,0-1-1H47.51l-4.7-6.58A1,1,0,0,0,42,20H35V17h3a1,1,0,0,0,1-1V12a1,1,0,0,0-1-1H26a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h3v3H24a1,1,0,0,0-.81.42L18.49,27H13a1,1,0,0,0-1,1V38H9V35a1,1,0,0,0-1-1H4a1,1,0,0,0-1,1V47a1,1,0,0,0,1,1H8a1,1,0,0,0,1-1V44h3v5a1,1,0,0,0,1,1H24.59l2.7,2.71A1,1,0,0,0,28,53H48a1,1,0,0,0,.71-.29l3-3A1,1,0,0,0,52,49V44h3v3a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1V35A1,1,0,0,0,60,34ZM35.77,37.64l-5,6A1,1,0,0,1,30,44a1,1,0,0,1-.64-.23,1,1,0,0,1-.13-1.41L32.87,38H29a1,1,0,0,1-.77-1.64l5-6a1,1,0,0,1,1.54,1.28L31.13,36H35a1,1,0,0,1,.77,1.64Z">
                                         </path>
                                     </svg>
-                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white ">Exceptional Customer Support</h3>
-                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white">Our dedicated team provides attentive follow-up with clear and transparent communication. We'll assess the issue and recommend the best solution tailored to your specific needs.</p>
+                                    <h3 class="mt-8 text-2xl font-semibold text-black group-hover:text-white">Exceptional Air Conditioning Support</h3>
+                                    <p class="mt-4 text-lg text-gray-600 group-hover:text-white">
+                                        Our dedicated team offers attentive follow-up with clear and transparent communication. We'll assess your cooling system issues and recommend the best solution tailored to your specific needs.
+                                    </p>
+
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
         </section>
+        <hr>
     </section>
 
+    <div>
+        <div class="bg-gray-100 lg:py-12 lg:flex lg:justify-center">
+            <div class="bg-white lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg">
+                <div class="lg:w-1/2">
+                    <div class="h-64 bg-cover lg:rounded-lg lg:h-full" style="background-image:url('https://www.electricrate.com/wp-content/uploads/2023/06/how-to-make-the-air-conditioner-colder.jpg')"></div>
+                </div>
+                <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
+                    <h2 class="text-3xl text-gray-800 font-bold">Aircon Not <span class="text-indigo-600">Cold</span></h2>
+                    <p class="mt-4 text-gray-600">Air conditioners are considered a must-have appliance in all homes, offices, commercial buildings, and even schools. A working, reliable air conditioning unit is key to comfort in Singapore’s hot and humid climate. Which is why when your aircon starts blowing warm instead of cold air, it is immediately a cause for concern.
 
-    <div class="flex justify-center items-center dark:bg-slate-800" style="margin-top: -92px;">
-        <div class="mx-auto mt-10 flex justify-center px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8">
-            <div class="text-center ">
-                <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-slate-200 sm:text-5xl md:text-6xl">
-                    <span class="block xl:inline"><span class="mb-1 block">We've Completed More Than</span>
-                        <span class="bg-gradient-to-r from-indigo-400 to-pink-600 bg-clip-text text-transparent">
+                        When no regular aircon servicing is done or there is prolonged lack of aircon maintenance, your aircon may face some of these common issues, including your aircon not being cold enough.
 
-                            <span class="relative mt-3 whitespace-nowrap text-blue-600"><svg aria-hidden="true" viewBox="0 0 418 42" class="absolute top-3/4 left-0 right-0 m-auto h-[0.58em] w-fit fill-pink-400/50" preserveAspectRatio="none">
-                                    <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
-                                    </path>
-                                </svg>
-                                <span class="relative">20,000+</span>
-                            </span>
-                            Works
-                        </span>
-                    </span>
-                </h1>
-                <div class="mt-5 sm:mt-8 sm:flex sm:justify-center">
-                    <div class="rounded-md shadow">
-                        <a href="https://api.whatsapp.com/send?phone=6596585757&text=Hello%2C%20I%20need%20assistance%20today" target="_blank" class="flex w-full items-center justify-center rounded-md border border-transparent bg-green-500 px-8 py-3 text-base font-medium text-white hover:bg-green-700 md:py-4 md:px-10 md:text-lg">
-                            How Can We Help You Today?
-                            <img src="http://127.0.0.1:8000/img/social.png" style="height: 25px; margin-left: 10px;" alt="">
-                        </a>
-                    </div>
+                        All air conditioners will face one of these issues in its lifespan due to frequent use, and will need an aircon repair at some point. For extensive damages and problems, it is always better to contact a professional aircon service company. </p>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+
+
     <div class="inline-flex items-center justify-center w-full mt-6">
         <hr class="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700" style="width: 95%;">
         <div class="absolute px-4 -translate-x-1/2 bg-white left-90 dark:bg-gray-900">
@@ -1699,308 +1989,697 @@
     </div>
 
 
-    <!-- Popular Home Maintenance Services -->
-    <section class="mt-14">
-        <div class="max-w-sm p-6 bg-white rounded-lg dark:border-gray-700 text-center mx-auto">
-            <svg class="mx-auto mb-6" fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" viewBox="0 0 495.398 495.398" xml:space="preserve">
+    <section class="max-w-7xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://www.aircon-servicing.com/wp-content/uploads/2022/08/How-Long-Does-it-Take-to-Repair-an-Air-Conditioner-1200x675.jpg" alt="Image 1" class="w-full h-48 object-cover">
+
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://www.aircon-servicing.com.sg/wp-content/uploads/2023/02/The-Impact-Of-Aircon-Servicing-On-The-Efficiency-Of-Your-Aircon.jpg" alt="Image 2" class="w-full h-48 object-cover">
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://www.airconservicesg.com/wp-content/uploads/2021/03/How-to-Know-if-Your-Air-Conditioner-Needs-Servicing.jpg" alt="Image 3" class="w-full h-48 object-cover">
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://www.kbe.com.sg/wp-content/uploads/2017/01/DSCF2118-e1494568451651.jpg" alt="Image 4" class="w-full h-48 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-8 lg:py-12">
+        <!-- Title -->
+        <h2 class="text-3xl lg:text-4xl font-bold text-center mb-8">Possible Aircon Leak Causes</h2>
+
+        <!-- Grid Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1: Frozen Evaporator Coils -->
+            <div class="bg-white border-l-4 border-blue-500 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">Dirty Air Filter
+                </h3>
+                <p class="text-gray-700 text-sm">
+                    Without going through regular aircon servicing, your air filter is clogged with dirt and dust. It restricts air flow into and out of your aircon unit, causing your aircon to be not cold. The air filter should be cleaned every 3 months, and for commercial aircons, on a monthly basis.
+                </p>
+            </div>
+
+            <!-- Card 2: Blocked Drainage Pipe -->
+            <div class="bg-white border-l-4 border-yellow-500 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">Faulty Compressor</h3>
+                <p class="text-gray-700 text-sm">
+                    The compressor component in the aircon manages the temperature of the refrigerant coolant in the evaporator coils. This helps to remove heat from the warm air of your home to the condenser (outdoor aircon unit), and distribute cold air back. If it is damaged or clogged, it will result in the aircon not being cold.
+                </p>
+            </div>
+
+            <!-- Card 3: Aircon Pump Spoilt -->
+            <div class="bg-white border-l-4 border-red-500 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">Faulty Fan Motor</h3>
+                <p class="text-gray-700 text-sm">
+                    If the fan motor cannot perform its optimal function due to dirt and debris, then the aircon will not get the room cold as much as it should. The fan could be repaired or replaced depending on how severe the degree of damage is. Our trained aircon technicians can assist you with this.
+                </p>
+            </div>
+
+            <!-- Card 4: Drainage Tray Full -->
+            <div class="bg-white border-l-4 border-green-500 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">Low Aircon Gas</h3>
+                <p class="text-gray-700 text-sm">
+                    The coolant liquid used for cooling the warm air in the room, which is pumped by the AC’s compressor into the evaporator coils, is a refrigerant that is refilled by an aircon gas top up. If the aircon doesn’t seem to be cold enough, this could be one of the reasons.
+                </p>
+            </div>
+
+            <!-- Card 5: Faulty Aircon Installation -->
+            <div class="bg-white border-l-4 border-indigo-500 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">Clogged Condenser Coil</h3>
+                <p class="text-gray-700 text-sm">
+                    The condenser coils removes heat from the air conditioner’s compressor. The efficiency of these coils may get reduced due to dirt or dust as it is located in the outdoors. This problem can be solved with servicing at regular intervals, which we offer as part of our aircon services.
+                </p>
+            </div>
+
+            <!-- Card 6: Leaking Condenser Coil -->
+            <div class="bg-white border-l-4 border-purple-500 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">Frozen Evaporator Coils</h3>
+                <p class="text-gray-700 text-sm">
+                    Coolant is pumped through the evaporator coils, helping the aircon to get cold to cool the room. The evaporator coils may get frozen or clogged because of dirt stuck in them, resulting in the aircon not being cold. This symptom is usually accompanied with the aircon leaking water.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- AIRCON INSTALLATION -->
+    <div class="inline-flex items-center justify-center w-full mt-6">
+        <hr class="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700" style="width: 95%;">
+        <div class="absolute px-4 -translate-x-1/2 bg-white left-90 dark:bg-gray-900">
+            <svg width="64px" height="64px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                 <g id="SVGRepo_iconCarrier">
-                    <g>
-                        <g>
-                            <g>
-                                <path d="M487.083,225.514l-75.08-75.08V63.704c0-15.682-12.708-28.391-28.413-28.391c-15.669,0-28.377,12.709-28.377,28.391v29.941L299.31,37.74c-27.639-27.624-75.694-27.575-103.27,0.05L8.312,225.514c-11.082,11.104-11.082,29.071,0,40.158c11.087,11.101,29.089,11.101,40.172,0l187.71-187.729c6.115-6.083,16.893-6.083,22.976-0.018l187.742,187.747c5.567,5.551,12.825,8.312,20.081,8.312c7.271,0,14.541-2.764,20.091-8.312C498.17,254.586,498.17,236.619,487.083,225.514z"></path>
-                                <path d="M257.561,131.836c-5.454-5.451-14.285-5.451-19.723,0L72.712,296.913c-2.607,2.606-4.085,6.164-4.085,9.877v120.401c0,28.253,22.908,51.16,51.16,51.16h81.754v-126.61h92.299v126.61h81.755c28.251,0,51.159-22.907,51.159-51.159V306.79c0-3.713-1.465-7.271-4.085-9.877L257.561,131.836z"></path>
-                            </g>
-                        </g>
-                    </g>
+                    <path d="M779.7 375.2C582.2 331.9 744.1 58.1 473.5 80.8s-527.2 645.8-46.8 791.7 728-415 353-497.3z" fill="#464BD8"></path>
+                    <path d="M724.3 356.6m-36.6 0a36.6 36.6 0 1 0 73.2 0 36.6 36.6 0 1 0-73.2 0Z" fill="#514DDF"></path>
+                    <path d="M724.3 329a27.6 27.6 0 1 1 0 55.2 27.6 27.6 0 1 1 0-55.2m0-17.9c-25.1 0-45.5 20.4-45.5 45.5s20.4 45.5 45.5 45.5 45.5-20.4 45.5-45.5-20.4-45.5-45.5-45.5z" fill="#151B28"></path>
+                    <path d="M395.3 475.4c-1.7 0-3.4-0.7-4.7-1.9l-4.6-4.6a6.52 6.52 0 0 1 0-9.3l210.5-210.5c1.2-1.2 2.9-1.9 4.7-1.9 1.7 0 3.4 0.7 4.7 1.9l4.6 4.6c2.6 2.6 2.6 6.7 0 9.3L400 473.5a6.83 6.83 0 0 1-4.7 1.9z" fill="#FFFFFF"></path>
+                    <path d="M601.2 253.7l4.6 4.6-210.5 210.5-4.6-4.6 210.5-210.5m0-13.1c-3.4 0-6.7 1.3-9.3 3.9L381.4 454.9a13.1 13.1 0 0 0-3.9 9.3c0 3.5 1.4 6.8 3.9 9.3l4.6 4.6a13.03 13.03 0 0 0 18.6 0l210.5-210.5c2.5-2.5 3.9-5.8 3.9-9.3 0-3.5-1.4-6.8-3.9-9.3l-4.6-4.6c-2.5-2.5-5.9-3.8-9.3-3.8z" fill="#151B28"></path>
+                    <path d="M600.4 690.1c-1.7 0-3.4-0.6-4.7-1.9L385.2 477.7a6.52 6.52 0 0 1 0-9.3l6.3-6.3c1.3-1.3 3-1.9 4.7-1.9s3.4 0.6 4.7 1.9l210.5 210.5c2.6 2.6 2.6 6.7 0 9.3l-6.3 6.3c-1.3 1.2-3 1.9-4.7 1.9z" fill="#FFFFFF"></path>
+                    <path d="M396.2 466.7l210.5 210.5-6.3 6.3L389.9 473l6.3-6.3m0-13.2c-3.4 0-6.7 1.3-9.3 3.9l-6.3 6.3c-2.5 2.5-3.9 5.8-3.9 9.3s1.4 6.8 3.9 9.3l210.5 210.5c2.5 2.5 5.8 3.9 9.3 3.9s6.8-1.4 9.3-3.9l6.3-6.3c5.1-5.1 5.1-13.5 0-18.6L405.5 457.4c-2.6-2.6-6-3.9-9.3-3.9z" fill="#151B28"></path>
+                    <path d="M598.3 292c-2.2 0-4.3-0.8-6-2.5-8.4-8.4-13-19.5-13-31.3s4.6-22.9 13-31.3c8.4-8.4 19.5-13 31.3-13s22.9 4.6 31.3 13a8.4 8.4 0 0 1 2.5 6c0 2.2-0.9 4.4-2.5 6l-50.6 50.6a8.16 8.16 0 0 1-6 2.5z" fill="#2AEFC8"></path>
+                    <path d="M623.6 222.5c9.2 0 18.3 3.5 25.3 10.5l-50.6 50.6c-14-14-14-36.6 0-50.6 7-7 16.2-10.5 25.3-10.5m0-17c-14.1 0-27.3 5.5-37.3 15.4a52.75 52.75 0 0 0 0 74.6c3.2 3.2 7.5 5 12 5s8.8-1.8 12-5l50.6-50.6c6.6-6.6 6.6-17.4 0-24a52.5 52.5 0 0 0-37.3-15.4z" fill="#151B28"></path>
+                    <path d="M399.2 489.2c-12.4 0-22.5-10.1-22.5-22.5s10.1-22.5 22.5-22.5 22.5 10.1 22.5 22.5-10.1 22.5-22.5 22.5z" fill="#2AEFC8"></path>
+                    <path d="M399.2 452.7c7.7 0 14 6.3 14 14s-6.3 14-14 14-14-6.3-14-14c-0.1-7.7 6.2-14 14-14m0-17c-17.1 0-31 13.9-31 31s13.9 31 31 31 31-13.9 31-31c-0.1-17.1-14-31-31-31z" fill="#151B28"></path>
+                    <path d="M664 681.7a4.7 4.7 0 0 1-4.7-4.7v-22.7c0-2.6 2.1-4.7 4.7-4.7h22.7c2.6 0 4.7 2.1 4.7 4.7V677c0 2.6-2.1 4.7-4.7 4.7H664z" fill="#2AEFC8"></path>
+                    <path d="M686.7 654.3V677H664v-22.7h22.7m0-9.4H664c-5.2 0-9.4 4.2-9.4 9.4V677c0 5.2 4.2 9.4 9.4 9.4h22.7c5.2 0 9.4-4.2 9.4-9.4v-22.7c0-5.2-4.2-9.4-9.4-9.4z" fill="#151B28"></path>
+                    <path d="M430.4 726.4c-5.1 0-9.3-4.1-9.3-9.3 0-22.5 18.3-40.8 40.8-40.8h280.5c22.5 0 40.8 18.3 40.8 40.8 0 5.1-4.1 9.3-9.3 9.3H430.4z" fill="#FFFFFF"></path>
+                    <path d="M742.5 685.5a31.6 31.6 0 0 1 31.6 31.6H430.4a31.6 31.6 0 0 1 31.6-31.6h280.5m0-18.5H462c-27.6 0-50.1 22.5-50.1 50.1 0 10.2 8.3 18.5 18.5 18.5H774c10.2 0 18.5-8.3 18.5-18.5 0.1-27.6-22.4-50.1-50-50.1z" fill="#151B28"></path>
+                    <path d="M774 717.1H464.4c0-11.3 9.1-20.4 20.4-20.4h268.8c11.3 0 20.4 9.1 20.4 20.4z" fill="#464BD8"></path>
+                    <path d="M632.4 434.1c-2.5 0-4.8-1-6.6-2.7a121.8 121.8 0 0 1-35.9-86.6c0-32.7 12.7-63.5 35.9-86.6a121.8 121.8 0 0 1 86.6-35.9c32.7 0 63.5 12.7 86.6 35.9a9.3 9.3 0 0 1 0 13.1L639 431.4a9.14 9.14 0 0 1-6.6 2.7z" fill="#FFFFFF"></path>
+                    <path d="M712.5 231.6c29 0 58 11.1 80.1 33.2L632.4 424.9c-44.2-44.2-44.2-115.9 0-160.1 22.1-22.2 51.1-33.2 80.1-33.2m0-18.6c-35.2 0-68.3 13.7-93.2 38.6-24.9 24.9-38.6 58-38.6 93.2s13.7 68.3 38.6 93.2a18.55 18.55 0 0 0 26.2 0l160.1-160.1c7.2-7.2 7.2-19 0-26.2a130.63 130.63 0 0 0-93.1-38.7z" fill="#151B28"></path>
+                    <path d="M760.1 297.2c-35.3-35.3-92.4-35.3-127.7 0s-35.3 92.4 0 127.7l127.7-127.7z" fill="#2AEFC8"></path>
                 </g>
             </svg>
-            <a href="#">
-                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Popular Home Maintenance Services</h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Contact us to diagnose and receive an instant quote for all your home maintenance and handyman tasks, including air conditioning, plumbing, and electrical services.</p>
         </div>
+    </div>
 
-        <div class="flex flex-wrap gap-6 justify-center mt-6">
-            <!-- card-1 -->
-            <a href="/plumbing" target="_blank">
-                <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <img class="rounded-t-lg" src="https://vlasconstruction.com/wp-content/uploads/2023/08/Plumbing-Services-003.jpg" alt="" style="border-top: 5px solid #f7a80c;" />
-                    <div class="p-5">
-                        <h5 class="mb-2 text-xl text-center font-medium tracking-tight text-gray-900 dark:text-white">PLUMBER SERVICES</h5>
-                    </div>
+
+    <!-- component -->
+    <section>
+        <div class="py-16">
+            <div class="mx-auto px-6 max-w-6xl text-gray-500">
+                <div class="text-center">
+                    <h2 class="text-3xl text-gray-950 dark:text-white font-semibold">OUR AIRCON LEAK REPAIR INCLUDES</h2>
                 </div>
-            </a>
-
-            <!-- card-1 -->
-            <!-- card-2 -->
-            <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="/electric">
-                    <img class="rounded-t-lg" src="https://images.squarespace-cdn.com/content/v1/60d1c27a3fe67824cc3c5f3b/d4c00972-1be7-4ffe-9dcc-ababba2b0cc3/Midatt+electrical+services.jpg" alt="" style="border-top: 5px solid #f7a80c;" />
-                </a>
-                <div class="p-5">
-                    <a href="/electric">
-                        <h5 class="mb-2 text-xl text-center font-medium tracking-tight text-gray-900 dark:text-white">ELECTRIC SERVICES</h5>
-                    </a>
-                </div>
-            </div>
-
-            <!-- card-2 -->
-            <!-- card-3 -->
-            <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="/handyman">
-                    <img class="rounded-t-lg" src="https://codeexmaintenance.com/wp-content/uploads/2022/01/handyman-.png" alt="" style="border-top: 5px solid #f7a80c;" />
-                </a>
-                <div class="p-5">
-                    <a href="/handyman">
-                        <h5 class="mb-2 text-xl text-center font-medium tracking-tight text-gray-900 dark:text-white">HANDYMAN SERVICES</h5>
-                    </a>
-                </div>
-            </div>
-
-            <!-- card-3 -->
-        </div>
-        <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-                <!-- CARD 1 -->
-                <div class="rounded overflow-hidden flex flex-col" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
-                    <a href="/wood" target="_blank"></a>
-                    <div class="relative"><a href="/wood" target="_blank">
-                            <img class="w-full h-48 object-cover" src="https://www.itsplaneandsimple.com/Content/BlogImages/P%26S_Blog_Images-wood2_100821142841.jpg" alt="Sunset in the mountains">
-                            <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                    <div class="relative group overflow-hidden p-8 rounded-xl bg-white border border-gray-200 dark:border-gray-800 dark:bg-gray-900">
+                        <div aria-hidden="true" class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-blue-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"></div>
+                        <div class="relative">
+                            <div class="border border-blue-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-lg dark:bg-gray-900 dark:border-white/15 before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-blue-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+                                <svg class="text-[#000014] dark:text-white" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 128 128">
+                                    <defs>
+                                        <linearGradient id="deviconAstro0" x1="882.997" x2="638.955" y1="27.113" y2="866.902" gradientTransform="scale(.1)" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="currentColor"></stop>
+                                            <stop offset="1" stop-color="currentColor"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="deviconAstro1" x1="1001.68" x2="790.326" y1="652.45" y2="1094.91" gradientTransform="scale(.1)" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#ff1639"></stop>
+                                            <stop offset="1" stop-color="#ff1639" stop-opacity="0"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <path fill="url(#deviconAstro0)" d="M81.504 9.465c.973 1.207 1.469 2.836 2.457 6.09l21.656 71.136a90.079 90.079 0 0 0-25.89-8.765L65.629 30.28a1.833 1.833 0 0 0-3.52.004L48.18 77.902a90.104 90.104 0 0 0-26.003 8.778l21.758-71.14c.996-3.25 1.492-4.876 2.464-6.083a8.023 8.023 0 0 1 3.243-2.398c1.433-.575 3.136-.575 6.535-.575H71.72c3.402 0 5.105 0 6.543.579a7.988 7.988 0 0 1 3.242 2.402Zm0 0"></path>
+                                    <path fill="#ff5d01" d="M84.094 90.074c-3.57 3.055-10.696 5.137-18.903 5.137c-10.07 0-18.515-3.137-20.754-7.356c-.8 2.418-.98 5.184-.98 6.954c0 0-.527 8.675 5.508 14.71a5.671 5.671 0 0 1 5.672-5.671c5.37 0 5.367 4.683 5.363 8.488v.336c0 5.773 3.527 10.719 8.543 12.805a11.62 11.62 0 0 1-1.172-5.098c0-5.508 3.23-7.555 6.988-9.938c2.989-1.894 6.309-4 8.594-8.222a15.513 15.513 0 0 0 1.875-7.41a15.55 15.55 0 0 0-.734-4.735m0 0"></path>
+                                    <path fill="url(#deviconAstro1)" d="M84.094 90.074c-3.57 3.055-10.696 5.137-18.903 5.137c-10.07 0-18.515-3.137-20.754-7.356c-.8 2.418-.98 5.184-.98 6.954c0 0-.527 8.675 5.508 14.71a5.671 5.671 0 0 1 5.672-5.671c5.37 0 5.367 4.683 5.363 8.488v.336c0 5.773 3.527 10.719 8.543 12.805a11.62 11.62 0 0 1-1.172-5.098c0-5.508 3.23-7.555 6.988-9.938c2.989-1.894 6.309-4 8.594-8.222a15.513 15.513 0 0 0 1.875-7.41a15.55 15.55 0 0 0-.734-4.735m0 0"></path>
+                                </svg>
                             </div>
-                        </a>
-                    </div>
-                    <div class="px-6 py-4 mb-auto" style="text-align: center;">
-                        <a href="/wood" target="_blank" class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Wood Varnishing</a>
-                    </div>
-                    <div class="px-6 py-1 flex flex-row items-center justify-between" style="background-color: #f7a80c;">
-                    </div>
-                </div>
-                <!-- CARD 2 -->
-                <div class="rounded overflow-hidden flex flex-col" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
-                    <a href="/deepclean" target="_blank"></a>
-                    <div class="relative"><a href="/deepclean" target="_blank">
-                            <img class="w-full h-48 object-cover" src="https://media.licdn.com/dms/image/D5612AQHkrhi78vXwrg/article-cover_image-shrink_720_1280/0/1691741644459?e=2147483647&v=beta&t=ClGXl6miAU8Al-dBeQVIYOZ9PynVy6d5JstgA3ZOROs" alt="Sunset in the mountains">
-                            <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="px-6 py-4 mb-auto" style="text-align: center;">
-                        <a href="/deepclean" target="_blank" class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Deep Cleaning</a>
-                    </div>
-                    <div class="px-6 py-1 flex flex-row items-center justify-between" style="background-color: #f7a80c;">
-                    </div>
-                </div>
 
-                <!-- CARD 3 -->
-                <div class="rounded overflow-hidden flex flex-col" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
-                    <a href="/floorpolish" target="_blank"></a>
-                    <div class="relative"><a href="/floorpolish" target="_blank">
-                            <img class="w-full h-48 object-cover" src="https://d7fcfvvxwoz9e.cloudfront.net/dom43635/wp-content/uploads/2020/08/polishing-a-concrete-floor.png" alt="Sunset in the mountains">
-                            <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                            <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                <p class="text-gray-700 dark:text-gray-300">Call us now to speak to our consultants to understand your aircon water leaking issue, We provide an on-site inspection for your aircon leaks and are able to diagnose where the specific problem lies.
+                                </p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="px-6 py-4 mb-auto" style="text-align: center;">
-                        <a href="/floorpolish" target="_blank" class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Floor Polishing</a>
-                    </div>
-                    <div class="px-6 py-1 flex flex-row items-center justify-between" style="background-color: #f7a80c;">
-                    </div>
-                </div>
-                <!-- CARD 4 -->
-                <div class="rounded overflow-hidden flex flex-col" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
-                    <a href="/floorclean" target="_blank"></a>
-                    <div class="relative"><a href="/floorclean" target="_blank">
-                            <img class="w-full h-48 object-cover" src="https://s1.kaercher-media.com/images/pim/Weitere_Reinigungsl_sungen_620x310_Teaserbild_.jpg" alt="Sunset in the mountains">
-                            <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="px-6 py-4 mb-auto" style="text-align: center;">
-                        <a href="/floorclean" target="_blank" class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Floor Cleaning</a>
-                    </div>
-                    <div class="px-6 py-1 flex flex-row items-center justify-between" style="background-color: #f7a80c;">
-                    </div>
-                </div>
 
+                        </div>
+                    </div>
+                    <div href="#" class="relative group overflow-hidden p-8 rounded-xl bg-white border border-gray-200 dark:border-gray-800 dark:bg-gray-900">
+                        <div aria-hidden="true" class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-green-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"></div>
+                        <div class="relative">
+                            <div class="border border-green-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-lg dark:bg-gray-900 dark:border-white/15 before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.98em" height="1em" viewBox="0 0 256 263">
+                                    <defs>
+                                        <linearGradient id="logosSupabaseIcon0" x1="20.862%" x2="63.426%" y1="20.687%" y2="44.071%">
+                                            <stop offset="0%" stop-color="#249361"></stop>
+                                            <stop offset="100%" stop-color="#3ecf8e"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="logosSupabaseIcon1" x1="1.991%" x2="21.403%" y1="-13.158%" y2="34.708%">
+                                            <stop offset="0%"></stop>
+                                            <stop offset="100%" stop-opacity="0"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <path fill="url(#logosSupabaseIcon0)" d="M149.602 258.579c-6.718 8.46-20.338 3.824-20.5-6.977l-2.367-157.984h106.229c19.24 0 29.971 22.223 18.007 37.292z"></path>
+                                    <path fill="url(#logosSupabaseIcon1)" fill-opacity="0.2" d="M149.602 258.579c-6.718 8.46-20.338 3.824-20.5-6.977l-2.367-157.984h106.229c19.24 0 29.971 22.223 18.007 37.292z"></path>
+                                    <path fill="#3ecf8e" d="M106.399 4.37c6.717-8.461 20.338-3.826 20.5 6.976l1.037 157.984H23.037c-19.241 0-29.973-22.223-18.008-37.292z"></path>
+                                </svg>
+                            </div>
+
+                            <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                <p class="text-gray-700 dark:text-gray-300">We will provide on -the-spot recommendations on what is required for the aircon leak repair. We are transparent and will seek your approval of additional quotations before carrying out any works.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group overflow-hidden p-8 rounded-xl bg-white border border-gray-200 dark:border-gray-800 dark:bg-gray-900">
+                        <div aria-hidden="true" class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-red-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"></div>
+                        <div class="relative">
+                            <div class="border border-red-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-lg dark:bg-gray-900 dark:border-white/15 before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-red-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.95em" height="1em" viewBox="0 0 256 271">
+                                    <defs>
+                                        <linearGradient id="logosAngularIcon0" x1="25.071%" x2="96.132%" y1="90.929%" y2="55.184%">
+                                            <stop offset="0%" stop-color="#e40035"></stop>
+                                            <stop offset="24%" stop-color="#f60a48"></stop>
+                                            <stop offset="35.2%" stop-color="#f20755"></stop>
+                                            <stop offset="49.4%" stop-color="#dc087d"></stop>
+                                            <stop offset="74.5%" stop-color="#9717e7"></stop>
+                                            <stop offset="100%" stop-color="#6c00f5"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="logosAngularIcon1" x1="21.863%" x2="68.367%" y1="12.058%" y2="68.21%">
+                                            <stop offset="0%" stop-color="#ff31d9"></stop>
+                                            <stop offset="100%" stop-color="#ff5be1" stop-opacity="0"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <path fill="url(#logosAngularIcon0)" d="m256 45.179l-9.244 145.158L158.373 0zm-61.217 187.697l-66.782 38.105l-66.784-38.105L74.8 199.958h106.4zM128.001 72.249l34.994 85.076h-69.99zM9.149 190.337L0 45.179L97.627 0z"></path>
+                                    <path fill="url(#logosAngularIcon1)" d="m256 45.179l-9.244 145.158L158.373 0zm-61.217 187.697l-66.782 38.105l-66.784-38.105L74.8 199.958h106.4zM128.001 72.249l34.994 85.076h-69.99zM9.149 190.337L0 45.179L97.627 0z"></path>
+                                </svg>
+                            </div>
+
+                            <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                <p class="text-gray-700 dark:text-gray-300">To prevent your aircon from leaking again, we provide the best Aircon Servicing Packages for quarterly maintenance of your aircon units to ensure you get cool clean air all year round.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Popular Home Maintenance Services -->
-
-
-    <!-- All House Work's Happiness, Guaranteed -->
-    <div class="flex" style="margin-left: 13%;width: 77%;">
-        <section class="mt-32">
-            <a href="#" style="cursor: default;" class="flex flex-col items-center bg-white  md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                <img class="object-cover w-425 h-350 md:h-96 md:w-425 md:rounded-none md:rounded-s-lg" src="https://storage.googleapis.com/carousell-wordpress-files/1/2022/10/sg_homeservice-autos_blogcover5.jpg" alt="">
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        All House Works Happiness, Guaranteed
-                        <span style="display: block;width: 114px;height: 3px;background-color: black;margin-top: 10px;"></span>
-                        <span style="display: block;width: 49%;height: 2px;background-image: linear-gradient(to right, black 60%, #f7a80c 40%);">
-                        </span>
-                    </h5>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Your happiness is our goal. If you’re not happy, we’ll work to make it right. Our friendly customer service agents are available, 7 days a week. The All House Work's Happiness Guarantee only applies when you book and pay for a service directly through the All House Work's platform.</p>
-                    <!--<button style="background-color: #dd9933;width: 99px;height: 32px;font-family: math;">Learn More</button>-->
+    <!-- component -->
+    <section class="text-gray-400 bg-gray-800 body-font mt-10">
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-white mb-20">
+                THE MOST TRUSTED SERVICE
+                <br class="hidden sm:block">PROVIDER FOR PLUMBING SERVICES
+            </h1>
+            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+                <div class="p-4 md:w-1/2 flex">
+                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow pl-6">
+                        <h2 class="text-white text-lg title-font font-medium mb-2">EXPERIENCED</h2>
+                        <p class="leading-relaxed text-base">AllHouseWorks has helped connect thousands of happy customers to home service professionals. When troubleshooting your home repair or maintenance issues, both our customer service agents and technicians are knowledgeable in answering your queries. Feel free to message us about the products or services you are looking for, and we will respond to you promptly.</p>
+                    </div>
                 </div>
-            </a>
-        </section>
+                <div class="p-4 md:w-1/2 flex">
+                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <circle cx="6" cy="6" r="3"></circle>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow pl-6">
+                        <h2 class="text-white text-lg title-font font-medium mb-2">HONEST & TRANSPARENT PRICES</h2>
+                        <p class="leading-relaxed text-base">We are transparent about our prices and will only carry out the works upon your approval of the final quotation. Be assured that we will only recommend services or products you would need, and nothing more than that!</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 flex">
+                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="flex-grow pl-6">
+                        <h2 class="text-white text-lg title-font font-medium mb-2">FLEXIBILITY</h2>
+                        <p class="leading-relaxed text-base">Booking just one or multiple home services is easy on the AllHouseWorks platform. Our professional service providers will be arranged to fit a date and time that is convenient for you.</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 flex">
+                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="flex-grow pl-6">
+                        <h2 class="text-white text-lg title-font font-medium mb-2">RELIABILITY</h2>
+                        <p class="leading-relaxed text-base">AllHouseWorks is home to a curated list of certified and reliable professionals from reputable home repair companies in Singapore. We also co-operate with accredited and legitimate partners to value-add their services to give you a holistic solution to your home services needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PLUMBING INSTALLATION -->
+
+
+    <!-- FAQ -->
+    <div class="py-24 px-8 max-w-5xl mx-auto flex flex-col md:flex-row gap-12 mt-10">
+        <div class="flex flex-col text-left basis-1/2">
+            <p class="inline-block font-semibold text-primary mb-4">Insurance FAQ</p>
+            <p class="sm:text-4xl text-3xl font-extrabold text-base-content">Frequently Asked Questions</p>
+        </div>
+        <ul class="basis-1/2">
+            <li>
+                <button class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10" aria-expanded="false" onclick="toggleFAQ(this)">
+                    <span class="flex-1 text-base-content">What to Know Before Engaging an Plumbing Service Company</span>
+                    <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
+                        <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+                    </svg>
+                </button>
+                <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
+                    <div class="pb-5 leading-relaxed">
+                        <div class="space-y-2 leading-relaxed">Whether it comes to broken pipes, leaky faucets, or clogged drains, it is best to call up a professional Singapore plumber who has the license, skills, tools and expertise to deal with the task. Here are some things to consider before looking to engage a plumber.
+                            License / Accreditations
+                            A PUB license is important for big plumbing projects, especially for HDB or commerciarenovations that require hacking into the plumbing systems. However, most plumbers should bBCA-licensed for common domestic plumbing works like solving water leaks and water pipe works.
+                            Experience
+                            Looking for an experienced plumber is key if you do not want the plumbing issue they are fixinto come back again. A plumber who is confident in their skills is equivalent to how many yearthey have been working in the industry.
+                            Look at Their Plumbing Services Reviews
+                            If the company has been in business for at least 5 years and consistently receives gooreviews, you can expect quality work.
+                            Warranty
+                            Look at Singapore plumber services that offers plumbing works with workmanship or servicwarranty, and check if the warranty is extended to the plumbing products as well.
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <button class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10" aria-expanded="false" onclick="toggleFAQ(this)">
+                    <span class="flex-1 text-base-content">Ways to Save Money On Plumbing</span>
+                    <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
+                        <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+                    </svg>
+                </button>
+                <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
+                    <div class="pb-5 leading-relaxed">
+                        <div class="space-y-2 leading-relaxed">Plumbing emergencies do happen, and calling a plumber will be necessary. But you can certainly save money on plumbing works by preventing them from disrepair in the first place. Just follow these easy steps:
+
+                            Prevention and maintenance
+                            Prevent a small sign of plumbing issue from getting bigger, such as a leaky faucet or build-up of blockage in your drains.
+
+                            Replace rather than Repair
+                            If regular repairs become a routine in your home, consider replacing the parts that need replacement. A product replacement tends to be cheaper in the long run than constant repairs.
+
+                            Compare prices
+                            Plumbing is a competitive business, and many different companies offer different plumbing services at differing prices. Make sure you do your own research in order to compare prices and find the right plumber who can do the job well for you.</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <button class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10" aria-expanded="false" onclick="toggleFAQ(this)">
+                    <span class="flex-1 text-base-content">How Much Are Plumbing Services</span>
+                    <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
+                        <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+                    </svg>
+                </button>
+                <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden" style="transition: max-height 0.3s ease-in-out 0s;">
+                    <div class="pb-5 leading-relaxed">
+                        <div class="space-y-2 leading-relaxed">Plumbing Services start from $90 per job. See here for full list of our plumbing services prices.
+
+                            Our Plumbing Services include:
+
+                            Plumbing Chokes Services
+                            Plumbing Installation Services
+                            Plumbing Leaks Services
+                            Water Heater Services
+                            Toilet Bowl Services
+                            Toilet Flush System Services
+                            Shower Services</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
-    <!-- All House Work's Happiness, Guaranteed -->
+    <!-- FAQ -->
 
-
-    <section class="mt-10 mb-10">
-        <div class="p-4" id="timeline">
-            <h2 class="text-3xl text-black font-bold mb-10 text-center">All House Work's For Businesses</h2>
-            <p class="text-lg mb-10 text-black text-center">All House Work's provides easy access to quality home services at <br>affordable prices. This allows businesses to value-add their services for their customers.</p>
-            <div class="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
-                <div class="flex md:contents flex-row-reverse">
-                    <div class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto" id="timebor">
-                        <svg fill="#000000" class="ml-16 mb-2" height="45px" width="45px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 485.017 485.017" xml:space="preserve">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <g>
-                                    <path d="M361.205,68.899c-14.663,0-28.447,5.71-38.816,16.078c-21.402,21.403-21.402,56.228,0,77.631 c10.368,10.368,24.153,16.078,38.815,16.078s28.447-5.71,38.816-16.078c21.402-21.403,21.402-56.228,0-77.631 C389.652,74.609,375.867,68.899,361.205,68.899z M378.807,141.394c-4.702,4.702-10.953,7.292-17.603,7.292 s-12.901-2.59-17.603-7.291c-9.706-9.706-9.706-25.499,0-35.205c4.702-4.702,10.953-7.291,17.603-7.291s12.9,2.589,17.603,7.291 C388.513,115.896,388.513,131.688,378.807,141.394z"></path>
-                                    <path d="M441.961,43.036C414.21,15.284,377.311,0,338.064,0c-39.248,0-76.146,15.284-103.897,43.036 c-42.226,42.226-54.491,105.179-32.065,159.698L0.254,404.584l-0.165,80.268l144.562,0.165v-55.722h55.705l0-55.705h55.705v-64.492 l26.212-26.212c17.615,7.203,36.698,10.976,55.799,10.976c39.244,0,76.14-15.282,103.889-43.032 C499.25,193.541,499.25,100.325,441.961,43.036z M420.748,229.617c-22.083,22.083-51.445,34.245-82.676,34.245 c-18.133,0-36.237-4.265-52.353-12.333l-9.672-4.842l-49.986,49.985v46.918h-55.705l0,55.705h-55.705v55.688l-84.5-0.096 l0.078-37.85L238.311,208.95l-4.842-9.672c-22.572-45.087-13.767-99.351,21.911-135.029C277.466,42.163,306.83,30,338.064,30 c31.234,0,60.598,12.163,82.684,34.249C466.34,109.841,466.34,184.025,420.748,229.617z"></path>
-                                </g>
-                            </g>
-                        </svg>
-                        <h3 class="text-lg font-semibold lg:text-xl">Landlords & Tenants</h3>
-                    </div>
-                    <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-                        <div class="flex items-center justify-center w-6 h-full">
-                            <div class="w-1 h-full bg-indigo-300 rounded-t-full bg-gradient-to-b from-indigo-400 to-indigo-300">
-                            </div>
-                        </div>
-                        <div class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
-                    </div>
+    <!-- Revew -->
+    <section id="testimonies" class="py-20 bg-gray-900">
+        <div class="max-w-6xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
+            <div class="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
+                <div class="mb-12 space-y-5 md:mb-16 md:text-center">
+                    <h1 class="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
+                        CUSTOMER REVIEWS absolute
+                    </h1>
+                    <p class="text-xl text-gray-100 md:text-center md:text-2xl">
+                        OUR PLUMBING SERVICES
+                    </p>
                 </div>
+            </div>
 
-                <div class="flex md:contents">
-                    <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-                        <div class="flex items-center justify-center w-6 h-full">
-                            <div class="w-1 h-full bg-indigo-300"></div>
+
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+
+
+                <ul class="space-y-8">
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/kanyewest" class="cursor-pointer">
+                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Kanye West</h3>
+                                            <p class="text-gray-500 text-md">Rapper &amp; Entrepreneur</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Find God.</p>
+                                </div>
+                            </a>
                         </div>
-                        <div class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
-                    </div>
-                    <div class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto" id="timebor">
-                        <svg class="ml-16 mb-2" height="45px" width="45px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path d="M15.5777 3.38197L17.5777 4.43152C19.7294 5.56066 20.8052 6.12523 21.4026 7.13974C22 8.15425 22 9.41667 22 11.9415V12.0585C22 14.5833 22 15.8458 21.4026 16.8603C20.8052 17.8748 19.7294 18.4393 17.5777 19.5685L15.5777 20.618C13.8221 21.5393 12.9443 22 12 22C11.0557 22 10.1779 21.5393 8.42229 20.618L6.42229 19.5685C4.27063 18.4393 3.19479 17.8748 2.5974 16.8603C2 15.8458 2 14.5833 2 12.0585V11.9415C2 9.41667 2 8.15425 2.5974 7.13974C3.19479 6.12523 4.27063 5.56066 6.42229 4.43152L8.42229 3.38197C10.1779 2.46066 11.0557 2 12 2C12.9443 2 13.8221 2.46066 15.5777 3.38197Z" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
-                                <path d="M21 7.5L17 9.5M12 12L3 7.5M12 12V21.5M12 12C12 12 14.7426 10.6287 16.5 9.75C16.6953 9.65237 17 9.5 17 9.5M17 9.5V13M17 9.5L7.5 4.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
-                            </g>
-                        </svg>
-                        <h3 class="text-lg font-semibold lg:text-xl">Interior Designers</h3>
-                    </div>
-                </div>
-
-                <div class="flex md:contents flex-row-reverse">
-                    <div class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto" id="timebor">
-                        <svg fill="#000000" class="ml-16 mb-2" height="45px" width="45px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <title>stack2</title>
-                                <path d="M28.608 11.246l-12.608-8.632-12.608 8.632 12.608 8.631 12.608-8.631zM16 21.803l-11.129-7.338-1.479 1.535 12.608 8.631 12.608-8.631-1.499-1.568-11.109 7.371zM16 26.559l-11.129-7.338-1.479 1.535 12.608 8.631 12.608-8.631-1.499-1.568-11.109 7.371z"></path>
-                            </g>
-                        </svg>
-                        <h3 class="text-lg font-semibold lg:text-xl">Service Partners</h3>
-                    </div>
-                    <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-                        <div class="flex items-center justify-center w-6 h-full">
-                            <div class="w-1 h-full bg-indigo-300 rounded-t-full bg-gradient-to-b from-indigo-400 to-indigo-300">
-                            </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
+                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
+                                            <p class="text-gray-500 text-md">CEO of Apple</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
+                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                        aliquam malesuada bibendum.</p>
+                                </div>
+                            </a>
                         </div>
-                        <div class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
-                    </div>
-                </div>
-
-                <div class="flex md:contents">
-                    <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-                        <div class="flex items-center justify-center w-6 h-full">
-                            <div class="w-1 h-full bg-indigo-300"></div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/kanyewest" class="cursor-pointer">
+                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Kanye West</h3>
+                                            <p class="text-gray-500 text-md">Rapper &amp; Entrepreneur</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Find God.</p>
+                                </div>
+                            </a>
                         </div>
-                        <div class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
-                    </div>
-                    <div class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto" id="timebor">
-                        <svg fill="#000000" class="ml-16 mb-2" height="45px" width="45px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <title>barcode1</title>
-                                <path d="M23.807 19.398h-1.758v0.586h1.758v-0.586zM17.248 21.156v0.586h1.758v0.586h0.586v-2.344h-0.586v1.172h-1.758zM17.248 23.5h1.172v-0.586h-1.172v0.586zM18.42 22.914h0.586v-0.586h-0.586v0.586zM17.248 19.984h-0.586v1.172h0.586v-1.172zM14 8h-2v10h2v-10zM16 8h-1v10h1v-10zM22.049 23.5h1.758v-0.586h-1.758v0.586zM19.006 19.398h-1.758v0.586h1.758v-0.586zM24.393 22.914v-2.93h-0.586v2.93h0.586zM25 8h-1v10h1v-10zM12.448 22.328h-0.586v0.586h0.586v-0.586zM20 8h-2v10h2v-10zM22 8h-1v10h1v-10zM21.463 22.914h0.586v-2.93h-0.586v2.93zM7.062 23.5h2.93v-0.586h-2.344v-0.586h-0.586v1.172zM7.062 20.57h0.586v-0.586h-0.586v0.586zM8.234 21.742h1.172v-0.586h-1.172v0.586zM13.034 21.156v0.586h1.172v-0.586h-1.172zM7.648 19.398v0.586h1.758v-0.586h-1.758zM8 8h-1v10h1v-10zM30 4h-28c-1.104 0-2 0.896-2 2v20c0 1.104 0.896 2 2 2h28c1.104 0 2-0.896 2-2v-20c0-1.104-0.896-2-2-2zM30 26h-28v-20h28v20zM6 8h-2v16h2v-16zM7.648 22.328h0.586v-0.586h-0.586v0.586zM14.792 19.984h-0.586v1.172h0.586v-1.172zM12.448 19.398v0.586h1.758v-0.586h-1.758zM9.992 21.156v-1.172h-0.586v1.172h0.586zM11.862 20.57h0.586v-0.586h-0.586v0.586zM11 8h-1v10h1v-10zM14.792 21.742h-0.586v1.172h0.586v-1.172zM14.206 23.5v-0.586h-1.758v0.586h1.758zM28 8h-2v16h2v-16z"></path>
-                            </g>
-                        </svg>
-                        <h3 class="text-lg font-semibold lg:text-xl">Commercial Clients</h3>
-                    </div>
-                </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
+                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
+                                            <p class="text-gray-500 text-md">CEO of Apple</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
+                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                        aliquam malesuada bibendum.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
 
+
+                <ul class="hidden space-y-8 sm:block">
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/paraga" class="cursor-pointer">
+                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Parag Agrawal">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Parag Agrawal</h3>
+                                            <p class="text-gray-500 text-md">CEO of Twitter</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Enim neque volutpat ac tincidunt vitae
+                                        semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus quam
+                                        pellentesque nec. Turpis cursus in hac habitasse platea dictumst.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
+                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
+                                            <p class="text-gray-500 text-md">CEO of Apple</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
+                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                        aliquam malesuada bibendum.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/paraga" class="cursor-pointer">
+                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Parag Agrawal">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Parag Agrawal</h3>
+                                            <p class="text-gray-500 text-md">CEO of Twitter</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Enim neque volutpat ac tincidunt vitae
+                                        semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus quam
+                                        pellentesque nec. Turpis cursus in hac habitasse platea dictumst.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
+                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
+                                            <p class="text-gray-500 text-md">CEO of Apple</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
+                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                        aliquam malesuada bibendum.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+
+                <ul class="hidden space-y-8 lg:block">
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/satyanadella" class="cursor-pointer">
+                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Satya Nadella">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Satya Nadella</h3>
+                                            <p class="text-gray-500 text-md">CEO of Microsoft</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Tortor dignissim convallis aenean et
+                                        tortor at. At ultrices mi tempus imperdiet nulla malesuada. Id cursus metus aliquam
+                                        eleifend mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/dan_schulman" class="cursor-pointer">
+                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Dan Schulman">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Dan Schulman</h3>
+                                            <p class="text-gray-500 text-md">CEO of PayPal</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Quam pellentesque nec nam aliquam sem
+                                        et tortor consequat id. Enim sit amet venenatis urna cursus.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/satyanadella" class="cursor-pointer">
+                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Satya Nadella">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Satya Nadella</h3>
+                                            <p class="text-gray-500 text-md">CEO of Microsoft</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Tortor dignissim convallis aenean et
+                                        tortor at. At ultrices mi tempus imperdiet nulla malesuada. Id cursus metus aliquam
+                                        eleifend mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/dan_schulman" class="cursor-pointer">
+                                <div class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg" class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Dan Schulman">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Dan Schulman</h3>
+                                            <p class="text-gray-500 text-md">CEO of PayPal</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Quam pellentesque nec nam aliquam sem
+                                        et tortor consequat id. Enim sit amet venenatis urna cursus.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-4 py-8">
+        <!-- Things to Consider Before Hiring an Aircon Maintenance Company -->
+        <div class="bg-blue-50 border-l-4 border-blue-500 shadow-lg rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">Things to Consider Before Hiring an Aircon Maintenance Company</h2>
+            <p class="mb-4">Air conditioners are a significant investment, especially given Singapore’s consistently humid weather. Ensuring your aircon is properly maintained is crucial to protect your investment and ensure optimal performance. Here are key factors to consider before hiring an aircon maintenance company:</p>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-blue-500 mb-2">1. Understand Your Aircon Unit</h3>
+                <p>Familiarize yourself with your aircon unit, including its main components and common issues. This knowledge will help you communicate effectively with the service provider and evaluate their recommendations.</p>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-blue-500 mb-2">2. Check Reviews and Reputation</h3>
+                <p>Research online reviews and testimonials to gauge the quality of service provided by different companies. Look for detailed feedback from real customers to identify reputable aircon maintenance companies.</p>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-blue-500 mb-2">3. Verify Experience and Credentials</h3>
+                <p>Ensure the company has experienced, full-time technicians. Check their credentials by visiting their website or contacting them directly. Hiring experienced professionals guarantees better service and reliability.</p>
+            </div>
+        </div>
+
+        <!-- How to Handle an Aircon Emergency -->
+        <div class="bg-green-50 border-l-4 border-green-500 shadow-lg rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">How to Handle an Aircon Emergency</h2>
+            <p class="mb-4">If you experience a serious issue with your aircon, prompt action is essential. Here’s how to handle an aircon emergency:</p>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-green-500 mb-2">1. Inspect the Circuit Breaker</h3>
+                <p>A tripped circuit breaker can cause your aircon to stop working. Check if the power supply to the aircon has been interrupted and reset the breaker if necessary.</p>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-green-500 mb-2">2. Avoid DIY Repairs</h3>
+                <p>Attempting DIY fixes based on online guides can lead to further damage. If you’re unsure about how to address the issue, it’s best to call a professional aircon service company for assistance.</p>
+            </div>
+        </div>
+
+        <!-- Common Mistakes to Avoid When Hiring an Air Conditioning Service -->
+        <div class="bg-yellow-50 border-l-4 border-yellow-500 shadow-lg rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold text-yellow-600 mb-4">Common Mistakes to Avoid When Hiring an Air Conditioning Service</h2>
+            <p class="mb-4">When choosing an aircon service company, avoid these common mistakes:</p>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-yellow-500 mb-2">1. Irregular Maintenance Program</h3>
+                <p>The common mistake people make is not having a regular aircon maintenance program or service contract. Depending on usage frequency, it’s best to schedule quarterly servicing. Lack of maintenance can reduce the unit’s lifespan and increase overall costs.</p>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-yellow-500 mb-2">2. Choosing an Unlicensed Air Conditioning Service Company</h3>
+                <p>When hiring someone for home air conditioning services, ensure the service provider has a legitimate license. This guarantees that the technicians are skilled in performing repairs and maintenance.</p>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-yellow-500 mb-2">3. Hiring an Uninsured Aircon Contractor</h3>
+                <p>Ensure the contractor provides an insured service contract. This protects you from any potential damages caused by the contractor. Without insurance, you could be liable for repair costs resulting from their work.</p>
+            </div>
+        </div>
+
+        <!-- Energy-Saving Tips for Your Aircon -->
+        <div class="bg-teal-50 border-l-4 border-teal-500 shadow-lg rounded-lg p-6">
+            <h2 class="text-2xl font-bold text-teal-600 mb-4">Energy-Saving Tips for Your Aircon</h2>
+            <p class="mb-4">In Singapore, air conditioning significantly contributes to your utility bills. Here are some tips to save energy and reduce costs:</p>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-teal-500 mb-2">1. Reduce Aircon Usage</h3>
+                <p>Turn on your aircon only when necessary. Set the temperature above 25°C, use a timer to turn it off after a while, or switch to fan mode once the room is adequately cooled.</p>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-teal-500 mb-2">2. Purchase an Energy-Efficient Aircon Unit</h3>
+                <p>Look for aircon units with a high NEA rating (more ticks). While they may cost more upfront, they can save you money on energy bills in the long run.</p>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-teal-500 mb-2">3. Regular Aircon Servicing</h3>
+                <p>Regular servicing ensures your aircon runs efficiently and extends its lifespan. Consider a service contract to make maintenance more affordable and convenient.</p>
             </div>
         </div>
     </section>
 
 
 
-    <div class="parallax py-24 sm:py-32 mt-16 mb-16">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                <div class="lg:pr-4">
-                    <div class="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
-                        <img class="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0" src="https://media.istockphoto.com/id/1458711335/photo/male-wood-furniture-joiner-work-in-diy-wooden-workshop-real-authentic-people-worker.webp?b=1&s=170667a&w=0&k=20&c=MYhOSwYt7QwT4c8gBp3lCZZMje4r3QydPKFx4zBN2mI=" alt="">
-                        <div class="absolute inset-0 bg-gray-900 mix-blend-multiply"></div>
-                        <div class="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl" aria-hidden="true">
-                            <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-40" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-                        </div>
-                        <figure class="relative isolate">
-                            <svg viewBox="0 0 162 128" fill="none" aria-hidden="true" class="absolute -left-2 -top-4 -z-10 h-32 stroke-white/20">
-                                <path id="0ef284b8-28c2-426e-9442-8655d393522e" d="M65.5697 118.507L65.8918 118.89C68.9503 116.314 71.367 113.253 73.1386 109.71C74.9162 106.155 75.8027 102.28 75.8027 98.0919C75.8027 94.237 75.16 90.6155 73.8708 87.2314C72.5851 83.8565 70.8137 80.9533 68.553 78.5292C66.4529 76.1079 63.9476 74.2482 61.0407 72.9536C58.2795 71.4949 55.276 70.767 52.0386 70.767C48.9935 70.767 46.4686 71.1668 44.4872 71.9924L44.4799 71.9955L44.4726 71.9988C42.7101 72.7999 41.1035 73.6831 39.6544 74.6492C38.2407 75.5916 36.8279 76.455 35.4159 77.2394L35.4047 77.2457L35.3938 77.2525C34.2318 77.9787 32.6713 78.3634 30.6736 78.3634C29.0405 78.3634 27.5131 77.2868 26.1274 74.8257C24.7483 72.2185 24.0519 69.2166 24.0519 65.8071C24.0519 60.0311 25.3782 54.4081 28.0373 48.9335C30.703 43.4454 34.3114 38.345 38.8667 33.6325C43.5812 28.761 49.0045 24.5159 55.1389 20.8979C60.1667 18.0071 65.4966 15.6179 71.1291 13.7305C73.8626 12.8145 75.8027 10.2968 75.8027 7.38572C75.8027 3.6497 72.6341 0.62247 68.8814 1.1527C61.1635 2.2432 53.7398 4.41426 46.6119 7.66522C37.5369 11.6459 29.5729 17.0612 22.7236 23.9105C16.0322 30.6019 10.618 38.4859 6.47981 47.558L6.47976 47.558L6.47682 47.5647C2.4901 56.6544 0.5 66.6148 0.5 77.4391C0.5 84.2996 1.61702 90.7679 3.85425 96.8404L3.8558 96.8445C6.08991 102.749 9.12394 108.02 12.959 112.654L12.959 112.654L12.9646 112.661C16.8027 117.138 21.2829 120.739 26.4034 123.459L26.4033 123.459L26.4144 123.465C31.5505 126.033 37.0873 127.316 43.0178 127.316C47.5035 127.316 51.6783 126.595 55.5376 125.148L55.5376 125.148L55.5477 125.144C59.5516 123.542 63.0052 121.456 65.9019 118.881L65.5697 118.507Z" />
-                                <use href="#0ef284b8-28c2-426e-9442-8655d393522e" x="86" />
-                            </svg>
-                            <blockquote class="mt-6 text-xl font-semibold leading-8 text-white">
-                                <p>"What happens is not as important as how you react to what happens." "The journey of a thousand miles begins with one step." "The only true wisdom is in knowing you know nothing." "Just as treasures are uncovered from the earth, so virtue appears from good deeds, and wisdom appears from a pure and peaceful mind..”</p>
-                            </blockquote>
-                            <!--<figcaption class="mt-6 text-sm leading-6 text-gray-300"><strong class="font-semibold text-white">Shehab Najib,</strong> ceo of ISREN</figcaption>-->
-                        </figure>
-                    </div>
-                </div>
-                <div>
-                    <div class="text-base leading-7 text-gray-700 lg:max-w-lg">
-                        <p class="text-base font-semibold leading-7 text-yellow-400">MORE ABOUT US</p>
-                        <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Oue Testimonial</h1>
-                        <div class="max-w-xl">
-                            <p class="mt-6">I recently used their handyman, plumbing, and electrical services and was thoroughly impressed. Marc and Rhae coordinated a responsive and professional handyman team, ensuring timely and efficient service. </p>
-                            <p class="mt-8">The plumber quickly fixed a water leakage issue, and the electrician was prompt, clear about charges, and effective. Overall, the services were excellent, affordable, and highly recommended.</p>
-                            <p class="mt-8">Zero Degree AC Limited also offers tailored Air Conditioning installation packages. Their systems are inverter-driven, energy-efficient, stylish, silent, and provide both cooling and heating. </p>
-                        </div>
-                    </div>
-                    <dl class="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4">
-                        <div style="cursor:pointer;">
-                            <img src="{{ url('img/technician.png') }}" alt="Technician" id="whatsappImage">
-                        </div>
-                        <a href="mailto:info@allhouseworks.com">
-                            <div style="cursor:pointer;">
-                                <img src="{{ url('img/gmail.png') }}" alt="Technician" id="whatsappImage">
-                            </div>
-                        </a>
 
-                    </dl>
-                    <div class="mt-10 flex">
-                        <a href="/about" class="text-base font-semibold leading-7 text-yellow-500">Learn more about our company <span aria-hidden="true">&rarr;</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+
+    <!-- Revew -->
     <section class="bg-gray-100 h-auto flex flex-wrap justify-center p-4">
         <h2 class="w-full text-center mt-8 mb-8 text-lg font-bold">AllHouseWork's Group's Network of Service Brands</h2>
-        <div class="w-12/12 mt-2 mb-8 flex flex-wrap justify-around">
+        <div class="w-11/12 mt-2 mb-8 flex flex-wrap justify-around">
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/plumbing">
                     <img src="{{ url('img/plumber.png') }}" alt="Image 1" class="w-48 h-16 hover:zoom-in">
@@ -2038,7 +2717,7 @@
             </div>
             <div class="w-1/4 p-2 flex justify-center items-center responsive-image">
                 <a href="/rubbishChute">
-                    <img src="{{ url('img/rubbish.png') }}" alt="Image 8" class="w-56 h-20 hover:zoom-in">
+                    <img src="{{ url('img/rubbish.png') }}" alt="Image 8" class="w-56 h-16 hover:zoom-in">
                 </a>
             </div>
         </div>
@@ -2102,7 +2781,7 @@
     </footer>
     <style>
         .footer-bg {
-            background-image: linear-gradient(rgb(0 0 0 / 67%), rgb(0 0 0 / 81%)), url(https://img.pikbest.com/origin/09/17/44/54fpIkbEsTrpq.jpg!w700wp);
+            background-image: linear-gradient(#000000AB, hsla(0 0% 0% / 0.81)), url(https://img.pikbest.com/origin/09/17/44/54fpIkbEsTrpq.jpg!w700wp);
             background-attachment: fixed;
         }
 
@@ -2110,11 +2789,17 @@
             color: #f8b500;
         }
     </style>
-
-
 </body>
 
 </html>
+<script>
+    document.getElementById('whatsappImage').addEventListener('click', function() {
+        var message = "Good day, I am interested in learning more about your services. Could you please provide me with more information? Thank you.";
+        var phoneNumber = "6596585757";
+        var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+        window.open(whatsappUrl, '_blank');
+    });
+</script>
 <script>
     let i = 1;
 
@@ -2431,7 +3116,6 @@
         electricianMenu.style.left = '-100%';
         overlay.style.display = 'none';
     });
-
     // Open Light Service submenu when clicking "Light Service"
     document.getElementById('light-service-btn').addEventListener('click', function() {
         const menu = document.getElementById('mobile-menu');
@@ -2605,31 +3289,6 @@
         const overlay = document.getElementById('menu-overlay');
         menu.style.left = '-100%';
         deckingMenu.style.left = '-100%';
-        overlay.style.display = 'none';
-    });
-    // Open aircon submenu when clicking "aircon"
-    document.getElementById('aircon-btn').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const airconMenu = document.getElementById('aircon-menu');
-        menu.style.left = '-100%';
-        airconMenu.style.left = '0';
-    });
-
-    // Return to main menu from aircon submenu
-    document.getElementById('return-aircon-menu').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const airconMenu = document.getElementById('aircon-menu');
-        airconMenu.style.left = '-100%';
-        menu.style.left = '0';
-    });
-
-    // Click outside to close aircon submenu
-    document.getElementById('menu-overlay').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        const airconMenu = document.getElementById('aircon-menu');
-        const overlay = document.getElementById('menu-overlay');
-        menu.style.left = '-100%';
-        airconMenu.style.left = '-100%';
         overlay.style.display = 'none';
     });
 </script>
